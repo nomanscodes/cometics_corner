@@ -24,10 +24,10 @@ const Category = () => {
           </Link>
         </div>
         <div className='flex items-center gap-2'>
-          <button onClick={scrollLeft} className='bg-bgColor p-1.5'>
+          <button onClick={scrollLeft} className='bg-bgColor px-1 md:px-2 md:py-1'>
             <FiChevronLeft size={18} />
           </button>
-          <button onClick={scrolRight} className='bg-bgColor p-1.5'>
+          <button onClick={scrolRight} className='bg-bgColor px-1 md:px-2 md:py-1'>
             <FiChevronRight size={18} />
           </button>
         </div>
