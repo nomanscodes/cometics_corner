@@ -22,5 +22,5 @@ module.exports = {
       poppins: "Urbanist, sans-serif",
     },
   },
-  plugins: [],
+  plugins: [require("tailwind-scrollbar-hide")],
 };
