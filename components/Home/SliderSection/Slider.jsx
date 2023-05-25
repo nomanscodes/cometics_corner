@@ -45,7 +45,7 @@ const Slider = () => {
                                     className="aspect-[16/10] md:aspect-auto object-cover shadow rounded-sm"
                                 />
                             </picture>
-                            <button className="px-[15px] md:px-[5px] py-[5px] md:py-[7px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[15px] md:text-[30px] font-medium cursor-pointer hover:opacity-90">
+                            <button className="px-[15px] md:px-[5px] py-[3px] md:py-[5px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[10px] md:text-[22px] font-medium cursor-pointer hover:opacity-90">
                                 SHOP NOW
                             </button>
                         </div>
@@ -57,7 +57,7 @@ const Slider = () => {
                                     className="aspect-[16/10] md:aspect-auto object-cover shadow rounded-sm"
                                 />
                             </picture>
-                            <button className="px-[15px] md:px-[5px] py-[5px] md:py-[7px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[15px] md:text-[30px] font-medium cursor-pointer hover:opacity-90">
+                            <button className="px-[15px] md:px-[5px] py-[3px] md:py-[5px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[10px] md:text-[22px] font-medium cursor-pointer hover:opacity-90">
                                 SHOP NOW
                             </button>
                         </div>
