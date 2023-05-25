@@ -15,7 +15,7 @@ const Category = () => {
 
   return (
     <div className='container mx-auto relative mt-4 font-poppins md:px-0'>
-      <div className='flex items-center justify-between px-4'>
+      <div className='flex items-center justify-between px-4 md:px-0'>
         <div className='flex items-center gap-7'>
           <h1 className='font-semibold text-xl md:text-3xl opacity-90'>Browse by Category</h1>
           <Link href={""} className='hidden md:flex items-center gap-1 group  '>
@@ -23,7 +23,7 @@ const Category = () => {
             <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />
           </Link>
         </div>
-        <div className='flex items-center gap-2'>
+        <div className='flex items-center gap-2 text-white'>
           <button onClick={scrollLeft} className='bg-bgColor px-1 md:px-2 md:py-1'>
             <FiChevronLeft size={18} />
           </button>
@@ -33,7 +33,7 @@ const Category = () => {
         </div>
       </div>
       <div id='carouselContent' className='CatCarousel flex items-center justify-start overflow-x-auto 
-      scroll-smooth'>
+      scroll-smooth mt-4'>
         <div>
           <CategoryCart />
         </div>

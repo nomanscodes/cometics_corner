@@ -3,6 +3,7 @@ import Layout from "@/Layouts/Layout";
 import Slider from "@/components/Home/SliderSection/Slider";
 import Categorie from "@/components/Home/Cetagory/Category";
 import AdsSection from "@/components/Home/AdsSection";
+import FeaturedProducts from "@/components/Home/Products/FeaturedProducts";
 
 export default function Home() {
   return (
@@ -18,6 +19,7 @@ export default function Home() {
         <Slider />
         <Categorie />
         <AdsSection/>
+        <FeaturedProducts/>
       </div>
     </Layout>
   );
