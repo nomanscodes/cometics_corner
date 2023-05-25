@@ -69,7 +69,7 @@ const Middle = () => {
           className="h-6 w-6 rounded-full z-10 flex justify-center items-center mr-2"
         >
           <p className="h-5 w-5 bg-bgColor rounded flex items-center justify-center absolute z-50  mb-5 ml-5 ">
-            <span className="fontSize10">05</span>
+            <span className="fontSize10 text-white">05</span>
           </p>
           <Image src="/SVG/cart.svg" alt='cart' height={20} width={22}></Image>
         </Link>
