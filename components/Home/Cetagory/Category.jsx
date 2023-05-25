@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
@@ -17,7 +17,7 @@ const Category = () => {
     <div className='container mx-auto relative mt-4 font-poppins md:px-0'>
       <div className='flex items-center justify-between px-4'>
         <div className='flex items-center gap-7'>
-          <h1 className='font-bold text-xl md:text-3xl opacity-90'>Browse by Category</h1>
+          <h1 className='font-semibold text-xl md:text-3xl opacity-90'>Browse by Category</h1>
           <Link href={""} className='hidden md:flex items-center gap-1 group  '>
             <h1 className='font-medium group-hover:text-bgColor duration-300'>All Category</h1>
             <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />

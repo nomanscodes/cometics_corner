@@ -2,6 +2,7 @@ import Head from "next/head";
 import Layout from "@/Layouts/Layout";
 import Slider from "@/components/Home/SliderSection/Slider";
 import Categorie from "@/components/Home/Cetagory/Category";
+import AdsSection from "@/components/Home/AdsSection";
 
 export default function Home() {
   return (
@@ -16,6 +17,7 @@ export default function Home() {
       <div className="">
         <Slider />
         <Categorie />
+        <AdsSection/>
       </div>
     </Layout>
   );
