@@ -20,7 +20,7 @@ const FeaturedProducts = () => {
                     </picture>
                 </div>
                 <div className='col-span-5 md:col-span-4 grid
-                grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3'>
+                grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 px-1 md:px-0'>
                     <ProductCart />
                     <ProductCart />
                     <ProductCart />
