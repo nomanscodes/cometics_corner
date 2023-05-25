@@ -1,0 +1,84 @@
+[
+  {
+    "id": 2,
+    "title": "Fashion",
+    "subCat": [
+      {
+        "id": 1,
+        "title": "Men",
+        "label3": [
+          {
+            "id": 12,
+            "title": "cloths"
+          },
+          {
+            "id": 13,
+            "title": "watch"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": " Lable2",
+    "subCat": [
+      {
+        "id": 31,
+        "title": " Lable2sub",
+        "label3": [
+          {
+            "id": 32,
+            "title": " Lable2"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": " Mackup",
+    "subCat": [
+      {
+        "id": 41,
+        "title": " Face",
+        "label3": [
+          {
+            "id": 42,
+            "title": "Mouth"
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "title": " Hand",
+        "label3": [
+          {
+            "id": 44,
+            "title": " Hand Wash"
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "title": " Hand",
+        "label3": [
+          {
+            "id": 44,
+            "title": " Hand Wash"
+          }
+        ]
+      },
+      {
+        "id": 43,
+        "title": " Hand",
+        "label3": [
+          {
+            "id": 44,
+            "title": " Hand Wash"
+          }
+        ]
+      }
+    ]
+  }
+]
