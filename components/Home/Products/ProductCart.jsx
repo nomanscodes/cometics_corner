@@ -4,10 +4,9 @@ import Image from 'next/image'
 const ProductCart = () => {
     return (
         <div className="col-span-1 flex-shrink-0 relative overflow-hidden bg-white rounded-lg shadow-lg">
-            <div className="relative pt-10 px-10 flex items-center justify-center">
-                <div className="block absolute w-52 bottom-0 left-0 -mb-24 ml-3" ></div>
+            <div className="relative pt-3 flex items-center justify-center">
                 <picture>
-                    <img className="relative w-32" src="https://user-images.githubusercontent.com/2805249/64069899-8bdaa180-cc97-11e9-9b19-1a9e1a254c18.png" alt="" />
+                    <img className="w-full mt-2 px-6 rounded-md" src="/product2.jpg" alt="" />
                 </picture>
             </div>
             <div className="relative text-bgColor px-6 pb-2 mt-2">
