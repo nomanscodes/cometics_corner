@@ -5,9 +5,9 @@ import ProductCart from './ProductCart'
 
 const FeaturedProducts = () => {
     return (
-        <div className='container mx-auto mt-4'>
+        <div className='container mx-auto mt-4 font-poppins'>
             <div className='flex items-center justify-between px-2 md:px-0'>
-                <h1 className='font-semibold text-xl md:text-3xl opacity-90'>Featured Products </h1>
+                <h1 className='font-semibold text-lg md:text-2xl opacity-90'>Featured Products </h1>
                 <Link href={""} className='hidden md:flex items-center gap-1 group  '>
                     <h1 className='font-medium group-hover:text-bgColor duration-300'>More products</h1>
                     <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />
