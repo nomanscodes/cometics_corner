@@ -23,7 +23,7 @@ const Category = () => {
   };
 
   return (
-    <div className='container mx-auto mt-6 font-poppins '>
+    <div className='container mx-auto mt-6 font-poppins px-2 md:px-0'>
       <div className='flex items-center gap-7'>
         <h1 className='font-bold text-3xl opacity-90'>Browse by Category</h1>
         <Link href={""} className='hidden md:flex items-center gap-1 group  '>
