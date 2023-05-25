@@ -9,12 +9,12 @@ const ProductCart = () => {
                     <img className="w-full mt-2 px-6 rounded-md" src="/product2.jpg" alt="" />
                 </picture>
             </div>
-            <div className="relative text-bgColor px-6 pb-2 mt-2">
+            <div className="relative  px-6 pb-2 mt-2">
                 <span className="block -mb-1">Indoor</span>
                 <span className="block font-semibold text-xl">Red Lipistic</span>
                 <div className="flex items-center gap-6">
-                    <span className="text-bgColor text-xs font-bold py-2 leading-none items-center">$36.00</span>
-                    <span className=" rounded-full text-bgColor text-xs font-bold  py-2 leading-none items-center line-through">$36.00</span>
+                    <span className=" text-xs font-bold py-2 leading-none items-center">$36.00</span>
+                    <span className=" rounded-full text-xs font-bold  py-2 leading-none items-center line-through">$36.00</span>
                 </div>
 
                 <button className="bg-bgColor text-white w-full rounded text-xs font-bold py-3 leading-none transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105">Add To Bucket</button>
