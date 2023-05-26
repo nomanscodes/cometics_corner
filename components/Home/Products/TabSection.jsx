@@ -7,7 +7,7 @@ const TabSection = () => {
             <h5 className="flex  items-center justify-center text-2xl font-poppins font-bold">
                 Popular Departments
             </h5>
-            <div className="flex items-center justify-center gap-4 mt-3 overflow-x-auto scroll-smooth">
+            <div className="CatCarousel flex items-center justify-start overflow-x-auto scroll-smooth mt-4 gap-3">
                 <div>
                     <button className=" border border-bgColor px-[4px] py-[2px] md:px-[8px] font-poppins text-sm md:text-base md:font-bold text-bgColor rounded whitespace-nowrap">New Arrivals</button>
                 </div>
