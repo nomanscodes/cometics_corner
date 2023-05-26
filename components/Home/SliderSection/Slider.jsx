@@ -3,8 +3,6 @@ import { BiArrowBack } from 'react-icons/bi'
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 
-
-
 const Slider = () => {
     return (
 
