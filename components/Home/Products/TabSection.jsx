@@ -3,7 +3,7 @@ import ProductCart from "./ProductCart";
 
 const TabSection = () => {
     return (
-        <div className="px-2 md:px-6 mt-1">
+        <div className="px-2 md:px-6">
             <h5 className="flex  items-center justify-center text-2xl font-poppins font-bold">
                 Popular Departments
             </h5>
@@ -27,7 +27,7 @@ const TabSection = () => {
                     <button className=" border border-bgColor px-[4px] py-[2px] md:px-[8px] font-poppins text-sm md:text-base md:font-bold text-bgColor rounded whitespace-nowrap">Featured</button>
                 </div>
             </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-2">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
                 <ProductCart />
                 <ProductCart />
                 <ProductCart />
