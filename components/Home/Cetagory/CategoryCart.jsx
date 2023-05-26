@@ -3,11 +3,13 @@ import React from 'react'
 
 const CategoryCart = () => {
     return (
-        <Link href={""} className='text-bgColor flex flex-col items-center justify-center bg-white shadow-xl h-22 w-28 md:h-32 md:w-36 rounded-2xl m-2 transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105'>
+        <Link href={""} className='text-bgColor relative file:transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105  shadow-bgColor shadow-lg'>
             <picture>
-                <img className=' h-16 w-20 md:w-32 md:h-24' src="/assets/cat/cat2.png" alt="" />
+                <img className='w-32 h-24 rounded-t-md ' src="/vendorImage.avif" alt="" />
             </picture>
-            <h5 className='font-poppins font-semibold text-lg mb-2'>Mackup</h5>
+            <div className='bg-white w-32 py-[1px] px-[2px] rounded-b-md'>
+                <h5 className='font-poppins font-medium text-lg mb-2 '>Mackup</h5>
+            </div>
         </Link>
     )
 }

@@ -32,8 +32,45 @@ const Category = () => {
           </button>
         </div>
       </div>
-      <div id='carouselContent' className='CatCarousel flex items-center justify-start overflow-x-auto 
+      <div id='carouselContent' className='CatCarousel flex items-center justify-start gap-3 overflow-x-auto 
       scroll-smooth mt-4'>
+        
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
+        <div>
+          <CategoryCart />
+        </div>
         <div>
           <CategoryCart />
         </div>

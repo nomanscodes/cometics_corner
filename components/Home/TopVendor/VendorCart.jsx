@@ -4,9 +4,9 @@ const VendorCart = () => {
   return (
     <div className=''>
       <picture>
-        <img className='w-40 h-32 rounded-t' src="/vendorImage.avif" alt="vedor" />
+        <img className='w-40 h-32 rounded-t-md' src="/vendorImage.avif" alt="vedor" />
       </picture>
-      <div className='w-40 bg-white p-1 rounded-b'>
+      <div className='w-40 bg-white p-1 rounded-b-md'>
         <div className="name">
           <h3 className='text-base font-poppins font-semibold'>Absolute Glam</h3>
         </div>
@@ -24,7 +24,7 @@ const VendorCart = () => {
           </span>
         </div>
         <div className="follow mt-1 ">
-          <button className="border border-bgColor font-poppins text-sm  text-bgColor rounded px-3 py-[2px] whitespace-nowrap transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105">Follow Vendor</button>
+          <button className="border border-bgColor font-poppins text-sm  text-bgColor rounded px-3 py-[2px] whitespace-nowrap transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105">Follow</button>
         </div>
       </div>
     </div>
