@@ -40,9 +40,9 @@ const Slider = () => {
                         <div>
                             <picture>
                                 <img
-                                    src="/assets/Slider/1.png"
+                                    src="/assets/Slider/slider3.png"
                                     alt="slider"
-                                    className="aspect-[16/10] md:aspect-auto object-cover shadow rounded-sm"
+                                    className="aspect-[16/10] md:aspect-auto object-cover h-[200px] md:h-auto shadow rounded-lg md:rounded-sm"
                                 />
                             </picture>
                             <button className="px-[15px] md:px-[5px] py-[3px] md:py-[5px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[10px] md:text-[22px] font-medium cursor-pointer hover:opacity-90">
@@ -52,9 +52,9 @@ const Slider = () => {
                         <div>
                             <picture>
                                 <img
-                                    src="/assets/Slider/2.png"
+                                    src="/assets/Slider/slider3.png"
                                     alt="slider"
-                                    className="aspect-[16/10] md:aspect-auto object-cover shadow rounded-sm"
+                                    className="aspect-[16/10] md:aspect-auto object-cover shadow  h-[200px] md:h-auto rounded-lg md:rounded-sm"
                                 />
                             </picture>
                             <button className="px-[15px] md:px-[5px] py-[3px] md:py-[5px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[10px] md:text-[22px] font-medium cursor-pointer hover:opacity-90">
@@ -67,10 +67,10 @@ const Slider = () => {
             <div className="hidden md:block">
                 <div className="col-span-1 h-full flex flex-col items-center justify-between">
                     <picture>
-                        <img className='shadow' src="/assets/side/side4.png" alt="" />
+                        <img className='shadow' src="/assets/side/cat4.png" alt="" />
                     </picture>
                     <picture>
-                        <img className='shadow' src="/assets/side/side4.png" alt="" />
+                        <img className='shadow' src="/assets/side/cat4.png" alt="" />
                     </picture>
                 </div>
             </div>

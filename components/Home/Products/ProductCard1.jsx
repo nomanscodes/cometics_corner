@@ -1,7 +1,7 @@
 import React from 'react'
 import { IoMdHeartEmpty } from 'react-icons/io'
 
-const ProductCart = () => {
+const ProductCart1 = () => {
     return (
         <div className="col-span-1 font-poppins">
             <div className=" bg-white  group shadow rounded">
@@ -29,7 +29,7 @@ const ProductCart = () => {
                             <p className='line-through font-[200] opacity-80' >&#2547; 555575</p>
                         </span>
                         <picture>
-                            <img src="/SVG/cart2.svg" className='w-5 cursor-pointer opacity-90' alt="" />
+                            <img src="/SVG/cart2.svg" className='w-5 cursor-pointer opacity-80' alt="" />
                         </picture>
                     </span>
                 </div>
@@ -38,4 +38,4 @@ const ProductCart = () => {
     )
 }
 
-export default ProductCart
+export default ProductCart1
