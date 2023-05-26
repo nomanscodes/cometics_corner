@@ -22,9 +22,9 @@ export default function Home() {
         <Categorie />
         <AdsSection />
         <FeaturedProducts />
-        <AdsSection />
-        <PopularProduct />
         <TopVendor />
+        <PopularProduct />
+        <AdsSection />
       </div>
     </Layout>
   );
