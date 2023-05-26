@@ -14,8 +14,8 @@ const Category = () => {
   }
 
   return (
-    <div className='px-6 relative mt-4 font-poppins '>
-      <div className='flex items-center justify-between px-4 md:px-0'>
+    <div className='px-2 md:px-6 relative mt-4 font-poppins '>
+      <div className='flex items-center justify-between'>
         <div className='flex items-center gap-7'>
           <h1 className='font-semibold text-lg md:text-2xl opacity-90'>Browse by Category</h1>
           <Link href={""} className='hidden md:flex items-center gap-1 group  '>
