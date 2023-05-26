@@ -8,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 const Slider = () => {
     return (
 
-        <div className='px-2 md:px-6 grid grid-cols-4 pt-2'>
+        <div className='px-2 md:px-6 grid grid-cols-4'>
             <div className='col-span-4 md:col-span-3 '>
                 <div className="relative mx-auto text-white">
                     <Carousel
@@ -42,7 +42,7 @@ const Slider = () => {
                                 <img
                                     src="/assets/Slider/slider3.png"
                                     alt="slider"
-                                    className="aspect-[16/10] md:aspect-auto object-cover h-[200px] md:h-auto shadow rounded-lg md:rounded-sm"
+                                    className="aspect-[16/10] md:aspect-auto object-cover h-[200px] md:h-auto shadow "
                                 />
                             </picture>
                             <button className="px-[15px] md:px-[5px] py-[3px] md:py-[5px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[10px] md:text-[22px] font-medium cursor-pointer hover:opacity-90">
@@ -54,7 +54,7 @@ const Slider = () => {
                                 <img
                                     src="/assets/Slider/slider3.png"
                                     alt="slider"
-                                    className="aspect-[16/10] md:aspect-auto object-cover shadow  h-[200px] md:h-auto rounded-lg md:rounded-sm"
+                                    className="aspect-[16/10] md:aspect-auto object-cover shadow  h-[200px] md:h-auto"
                                 />
                             </picture>
                             <button className="px-[15px] md:px-[5px] py-[3px] md:py-[5px] font-oswald bg-bgColor absolute bottom-[25px] md:bottom-[75px] left-0  text-[10px] md:text-[22px] font-medium cursor-pointer hover:opacity-90">
