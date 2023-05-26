@@ -13,7 +13,7 @@ const TabSection = () => {
                 <button className=" border border-bgColor p-1 md:p-0 md:py-[2px] md:px-[8px] font-poppins text-sm md:text-base md:font-bold text-bgColor rounded">Most Popular</button>
                 <button className=" border border-bgColor p-1 md:p-0 md:py-[2px] md:px-[8px] font-poppins text-sm md:text-base md:font-bold text-bgColor rounded">Featured</button>
             </div>
-            <div className="grid grid-cols-5 gap-3 mt-4">
+            <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-2">
                 <ProductCart />
                 <ProductCart />
                 <ProductCart />
