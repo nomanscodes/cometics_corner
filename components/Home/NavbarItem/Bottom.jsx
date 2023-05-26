@@ -7,8 +7,8 @@ import dummyData from "../../../public/assets/js/dummy.json"
 const Bottom = () => {
 
   return (
-    <div className='bg-black text-white hidden md:block'>
-      <div className='container mx-auto flex items-center justify-between font-poppins'>
+    <div className='bg-black px-6  text-white hidden md:block '>
+      <div className='flex items-center justify-between font-poppins'>
         <div className='flex items-center gap-6'>
           <div className="dropdown inline-block relative ">
             <div className=" text-white font-normal bg-gray-900 py-1.5 px-4 rounded inline-flex items-center ">

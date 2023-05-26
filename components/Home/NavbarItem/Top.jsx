@@ -6,7 +6,7 @@ import Image from 'next/image'
 
 const Top = () => {
     return (
-        <div className='container mx-auto py-2 hidden md:flex items-center justify-between  text-xs'>
+        <div className='px-6 py-2 hidden md:flex items-center justify-between  text-xs'>
             <div className='hidden md:flex items-center gap-3 '>
                 <Link href={""}>Account</Link>
                 <Link href={""}>Track Order</Link>

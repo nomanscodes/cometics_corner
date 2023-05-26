@@ -8,7 +8,7 @@ import { Carousel } from "react-responsive-carousel";
 const Slider = () => {
     return (
 
-        <div className=' container mx-auto grid grid-cols-4 gap-1 py-2'>
+        <div className='px-6 grid grid-cols-4  py-2'>
             <div className='col-span-4 md:col-span-3 px-2 md:px-0'>
                 <div className="relative mx-auto text-white">
                     <Carousel

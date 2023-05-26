@@ -6,7 +6,7 @@ import ProductCart1 from './ProductCard1'
 
 const FeaturedProducts = () => {
     return (
-        <div className='container mx-auto mt-4 font-poppins'>
+        <div className='px-6 mt-4 font-poppins'>
             <div className='flex items-center justify-between px-2 md:px-0'>
                 <h1 className='font-semibold text-lg md:text-2xl opacity-90'>Just for you</h1>
                 <Link href={""} className='hidden md:flex items-center gap-1 group  '>

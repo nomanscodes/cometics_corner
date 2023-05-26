@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react'
 const TopPhone = () => {
 
     return (
-        <div className='container mx-auto px-3 py-[5px]'>
+        <div className=' px-3 py-[5px]'>
             <div className='flex items-center justify-between'>
                 <div className='logoSection'>
                     <Image

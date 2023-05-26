@@ -14,7 +14,7 @@ const Category = () => {
   }
 
   return (
-    <div className='container mx-auto relative mt-4 font-poppins md:px-0'>
+    <div className='px-6 relative mt-4 font-poppins '>
       <div className='flex items-center justify-between px-4 md:px-0'>
         <div className='flex items-center gap-7'>
           <h1 className='font-semibold text-lg md:text-2xl opacity-90'>Browse by Category</h1>
