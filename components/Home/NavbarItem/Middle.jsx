@@ -27,13 +27,13 @@ const Middle = () => {
           <p className='text-sm -mt-1'>Bangladesh</p>
         </span>
       </div>
-      <div className='flex w-full lg:w-auto mx-2 lg:mx-0'>
+      <div className='flex w-full lg:w-auto md:mx-2 lg:mx-0'>
         <input
           type="text"
-          className="flex flex-1 rounded-lg md:rounded rounded-r-none lg:flex-none lg:w-96 py-2 md:py-1 text-sm border border-r-0  border-solid border-neutral-700 pl-4 focus:outline-none "
+          className="flex flex-1 rounded-lg rounded-r-none md:rounded md:rounded-r-none lg:flex-none lg:w-96 py-2 md:py-1 text-sm border border-r-0  border-solid border-neutral-700 pl-4 focus:outline-none "
           placeholder="Search here"
         />
-        <AiOutlineSearch className='h-[38px] text-white bg-bgColor rounded-lg md:rounded rounded-l-none md:h-8 lg:h-9 p-1 w-10 border border-l-0 border-solid border-neutral-700' size={30} />
+        <AiOutlineSearch className='h-[38px] text-white bg-bgColor rounded-lg rounded-l-none md:rounded md:rounded-l-none md:h-8 lg:h-9 p-1 w-10 border border-l-0 border-solid border-neutral-700' size={30} />
       </div>
       <div className='hidden lg:flex items-center leading-tight gap-3 px-3'>
         <Image src="/avatar.png" alt='profile image' className='rounded-full' height={30} width={30} />
