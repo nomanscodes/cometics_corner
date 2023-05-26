@@ -21,6 +21,7 @@ export default function Home() {
         <Categorie />
         <AdsSection />
         <FeaturedProducts />
+        <AdsSection />
         <PopularProduct />
       </div>
     </Layout>
