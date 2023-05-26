@@ -2,10 +2,12 @@ import React from 'react'
 import Image from 'next/image'
 import Link from 'next/link'
 import { AiOutlineSearch } from "react-icons/ai"
+import { useState,useEffect } from 'react'
 
 const TopPhone = () => {
+
     return (
-        <div className='container mx-auto md:hidden px-3 '>
+        <div className='container mx-auto px-3 py-[5px]'>
             <div className='flex items-center justify-between'>
                 <div className='logoSection'>
                     <Image
@@ -28,7 +30,7 @@ const TopPhone = () => {
                     <div className='cartSection flex items-center '>
                         <Link
                             href={"/cartpage"}
-                            className="h-10 w-10 rounded-full z-10 flex justify-center items-center  relative mt-2"
+                            className="h-10 w-10 rounded-full z-10 flex justify-center items-center  relative "
                         >
                             <p className="h-5 w-5 bg-bgColor rounded flex items-center justify-center absolute z-50 mb-6 ml-5 ">
                                 <span className="fontSize10 text-white">05</span>

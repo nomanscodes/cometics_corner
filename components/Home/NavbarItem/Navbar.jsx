@@ -6,15 +6,13 @@ import TopPhone from './TopPhone'
 import { useState, useEffect } from 'react'
 
 const Navbar = () => {
-
-
     const [show, setShow] = useState("translate-y-0");
     const [lastScrollY, setLastScrollY] = useState(0);
 
     const controlNavbar = () => {
         if (window.scrollY > 200) {
             if (window.scrollY > lastScrollY) {
-                setShow("-translate-y-[80px]");
+                setShow("-translate-y-[90px]");
             } else {
                 setShow("shadow-sm");
             }
@@ -31,16 +29,17 @@ const Navbar = () => {
         };
     }, [lastScrollY]);
 
+
     return (
         <>
-            <div className={`bg-white w-full shadow-md md:shadow-none sticky top-0 ${show} z-50`}>
-                <TopPhone />
+            <div className="bg-white w-full shadow-md hidden md:block">
                 <Top />
                 <hr className='opacity-70 ' />
                 <Middle />
-                <div className='bg-black'>
-                    <Bottom />
-                </div>
+                <Bottom />
+            </div>
+            <div className={`shadow-md bg-white md:hidden z-20 sticky top-0 transition-transform duration-300 ${show}`}>
+                <TopPhone />
             </div>
 
         </>
