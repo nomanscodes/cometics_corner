@@ -14,7 +14,7 @@ const Category = () => {
   }
 
   return (
-    <div className='px-2 md:px-6 relative mt-4 font-poppins '>
+    <div className='px-2 md:px-6 relative md:mt-4 font-poppins '>
       <div className='hidden md:flex items-center justify-between '>
         <div className='flex items-center gap-7'>
           <h1 className='font-semibold text-lg md:text-2xl opacity-90'>SHOP BY CETEGORY</h1>
