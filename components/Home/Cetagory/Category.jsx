@@ -17,7 +17,7 @@ const Category = () => {
     <div className='px-2 md:px-6 relative mt-4 font-poppins '>
       <div className='flex items-center justify-between'>
         <div className='flex items-center gap-7'>
-          <h1 className='font-semibold text-lg md:text-2xl opacity-90'>Browse by Category</h1>
+          <h1 className='font-semibold text-lg md:text-2xl opacity-90'>SHOP BY CETEGORY</h1>
           <Link href={""} className='hidden md:flex items-center gap-1 group  '>
             <h1 className='font-medium group-hover:text-bgColor duration-300'>All Category</h1>
             <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />

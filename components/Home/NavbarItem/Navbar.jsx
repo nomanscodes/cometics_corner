@@ -2,7 +2,7 @@ import React from 'react'
 import Top from './Top'
 import Middle from './Middle'
 import Bottom from './Bottom'
-import TopPhone from './TopPhone'
+import TopPhone from './PhoneNav'
 import { useState, useEffect } from 'react'
 
 const Navbar = () => {

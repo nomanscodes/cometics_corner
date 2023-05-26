@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { AiOutlineSearch } from "react-icons/ai"
 import { useState,useEffect } from 'react'
 
-const TopPhone = () => {
+const PhoneNav = () => {
 
     return (
         <div className=' px-3 py-[5px]'>
@@ -53,4 +53,4 @@ const TopPhone = () => {
     )
 }
 
-export default TopPhone
+export default PhoneNav

@@ -3,8 +3,9 @@ import Layout from "@/Layouts/Layout";
 import Slider from "@/components/Home/SliderSection/Slider";
 import Categorie from "@/components/Home/Cetagory/Category";
 import AdsSection from "@/components/Home/AdsSection";
-import FeaturedProducts from "@/components/Home/Products/FeaturedProducts";
-import PopularProduct from "@/components/Home/Products/TabSection";
+import FeaturedProducts from "@/components/Home/Products/Featured/FeaturedProducts";
+import PopularProduct from "@/components/Home/Products/TabSection/TabSection";
+import TopVendor from "@/components/Home/TopVendor/TopVendor";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
         <FeaturedProducts />
         <AdsSection />
         <PopularProduct />
+        <TopVendor />
       </div>
     </Layout>
   );
