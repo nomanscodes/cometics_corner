@@ -6,7 +6,7 @@ import { AiOutlineSearch } from "react-icons/ai"
 
 const Middle = () => {
   return (
-    <div className='container mx-auto flex items-center justify-between gap-2 md:gap-0 py-3 md:py-2 px-3 md:px-0 '>
+    <div className='container mx-auto hidden md:flex items-center justify-between gap-2 md:gap-0 py-3 md:py-2 px-3 md:px-0 '>
       <div className='hidden md:block'>
         <Image
           alt='logo'
