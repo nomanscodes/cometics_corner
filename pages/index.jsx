@@ -4,6 +4,7 @@ import Slider from "@/components/Home/SliderSection/Slider";
 import Categorie from "@/components/Home/Cetagory/Category";
 import AdsSection from "@/components/Home/AdsSection";
 import FeaturedProducts from "@/components/Home/Products/FeaturedProducts";
+import PopularProduct from "@/components/Home/Products/PopularProduct";
 
 export default function Home() {
   return (
@@ -18,8 +19,9 @@ export default function Home() {
       <div className="">
         <Slider />
         <Categorie />
-        <AdsSection/>
-        <FeaturedProducts/>
+        <AdsSection />
+        <FeaturedProducts />
+        <PopularProduct />
       </div>
     </Layout>
   );
