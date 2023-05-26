@@ -25,6 +25,8 @@ const TabSection = () => {
                     <button className=" border border-bgColor px-[4px] py-[2px] md:px-[8px] font-poppins text-sm md:text-base md:font-bold text-bgColor rounded whitespace-nowrap">Featured</button>
                 </div>
             </div>
+            <hr className='mt-[3px] md:mt-[6px]' />
+
             <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
                 <ProductCart />
                 <ProductCart />

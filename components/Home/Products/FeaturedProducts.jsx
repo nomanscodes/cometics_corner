@@ -14,6 +14,7 @@ const FeaturedProducts = () => {
                     <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />
                 </Link>
             </div>
+            <hr className='mt-[3px] md:mt-[6px]' />
             <div className='mt-4 grid grid-cols-5 gap-2'>
                 <div className=' col-span-1 hidden md:block'>
                     <picture>
