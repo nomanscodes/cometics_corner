@@ -4,7 +4,7 @@ import Slider from "@/components/Home/SliderSection/Slider";
 import Categorie from "@/components/Home/Cetagory/Category";
 import AdsSection from "@/components/Home/AdsSection";
 import FeaturedProducts from "@/components/Home/Products/FeaturedProducts";
-import PopularProduct from "@/components/Home/Products/PopularProduct";
+import PopularProduct from "@/components/Home/Products/TavSection";
 
 export default function Home() {
   return (
