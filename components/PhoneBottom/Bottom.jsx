@@ -2,7 +2,7 @@ import React from 'react'
 
 const Bottom = () => {
     return (
-        <div className='fixed bottom-0 left-0 z-50 w-full bg-white shadow-2xl md:hidden '>
+        <div className='fixed bottom-0 left-0 z-50 w-full bg-white border-t shadow-2xl md:hidden '>
             <div className='flex items-center justify-between px-6'>
                 <div className='flex flex-col items-center p-1'>
                     <picture>
@@ -28,8 +28,6 @@ const Bottom = () => {
                     </picture>
                     <p className='font-medium footerText2 text-[#A1A0A0]'>Account</p>
                 </div>
-
-
             </div>
         </div>
     )
