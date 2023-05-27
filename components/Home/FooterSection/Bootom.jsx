@@ -25,7 +25,7 @@ const Bootom = () => {
         <p>Allready a customar? <Link href={""}>Sign In</Link></p>
       </div>
       <div className="mt-3 ">
-        <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6">
+        <div className="flex items-center justify-center px-2 md:px-0 gap-5">
           <Link className="whitespace-nowrap footerText" href={":"}>Conditions of USE </Link>
           <Link className="whitespace-nowrap footerText" href={":"}>Privacy Notice </Link>
           <Link className="whitespace-nowrap footerText" href={":"}>
@@ -34,10 +34,7 @@ const Bootom = () => {
         </div>
         <h1 className=" text-xs flex items-center justify-center mt-1">© 2023-Present<Link className="hover:underline font-medium ml-[4px]" href={""}> MeNom.com </Link>  - Inc.or its affiliate</h1>
       </div>
-
     </div>
-
-
   );
 };
 
