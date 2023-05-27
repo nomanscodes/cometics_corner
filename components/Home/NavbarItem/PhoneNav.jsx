@@ -7,7 +7,7 @@ import { useState,useEffect } from 'react'
 const PhoneNav = () => {
 
     return (
-        <div className=' px-3 py-[5px]'>
+        <div className='px-3 py-[5px] bg-bgColor text-white'>
             <div className='flex items-center justify-between'>
                 <div className='logoSection'>
                     <Image
@@ -18,11 +18,11 @@ const PhoneNav = () => {
                     />
                 </div>
                 <div className='account&cart flex items-center gap-4'>
-                    <Link href={""} className='flex items-center gap-1'>
-                        <span className='text-base font-semibold font-poppins'>Sign in</span>
+                    <Link href={""} className='flex items-center gap-2'>
+                        <span className='font-medium font-poppins'>Sign in</span>
                         <Image
                             alt='accountt'
-                            src="/SVG/accountBlack.svg"
+                            src="/SVG/accountWhite.svg"
                             height={20}
                             width={20}
                         />
@@ -32,10 +32,10 @@ const PhoneNav = () => {
                             href={"/cartpage"}
                             className="h-10 w-10 rounded-full z-10 flex justify-center items-center  relative "
                         >
-                            <p className="h-5 w-5 bg-bgColor rounded flex items-center justify-center absolute z-50 mb-6 ml-5 ">
-                                <span className="fontSize10 text-white">05</span>
+                            <p className="h-5 w-5 bg-white rounded flex items-center justify-center absolute z-50 mb-6 ml-5 ">
+                                <span className="fontSize10 text-black">05</span>
                             </p>
-                            <Image src="/SVG/cart2.svg" alt='cart' height={20}
+                            <Image src="/SVG/whitecart.svg" alt='cart' height={20}
                                 width={22}></Image>
                         </Link>
                     </div>
