@@ -24,8 +24,8 @@ const Bootom = () => {
       <div className="flex items-center justify-center mt-2 footerText">
         <p>Allready a customar? <Link href={""}>Sign In</Link></p>
       </div>
-      <div className="mt-3">
-        <div className="flex items-center justify-center gap-6">
+      <div className="mt-3 ">
+        <div className="flex items-center justify-center gap-3 sm:gap-4 md:gap-6">
           <Link className="whitespace-nowrap footerText" href={":"}>Conditions of USE </Link>
           <Link className="whitespace-nowrap footerText" href={":"}>Privacy Notice </Link>
           <Link className="whitespace-nowrap footerText" href={":"}>
