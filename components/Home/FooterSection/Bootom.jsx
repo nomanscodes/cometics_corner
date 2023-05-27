@@ -4,7 +4,7 @@ import { MdOutlineLanguage } from "react-icons/md";
 
 const Bootom = () => {
   return (
-    <div className=" bg-[#334131] text-white px-6 py-1 footerText2">
+    <div className=" bg-[#334131] text-white px-6 py-1 footerText md:text-sm">
       <div className="flex items-center justify-center gap-4 ">
         <span className="flex items-center gap-2 ">
           <MdOutlineLanguage size={16} />

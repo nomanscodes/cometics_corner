@@ -33,11 +33,11 @@ const Middle = () => {
                     <h1 className=" whitespace-nowrap">22-No Road.Khilkhet,Dhaka,Bangladesh</h1>
 
                     <Link
-                        className="flex items-center mt-2"
+                        className="flex items-center justify-center lg:block mt-2"
                         href={">>"}
                     >
-                        <div className="flex gap-2">
-                            <FiMail size={22} />
+                        <div className="flex items-center gap-2">
+                            <FiMail size={16} />
                             <p className="font-medium">
                                 nomanhossain@gmail.com
                             </p>
