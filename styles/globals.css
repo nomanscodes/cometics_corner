@@ -22,3 +22,11 @@ body{
     display: none;
 }
 
+.footerText{
+	font-size: 11px;
+	line-height: 20px;
+}
+.footerText2{
+	font-size: 13px;
+	line-height: 22px;
+}

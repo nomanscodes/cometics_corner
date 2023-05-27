@@ -21,6 +21,13 @@ module.exports = {
     fontFamily: {
       poppins: "Urbanist, sans-serif",
     },
+    screens: {
+      xs: "460px",
+      sm: "660px",
+      md: "720px",
+      lg: "1024px",
+      xl: "1280px",
+    },
   },
   plugins: [require("tailwind-scrollbar-hide")],
 };

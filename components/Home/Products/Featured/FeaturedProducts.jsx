@@ -15,14 +15,14 @@ const FeaturedProducts = () => {
             </div>
             <hr className='mt-[3px] md:mt-[6px]' />
             <div className='mt-4 grid grid-cols-5 gap-2'>
-                <div className=' col-span-1 hidden md:block'>
+                <div className='col-span-1 hidden md:block'>
                     <picture>
                         <img src="/brand2.png" className='rounded h-[550px] 
                         w-[230px]' alt="" />
                     </picture>
                 </div>
                 <div className='col-span-5 md:col-span-4 grid
-                grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-3 '>
+                grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 '>
                     <ProductCart />
                     <ProductCart />
                     <ProductCart />
