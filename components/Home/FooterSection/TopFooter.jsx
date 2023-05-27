@@ -14,7 +14,7 @@ const TopFooter = () => {
               <picture>
                 <img src="/flay_3-removebg-preview.png" alt="" />
               </picture>
-              <h1 className=" md:text-lg  md:font-bold whitespace-nowrap">Sign up to Newsletter</h1>
+              <h1 className=" text-sm md:text-lg  md:font-bold whitespace-nowrap">Sign up to Newsletter</h1>
             </div>
             <div className="flex items-center justify-center ">
               <h1 className="text-xs md:text-base">
