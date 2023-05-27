@@ -6,6 +6,7 @@ import AdsSection from "@/components/Home/AdsSection";
 import FeaturedProducts from "@/components/Home/Products/Featured/FeaturedProducts";
 import PopularProduct from "@/components/Home/Products/TabSection/TabSection";
 import TopVendor from "@/components/Home/TopVendor/TopVendor";
+import Featured from "@/components/Home/Featured/Featured";
 
 export default function Home() {
   return (
@@ -25,6 +26,7 @@ export default function Home() {
         <TopVendor />
         <PopularProduct />
         <AdsSection />
+        <Featured />
       </div>
     </Layout>
   );

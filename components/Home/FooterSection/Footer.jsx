@@ -8,6 +8,7 @@ const Footer = () => {
   return (
     <div className=" mt-6">
       <TopFooter />
+      <hr />
       <Middle />
       <Bootom />
     </div>

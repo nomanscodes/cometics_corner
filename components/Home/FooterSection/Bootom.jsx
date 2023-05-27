@@ -32,7 +32,7 @@ const Bootom = () => {
             Your Ads Privacy Choice
           </Link>
         </div>
-        <h1 className=" text-xs flex items-center justify-center mt-1">© 2023-Present<Link className="hover:underline font-medium ml-[4px]" href={""}> MeNom.com </Link>  - Inc.or its affiliate</h1>
+        <h1 className=" text-xs flex items-center justify-center mt-1">© 2023-Present<Link className="hover:underline font-medium ml-[4px]" href={""}> MeNom.com </Link>- Inc.or its affiliate</h1>
       </div>
     </div>
   );
