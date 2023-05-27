@@ -30,7 +30,7 @@ const Middle = () => {
                         </h1>
                     </div>
 
-                    <h1 className=" whitespace-nowrap">22-No Road.Khilkhet,Dhaka,Bangladesh</h1>
+                    <h1 className=" whitespace-nowrap">22-No.Road-Khilkhet-Dhaka-Bangladesh</h1>
 
                     <Link
                         className="flex items-center justify-center lg:block mt-2"
