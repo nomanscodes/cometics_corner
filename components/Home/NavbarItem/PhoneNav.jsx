@@ -47,7 +47,7 @@ const PhoneNav = () => {
                     className="flex flex-1 rounded-lg rounded-r-none md:rounded md:rounded-r-none lg:flex-none lg:w-96 py-2 md:py-1 text-sm border border-r-0  border-solid border-neutral-700 pl-4 focus:outline-none "
                     placeholder="Search here"
                 />
-                <AiOutlineSearch className='h-[38px] text-white bg-bgColor rounded-lg rounded-l-none md:rounded md:rounded-l-none md:h-8 lg:h-9 p-1 w-10 border border-l-0 border-solid border-neutral-700' size={30} />
+                <AiOutlineSearch className='h-[38px] bg-white text-black rounded-lg rounded-l-none md:rounded md:rounded-l-none md:h-8 lg:h-9 p-1 w-10 border  border-solid border-neutral-700' size={30} />
             </div>
         </div>
     )
