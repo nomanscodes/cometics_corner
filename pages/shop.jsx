@@ -20,15 +20,15 @@ const Shop = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div onClick={() => {
+            <AdsSection />
+            <div className='relative' onClick={() => {
                 if (showFilter) {
                     setShowFilter(false)
                 }
             }}>
-                <AdsSection />
-                <div className=' md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
-                    <div className='absolute z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
-                        <div>
+                <div className='relative md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
+                    <div className=' absolute md:-top-0 z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
+                        <div className='relative'>
                             <div className="desktopFilter  py-[9px] hidden md:block">
                                 <span className="filter flex items-center gap-3">
                                     <picture>
@@ -37,7 +37,7 @@ const Shop = () => {
                                     <p className='font-semibold text-base'>FILTER BY</p>
                                 </span>
                             </div>
-                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter w-28 py-[6px] flex items-center justify-between bg-gray-600 cursor-pointer md:hidden">
+                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter absolute w-32 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer md:hidden shadow -top-10 -ml-[10px]">
                                 <span className="filter flex items-center gap-3">
                                     <picture>
                                         <img className='w-4' src="/SVG/filter.svg" alt="" />
@@ -242,8 +242,8 @@ const Shop = () => {
                             </div>
                         </div>
                     </div>
-                    <div className='contentSection md:col-span-3 lg:col-span-4'>
-                        <div className='ml-48 md:ml-2 flex items-center gap-3 bg-white  p-2'>
+                    <div className='contentSection md:col-span-3 lg:col-span-4 mt-12 md:mt-auto'>
+                        <div className='md:ml-2 flex items-center gap-3 bg-white p-2 '>
                             <div className='flex items-center gap-1 bg-white shadow rounded-full border py-[2px] px-2 cursor-pointer'>
                                 <p className='font-semibold text-sm text-bgColor'>Red Lipistic</p>
                                 <RxCross2 size={12} />
@@ -267,23 +267,7 @@ const Shop = () => {
                         </div>
                     </div>
                 </div>
-                <div className='flex items-center justify-center px-6 mt-4 font-poppins'>
-                    <div className='flex items-center gap-1 md:gap-6 bg-white p-2 shs'>
-                        <button className='border border-bgColor text-xs px-2 rounded text-bgColor'>
-                            <MdKeyboardArrowLeft size={24} />
-                        </button>
-                        <span className='border border-bgColor text-xs px-2 py-1 rounded'>1</span>
-                        <span className='border border-bgColor text-xs px-2 py-1 rounded'>2</span>
-                        <span className='border bg-bgColor text-white text-xs px-2 py-1 rounded'>3</span>
-                        <span className='border border-bgColor text-xs px-2 py-1 rounded'>4</span>
-                        <span className='border border-bgColor text-xs px-2 py-1 rounded'>5</span>
-                        <span className=''>....</span>
-                        <span className='border border-bgColor text-xs px-2 py-1 rounded'>25</span>
-                        <button className='border border-bgColor text-bgColor text-xs px-2  rounded'>
-                            <MdKeyboardArrowRight size={24} />
-                        </button>
-                    </div>
-                </div>
+
                 <AdsSection />
                 <LikeProducts />
             </div>
