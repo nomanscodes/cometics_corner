@@ -268,7 +268,7 @@ const Shop = () => {
                     </div>
                 </div>
                 <div className='flex items-center justify-center px-6 mt-4 font-poppins'>
-                    <div className='flex items-center gap-6 bg-white p-2 shs'>
+                    <div className='flex items-center gap-1 md:gap-6 bg-white p-2 shs'>
                         <button className='border border-bgColor text-xs px-2 rounded text-bgColor'>
                             <MdKeyboardArrowLeft size={24} />
                         </button>
