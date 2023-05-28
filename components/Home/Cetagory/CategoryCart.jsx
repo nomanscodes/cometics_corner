@@ -3,7 +3,7 @@ import React from 'react'
 
 const CategoryCart = () => {
     return (
-        <Link href={""} className='text-bgColor relative file:transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105  shadow-bgColor shadow-lg'>
+        <Link href={"/category"} className='text-bgColor relative file:transition ease-in-out delay-75 hover:-translate-y-1 hover:scale-105  shadow-bgColor shadow-lg'>
             <picture>
                 <img className='w-32 h-24 rounded-t-md ' src="/vendorImage.avif" alt="" />
             </picture>

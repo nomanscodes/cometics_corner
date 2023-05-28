@@ -29,7 +29,6 @@ const Bottom = ({ shopPath, homePath }) => {
                     </picture>
                     <p className="font-medium footerText2 text-[#A1A0A0]">Categories</p>
                 </Link>
-
                 <Link href={"/shop"} className="flex flex-col items-center p-1">
                     {shopPath ? (
                         <>
@@ -47,10 +46,7 @@ const Bottom = ({ shopPath, homePath }) => {
                             <p className="font-medium footerText2 text-[#A1A0A0]">Shop</p>
                         </>
                     )}
-
-
                 </Link>
-
                 <Link href={"/cart"} className="flex flex-col items-center p-1">
                     <picture>
                         <img className="w-5" src="/SVG/bottomcart.svg" alt="home" />
