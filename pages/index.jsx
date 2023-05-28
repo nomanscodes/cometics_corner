@@ -12,10 +12,6 @@ import Bottom from "@/components/PhoneBottom/Bottom";
 
 export default function Home() {
   const { asPath, pathname } = useRouter()
-
-
-
-
   return (
     <Layout>
       <Head>
