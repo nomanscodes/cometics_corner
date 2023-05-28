@@ -21,8 +21,8 @@ const ProductCart = () => {
                         <p>.765 Sold</p>
                     </span>
                     <span className='flex items-center gap-5 mt-1'>
-                        <button className='border border-bgColor text-bgColor text-xs px-2'><i>Free Delivery</i></button>
-                        <p className='text-xs px-2 text-bgColor'>34% Discount</p>
+                        <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'><i>Free Delivery</i></button>
+                        <p className='text-xs px-2 text-bgColor whitespace-nowrap'>34% Off</p>
                     </span>
                     <span className='flex items-center justify-between mt-2 text-sm'>
                         <span className='flex items-center gap-2'>
