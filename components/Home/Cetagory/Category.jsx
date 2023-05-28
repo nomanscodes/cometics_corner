@@ -2,7 +2,7 @@ import React, { useEffect } from 'react'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
-import CategoryCart from './CategoryCart';
+import CategoryCart from './CategoryCard';
 
 const Category = () => {
 

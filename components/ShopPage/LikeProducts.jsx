@@ -1,7 +1,7 @@
 import React from 'react'
 import Link from 'next/link'
 import { MdKeyboardArrowRight } from "react-icons/md"
-import ProductCart from '../Home/Products/ProductCart'
+import ProductCart from '../Home/Products/ProductCard'
 
 const LikeProducts = () => {
   return (

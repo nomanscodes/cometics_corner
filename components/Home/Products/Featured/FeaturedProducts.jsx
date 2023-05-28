@@ -1,13 +1,13 @@
 import React from 'react'
 import Link from 'next/link'
 import { MdKeyboardArrowRight } from "react-icons/md"
-import ProductCart from '../ProductCart'
+import ProductCart from '../ProductCard'
 
 const FeaturedProducts = () => {
     return (
         <div className=' px-2 md:px-6 mt-4 font-poppins mb-2'>
             <div className='flex items-center justify-between'>
-                <h1 className='font-semibold text-lg md:text-2xl opacity-90'>RECOMMEND FOR YOU</h1>
+                <h1 className='font-semibold text-sm md:text-2xl opacity-90'>RECOMMEND FOR YOU</h1>
                 <Link href={""} className='hidden md:flex items-center gap-1 group  '>
                     <h1 className='font-medium group-hover:text-bgColor duration-300'>More products</h1>
                     <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />

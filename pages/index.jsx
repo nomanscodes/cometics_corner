@@ -9,6 +9,7 @@ import TopVendor from "@/components/Home/TopVendor/TopVendor";
 import Featured from "@/components/Home/Featured/Featured";
 import { useRouter } from "next/router";
 import Bottom from "@/components/PhoneBottom/Bottom";
+import TopBrand from "@/components/Home/TopBrand/TopBrand";
 
 export default function Home() {
   const { asPath, pathname } = useRouter()
@@ -24,6 +25,7 @@ export default function Home() {
         <Slider />
         <Categorie />
         <AdsSection />
+        <TopBrand />
         <FeaturedProducts />
         <TopVendor />
         <PopularProduct />

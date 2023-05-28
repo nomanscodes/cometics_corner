@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import Head from 'next/head'
 import Layout from '@/Layouts/Layout'
 import { RxCross2 } from 'react-icons/rx'
-import ProductCart from '@/components/Home/Products/ProductCart'
+import ProductCart from '@/components/Home/Products/ProductCard'
 import AdsSection from '@/components/Home/AdsSection'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import LikeProducts from '@/components/ShopPage/LikeProducts'
@@ -31,7 +31,7 @@ const Shop = () => {
                 }
             }}>
                 <div className='relative md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
-                    
+
                     <div className=' absolute md:-top-0 z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
                         <div className='relative'>
                             <div className="desktopFilter  py-[9px] hidden md:block">

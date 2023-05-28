@@ -15,7 +15,7 @@ const TopVendor = () => {
         <div className="px-2 md:px-6 mt-4 relative font-poppins ">
             <div className='flex items-center justify-between'>
                 <div className=''>
-                    <h1 className='font-semibold text-lg md:text-2xl opacity-90'>TOP VENDOR</h1>
+                    <h1 className='font-semibold text-sm md:text-2xl opacity-90'>TOP VENDOR</h1>
                 </div>
                 <div className='hidden md:flex items-center gap-2 text-white '>
                     <button onClick={scrollLeft} className='bg-bgColor px-1 md:px-2 md:py-1'>
