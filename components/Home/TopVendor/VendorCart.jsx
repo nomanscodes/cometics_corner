@@ -37,7 +37,7 @@ const VendorCart = () => {
             <p className='text-sm font-bold'>12.6K</p>
           </span>
           <span>
-            <button className='text-sm w-full font-bold text-white bg-bgColor  rounded-md px-[2px]'>
+            <button className='text-xs md:text-sm w-full font-bold text-white bg-bgColor  rounded-md px-[3px]'>
               Following
             </button>
           </span>
