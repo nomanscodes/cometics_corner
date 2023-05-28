@@ -12,15 +12,16 @@ const Bottom = ({ shopPath, homePath }) => {
                             <picture>
                                 <img className="w-5" src="/SVG/activeHome.svg" alt="home" />
                             </picture>
+                            <p className="font-medium footerText2  text-[#41583d]">Home</p>
                         </>
                     ) : (
                         <>
                             <picture>
                                 <img className="w-5" src="/SVG/home.svg" alt="home" />
                             </picture>
+                            <p className="font-medium footerText2  text-[#A1A0A0]">Home</p>
                         </>
                     )}
-                    <p className="font-medium footerText2  text-[#A1A0A0]">Home</p>
                 </Link>
                 <Link href={"/categorys"} className="flex flex-col items-center p-1">
                     <picture>
@@ -35,16 +36,19 @@ const Bottom = ({ shopPath, homePath }) => {
                             <picture>
                                 <img className="w-5" src="/SVG/activeShop.svg" alt="home" />
                             </picture>
+                            <p className="font-medium footerText2 text-[#41583d]">Shop</p>
+
                         </>
                     ) : (
                         <>
                             <picture>
                                 <img className="w-5" src="/SVG/shop.svg" alt="home" />
                             </picture>
+                            <p className="font-medium footerText2 text-[#A1A0A0]">Shop</p>
                         </>
                     )}
 
-                    <p className="font-medium footerText2 text-[#A1A0A0]">Shop</p>
+
                 </Link>
 
                 <Link href={"/cart"} className="flex flex-col items-center p-1">
