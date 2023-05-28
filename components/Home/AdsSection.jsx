@@ -6,7 +6,6 @@ const AdsSection = () => {
             <picture>
                 <img className='rounded' src="/ads5.png" alt="" />
             </picture>
-
         </div>
     )
 }

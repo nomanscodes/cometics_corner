@@ -1,7 +1,7 @@
 import React from 'react'
 import Top from './Top'
 import Middle from './Middle'
-import Bottom from './Bottom'
+import Bottom from './BottomNav'
 import TopPhone from './PhoneNav'
 import { useState, useEffect } from 'react'
 

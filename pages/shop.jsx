@@ -7,11 +7,14 @@ import AdsSection from '@/components/Home/AdsSection'
 import { MdKeyboardArrowDown } from 'react-icons/md'
 import LikeProducts from '@/components/ShopPage/LikeProducts'
 import Bottom from '@/components/PhoneBottom/Bottom'
-
+import { useRouter } from 'next/router'
 
 const Shop = () => {
 
+    const { asPath, pathname } = useRouter()
+
     const [showFilter, setShowFilter] = useState(false)
+
 
     return (
         <Layout >
@@ -272,7 +275,7 @@ const Shop = () => {
                 <AdsSection />
                 <LikeProducts />
             </div>
-            <Bottom />
+            <Bottom shopPath={pathname} />
         </Layout >
     )
 }

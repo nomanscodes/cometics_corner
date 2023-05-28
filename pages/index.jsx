@@ -7,9 +7,15 @@ import FeaturedProducts from "@/components/Home/Products/Featured/FeaturedProduc
 import PopularProduct from "@/components/Home/Products/TabSection/TabSection";
 import TopVendor from "@/components/Home/TopVendor/TopVendor";
 import Featured from "@/components/Home/Featured/Featured";
+import { useRouter } from "next/router";
 import Bottom from "@/components/PhoneBottom/Bottom";
 
 export default function Home() {
+  const { asPath, pathname } = useRouter()
+
+
+
+
   return (
     <Layout>
       <Head>
@@ -27,7 +33,7 @@ export default function Home() {
         <PopularProduct />
         <AdsSection />
         <Featured />
-        <Bottom />
+        <Bottom homePath={pathname} />
       </div>
     </Layout>
   );

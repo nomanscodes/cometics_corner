@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Link from 'next/link'
 import { IoIosArrowDown } from 'react-icons/io'
-import { MdOutlineLocalOffer, MdKeyboardArrowRight } from 'react-icons/md'
+import { MdOutlineLocalOffer } from 'react-icons/md'
 import dummyData from "../../../public/assets/js/dummy.json"
 
 const Bottom = () => {
@@ -40,10 +40,6 @@ const Bottom = () => {
                 </li>))}
             </ul>
           </div>
-
-
-
-
           <div className='flex items-center gap-5'>
             <Link className='hover:text-bgColor duration-300' href={"/"}>Home</Link>
             <Link className='hover:text-bgColor duration-300' href={"/shop"}>Shop</Link>
@@ -54,7 +50,6 @@ const Bottom = () => {
               <IoIosArrowDown size={18} />
             </div>
           </div>
-
         </div>
         <div className='hidden lg:flex items-center gap-4'>
           <Link href={""}>
