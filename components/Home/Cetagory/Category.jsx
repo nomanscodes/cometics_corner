@@ -32,7 +32,7 @@ const Category = () => {
           </button>
         </div>
       </div>
-      <div id='carouselContent' className='CatCarousel flex items-center justify-start gap-3 overflow-x-auto 
+      <div id='carouselContent' className='CatCarousel flex items-center justify-start gap-4 md:gap-8 overflow-x-auto 
       scroll-smooth mt-4'>
         
         <div>

@@ -23,7 +23,7 @@ const Bottom = ({ shopPath, homePath }) => {
                         </>
                     )}
                 </Link>
-                <Link href={"/categorys"} className="flex flex-col items-center p-1">
+                <Link href={"/category"} className="flex flex-col items-center p-1">
                     <picture>
                         <img className="w-5" src="/SVG/category.svg" alt="home" />
                     </picture>

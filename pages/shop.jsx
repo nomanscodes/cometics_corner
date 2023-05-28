@@ -31,6 +31,7 @@ const Shop = () => {
                 }
             }}>
                 <div className='relative md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
+                    
                     <div className=' absolute md:-top-0 z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
                         <div className='relative'>
                             <div className="desktopFilter  py-[9px] hidden md:block">
@@ -246,6 +247,7 @@ const Shop = () => {
                             </div>
                         </div>
                     </div>
+
                     <div className='contentSection md:col-span-3 lg:col-span-4 mt-12 md:mt-auto'>
                         <div className='md:ml-2 flex items-center gap-3 bg-white p-2 '>
                             <div className='flex items-center gap-1 bg-white shadow rounded-full border py-[2px] px-2 cursor-pointer'>
