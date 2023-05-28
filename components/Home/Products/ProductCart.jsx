@@ -4,7 +4,7 @@ import { IoMdHeartEmpty } from 'react-icons/io'
 const ProductCart = () => {
     return (
         <div className="col-span-1 font-poppins">
-            <div className=" bg-white  group shadow rounded">
+            <div className=" bg-white group shadow rounded">
                 <div className='card__top relative'>
                     <picture>
                         <img src="/product2.jpg" alt="" />
@@ -20,17 +20,15 @@ const ProductCart = () => {
                         <p>44/5(130)</p>
                         <p>.765 Sold</p>
                     </span>
-                    <span className='flex mt-1'>
+                    <span className='flex items-center gap-5 mt-1'>
                         <button className='border border-bgColor text-bgColor text-xs px-2'><i>Free Delivery</i></button>
+                        <p className='text-xs px-2 text-bgColor'>34% Discount</p>
                     </span>
                     <span className='flex items-center justify-between mt-2 text-sm'>
                         <span className='flex items-center gap-2'>
                             <p className='font-semibold text-bgColor'>&#2547; 445777</p>
                             <p className='line-through font-[200] opacity-80' >&#2547; 555575</p>
                         </span>
-                        <picture>
-                            <img src="/SVG/cart2.svg" className='w-5 cursor-pointer opacity-90' alt="" />
-                        </picture>
                     </span>
                 </div>
             </div>

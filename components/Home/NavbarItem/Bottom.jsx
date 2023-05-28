@@ -45,10 +45,10 @@ const Bottom = () => {
 
 
           <div className='flex items-center gap-5'>
-            <Link className='hover:text-bgColor duration-300' href={""}>Home</Link>
-            <Link className='hover:text-bgColor duration-300' href={""}>Shope</Link>
-            <Link className='hover:text-bgColor duration-300' href={""}>Vendor</Link>
-            <Link className='hover:text-bgColor duration-300' href={""}>Best Sellers</Link>
+            <Link className='hover:text-bgColor duration-300' href={"/"}>Home</Link>
+            <Link className='hover:text-bgColor duration-300' href={"/shop"}>Shop</Link>
+            <Link className='hover:text-bgColor duration-300' href={"/vendor"}>Vendor</Link>
+            <Link className='hover:text-bgColor duration-300' href={"/best-sellers"}>Best Sellers</Link>
             <div className='hover:text-bgColor duration-300 flex items-center gap-2'>
               <p>Customer Service</p>
               <IoIosArrowDown size={18} />
