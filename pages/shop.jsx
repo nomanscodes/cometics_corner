@@ -27,7 +27,7 @@ const Shop = () => {
             }}>
                 <AdsSection />
                 <div className=' md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
-                    <div className='absolute z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-6 bg-white flex flex-1'>
+                    <div className='absolute z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 bg-white flex flex-1'>
                         <div>
                             <div className="desktopFilter  py-[9px] hidden md:block">
                                 <span className="filter flex items-center gap-3">
@@ -37,14 +37,14 @@ const Shop = () => {
                                     <p className='font-semibold text-base'>FILTER BY</p>
                                 </span>
                             </div>
-                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter py-[9px] flex items-center justify-between cursor-pointer md:hidden">
-                                <span className="filter flex items-center  gap-3">
+                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter w-28 py-[6px] flex items-center justify-between cursor-pointer md:hidden">
+                                <span className="filter flex items-center gap-3">
                                     <picture>
                                         <img className='w-4' src="/SVG/filter.svg" alt="" />
                                     </picture>
-                                    <p className='font-semibold text-base'>FILTER BY</p>
+                                    <p className='md:font-semibold text-xs md:text-base'>FILTER BY</p>
                                 </span>
-                                <MdKeyboardArrowDown className='ml-4' size={22} />
+                                <MdKeyboardArrowDown className='ml-2' size={22} />
                             </div>
                             <hr className='hidden md:block' />
                             <div className={`${showFilter ? `block overflow-y-scroll` : `hidden`}  md:block`}>
@@ -249,7 +249,7 @@ const Shop = () => {
                                 <RxCross2 size={12} />
                             </div>
                         </div>
-                        <div className='grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 ml-2 mt-4'>
+                        <div className='grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:ml-2 mt-4'>
                             <ProductCart />
                             <ProductCart />
                             <ProductCart />
