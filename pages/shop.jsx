@@ -4,8 +4,9 @@ import Layout from '@/Layouts/Layout'
 import { RxCross2 } from 'react-icons/rx'
 import ProductCart from '@/components/Home/Products/ProductCart'
 import AdsSection from '@/components/Home/AdsSection'
-import { MdKeyboardArrowLeft, MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md'
+import { MdKeyboardArrowDown } from 'react-icons/md'
 import LikeProducts from '@/components/ShopPage/LikeProducts'
+import Bottom from '@/components/PhoneBottom/Bottom'
 
 
 const Shop = () => {
@@ -271,6 +272,7 @@ const Shop = () => {
                 <AdsSection />
                 <LikeProducts />
             </div>
+            <Bottom />
         </Layout >
     )
 }
