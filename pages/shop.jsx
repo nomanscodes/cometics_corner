@@ -27,7 +27,7 @@ const Shop = () => {
             }}>
                 <AdsSection />
                 <div className=' md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
-                    <div className='absolute z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 bg-white flex flex-1'>
+                    <div className='absolute z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
                         <div>
                             <div className="desktopFilter  py-[9px] hidden md:block">
                                 <span className="filter flex items-center gap-3">
@@ -37,7 +37,7 @@ const Shop = () => {
                                     <p className='font-semibold text-base'>FILTER BY</p>
                                 </span>
                             </div>
-                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter w-28 py-[6px] flex items-center justify-between cursor-pointer md:hidden">
+                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter w-28 py-[6px] flex items-center justify-between bg-gray-600 cursor-pointer md:hidden">
                                 <span className="filter flex items-center gap-3">
                                     <picture>
                                         <img className='w-4' src="/SVG/filter.svg" alt="" />
@@ -47,8 +47,8 @@ const Shop = () => {
                                 <MdKeyboardArrowDown className='ml-2' size={22} />
                             </div>
                             <hr className='hidden md:block' />
-                            <div className={`${showFilter ? `block overflow-y-scroll` : `hidden`}  md:block`}>
-                                <div className="categories mt-7">
+                            <div className={`${showFilter ? `block overflow-y-scroll` : `hidden`} h-96 p-2 md:mt-0 rounded md:rounded-none shadow-2xl bg-white md:shadow-none md:h-auto  md:block`}>
+                                <div className="categories  md:mt-7">
                                     <span className="filter flex items-center gap-3  bg-gray-100 p-1">
                                         <picture>
                                             <img className='w-3' src="/SVG/leftalignment.svg" alt="" />
@@ -287,7 +287,7 @@ const Shop = () => {
                 <AdsSection />
                 <LikeProducts />
             </div>
-        </Layout>
+        </Layout >
     )
 }
 
