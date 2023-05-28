@@ -26,7 +26,7 @@ const Shop = () => {
                 }
             }}>
                 <AdsSection />
-                <div className=' md:flex xl:grid grid-cols-5 px-6 mt-4 font-poppins'>
+                <div className=' md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
                     <div className='absolute z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-6 bg-white flex flex-1'>
                         <div>
                             <div className="desktopFilter  py-[9px] hidden md:block">
