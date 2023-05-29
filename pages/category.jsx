@@ -35,6 +35,7 @@ const Category = () => {
                     <CategoryList />
                 </div>
                 <div className="contentSection md:w-full lg:w-full lg:col-span-4">
+                    <AdsSection />
                     <div className='carouselFilter flex items-center justify-start overflow-x-auto scroll-smooth lg:justify-between  mt-3 px-2'>
                         <div className='flex items-center gap-6'>
                             <div className="w-36 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
@@ -66,9 +67,9 @@ const Category = () => {
                             <p className='font-semibold text-xs'>65 Items</p>
                         </div>
                     </div>
-                    <div className=' mt-3'>
+                    <div className='mt-3 w-fit'>
                         <h1 className='font-semibold text-base'>QUALITY MACKUP</h1>
-                        <hr className='bg-bgColor h-[2px] w-32 mt-2' />
+                        <hr className='bg-bgColor h-[2px] w-full mt-2' />
                     </div>
                     <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mt-3'>
                         <ProductCart />
@@ -90,6 +91,7 @@ const Category = () => {
                     {/* <TopBrand /> */}
                 </div>
             </div>
+            <Bottom />
         </Layout >
     )
 }
