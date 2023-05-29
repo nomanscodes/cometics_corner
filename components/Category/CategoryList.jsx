@@ -2,9 +2,9 @@ import React from 'react'
 
 const CategoryList = () => {
     return (
-        <div className='flex flex-col px-4 mt-2'>
+        <div className='flex flex-col px-4 mt-2 md:w-48 lg:w-auto'>
             <div className=''>
-                <h1 className=' font-semibold text-lg'>SEARCH BY CATEGORY</h1>
+                <h1 className='font-semibold xl:text-lg whitespace-nowrap'>SEARCH BY CATEGORY</h1>
                 <hr className='mt-2' />
             </div>
 

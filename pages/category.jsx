@@ -24,16 +24,11 @@ const Category = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className='grid grid-cols-5 gap-4 px-12 mt-4'>
-                <div className="categorySection col-span-1 bg-white shadow">
+            <div className='md:flex lg:grid grid-cols-5 gap-4 px-6 mt-4'>
+                <div className="categorySection lg:col-span-1 bg-white shadow h-fit">
                     <CategoryList />
                 </div>
-                <div className="contentSection col-span-4">
-                    <div>
-                        <picture>
-                            <img src="/assets/2.png" alt="" />
-                        </picture>
-                    </div>
+                <div className="contentSection md:w-full lg:w-full lg:col-span-4">
                     <div className='flex items-center justify-between  mt-3 px-2'>
                         <div className='flex items-center gap-6'>
                             <div className="w-36 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
@@ -60,13 +55,8 @@ const Category = () => {
 
                                 <MdKeyboardArrowDown className='ml-2' size={22} />
                             </div>
-                            <div className=" px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
-                                <p className='font-semibold text-xs'>PRODUCT TYPE</p>
-
-                                <MdKeyboardArrowDown className='ml-2' size={22} />
-                            </div>
                         </div>
-                        <div className="px-2 py-[6px] flex items-center bg-white shadow">
+                        <div className=" hidden lg:flex items-center px-2 py-[6px]  bg-white shadow">
                             <p className='font-semibold text-xs'>65 Items</p>
                         </div>
                     </div>
@@ -74,7 +64,7 @@ const Category = () => {
                         <h1 className='font-semibold text-base'>QUALITY MACKUP</h1>
                         <hr className='bg-bgColor h-[2px] w-32 mt-2' />
                     </div>
-                    <div className='grid grid-cols-5 gap-3 mt-3'>
+                    <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3 mt-3'>
                         <ProductCart />
                         <ProductCart />
                         <ProductCart />
@@ -91,10 +81,7 @@ const Category = () => {
                         <ProductCart />
                         <ProductCart />
                     </div>
-                    <div >
-                        <AdsSection />
-                    </div>
-                    <TopBrand />
+                    {/* <TopBrand /> */}
                 </div>
             </div>
         </Layout >
