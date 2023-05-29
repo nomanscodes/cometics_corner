@@ -13,6 +13,12 @@ const Category = () => {
 
     const { asPath, pathname } = useRouter()
 
+    const scrollLeft = () => {
+        document.getElementById("carouselFilter").scrollLeft -= 600
+    }
+    const scrolRight = () => {
+        document.getElementById("carouselFilter").scrollLeft += 600
+    }
 
 
     return (
@@ -24,12 +30,12 @@ const Category = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className='md:flex lg:grid grid-cols-5 gap-4 md:px-6 mt-4'>
+            <div className='relative md:flex lg:grid grid-cols-5 gap-4 px-2 md:px-6 mt-4'>
                 <div className="categorySection lg:col-span-1 bg-white shadow h-fit">
                     <CategoryList />
                 </div>
                 <div className="contentSection md:w-full lg:w-full lg:col-span-4">
-                    <div className='flex items-center justify-between  mt-3 px-2'>
+                    <div className='carouselFilter flex items-center justify-start overflow-x-auto scroll-smooth lg:justify-between  mt-3 px-2'>
                         <div className='flex items-center gap-6'>
                             <div className="w-36 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
                                 <span className="filter flex items-center gap-3">
