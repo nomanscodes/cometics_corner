@@ -24,7 +24,7 @@ const Category = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className='md:flex lg:grid grid-cols-5 gap-4 px-6 mt-4'>
+            <div className='md:flex lg:grid grid-cols-5 gap-4 md:px-6 mt-4'>
                 <div className="categorySection lg:col-span-1 bg-white shadow h-fit">
                     <CategoryList />
                 </div>
