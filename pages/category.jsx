@@ -1,19 +1,16 @@
 import React, { useState } from 'react'
 import Head from 'next/head'
 import Layout from '@/Layouts/Layout'
-import { RxCross2 } from 'react-icons/rx'
-import ProductCart from '@/components/Home/Products/ProductCard'
-import AdsSection from '@/components/Home/AdsSection'
-import { MdKeyboardArrowDown } from 'react-icons/md'
-import LikeProducts from '@/components/ShopPage/LikeProducts'
+import { MdKeyboardArrowRight, MdKeyboardArrowDown } from 'react-icons/md'
 import Bottom from '@/components/PhoneBottom/Bottom'
 import { useRouter } from 'next/router'
+import CategoryList from '@/components/Category/CategoryList'
 
 const Category = () => {
 
     const { asPath, pathname } = useRouter()
 
-    const [showFilter, setShowFilter] = useState(false)
+
 
     return (
         <Layout >
@@ -23,92 +20,45 @@ const Category = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <AdsSection />
-            <div className='relative' onClick={() => {
-                if (showFilter) {
-                    setShowFilter(false)
-                }
-            }}>
-                <div className='relative md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
 
-                    <div className=' absolute md:-top-0 z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
-                        <div className='relative'>
-                            <div className="desktopFilter  py-[9px] hidden md:block">
-                                <span className="filter flex items-center gap-3">
-                                    <picture>
-                                        <img className='w-4' src="/SVG/filter.svg" alt="" />
-                                    </picture>
-                                    <p className='font-semibold text-base'>FILTER BY</p>
-                                </span>
-                            </div>
-                            <div onClick={() => setShowFilter(!showFilter)} className="MobileFilter absolute w-32 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer md:hidden shadow -top-10 -ml-[10px]">
-                                <span className="filter flex items-center gap-3">
-                                    <picture>
-                                        <img className='w-4' src="/SVG/filter.svg" alt="" />
-                                    </picture>
-                                    <p className='md:font-semibold text-xs md:text-base'>FILTER BY</p>
-                                </span>
-                                <MdKeyboardArrowDown className='ml-2' size={22} />
-                            </div>
-                            <hr className='hidden md:block' />
-                            <div className={`${showFilter ? `block overflow-y-scroll` : `hidden`} h-96 p-2 md:mt-0 rounded md:rounded-none shadow-2xl bg-white md:shadow-none md:h-auto  md:block`}>
-                                <div className="categories md:mt-7 w-52">
-                                    <span className="filter flex items-center gap-3   bg-gray-100 p-1">
-                                        <picture>
-                                            <img className='w-3' src="/SVG/leftalignment.svg" alt="" />
-                                        </picture>
-                                        <p className='font-semibold text-sm'>CATEGORY</p>
-                                    </span>
-                                    <div className='mt-3'>
-                                        <div className='flex items-center justify-between mt-1 '>
-                                            <span className='flex items-center gap-2'>
-                                                <input id="red-checkbox" value="" type="checkbox" className='checked w-4 h-4 accent-bgColor' />
-                                                <p className='text-base footerText3'>Face</p>
-                                            </span>
-                                            <p>49</p>
-                                        </div>
-                                        <div className='flex items-center justify-between mt-1'>
-                                            <span className='flex items-center gap-2'>
-                                                <input id="red-checkbox" value="" type="checkbox" className='checked w-4 h-4 accent-bgColor' />
-                                                <p className='text-base footerText3'>Face</p>
-                                            </span>
-                                            <p>49</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <div className='grid grid-cols-5 gap-4 px-12 mt-4'>
+                <div className="categorySection col-span-1">
+                    <CategoryList />
+                </div>
+                <div className="contentSection col-span-4">
+                    <div>
+                        <picture>
+                            <img src="/assets/2.png" alt="" />
+                        </picture>
                     </div>
-                    <div className='contentSection md:col-span-3 lg:col-span-4 mt-12 md:mt-auto'>
-                        <div className='md:ml-2 flex items-center gap-3 bg-white p-2 '>
-                            <div className='flex items-center gap-1 bg-white shadow rounded-full border py-[2px] px-2 cursor-pointer'>
-                                <p className='font-semibold text-sm text-bgColor'>Red Lipistic</p>
-                                <RxCross2 size={12} />
-                            </div>
+                    <div className='flex items-center gap-4 mt-3 px-2'>
+                        <div className="w-32 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
+                            <span className="filter flex items-center gap-3">
+                                <picture>
+                                    <img className='w-4' src="/SVG/filter.svg" alt="" />
+                                </picture>
+                                <p className='font-semibold text-xs'>FILTER BY</p>
+                            </span>
+                            <MdKeyboardArrowRight className='ml-2' size={22} />
                         </div>
-                        <div className='grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:ml-2 mt-4'>
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
-                            <ProductCart />
+                        <div className="w-24 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
+                            <p className='font-semibold text-xs'>PRICE</p>
+
+                            <MdKeyboardArrowDown className='ml-2' size={22} />
+                        </div>
+                        <div className="w-24 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
+                            <p className='font-semibold text-xs'>RATING</p>
+
+                            <MdKeyboardArrowDown className='ml-2' size={22} />
+                        </div>
+                        <div className="w-24 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
+                            <p className='font-semibold text-xs'>SKIN</p>
+
+                            <MdKeyboardArrowDown className='ml-2' size={22} />
                         </div>
                     </div>
                 </div>
-
-                <AdsSection />
-                <LikeProducts />
             </div>
-            <Bottom shopPath={pathname} />
         </Layout >
     )
 }
