@@ -4,6 +4,101 @@ import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import CategoryCart from './CategoryCard';
 
+const catData = [
+  {
+    id: 1,
+    image: "/demo/c/c1.jpg",
+    name: "Eyes"
+  },
+  {
+    id: 2,
+    image: "/demo/c/c2.avif",
+    name: "Hand Wash"
+  },
+  {
+    id: 3,
+    image: "/demo/c/c3.avif",
+    name: "Nails"
+  },
+  {
+    id: 4,
+    image: "/demo/c/c4.avif",
+    name: "Hair Care"
+  },
+  {
+    id: 1,
+    image: "/demo/c/c1.jpg",
+    name: "Eyes"
+  },
+  {
+    id: 2,
+    image: "/demo/c/c2.avif",
+    name: "Hand Wash"
+  },
+  {
+    id: 3,
+    image: "/demo/c/c3.avif",
+    name: "Nails"
+  },
+  {
+    id: 4,
+    image: "/demo/c/c4.avif",
+    name: "Hair Care"
+  },
+  {
+    id: 1,
+    image: "/demo/c/c1.jpg",
+    name: "Eyes"
+  },
+  {
+    id: 2,
+    image: "/demo/c/c2.avif",
+    name: "Hand Wash"
+  },
+  {
+    id: 3,
+    image: "/demo/c/c3.avif",
+    name: "Nails"
+  },
+  {
+    id: 4,
+    image: "/demo/c/c4.avif",
+    name: "Hair Care"
+  },
+  {
+    id: 2,
+    image: "/demo/c/c2.avif",
+    name: "Hand Wash"
+  },
+  {
+    id: 3,
+    image: "/demo/c/c3.avif",
+    name: "Nails"
+  },
+  {
+    id: 4,
+    image: "/demo/c/c4.avif",
+    name: "Hair Care"
+  },
+  {
+    id: 2,
+    image: "/demo/c/c2.avif",
+    name: "Hand Wash"
+  },
+  {
+    id: 3,
+    image: "/demo/c/c3.avif",
+    name: "Nails"
+  },
+  {
+    id: 4,
+    image: "/demo/c/c4.avif",
+    name: "Hair Care"
+  },
+]
+
+
+
 const Category = () => {
 
   const scrollLeft = () => {
@@ -34,82 +129,12 @@ const Category = () => {
       </div>
       <div id='carouselContent' className='CatCarousel flex items-center justify-start gap-4 md:gap-8 overflow-x-auto 
       scroll-smooth mt-2 md:mt-4'>
+        {catData.map((item) => (
+          <div key={item.id}>
+            <CategoryCart item={item} />
+          </div>
+        ))}
 
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
-        <div>
-          <CategoryCart />
-        </div>
       </div>
 
 

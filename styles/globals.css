@@ -39,3 +39,8 @@ body{
 	font-size: 18px;
 	line-height: 26px;
 }
+
+.fitImage{
+background-repeat: no-repeat;
+background-size: 100% 100%;
+}
