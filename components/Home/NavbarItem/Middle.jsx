@@ -10,7 +10,7 @@ const Middle = () => {
       <div className='hidden md:block'>
         <Image
           alt='logo'
-          src="/logo1.png"
+          src="/assets/MENOM (1).png"
           height={70}
           width={100}
         />

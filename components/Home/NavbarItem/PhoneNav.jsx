@@ -10,8 +10,8 @@ const PhoneNav = () => {
                 <div className='logoSection'>
                     <Image
                         alt='logo'
-                        src="/logo1.png"
-                        height={20}
+                        src="/assets/MENOM (1).png"
+                        height={40}
                         width={90}
                     />
                 </div>
