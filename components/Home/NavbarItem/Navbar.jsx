@@ -12,7 +12,7 @@ const Navbar = () => {
     const controlNavbar = () => {
         if (window.scrollY > 200) {
             if (window.scrollY > lastScrollY) {
-                setShow("-translate-y-[90px]");
+                setShow("-translate-y-[45px]");
             } else {
                 setShow("shadow-sm");
             }

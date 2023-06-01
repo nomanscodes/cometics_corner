@@ -1,12 +1,11 @@
 import React from 'react'
 import Image from 'next/image'
-import Link from 'next/link'
 import { AiOutlineSearch } from "react-icons/ai"
 
 const PhoneNav = () => {
     return (
         <div className='px-3 py-[5px]  text-white'>
-            <div className='flex items-center'>
+            <div className='flex items-center justify-between'>
                 <div className='logoSection'>
                     <Image
                         alt='logo'
