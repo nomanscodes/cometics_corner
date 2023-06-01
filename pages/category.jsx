@@ -12,14 +12,11 @@ import TopBrand from '@/components/Home/TopBrand/TopBrand'
 const Category = () => {
 
     const { asPath, pathname } = useRouter()
-
-    const scrollLeft = () => {
-        document.getElementById("carouselFilter").scrollLeft -= 600
-    }
-    const scrolRight = () => {
-        document.getElementById("carouselFilter").scrollLeft += 600
-    }
-
+    const [showShort, setShowShort] = useState(false)
+    const [showColor, setShowColor] = useState(false)
+    const [showSize, setShowSize] = useState(false)
+    const [showRating, setShowRating] = useState(false)
+    const [showSkin, setShowSkin] = useState(false)
 
     return (
         <Layout >
@@ -36,32 +33,106 @@ const Category = () => {
                 </div>
                 <div className="contentSection md:w-full lg:w-full lg:col-span-4">
                     <AdsSection />
-                    <div className='carouselFilter flex items-center justify-start overflow-x-auto scroll-smooth lg:justify-between  mt-3 px-2'>
-                        <div className='flex items-center gap-6'>
-                            <div className="w-36 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
-                                <span className="filter flex items-center gap-3">
-                                    <picture>
-                                        <img className='w-4' src="/SVG/filter.svg" alt="" />
-                                    </picture>
+                    <div className='flex items-center justify-start  lg:justify-between  mt-3 px-2'>
+                        <div className='flex items-center  gap-6'>
+                            <div className="relative px-2 py-[6px] bg-white cursor-pointer shadow ">
+                                <span onClick={() => setShowSize(false) || setShowRating(false) || setShowColor(false) || setShowShort(!showShort)} className='flex items-center'>
                                     <p className='font-semibold text-xs whitespace-nowrap'>SHORTED BY</p>
+                                    <MdKeyboardArrowDown className='ml-2' size={22} />
                                 </span>
-                                <MdKeyboardArrowRight className='ml-2' size={22} />
+                                <div className={`absolute z-30 mt-[7px] -ml-2 ${showShort ? `w-32 transition-all duration-500` : `hidden`}  bg-white p-3 flex flex-col gap-2`}>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                </div>
                             </div>
-                            <div className="w-24 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
-                                <p className='font-semibold text-xs'>PRICE</p>
+                            <div className="relative px-2 py-[6px] bg-white cursor-pointer shadow ">
+                                <span onClick={() => setShowSize(false) || setShowRating(false) || setShowShort(false) || setShowColor(!showColor)} className='flex items-center'>
+                                    <p className='font-semibold text-xs whitespace-nowrap'>COLOR</p>
+                                    <MdKeyboardArrowDown className='ml-2' size={22} />
+                                </span>
+                                <div className={`absolute z-30 mt-[7px] -ml-2 ${showColor ? `w-32 transition-all duration-500` : `hidden`}  bg-white p-3 flex flex-col gap-2`}>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="relative px-2 py-[6px] bg-white cursor-pointer shadow ">
+                                <span onClick={() => setShowColor(false) || setShowRating(false) || setShowShort(false) || setShowSize(!showSize)} className='flex items-center'>
+                                    <p className='font-semibold text-xs whitespace-nowrap'>SIZE</p>
+                                    <MdKeyboardArrowDown className='ml-2' size={22} />
+                                </span>
+                                <div className={`absolute z-30 mt-[7px] -ml-2 ${showSize ? `w-32 transition-all duration-500` : `hidden`}  bg-white p-3 flex flex-col gap-2`}>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                </div>
+                            </div>
+                            <div className="relative px-2 py-[6px] bg-white cursor-pointer shadow ">
+                                <span onClick={() => setShowColor(false) || setShowSize(false) || setShowShort(false) || setShowRating(!showRating)} className='flex items-center'>
+                                    <p className='font-semibold text-xs whitespace-nowrap'>RATING</p>
+                                    <MdKeyboardArrowDown className='ml-2' size={22} />
+                                </span>
+                                <div className={`absolute z-30 mt-[7px] -ml-2 ${showRating ? `w-32 transition-all duration-500` : `hidden`}  bg-white p-3 flex flex-col gap-2`}>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                    <span className='flex items-center gap-3'>
+                                        <input value="" type="radio" className=' radio w-4 h-4 accent-bgColor' />
+                                        <p className='text-base font-medium footerText3'>Face</p>
+                                    </span>
+                                </div>
+                            </div>
 
-                                <MdKeyboardArrowDown className='ml-2' size={22} />
-                            </div>
-                            <div className="w-24 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
-                                <p className='font-semibold text-xs'>RATING</p>
 
-                                <MdKeyboardArrowDown className='ml-2' size={22} />
-                            </div>
-                            <div className="w-24 px-2 py-[6px] flex items-center justify-between bg-white cursor-pointer  shadow -top-10 -ml-[10px]">
-                                <p className='font-semibold text-xs'>SKIN</p>
-
-                                <MdKeyboardArrowDown className='ml-2' size={22} />
-                            </div>
                         </div>
                         <div className=" hidden lg:flex items-center px-2 py-[6px]  bg-white shadow">
                             <p className='font-semibold text-xs'>65 Items</p>
