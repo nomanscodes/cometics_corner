@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react'
-import { MdKeyboardArrowRight } from 'react-icons/md'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 import Link from 'next/link'
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi"
 import TopBrandCard from './TopBrandCard'
@@ -17,12 +17,12 @@ const TopBrand = () => {
     return (
         <div className='md:px-6 relative mt-2 md:mt-4 font-poppins '>
             <div className='flex items-center justify-between '>
-                <div className='px-2 md:px-0 flex items-center gap-7'>
-                    <h1 className='font-semibold text-sm md:text-2xl opacity-90'>TOP BRAND</h1>
-                    <Link href={""} className='hidden md:flex items-center gap-1 group  '>
-                        <h1 className='font-medium group-hover:text-bgColor duration-300'>All Brand</h1>
-                        <MdKeyboardArrowRight className='group-hover:text-bgColor duration-300' size={22} />
-                    </Link>
+                <div className='px-2 md:px-0 flex items-center '>
+                    <h1 className='font-semibold text-sm opacity-90'>TOP BRAND</h1>
+                    {/* <Link href={""} className='hidden md:flex items-center gap-1 group  '>
+                        <h1 className='font-medium text-xs group-hover:text-bgColor duration-300'>All Brand</h1>
+                        <FaLongArrowAltRight className='group-hover:text-bgColor duration-300' size={22} />
+                    </Link> */}
                 </div>
                 <div className='hidden md:flex items-center gap-2 text-white'>
                     <button onClick={scrollLeft} className='bg-bgColor px-1 md:px-2 md:py-1'>
