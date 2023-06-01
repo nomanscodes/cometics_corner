@@ -11,7 +11,7 @@ const PhoneNav = () => {
                     <Image
                         alt='logo'
                         src="/logo1.png"
-                        height={40}
+                        height={20}
                         width={90}
                     />
                 </div>
@@ -19,7 +19,7 @@ const PhoneNav = () => {
             <div className='flex w-full'>
                 <input
                     type="text"
-                    className="flex flex-1 py-2 md:py-1 text-sm border border-r-0 border-neutral-400 pl-4 focus:outline-none "
+                    className="flex flex-1 py-2 md:py-1 text-black text-sm border border-r-0 border-neutral-400 pl-4 focus:outline-none "
                     placeholder="Search For Products"
                 />
                 <AiOutlineSearch className='h-[38px] bg-white text-black md:h-8 lg:h-9 p-1 w-10 border border-l-0 border-neutral-400' size={30} />
