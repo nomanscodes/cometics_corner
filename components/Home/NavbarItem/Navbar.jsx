@@ -38,7 +38,7 @@ const Navbar = () => {
                 <Middle />
                 <Bottom />
             </div>
-            <div className={`shadow-md bg-white md:hidden z-20 sticky top-0 transition-transform duration-300 ${show}`}>
+            <div className={`shadow bg-white md:hidden z-20 sticky top-0 transition-transform duration-300 ${show}`}>
                 <TopPhone />
             </div>
 
