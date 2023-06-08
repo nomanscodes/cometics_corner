@@ -1,16 +1,22 @@
 import React from 'react'
+import { IoIosArrowForward } from 'react-icons/io'
 import { MdOutlineSupervisorAccount } from "react-icons/md"
 
 const VendorCart = () => {
   return (
-    <div className='w-auto bg-white rounded shadow-md'>
-      <div className="profileImage flex items-center justify-center p-3">
+    <div className='w-auto relative bg-white shadow-md'>
+      <div className="profileImage  flex items-center justify-center">
         <picture>
-          <img className='rounded-full w-28' src="/assets/avatar.avif" alt="" />
+          <img className='h-28 w-full' src="/happy.avif" alt="" />
         </picture>
       </div>
-      <div className='px-2 w-40'>
-        <div className="ratingbadge flex items-center justify-center gap-4">
+
+      <div className="name absolute top-0 mt-2 pl-1">
+        <h1 className='text-sm font-bold flex items-center gap-2'>Wellness Store <span><IoIosArrowForward size={13} /></span></h1>
+        <h4 className='text-xs'>For all health needs</h4>
+      </div>
+      <div className='px-2 w-32 mt-1'>
+        {/* <div className="ratingbadge flex items-center justify-center gap-4">
           <span>
             <MdOutlineSupervisorAccount className='opacity-80' size={22} />
           </span>
@@ -25,11 +31,9 @@ const VendorCart = () => {
               <img src="/SVG/badge.svg" className='w-4' alt="" />
             </picture>
           </span>
-        </div>
-        <div className="name flex items-center justify-center mt-2">
-          <h1 className='text-sm font-bold whitespace-nowrap'>Mehedi Hassan</h1>
-        </div>
-        <div className="followebutton w-fit flex items-center justify-center gap-4 mt-2 pb-2">
+        </div> */}
+
+        <div className="followebutton flex items-center justify-between  pb-1">
           <span className='flex items-center gap-2'>
             <picture>
               <img src="/SVG/accountBlack.svg" className='w-[15px] opacity-80' alt="" />
@@ -37,8 +41,8 @@ const VendorCart = () => {
             <p className='text-sm font-bold'>12.6K</p>
           </span>
           <span>
-            <button className='text-xs md:text-sm w-full font-bold text-white bg-bgColor  rounded-md px-[3px]'>
-              Following
+            <button className='text-xs md:text-sm w-full  text-white bg-bgColor px-[5px]'>
+              Follow
             </button>
           </span>
         </div>

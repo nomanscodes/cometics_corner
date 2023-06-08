@@ -14,14 +14,14 @@ const ProductCart = ({ item }) => {
                     </span>
                 </div>
                 <div className='card__middle flex flex-col p-2 font-medium'>
-                    <h3>Top sent six colors matte liquied</h3>
+                    <h3 className='text-sm'>Top sent six colors matte liquied</h3>
                     <span className='flex items-center text-xs opacity-70'>
                         <p>⭐</p>
                         <p>44/5(130)</p>
                         <p>.765 Sold</p>
                     </span>
                     <span className='flex items-center gap-3 sm:gap-5 mt-1'>
-                        <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'><i>Free Delivery</i></button>
+                        <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'>Free Delivery</button>
                         <p className='text-xs px-2 text-bgColor whitespace-nowrap'>34% Off</p>
                     </span>
                     <span className='flex items-center justify-between mt-2 text-sm'>
