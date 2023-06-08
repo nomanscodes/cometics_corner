@@ -24,8 +24,8 @@ export default function Home() {
       <div className="">
         <Slider />
         <Categorie />
-        <AdsSection />
-        <TopBrand />
+        {/* <AdsSection />
+        <TopBrand /> */}
         <FeaturedProducts />
         <TopVendor />
         <PopularProduct />
