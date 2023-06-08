@@ -2,9 +2,9 @@ import React from 'react'
 
 const Featured = () => {
     return (
-        <div className='mt-4 '>
+        <div className='mt-4 hidden md:block'>
             <div class="px-6 bg-white p-2">
-                <div class="w-10/12 grid grid-cols-4 gap-6 mx-auto justify-center">
+                <div class="w-full grid md:grid-cols-2 lg:grid-cols-4 gap-6 mx-auto justify-center">
                     <div class="border flex justify-center items-center gap-5 bg-white py-4 shadow-lg">
                         <picture>
                             <img src="/SVG/shipping.svg" class="w-12 h-12 object-contain" alt="" />
@@ -24,7 +24,6 @@ const Featured = () => {
                             <p class="text-five text-sm">30 Days money returns</p>
                         </div>
                     </div>
-
                     <div class="border border-praimary flex justify-center items-center gap-5  bg-white py-4 shadow-lg">
                         <picture>
                             <img src="/SVG/support.svg" class="w-12 h-12 object-contain" alt="" />

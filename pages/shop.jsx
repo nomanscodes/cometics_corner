@@ -24,7 +24,7 @@ const Shop = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <AdsSection />
+            {/* <AdsSection /> */}
             <div className='relative' onClick={() => {
                 if (showFilter) {
                     setShowFilter(false)
@@ -32,7 +32,7 @@ const Shop = () => {
             }}>
                 <div className='relative md:flex xl:grid grid-cols-5 px-2 md:px-6 mt-4 font-poppins'>
 
-                    <div className=' absolute md:-top-0 z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
+                    <div className='absolute md:-top-0 z-10 md:z-0 md:static md:col-span-2 lg:col-span-1 px-3 md:px-6 md:bg-white flex flex-1'>
                         <div className='relative'>
                             <div className="desktopFilter  py-[9px] hidden md:block">
                                 <span className="filter flex items-center gap-3">
@@ -248,14 +248,14 @@ const Shop = () => {
                         </div>
                     </div>
 
-                    <div className='contentSection md:col-span-3 lg:col-span-4 mt-12 md:mt-auto'>
+                    <div className='contentSection md:col-span-3 lg:col-span-4 mt-12 '>
                         <div className='md:ml-2 flex items-center gap-3 bg-white p-2 '>
                             <div className='flex items-center gap-1 bg-white shadow rounded-full border py-[2px] px-2 cursor-pointer'>
                                 <p className='font-semibold text-sm text-bgColor'>Red Lipistic</p>
                                 <RxCross2 size={12} />
                             </div>
                         </div>
-                        <div className='grid grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:ml-2 mt-4'>
+                        <div className='grid grid-cols-2 sm:grid-cols-3 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-3 md:ml-2 mt-4'>
                             <ProductCart />
                             <ProductCart />
                             <ProductCart />
@@ -274,7 +274,7 @@ const Shop = () => {
                     </div>
                 </div>
 
-                <AdsSection />
+
                 <LikeProducts />
             </div>
             <Bottom shopPath={pathname} />

@@ -8,6 +8,8 @@ import CategoryList from '@/components/Category/CategoryList'
 import ProductCart from '@/components/Home/Products/ProductCard'
 import AdsSection from '@/components/Home/AdsSection'
 import MobileCategory from '@/components/Category/MobileCategory'
+import TopVendor from '@/components/Home/TopVendor/TopVendor'
+
 
 const Category = () => {
 
@@ -26,13 +28,12 @@ const Category = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div>
-                <div className='p-2 w-full flex items-center gap-1'>
-                    <h4 className='ml-2 font-medium text-sm whitespace-nowrap'>All Categories</h4>
-                   <hr className='w-full bg-slate-500'/>
+            <div className='md:hidden '>
+                <div className='px-2 w-full flex items-center gap-1'>
+                    <h4 className='ml-2 font-semibold text-sm whitespace-nowrap'>All Categories</h4>
+                    <hr className='w-full lineVertical' />
                 </div>
-
-                <div className='p-2 grid grid-cols-4 gap-3 md:hidden '>
+                <div className='p-2 grid grid-cols-4 sm:grid-cols-5 gap-3 '>
                     <MobileCategory />
                     <MobileCategory />
                     <MobileCategory />
@@ -46,6 +47,15 @@ const Category = () => {
                     <MobileCategory />
                     <MobileCategory />
                     <MobileCategory />
+                </div>
+                <div>
+                    <div className='px-2 w-full flex items-center gap-1 mt-2'>
+                        <h4 className='ml-2 font-semibold text-sm whitespace-nowrap'>Trending Store</h4>
+                        <hr className='w-full lineVertical' />
+                    </div>
+                    <div className='mt-2 px-3 grid grid-cols-2 sm:grid-cols-3 gap-3 '>
+                   
+                    </div>
                 </div>
             </div>
             <div className='relative hidden md:flex lg:grid grid-cols-5 gap-4 px-2 md:px-6 mt-4'>
