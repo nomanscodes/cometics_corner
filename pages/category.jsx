@@ -27,10 +27,11 @@ const Category = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>
-                <div className='p-2 flex items-center'>
-                    <h4 className='ml-4 text-sm font-semibold'>All Categories</h4>
-                    <hr className='bg-slate-600'/>
+                <div className='p-2 w-full flex items-center gap-1'>
+                    <h4 className='ml-2 font-medium text-sm whitespace-nowrap'>All Categories</h4>
+                   <hr className='w-full bg-slate-500'/>
                 </div>
+
                 <div className='p-2 grid grid-cols-4 gap-3 md:hidden '>
                     <MobileCategory />
                     <MobileCategory />
