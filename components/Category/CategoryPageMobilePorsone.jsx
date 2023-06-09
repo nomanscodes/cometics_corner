@@ -6,7 +6,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const CategoryPageMobilePorsone = () => {
 
-    const [short, setShort] = useState(false)
+    const [short, setShort] = useState(true)
 
     return (
         <div className='bg-white relative'>
@@ -34,8 +34,41 @@ const CategoryPageMobilePorsone = () => {
                     <div onClick={() => setShort(false)} className='bg-black/70 h-full w-full'>
 
                     </div>
-                    <div className='bg-green-600 h-44'>
-
+                    <div className='bg-white h-fit rounded-t uppercase'>
+                        <h1 className=' font-medium text-sm p-2'>
+                            short by
+                        </h1>
+                        <hr />
+                        <div className='px-2 mt-1 flex flex-col gap-3'>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                            <span className='flex items-center justify-between mt-1'>
+                                <h4 className='text-xs font-medium'>relevance</h4>
+                                <input name='short_by' value="" type="radio" className='checked w-4 h-4 accent-bgColor' />
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
