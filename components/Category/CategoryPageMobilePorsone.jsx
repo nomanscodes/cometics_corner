@@ -34,7 +34,7 @@ const CategoryPageMobilePorsone = () => {
                     <div onClick={() => setShort(false)} className='bg-black/70 h-full w-full'>
 
                     </div>
-                    <div className='bg-white h-fit rounded-t '>
+                    <div className='bg-white h-fit'>
                         <h1 className='uppercase font-medium text-sm p-4'>
                             short by
                         </h1>
