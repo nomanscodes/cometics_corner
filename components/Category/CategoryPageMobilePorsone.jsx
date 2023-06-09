@@ -1,10 +1,13 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 
 const CategoryPageMobilePorsone = () => {
+
+    const [short, setShort] = useState(false)
+
     return (
         <div className='bg-white relative'>
             <div className='flex items-center gap-2'>
@@ -22,16 +25,16 @@ const CategoryPageMobilePorsone = () => {
                 <span className='text-xs opacity-60'>(Showing 1 – 24 products of 7,993 products)</span>
             </div>
             <div className='flex items-center gap-2 mt-2 uppercase '>
-                <span className='flex items-center border border-bgColor gap-1 p-1 rounded-md'>
+                <span onClick={() => setShort(true)} className='flex items-center border border-bgColor gap-1 p-1 rounded-md'>
                     <h1 className='text-xs'>short by</h1>
                     <HiOutlineChevronDown size={16} />
                 </span>
- 
-                <div className='absolute mt-[100vh] h-16 w-full'>
-                    <div className='bg-black/50 h-auto w-full'>
+
+                <div className={`fixed bottom-0 z-50 ${short ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
+                    <div onClick={() => setShort(false)} className='bg-black/70 h-full w-full'>
 
                     </div>
-                    <div className='bg-green-600 p-3'>
+                    <div className='bg-green-600 h-44'>
 
                     </div>
                 </div>
