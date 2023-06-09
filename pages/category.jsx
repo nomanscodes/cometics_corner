@@ -21,8 +21,8 @@ const Category = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='md:hidden pl-3 mt-1'>
-                <div className='bg-white'>
+            <div className='md:hidden mt-1'>
+                <div className='bg-white p-2'>
                     <div className='flex items-center gap-2'>
                         <div className='flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none '>
                             <Link href={""} className='uppercase'>Home</Link>
