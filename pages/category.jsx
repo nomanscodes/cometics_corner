@@ -122,7 +122,7 @@ const Category = () => {
                         <div className='flex w-full relative mt-2'>
                             <input
                                 type="text"
-                                className="py-1 text-sm flex flex-1 border border-opacity-70 border-t-0 border-r-0 border-l-0 border-neutral-500 pl-6 focus:outline-none "
+                                className="py-1 w-fit text-sm flex flex-1 border border-opacity-70 border-t-0 border-r-0 border-l-0 border-neutral-500 pl-6 focus:outline-none "
                                 placeholder="Search brand"
                             />
                             <AiOutlineSearch className=' absolute left-0 mt-[7px] text-gray-500 border-solid border-neutral-500' size={18} />
