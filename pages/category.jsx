@@ -22,20 +22,23 @@ const Category = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className='md:hidden pl-3 mt-1'>
-                <div className='flex items-center gap-2'>
-                    <div className='flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none '>
-                        <Link href={""} className='uppercase'>Home</Link>
-                        <FiChevronRight size={14} />
+                <div className='bg-white'>
+                    <div className='flex items-center gap-2'>
+                        <div className='flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none '>
+                            <Link href={""} className='uppercase'>Home</Link>
+                            <FiChevronRight size={14} />
+                        </div>
+                        <div className='flex items-center gap-[2px] text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>
+                            <Link href={""} className='uppercase'>Beauty and face</Link>
+                            <FiChevronRight size={14} />
+                        </div>
                     </div>
-                    <div className='flex items-center gap-[2px] text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>
-                        <Link href={""} className='uppercase'>Beauty and face</Link>
-                        <FiChevronRight size={14} />
+                    <div className='flex items-center gap-2 mt-1'>
+                        <h1 className='text-sm font-medium opacity-80 uppercase'>Mackup</h1>
+                        <span className='text-xs opacity-60'>(Showing 1 – 24 products of 7,993 products)</span>
                     </div>
                 </div>
-                <div className='flex items-center gap-2 mt-1'>
-                    <h1 className='text-sm font-medium opacity-80 uppercase'>Mackup</h1>
-                    <span className='text-xs opacity-60'>(Showing 1 – 24 products of 7,993 products)</span>
-                </div>
+
             </div>
             <div className='hidden md:flex lg:grid lg:grid-cols-9 gap-2 px-3 mt-2'>
                 <div className='md:w-64 lg:w-auto col-span-2  bg-white px-4 py-2 shadow-md'>
