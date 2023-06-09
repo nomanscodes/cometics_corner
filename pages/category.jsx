@@ -7,6 +7,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { AiOutlineSearch } from 'react-icons/ai'
 import { BiRightArrow } from 'react-icons/bi'
+import ProductCart from '@/components/Home/Products/ProductCard'
 
 const Category = () => {
 
@@ -20,18 +21,35 @@ const Category = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className=' grid grid-cols-9 gap-2 px-3 mt-2'>
-                <div className='col-span-2 bg-white px-4 py-2 shadow-md'>
+            <div className='md:hidden pl-3 mt-1'>
+                <div className='flex items-center gap-2'>
+                    <div className='flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none '>
+                        <Link href={""} className='uppercase'>Home</Link>
+                        <FiChevronRight size={14} />
+                    </div>
+                    <div className='flex items-center gap-[2px] text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>
+                        <Link href={""} className='uppercase'>Beauty and face</Link>
+                        <FiChevronRight size={14} />
+                    </div>
+                </div>
+                <div className='flex items-center gap-2 mt-1'>
+                    <h1 className='text-sm font-medium opacity-80 uppercase'>Mackup</h1>
+                    <span className='text-xs opacity-60'>(Showing 1 – 24 products of 7,993 products)</span>
+                </div>
+            </div>
+            <div className='hidden md:flex lg:grid lg:grid-cols-9 gap-2 px-3 mt-2'>
+                <div className='md:w-64 lg:w-auto col-span-2  bg-white px-4 py-2 shadow-md'>
                     <div className=''>
                         <div className='flex items-center justify-between '>
                             <h2 className=' font-semibold'>FILTER</h2>
                             <a className=' font-semibold text-sm text-bgColor cursor-pointer'>CLEAR ALL</a>
                         </div>
-                        <div className='mt-2 mb-2'>
-                            <span className='px-2 py-1 bg-slate-200 flex items-center gap-1 w-fit'>
+                        <div className='mt-2 mb-2 grid grid-cols-3 gap-2'>
+                            <span className='px-2 py-1 bg-slate-200 text-bgColor flex items-center gap-1 w-fit cursor-pointer'>
                                 <RxCross2 size={14} />
-                                <h1 className='text-xs font-normal uppercase'>SHOPE</h1>
+                                <h1 className='text-xs font-medium uppercase '>SHOPE</h1>
                             </span>
+
                         </div>
 
                     </div>
@@ -88,23 +106,23 @@ const Category = () => {
                                 </span>
                             </div>
                             <div className='flex items-center justify-between mt-3 font-normal'>
-                                <p className='text-sm font-bold'>From</p>
+                                <p className='text-sm font-semibold'>From</p>
                                 <span className='flex flex-col'>
                                     <input
                                         type="number" min={15}
-                                        className="border border-solid border-neutral-400 focus:outline-none w-16 pl-2 py-[4px] rounded-sm text-sm"
+                                        className="border border-solid border-neutral-400 focus:outline-none w-16 pl-2 py-[2px] rounded-sm text-xs"
                                         placeholder="&#2547;Min"
                                     />
                                 </span>
-                                <p className='text-sm font-bold'>To</p>
+                                <p className='text-sm font-semibold'>To</p>
                                 <span className='flex flex-col'>
                                     <input
                                         type="number" min={15}
-                                        className="border border-solid border-neutral-400 focus:outline-none w-16 pl-2 py-[4px] rounded-sm text-sm"
+                                        className="border border-solid border-neutral-400 focus:outline-none w-16 pl-2 py-[2px] rounded-sm text-xs"
                                         placeholder="&#2547;Max"
                                     />
                                 </span>
-                                <button className='border border-solid p-[6px] bg-bgColor'>
+                                <button className='border border-solid p-[3px] bg-bgColor'>
                                     <picture>
                                         <img src="SVG/filterwhite.svg" className='w-4' alt="" />
                                     </picture>
@@ -281,32 +299,55 @@ const Category = () => {
                         </div>
                     </div>
                 </div>
-                <div className='col-span-7 bg-white p-2'>
-                    <div className='flex items-center gap-2'>
-                        <div className='flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none '>
-                            <Link href={""} className='uppercase'>Home</Link>
-                            <FiChevronRight size={14} />
+                <div className='col-span-7 w-full'>
+                    <div className='bg-white p-2'>
+                        <div className='flex items-center gap-2'>
+                            <div className='flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none '>
+                                <Link href={""} className='uppercase'>Home</Link>
+                                <FiChevronRight size={14} />
+                            </div>
+                            <div className='flex items-center gap-[2px] text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>
+                                <Link href={""} className='uppercase'>Beauty and face</Link>
+                                <FiChevronRight size={14} />
+                            </div>
                         </div>
-                        <div className='flex items-center gap-[2px] text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none'>
-                            <Link href={""} className='uppercase'>Beauty and face</Link>
-                            <FiChevronRight size={14} />
+                        <div className='flex items-center gap-2 mt-3'>
+                            <h1 className='text-sm font-medium opacity-80 uppercase'>Mackup</h1>
+                            <span className='text-xs opacity-60'>(Showing 1 – 24 products of 7,993 products)</span>
                         </div>
+                        <div className='flex items-center gap-3 mt-3 uppercase'>
+                            <span className='flex items-center gap-1'>
+                                <h1 className='text-sm font-medium opacity-80 '>short by</h1>
+                                <FiChevronRight />
+                            </span>
+                            <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer text-[#142b17]'>popularity</h1>
+                            <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer'>price-low to-high</h1>
+                            <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer'>price-high to-low</h1>
+                            <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer'>newest first</h1>
+                        </div>
+                        {/* <hr className='mt-2' /> */}
                     </div>
-                    <div className='flex items-center gap-2 mt-3'>
-                        <h1 className='text-sm font-medium opacity-80 uppercase'>Mackup</h1>
-                        <span className='text-xs opacity-60'>(Showing 1 – 24 products of 7,993 products)</span>
+
+                    <div className='grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-[6px] mt-1'>
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
+                        <ProductCart />
                     </div>
-                    <div className='flex items-center gap-3 mt-3 uppercase'>
-                        <span className='flex items-center gap-1'>
-                            <h1 className='text-sm font-medium opacity-80 '>short by</h1>
-                            <FiChevronRight />
-                        </span>
-                        <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer text-[#142b17]'>popularity</h1>
-                        <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer'>price-low to-high</h1>
-                        <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer'>price-high to-low</h1>
-                        <h1 className='text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none cursor-pointer'>newest first</h1>
-                    </div>
-                    <hr className='mt-2' />
                 </div>
             </div>
             <Bottom />

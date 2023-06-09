@@ -3,6 +3,7 @@ import { IoMdHeartEmpty } from 'react-icons/io'
 
 const ProductCart = ({ item }) => {
     return (
+        
         <div className=" col-span-1 font-poppins">
             <div className=" bg-white group shadow rounded">
                 <div className='card__top relative'>
@@ -15,10 +16,14 @@ const ProductCart = ({ item }) => {
                 </div>
                 <div className='card__middle flex flex-col p-2 font-medium'>
                     <h3 className='text-sm'>Top sent six colors matte liquied</h3>
-                    <span className='flex items-center text-xs opacity-70'>
-                        <p>⭐</p>
-                        <p>44/5(130)</p>
-                        <p>.765 Sold</p>
+                    <span className='flex items-center text-xs opacity-80 py-[2px]'>
+                        <span>
+                            <picture>
+                                <img src="/SVG/star.svg" className='h-4 mr-1' alt="" />
+                            </picture>
+                        </span>
+                        <span>44/5(130)</span>
+                        <span>.765 Sold</span>
                     </span>
                     <span className='flex items-center gap-3 sm:gap-5 mt-1'>
                         <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'>Free Delivery</button>
