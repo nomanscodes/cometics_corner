@@ -14,9 +14,9 @@ const CategoryPageMobilePorsone = () => {
         <div className='bg-white relative'>
             <div className='flex items-center gap-2 mt-1 p-2'>
                 <div>
-                    <span onClick={() => setShort(true)} className='flex items-center border border-bgColor gap-1 p-1 rounded'>
-                        <h1 className='text-xs uppercase'>short by</h1>
-                        <HiOutlineChevronDown size={16} />
+                    <span onClick={() => setShort(true)} className='flex items-center border border-bgColor gap-1 px-3 py-1 rounded-full'>
+                        <h1 className='xxsFont uppercase'>short by</h1>
+                        <HiOutlineChevronDown size={14} />
                     </span>
                     <div className={`fixed bottom-0 left-0 right-0  z-50 ${short ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
                         <div onClick={() => setShort(false)} className='bg-black/70 h-full w-full'>
@@ -65,9 +65,9 @@ const CategoryPageMobilePorsone = () => {
                     </div>
                 </div>
                 <div>
-                    <span onClick={() => setBrand(true)} className='flex items-center border border-bgColor gap-1 p-1 rounded'>
-                        <h1 className='text-xs uppercase'>brand</h1>
-                        <HiOutlineChevronDown size={16} />
+                    <span onClick={() => setBrand(true)} className='flex items-center border border-bgColor gap-1 px-3 py-1 rounded-full'>
+                        <h1 className='xxsFont uppercase'>brand</h1>
+                        <HiOutlineChevronDown size={14} />
                     </span>
                     <div className={`fixed bottom-0 left-0 right-0 z-50 ${brand ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
                         <div onClick={() => setBrand(false)} className='bg-black/70 h-full w-full'>
