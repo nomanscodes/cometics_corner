@@ -6,7 +6,7 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 
 const CategoryPageMobilePorsone = () => {
 
-    const [short, setShort] = useState(true)
+    const [short, setShort] = useState(false)
 
     return (
         <div className='bg-white relative'>
