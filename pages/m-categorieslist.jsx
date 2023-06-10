@@ -129,7 +129,7 @@ const MobileCategorieslist = () => {
                         <h1 className="uppercase text-sm font-medium opacity-90 whitespace-nowrap"> trending store</h1>
                         <hr className="w-full" />
                     </div>
-                    <div className="mt-2 grid grid-cols-3 sm:grid-cols-4 gap-2">
+                    <div className="mt-2 grid grid-cols-2 sm:grid-cols-3 gap-2 px-2">
                         <VendorCart />
                         <VendorCart />
                         <VendorCart />
