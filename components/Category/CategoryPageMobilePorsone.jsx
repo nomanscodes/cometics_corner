@@ -3,6 +3,7 @@ import Link from 'next/link'
 import { HiOutlineChevronDown } from 'react-icons/hi'
 import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import { AiOutlineSearch } from 'react-icons/ai'
+import ProductCart from '../Home/Products/ProductCard'
 
 
 const CategoryPageMobilePorsone = () => {
@@ -277,24 +278,19 @@ const CategoryPageMobilePorsone = () => {
                         <h1 className='text-xs font-medium font-poppins whitespace-nowrap'>Top rated</h1>
                     </span>
                 </div>
-                {/* <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
-                    <picture>
-                        <img className='w-6' src="/SVG/saving.svg" alt="" />
-                    </picture>
-                    <h1 className='text-xs font-medium font-poppins'> Biggest Price Less</h1>
-                </span>
-                <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
-                    <picture>
-                        <img className='w-6' src="/SVG/combo.svg" alt="" />
-                    </picture>
-                    <h1 className='text-xs font-medium font-poppins'> Combo Offer</h1>
-                </span>
-                <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
-                    <picture>
-                        <img className='w-6' src="/SVG/toprated.svg" alt="" />
-                    </picture>
-                    <h1 className='text-xs font-medium font-poppins'> Top Rated</h1>
-                </span> */}
+            </div>
+
+            <div className='grid grid-cols-2 mt-1 gap-1'>
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
+                <ProductCart />
             </div>
         </div>
     )
