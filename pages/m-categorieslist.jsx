@@ -80,13 +80,11 @@ const MobileCategorieslist = () => {
                 <div className="flex items-center p-2">
                     <h1 className="uppercase text-sm font-medium opacity-90">all categories</h1>
                 </div>
-                <hr className="mt-1" />
-
                 <div className="p-2 flex flex-col gap-2">
                     <div className="w-full">
-                        <span className="flex flex-col w-fit">
-                            <h1 className="uppercase text-xs font-medium">Face & mackup</h1>
-                            <hr className="mt-[6px] w-full" />
+                        <span className="flex items-center gap-2 w-full">
+                            <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
+                            <hr className="w-full" />
                         </span>
                         <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
                             {catData.map((item) => (
@@ -97,9 +95,9 @@ const MobileCategorieslist = () => {
                         </div>
                     </div>
                     <div className="w-full">
-                        <span className="flex flex-col w-fit">
-                            <h1 className="uppercase text-xs font-medium">Face & mackup</h1>
-                            <hr className="mt-[6px] w-full" />
+                        <span className="flex items-center gap-2 w-full">
+                            <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
+                            <hr className="w-full" />
                         </span>
                         <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
                             {catData.map((item) => (
@@ -110,9 +108,9 @@ const MobileCategorieslist = () => {
                         </div>
                     </div>
                     <div className="w-full">
-                        <span className="flex flex-col w-fit">
-                            <h1 className="uppercase text-xs font-medium">Face & mackup</h1>
-                            <hr className="mt-[6px] w-full" />
+                        <span className="flex items-center gap-2 w-full">
+                            <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
+                            <hr className="w-full" />
                         </span>
                         <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
                             {catData.map((item) => (
