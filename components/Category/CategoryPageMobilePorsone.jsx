@@ -15,7 +15,7 @@ const CategoryPageMobilePorsone = () => {
 
     return (
         <div className='bg-white relative'>
-            <div className='flex items-center gap-2 mt-1 p-2'>
+            <div className='flex items-center justify-start  overflow-x-auto scroll-smooth gap-2 mt-1 p-2'>
                 <div className='short_bySection'>
                     <span onClick={() => setShort(true)} className='flex items-center border border-bgColor gap-1 px-[10px] py-[5px] rounded-full w-fit'>
                         <h1 className='xxsFont uppercase whitespace-nowrap'>short by</h1>
@@ -193,7 +193,6 @@ const CategoryPageMobilePorsone = () => {
                     </span>
                     <div className={`fixed bottom-0 left-0 right-0 z-50 ${customerRating ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
                         <div onClick={() => setCustomerRating(false)} className='bg-black/70 h-full w-full'>
-
                         </div>
                         <div className='bg-white h-fit'>
                             <h1 className='uppercase font-medium text-sm p-4'>
