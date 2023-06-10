@@ -23,6 +23,30 @@ const Category = () => {
             </Head>
             <div className='md:hidden mt-1 '>
                 <CategoryPageMobilePorsone />
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
+                <div className='h-64'>
+
+                </div>
             </div>
             <div className='hidden md:flex lg:grid lg:grid-cols-9 gap-2 px-3 mt-2'>
                 <div className='md:w-64 lg:w-auto col-span-2  bg-white px-4 py-2 shadow-md'>
