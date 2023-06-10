@@ -5,7 +5,7 @@ import { MdOutlineLanguage } from "react-icons/md";
 const Bootom = () => {
   return (
     <div className=" bg-[#334131] text-white px-6 py-1 footerText md:text-sm">
-      <div className="flex items-center justify-center gap-4 ">
+      <div className="flex items-center justify-center gap-4">
         <span className="flex items-center gap-2 ">
           <MdOutlineLanguage size={16} />
           <p>Bangla</p>
@@ -21,11 +21,11 @@ const Bootom = () => {
         </picture>
         <p>Bangladesh</p>
       </div>
-      <div className="flex items-center justify-center mt-2 ">
+      <div className="flex items-center justify-center">
         <p>Allready a customar? <Link href={""}>Sign In</Link></p>
       </div>
-      <div className="mt-3 ">
-        <div className="flex items-center justify-center px-3 md:px-0 gap-5">
+      <div className="mt">
+        <div className="flex items-center justify-center px-4 md:px-0 gap-5">
           <Link className="whitespace-nowrap " href={":"}>Conditions of USE </Link>
           <Link className="whitespace-nowrap " href={":"}>Privacy Notice </Link>
           <Link className="whitespace-nowrap " href={":"}>
