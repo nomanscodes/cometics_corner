@@ -236,6 +236,32 @@ const CategoryPageMobilePorsone = () => {
                     </div>
                 </div>
             </div>
+            <div className='px-2 py-1 flex items-center justify-start  overflow-x-auto scroll-smooth gap-3'>
+                <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
+                    <picture>
+                        <img className='w-6' src="/SVG/ceremony.svg" alt="" />
+                    </picture>
+                    <h1 className='text-xs font-medium font-poppins'> Ceremony Offer</h1>
+                </span>
+                <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
+                    <picture>
+                        <img className='w-6' src="/SVG/saving.svg" alt="" />
+                    </picture>
+                    <h1 className='text-xs font-medium font-poppins'> Biggest Price Less</h1>
+                </span>
+                <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
+                    <picture>
+                        <img className='w-6' src="/SVG/combo.svg" alt="" />
+                    </picture>
+                    <h1 className='text-xs font-medium font-poppins'> Combo Offer</h1>
+                </span>
+                <span className='flex items-center gap-2 bg-[#f6f5f0] border border-gray-400 rounded py-1 px-2'>
+                    <picture>
+                        <img className='w-6' src="/SVG/toprated.svg" alt="" />
+                    </picture>
+                    <h1 className='text-xs font-medium font-poppins'> Top Rated</h1>
+                </span>
+            </div>
         </div>
     )
 }
