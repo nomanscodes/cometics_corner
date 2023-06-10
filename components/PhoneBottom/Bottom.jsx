@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Bottom = ({ shopPath, homePath }) => {
+const Bottom = ({ shopPath, homePath, categoryPath }) => {
 
     return (
         <div className="fixed bottom-0 left-0 z-40 w-full bg-white border-t shadow-2xl md:hidden ">
@@ -24,10 +24,22 @@ const Bottom = ({ shopPath, homePath }) => {
                     )}
                 </Link>
                 <Link href={"/category"} className="flex flex-col items-center p-1">
-                    <picture>
-                        <img className="w-5" src="/SVG/category.svg" alt="home" />
-                    </picture>
-                    <p className="font-medium footerText2 text-[#A1A0A0]">Categories</p>
+                    {categoryPath ? (
+                        <>
+                            <picture>
+                                <img className="w-5" src="/SVG/activeCategory.svg" alt="home" />
+                            </picture>
+                            <p className="font-medium footerText2 text-[#41583d]">Category</p>
+
+                        </>
+                    ) : (
+                        <>
+                            <picture>
+                                <img className="w-5" src="/SVG/category.svg" alt="home" />
+                            </picture>
+                            <p className="font-medium footerText2 text-[#A1A0A0]">Category</p>
+                        </>
+                    )}
                 </Link>
                 <Link href={"/shop"} className="flex flex-col items-center p-1">
                     {shopPath ? (

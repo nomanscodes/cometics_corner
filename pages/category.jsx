@@ -1,5 +1,6 @@
-import React, { useState } from 'react'
 import Head from 'next/head'
+import React, { useState } from 'react'
+import { useRouter } from 'next/router'
 import Layout from '@/Layouts/Layout'
 import { RxCross2 } from 'react-icons/rx'
 import Bottom from '@/components/PhoneBottom/Bottom'
@@ -7,9 +8,10 @@ import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { AiOutlineSearch } from 'react-icons/ai'
 import ProductCart from '@/components/Home/Products/ProductCard'
-import CategoryPageMobilePorsone from '@/components/Category/CategoryPageMobilePorsone'
+import CategoryPageMobilePorsone from '@/components/Category/CategoryPageMobilePortion'
 
 const Category = () => {
+    const { asPath, pathname } = useRouter()
 
     const [moreBrand, setMoreBrand] = useState(false)
 
@@ -53,7 +55,6 @@ const Category = () => {
                             <h1 className='text-sm'>Face and Mackup</h1>
                         </Link>
                     </div>
-
                     <div className="priceRanger mt-7">
                         <span className="filter flex items-center gap-3  bg-gray-100 p-1 ">
                             <picture>
@@ -337,8 +338,8 @@ const Category = () => {
                     </div>
                 </div>
             </div>
-            <Bottom />
-         
+            <Bottom categoryPath={pathname} />
+
         </Layout >
     )
 }
