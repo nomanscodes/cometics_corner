@@ -5,7 +5,7 @@ import { MdOutlineSupervisorAccount } from "react-icons/md"
 const VendorCart = () => {
   return (
     <div className='w-auto bg-white shadow-lg'>
-      <div style={{ backgroundImage: `url("/happy.avif")` }} className="name fitImage h-32">
+      <div style={{ backgroundImage: `url("/happy.avif")` }} className="name fitImage h-36">
         <div className='p-2'>
           <h1 className='text-sm font-bold flex items-center gap-2'>Wellness Store <span><IoIosArrowForward size={13} /></span></h1>
           <h4 className='text-xs'>For all health needs</h4>
