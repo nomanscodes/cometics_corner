@@ -4,6 +4,7 @@ import { useRouter } from "next/router";
 import Layout from "@/Layouts/Layout";
 import Bottom from "@/components/PhoneBottom/Bottom";
 import CategoryCart from "@/components/Home/Cetagory/CategoryCard";
+import VendorCart from "@/components/Home/TopVendor/VendorCart";
 
 
 const catData = [
@@ -77,51 +78,70 @@ const MobileCategorieslist = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div className="bg-white">
-                <div className="flex items-center p-2">
-                    <h1 className="uppercase text-sm font-medium opacity-90">all categories</h1>
+                <div className="categorySection">
+                    <div className="flex items-center p-2">
+                        <h1 className="uppercase text-sm font-medium opacity-90">all categories</h1>
+                    </div>
+                    <div className="p-2 flex flex-col gap-2">
+                        <div className="w-full">
+                            <span className="flex items-center gap-2 w-full">
+                                <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
+                                <hr className="w-full" />
+                            </span>
+                            <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                                {catData.map((item) => (
+                                    <div key={item.id}>
+                                        <CategoryCart item={item} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="w-full">
+                            <span className="flex items-center gap-2 w-full">
+                                <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
+                                <hr className="w-full" />
+                            </span>
+                            <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                                {catData.map((item) => (
+                                    <div key={item.id}>
+                                        <CategoryCart item={item} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                        <div className="w-full">
+                            <span className="flex items-center gap-2 w-full">
+                                <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
+                                <hr className="w-full" />
+                            </span>
+                            <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                                {catData.map((item) => (
+                                    <div key={item.id}>
+                                        <CategoryCart item={item} />
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className="p-2 flex flex-col gap-2">
-                    <div className="w-full">
-                        <span className="flex items-center gap-2 w-full">
-                            <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
-                            <hr className="w-full" />
-                        </span>
-                        <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
-                            {catData.map((item) => (
-                                <div key={item.id}>
-                                    <CategoryCart item={item} />
-                                </div>
-                            ))}
-                        </div>
+                <div className="trendingStoreSetion mt-2">
+                    <div className="flex items-center gap-2 p-2">
+                        <h1 className="uppercase text-sm font-medium opacity-90 whitespace-nowrap"> trending store</h1>
+                        <hr className="w-full" />
                     </div>
-                    <div className="w-full">
-                        <span className="flex items-center gap-2 w-full">
-                            <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
-                            <hr className="w-full" />
-                        </span>
-                        <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
-                            {catData.map((item) => (
-                                <div key={item.id}>
-                                    <CategoryCart item={item} />
-                                </div>
-                            ))}
-                        </div>
-                    </div>
-                    <div className="w-full">
-                        <span className="flex items-center gap-2 w-full">
-                            <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
-                            <hr className="w-full" />
-                        </span>
-                        <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
-                            {catData.map((item) => (
-                                <div key={item.id}>
-                                    <CategoryCart item={item} />
-                                </div>
-                            ))}
-                        </div>
+                    <div className="mt-2 grid grid-cols-3 sm:grid-cols-4 gap-2">
+                        <VendorCart />
+                        <VendorCart />
+                        <VendorCart />
+                        <VendorCart />
+                        <VendorCart />
+                        <VendorCart />
+                        <VendorCart />
+                        <VendorCart />
                     </div>
                 </div>
             </div>
+
             <Bottom categoryPath={pathname} />
         </Layout>
     );
