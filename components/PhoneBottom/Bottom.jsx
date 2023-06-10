@@ -23,7 +23,7 @@ const Bottom = ({ shopPath, homePath, categoryPath }) => {
                         </>
                     )}
                 </Link>
-                <Link href={"/category"} className="flex flex-col items-center p-1">
+                <Link href={"/m-categorieslist"} className="flex flex-col items-center p-1">
                     {categoryPath ? (
                         <>
                             <picture>

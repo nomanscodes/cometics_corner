@@ -11,7 +11,7 @@ import ProductCart from '@/components/Home/Products/ProductCard'
 import CategoryPageMobilePorsone from '@/components/Category/CategoryPageMobilePortion'
 
 const Category = () => {
-    const { asPath, pathname } = useRouter()
+
 
     const [moreBrand, setMoreBrand] = useState(false)
 
@@ -338,7 +338,7 @@ const Category = () => {
                     </div>
                 </div>
             </div>
-            <Bottom categoryPath={pathname} />
+            <Bottom />
 
         </Layout >
     )
