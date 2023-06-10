@@ -7,11 +7,11 @@ const VendorCart = () => {
     <div className='w-auto bg-white shadow-lg'>
       <div style={{ backgroundImage: `url("/happy.avif")` }} className="name fitImage h-40">
         <div className='p-2'>
-          <h1 className='text-sm font-bold flex items-center gap-2'>Wellness Store <span><IoIosArrowForward size={13} /></span></h1>
+          <h1 className='text-sm font-medium md:font-bold flex items-center gap-2'>Wellness Store <span><IoIosArrowForward size={13} /></span></h1>
           <h4 className='text-xs'>For all health needs</h4>
         </div>
       </div>
-      <div className='px-2 w-full mt-1'>
+      {/* <div className='px-2 w-full mt-1'>
         <div className="followebutton flex items-center justify-between pb-1">
           <span className='flex items-center gap-2'>
             <picture>
@@ -25,7 +25,7 @@ const VendorCart = () => {
             </button>
           </span>
         </div>
-      </div>
+      </div> */}
     </div>
   )
 }
