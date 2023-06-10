@@ -58,45 +58,11 @@ const catData = [
         name: "Hand Wash"
     },
     {
-        id: 3,
-        image: "/demo/c/c3.avif",
-        name: "Nails"
-    },
-    {
-        id: 4,
-        image: "/demo/c/c4.avif",
-        name: "Hair Care"
-    },
-    {
         id: 2,
         image: "/demo/c/c2.avif",
         name: "Hand Wash"
-    },
-    {
-        id: 3,
-        image: "/demo/c/c3.avif",
-        name: "Nails"
-    },
-    {
-        id: 4,
-        image: "/demo/c/c4.avif",
-        name: "Hair Care"
-    },
-    {
-        id: 2,
-        image: "/demo/c/c2.avif",
-        name: "Hand Wash"
-    },
-    {
-        id: 3,
-        image: "/demo/c/c3.avif",
-        name: "Nails"
-    },
-    {
-        id: 4,
-        image: "/demo/c/c4.avif",
-        name: "Hair Care"
-    },
+    }
+
 ]
 
 const MobileCategorieslist = () => {
@@ -122,7 +88,33 @@ const MobileCategorieslist = () => {
                             <h1 className="uppercase text-xs font-medium">Face & mackup</h1>
                             <hr className="mt-[6px] w-full" />
                         </span>
-                        <div className="mt-1 grid grid-cols-4 sm:grid-cols-5">
+                        <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                            {catData.map((item) => (
+                                <div key={item.id}>
+                                    <CategoryCart item={item} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <span className="flex flex-col w-fit">
+                            <h1 className="uppercase text-xs font-medium">Face & mackup</h1>
+                            <hr className="mt-[6px] w-full" />
+                        </span>
+                        <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                            {catData.map((item) => (
+                                <div key={item.id}>
+                                    <CategoryCart item={item} />
+                                </div>
+                            ))}
+                        </div>
+                    </div>
+                    <div className="w-full">
+                        <span className="flex flex-col w-fit">
+                            <h1 className="uppercase text-xs font-medium">Face & mackup</h1>
+                            <hr className="mt-[6px] w-full" />
+                        </span>
+                        <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
                             {catData.map((item) => (
                                 <div key={item.id}>
                                     <CategoryCart item={item} />
