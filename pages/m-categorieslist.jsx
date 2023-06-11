@@ -147,14 +147,7 @@ const MobileCategorieslist = () => {
                     </div>
 
                     <div className=" grid grid-cols-4 gap-5 mt-4 px-1">
-                        <span className="flex flex-col items-center gap-1">
-                            <div className="p-2 rounded-full bg-[#b6ebff]">
-                                <picture>
-                                    <img src="/SVG/becomeaseller.svg" className="h-10" alt="" />
-                                </picture>
-                            </div>
-                            <h3 className="capitalize text-xs whitespace-nowrap">become a seller</h3>
-                        </span>
+
                         <span className="flex flex-col items-center gap-1">
                             <div className="p-2 rounded-full bg-[#cec9ff]">
                                 <picture>
@@ -194,6 +187,14 @@ const MobileCategorieslist = () => {
                                 </picture>
                             </div>
                             <h3 className="capitalize text-xs whitespace-nowrap">games</h3>
+                        </span>
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#b6ebff]">
+                                <picture>
+                                    <img src="/SVG/becomeaseller.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs whitespace-nowrap">become a seller</h3>
                         </span>
                     </div>
                 </div>
