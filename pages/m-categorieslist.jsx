@@ -83,12 +83,12 @@ const MobileCategorieslist = () => {
                         <h1 className="uppercase text-sm font-medium opacity-90">all categories</h1>
                     </div>
                     <div className="p-2 flex flex-col gap-2">
-                        <div className="w-full">
+                        <div className="w-full  ">
                             <span className="flex items-center gap-2 w-full">
                                 <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
                                 <hr className="w-full" />
                             </span>
-                            <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                            <div className="mt-4 grid grid-cols-4 sm:grid-cols-5 gap-2 ">
                                 {catData.map((item) => (
                                     <div key={item.id}>
                                         <CategoryCart item={item} />
@@ -96,12 +96,12 @@ const MobileCategorieslist = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="w-full">
+                        <div className="w-full ">
                             <span className="flex items-center gap-2 w-full">
                                 <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
                                 <hr className="w-full" />
                             </span>
-                            <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                            <div className="mt-4 grid grid-cols-4 sm:grid-cols-5 gap-2">
                                 {catData.map((item) => (
                                     <div key={item.id}>
                                         <CategoryCart item={item} />
@@ -109,12 +109,12 @@ const MobileCategorieslist = () => {
                                 ))}
                             </div>
                         </div>
-                        <div className="w-full">
+                        <div className="w-full ">
                             <span className="flex items-center gap-2 w-full">
                                 <h1 className="uppercase text-xs font-medium whitespace-nowrap text-bgColor">Face & mackup</h1>
                                 <hr className="w-full" />
                             </span>
-                            <div className="mt-2 grid grid-cols-5 sm:grid-cols-6 gap-2">
+                            <div className="mt-4 grid grid-cols-4 sm:grid-cols-5 gap-2">
                                 {catData.map((item) => (
                                     <div key={item.id}>
                                         <CategoryCart item={item} />
