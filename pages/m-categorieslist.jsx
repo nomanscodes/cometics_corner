@@ -140,6 +140,63 @@ const MobileCategorieslist = () => {
                         <VendorCart />
                     </div>
                 </div>
+                <div className="moreOnMenomSection px-3">
+                    <div className="flex items-center gap-2 mt-4">
+                        <h1 className="uppercase text-sm font-medium opacity-90 whitespace-nowrap">more on menom</h1>
+                        <hr className="w-full" />
+                    </div>
+
+                    <div className=" grid grid-cols-5 gap-5 mt-4">
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#b6ebff]">
+                                <picture>
+                                    <img src="/SVG/becomeaseller.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs">become a seller</h3>
+                        </span>
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#cec9ff]">
+                                <picture>
+                                    <img src="/SVG/liveshopping.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs">live shopping</h3>
+                        </span>
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#a5305369]">
+                                <picture>
+                                    <img src="/SVG/trophy.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs">label up</h3>
+                        </span>
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#e46e246c]">
+                                <picture>
+                                    <img src="/SVG/fire.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs">fire drops</h3>
+                        </span>
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#ff505038]">
+                                <picture>
+                                    <img src="/SVG/coupons.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs">coupons</h3>
+                        </span>
+                        <span className="flex flex-col items-center gap-1">
+                            <div className="p-2 rounded-full bg-[#f768103b]">
+                                <picture>
+                                    <img src="/SVG/games.svg" className="h-10" alt="" />
+                                </picture>
+                            </div>
+                            <h3 className="capitalize text-xs">games</h3>
+                        </span>
+                    </div>
+                </div>
             </div>
 
             <Bottom categoryPath={pathname} />
