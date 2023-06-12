@@ -36,29 +36,27 @@ const cart = () => {
         </div>
         <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-3'>
           <div className='mobileCardSection sm:hidden '>
-            <div className='p-2 bg-white shadow-md '>
-              <div className='flex items-center gap-2'>
-                <picture>
-                  <img src="/demo/p/p1.avif" alt="product" className='h-20 rounded' />
-                </picture>
-                <div className='flex flex-col gap-4'>
-                  <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml)</h3>
-                  <div className='flex items-center justify-between'>
-                    <span className='flex items-center gap-2'>
-                      <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
-                      <RxCross2 size={10} className='opacity-80' />
-                      <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
-                        <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
-                        <option className='text-xs font-medium opacity-80 capitalize' value="2">
-                          2
-                        </option>
-                        <option className='text-xs font-medium opacity-80 capitalize' value="3">
-                          3
-                        </option>
-                      </select>
-                    </span>
+            <div className='flex items-center justify-between p-2 bg-white shadow-md'>
+              <picture>
+                <img src="/demo/p/p1.avif" alt="product" className='h-16 rounded' />
+              </picture>
+              <div className='flex flex-col gap-4'>
+                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml)</h3>
+                <div className='flex items-center justify-between'>
+                  <span className='flex items-center gap-2'>
                     <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
-                  </div>
+                    <RxCross2 size={11} className='opacity-80' />
+                    <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="2">
+                        2
+                      </option>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                        3
+                      </option>
+                    </select>
+                  </span>
+                  <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
                 </div>
               </div>
             </div>
