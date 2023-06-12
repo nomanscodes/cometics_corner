@@ -5,12 +5,17 @@ import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { BiMinus, BiPlus } from 'react-icons/bi'
 import { AiTwotoneDelete } from 'react-icons/ai'
-import { FaHeart, FaLongArrowAltRight } from 'react-icons/fa'
+import { FaLongArrowAltRight } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
+import Bottom from '@/components/PhoneBottom/Bottom'
+import { useRouter } from 'next/router'
 
 
 
-const cart = () => {
+const Cart = () => {
+
+  const { asPath, pathname } = useRouter()
+
   return (
     <Layout>
       <Head>
@@ -36,7 +41,7 @@ const cart = () => {
         </div>
         <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-1 md:mt-3'>
           <div className='mobileCardSection sm:hidden '>
-            <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
+            <div className='grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md'>
               <picture className='col-span-1'>
                 <img src="/demo/p/p1.avif" alt="product" className='
                 h-[60px] rounded' />
@@ -64,7 +69,7 @@ const cart = () => {
                 <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
               </div>
             </div>
-            <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
+            <div className='grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md'>
               <picture className='col-span-1'>
                 <img src="/demo/p/p2.avif" alt="product" className='
                 w-full h-[60px] rounded' />
@@ -92,7 +97,7 @@ const cart = () => {
                 <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
               </div>
             </div>
-            <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
+            <div className='grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md'>
               <picture className='col-span-1'>
                 <img src="/demo/p/p3.avif" alt="product" className='
                 h-[60px] rounded' />
@@ -247,8 +252,9 @@ const cart = () => {
           </div>
         </div>
       </div>
+      <Bottom cartPath={pathname} />
     </Layout>
   )
 }
 
-export default cart
+export default Cart

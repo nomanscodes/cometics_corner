@@ -1,8 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Bottom = ({ shopPath, homePath, categoryPath }) => {
-
+const Bottom = ({ shopPath, homePath, categoryPath, cartPath }) => {
     return (
         <div className="fixed bottom-0 left-0 z-40 w-full bg-white border-t shadow-2xl md:hidden ">
             <div className="flex items-center justify-between px-3 sm:px-6">
@@ -23,14 +22,16 @@ const Bottom = ({ shopPath, homePath, categoryPath }) => {
                         </>
                     )}
                 </Link>
-                <Link href={"/m-categorieslist"} className="flex flex-col items-center p-1">
+                <Link
+                    href={"/m-categorieslist"}
+                    className="flex flex-col items-center p-1"
+                >
                     {categoryPath ? (
                         <>
                             <picture>
                                 <img className="w-5" src="/SVG/activeCategory.svg" alt="home" />
                             </picture>
                             <p className="font-medium footerText2 text-[#41583d]">Category</p>
-
                         </>
                     ) : (
                         <>
@@ -48,7 +49,6 @@ const Bottom = ({ shopPath, homePath, categoryPath }) => {
                                 <img className="w-5" src="/SVG/activeShop.svg" alt="home" />
                             </picture>
                             <p className="font-medium footerText2 text-[#41583d]">Shop</p>
-
                         </>
                     ) : (
                         <>
@@ -59,11 +59,23 @@ const Bottom = ({ shopPath, homePath, categoryPath }) => {
                         </>
                     )}
                 </Link>
+
                 <Link href={"/cart"} className="flex flex-col items-center p-1">
-                    <picture>
-                        <img className="w-5" src="/SVG/bottomcart.svg" alt="home" />
-                    </picture>
-                    <p className="font-medium footerText2 text-[#A1A0A0]">Cart</p>
+                    {cartPath ? (
+                        <>
+                            <picture>
+                                <img className="w-5" src="/SVG/activeBottomcart.svg" alt="home" />
+                            </picture>
+                            <p className="font-medium footerText2 text-[#A1A0A0]">Cart</p>
+                        </>
+                    ) : (
+                        <>
+                            <picture>
+                                <img className="w-5" src="/SVG/bottomcart.svg" alt="home" />
+                            </picture>
+                            <p className="font-medium footerText2 text-[#A1A0A0]">Cart</p>
+                        </>
+                    )}
                 </Link>
                 <Link href={"/account"} className="flex flex-col items-center p-1">
                     <picture>
