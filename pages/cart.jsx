@@ -5,7 +5,7 @@ import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { BiMinus, BiPlus } from 'react-icons/bi'
 import { AiTwotoneDelete } from 'react-icons/ai'
-import { FaLongArrowAltRight } from 'react-icons/fa'
+import { FaHeart, FaLongArrowAltRight } from 'react-icons/fa'
 import { RxCross2 } from 'react-icons/rx'
 
 
@@ -38,7 +38,8 @@ const cart = () => {
           <div className='mobileCardSection sm:hidden '>
             <div className='flex items-center justify-between p-2 bg-white shadow-md'>
               <picture>
-                <img src="/demo/p/p1.avif" alt="product" className='h-16 rounded' />
+                <img src="/demo/p/p1.avif" alt="product" className='
+                h-[60px] rounded' />
               </picture>
               <div className='flex flex-col gap-4'>
                 <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml)</h3>
@@ -58,6 +59,10 @@ const cart = () => {
                   </span>
                   <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
                 </div>
+              </div>
+              <div className='flex flex-col items-center gap-1'>
+                <h1 className='text-xs font-bold uppercase opacity-80'>rfc</h1>
+                <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
               </div>
             </div>
           </div>
