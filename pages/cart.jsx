@@ -26,7 +26,7 @@ const Cart = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      {/* <div className='py-4 px-2 md:px-6 bg-white'>
+      <div className='py-4 px-2 md:px-6 bg-white'>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ">
             <Link href={""} className="uppercase">
@@ -253,8 +253,7 @@ const Cart = () => {
             </div>
           </div>
         </div>
-      </div> */}
-
+      </div>
       <div className='mt-3 px-3 md:px-6 '>
         <div className=''>
           <h1 className='text-xs md:text-sm font-medium uppercase opacity-90'>recomanded for you</h1>
@@ -284,7 +283,7 @@ const Cart = () => {
         </div>
       </div>
 
-      <EmptyCart />
+      {/* <EmptyCart /> */}
       <Bottom cartPath={pathname} />
     </Layout>
   )
