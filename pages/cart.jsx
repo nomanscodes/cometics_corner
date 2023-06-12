@@ -66,8 +66,8 @@ const cart = () => {
             </div>
             <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
               <picture className='col-span-1'>
-                <img src="/demo/p/p1.avif" alt="product" className='
-                h-[60px] rounded' />
+                <img src="/demo/p/p2.avif" alt="product" className='
+                w-full h-[60px] rounded' />
               </picture>
               <div className='col-span-3 flex flex-col gap-2'>
                 <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
@@ -94,7 +94,7 @@ const cart = () => {
             </div>
             <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
               <picture className='col-span-1'>
-                <img src="/demo/p/p1.avif" alt="product" className='
+                <img src="/demo/p/p3.avif" alt="product" className='
                 h-[60px] rounded' />
               </picture>
               <div className='col-span-3 flex flex-col gap-2'>
