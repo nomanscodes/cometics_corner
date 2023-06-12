@@ -6,6 +6,8 @@ import Link from 'next/link'
 import { BiMinus, BiPlus } from 'react-icons/bi'
 import { AiTwotoneDelete } from 'react-icons/ai'
 import { FaLongArrowAltRight } from 'react-icons/fa'
+import { RxCross2 } from 'react-icons/rx'
+
 
 
 const cart = () => {
@@ -17,7 +19,7 @@ const cart = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='py-4 px-6 bg-white'>
+      <div className='py-4 px-2 md:px-6 bg-white'>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ">
             <Link href={""} className="uppercase">
@@ -32,8 +34,37 @@ const cart = () => {
             <FiChevronRight size={14} />
           </div>
         </div>
-        <div className=' md:grid grid-cols-7 gap-4 mt-3'>
-          <div className='col-span-5'>
+        <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-3'>
+          <div className='mobileCardSection sm:hidden '>
+            <div className='p-2 bg-white shadow-md '>
+              <div className='flex items-center gap-2'>
+                <picture>
+                  <img src="/demo/p/p1.avif" alt="product" className='h-20 rounded' />
+                </picture>
+                <div className='flex flex-col gap-4'>
+                  <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml)</h3>
+                  <div className='flex items-center justify-between'>
+                    <span className='flex items-center gap-2'>
+                      <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
+                      <RxCross2 size={10} className='opacity-80' />
+                      <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
+                        <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
+                        <option className='text-xs font-medium opacity-80 capitalize' value="2">
+                          2
+                        </option>
+                        <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                          3
+                        </option>
+                      </select>
+                    </span>
+                    <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div className='md:col-span-5 hidden sm:block'>
             <div className="relative shadow-md">
               <table className="w-full text-left">
                 <thead className="text-xs text-white uppercase bg-bgColor">
@@ -113,7 +144,7 @@ const cart = () => {
               </table>
             </div>
           </div>
-          <div className='col-span-2'>
+          <div className='md:col-span-2'>
             <div className=' bg-white shadow-md'>
               <div className='bg-bgColor py-[9px] w-full'>
                 <h3 className='text-sm font-semibold opacity-90 uppercase text-white px-2'>summary</h3>
