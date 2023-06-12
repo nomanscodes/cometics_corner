@@ -253,36 +253,36 @@ const Cart = () => {
             </div>
           </div>
         </div>
+
       </div>
-      <div className='mt-3 px-3 md:px-6 '>
-        <div className=''>
+      <div className='mt-3 '>
+        <div className='bg-white px-3 py-2 md:px-6'>
           <h1 className='text-xs md:text-sm font-medium uppercase opacity-90'>recomanded for you</h1>
           <h4 className='xxsFont font-medium uppercase mt-1 opacity-70'>based in your activity</h4>
-          <div className='flex items-center justify-start gap-4 md:gap-8 overflow-x-auto scroll-smooth mt-2 md:mt-4'>
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-            <ProductCart />
-          </div>
+        </div>
+        <div className='flex items-center justify-start gap-1 md:gap-2 overflow-x-auto scroll-smooth mt-2 md:mt-4 px-3 md:px-6'>
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
+          <ProductCart />
         </div>
       </div>
-
       {/* <EmptyCart /> */}
       <Bottom cartPath={pathname} />
     </Layout>
