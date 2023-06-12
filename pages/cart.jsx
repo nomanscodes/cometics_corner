@@ -34,9 +34,65 @@ const cart = () => {
             <FiChevronRight size={14} />
           </div>
         </div>
-        <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-3'>
+        <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-1 md:mt-3'>
           <div className='mobileCardSection sm:hidden '>
-            <div className='grid grid-cols-5 p-2 items-center gap-2 bg-white shadow-md'>
+            <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
+              <picture className='col-span-1'>
+                <img src="/demo/p/p1.avif" alt="product" className='
+                h-[60px] rounded' />
+              </picture>
+              <div className='col-span-3 flex flex-col gap-2'>
+                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
+                <div className='flex items-center justify-between'>
+                  <span className='flex items-center gap-2'>
+                    <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
+                    <RxCross2 size={11} className='opacity-80' />
+                    <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="2">
+                        2
+                      </option>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                        3
+                      </option>
+                    </select>
+                  </span>
+                  <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
+                </div>
+              </div>
+              <div className='col-span-1 flex flex-col items-center gap-1'>
+                <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
+              </div>
+            </div>
+            <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
+              <picture className='col-span-1'>
+                <img src="/demo/p/p1.avif" alt="product" className='
+                h-[60px] rounded' />
+              </picture>
+              <div className='col-span-3 flex flex-col gap-2'>
+                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
+                <div className='flex items-center justify-between'>
+                  <span className='flex items-center gap-2'>
+                    <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
+                    <RxCross2 size={11} className='opacity-80' />
+                    <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="2">
+                        2
+                      </option>
+                      <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                        3
+                      </option>
+                    </select>
+                  </span>
+                  <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
+                </div>
+              </div>
+              <div className='col-span-1 flex flex-col items-center gap-1'>
+                <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
+              </div>
+            </div>
+            <div className='grid grid-cols-5 p-2 mt-2 items-center gap-2 bg-white shadow-md'>
               <picture className='col-span-1'>
                 <img src="/demo/p/p1.avif" alt="product" className='
                 h-[60px] rounded' />
@@ -65,7 +121,6 @@ const cart = () => {
               </div>
             </div>
           </div>
-
           <div className='md:col-span-5 hidden sm:block'>
             <div className="relative shadow-md">
               <table className="w-full text-left">
