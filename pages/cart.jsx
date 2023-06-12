@@ -36,13 +36,13 @@ const cart = () => {
         </div>
         <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-3'>
           <div className='mobileCardSection sm:hidden '>
-            <div className='flex items-center justify-between p-2 bg-white shadow-md'>
-              <picture>
+            <div className='grid grid-cols-5 p-2 items-center gap-2 bg-white shadow-md'>
+              <picture className='col-span-1'>
                 <img src="/demo/p/p1.avif" alt="product" className='
                 h-[60px] rounded' />
               </picture>
-              <div className='flex flex-col gap-4'>
-                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml)</h3>
+              <div className='col-span-3 flex flex-col gap-4'>
+                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
                 <div className='flex items-center justify-between'>
                   <span className='flex items-center gap-2'>
                     <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
@@ -60,8 +60,7 @@ const cart = () => {
                   <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
                 </div>
               </div>
-              <div className='flex flex-col items-center gap-1'>
-                <h1 className='text-xs font-bold uppercase opacity-80'>rfc</h1>
+              <div className='col-span-1 flex flex-col items-center gap-1'>
                 <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
               </div>
             </div>
