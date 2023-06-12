@@ -264,7 +264,7 @@ const Cart = () => {
 
             <span>
               <Link className='flex ' href={"/shop"}>
-                <button className='px-2 md:px-3 py-[2px] md:py-1 pl-8 bg-bgColor text-white uppercase relative'>shopping</button>
+                <button className='px-2 md:px-3 py-[2px] md:py-1 pl-8 bg-bgColor text-white uppercase relative text-sm'>shopping</button>
                 <FaLongArrowAltRight size={22} className='absolute mt-[3px] md:mt-[5px] ml-[3px] text-white' />
               </Link>
             </span>
