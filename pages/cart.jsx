@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import React from 'react'
 import Layout from '@/Layouts/Layout'
-import { FiChevronRight } from 'react-icons/fi'
+import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { BiMinus, BiPlus } from 'react-icons/bi'
 import { AiTwotoneDelete } from 'react-icons/ai'
@@ -13,10 +13,16 @@ import EmptyCart from '@/components/CartPage/EmptyCart'
 import ProductCart from '@/components/Home/Products/ProductCard'
 
 
-
 const Cart = () => {
 
   const { asPath, pathname } = useRouter()
+
+  const scrollLeft = () => {
+    document.getElementById("suggestedContent").scrollLeft -= 600
+  }
+  const scrolRight = () => {
+    document.getElementById("suggestedContent").scrollLeft += 600
+  }
 
   return (
     <Layout>
@@ -256,11 +262,21 @@ const Cart = () => {
 
       </div>
       <div className='mt-3 '>
-        <div className='bg-white px-3 py-2 md:px-6'>
-          <h1 className='text-xs md:text-sm font-medium uppercase opacity-90'>recomanded for you</h1>
-          <h4 className='xxsFont font-medium uppercase mt-1 opacity-70'>based in your activity</h4>
+        <div className='bg-white px-3 py-2 md:px-6 flex items-center justify-between'>
+          <span>
+            <h1 className='text-xs md:text-sm font-medium uppercase opacity-90'>recomanded for you</h1>
+            <h4 className='xxsFont font-medium uppercase mt-1 opacity-70'>based on your activity</h4>
+          </span>
+          <div className='hidden md:flex items-center gap-2 text-white'>
+            <button onClick={scrollLeft} className='bg-bgColor px-1 md:px-2 md:py-1'>
+              <FiChevronLeft size={18} />
+            </button>
+            <button onClick={scrolRight} className='bg-bgColor px-1 md:px-2 md:py-1'>
+              <FiChevronRight size={18} />
+            </button>
+          </div>
         </div>
-        <div className='flex items-center justify-start gap-1 md:gap-2 overflow-x-auto scroll-smooth mt-2 md:mt-4 px-3 md:px-6'>
+        <div id='suggestedContent' className='suggestedContent flex items-center justify-start gap-1 md:gap-2 overflow-x-auto scroll-smooth mt-2 md:mt-4 px-3 md:px-6'>
           <ProductCart />
           <ProductCart />
           <ProductCart />
