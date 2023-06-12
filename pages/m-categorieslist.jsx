@@ -10,12 +10,12 @@ import VendorCart from "@/components/Home/TopVendor/VendorCart";
 const catData = [
     {
         id: 1,
-        image: "/demo/c/c1.jpg",
-        name: "Eyes"
+        image: "/category/makeup.svg",
+        name: "Beauty"
     },
     {
         id: 2,
-        image: "/demo/c/c2.avif",
+        image: "/category/face.svg",
         name: "Hand Wash"
     },
     {

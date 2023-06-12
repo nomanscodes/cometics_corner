@@ -44,7 +44,7 @@ const Middle = () => {
       </div>
       <div className='px-3 hidden md:flex items-center gap-2 text-white'>
         <Link
-          href={"/cartpage"}
+          href={""}
           className="h-10 w-10 rounded-full z-10 flex justify-center items-center "
         >
           <p className="h-5 w-5 bg-bgColor rounded flex items-center justify-center absolute z-50  mb-7 ml-5 ">
@@ -53,7 +53,7 @@ const Middle = () => {
           <Image src="/SVG/wishlist.svg" alt='cart' height={20} width={28}></Image>
         </Link>
         <Link
-          href={"/cartpage"}
+          href={"/cart"}
           className="h-10 w-10 rounded-full z-10 flex justify-center items-center "
         >
           <p className="h-5 w-5 bg-bgColor rounded flex items-center justify-center absolute z-50  mb-7 ml-5 ">
