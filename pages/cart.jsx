@@ -24,7 +24,7 @@ const Cart = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='py-4 px-2 md:px-6 bg-white'>
+      {/* <div className='py-4 px-2 md:px-6 bg-white'>
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ">
             <Link href={""} className="uppercase">
@@ -250,6 +250,25 @@ const Cart = () => {
               </div>
             </div>
           </div>
+        </div>
+      </div> */}
+
+      <div className='flex flex-col items-center gap-2'>
+        <picture>
+          <img src="/assets/emptycart.webp" alt="" />
+        </picture>
+        <div className='flex flex-col items-center gap-3'>
+          <h3 className='uppercase text-base md:text-xl font-bold opacity-75'>opps! your cart is empty</h3>
+          <span className='flex items-center gap-1'>
+            <h3 className='uppercase text-sm md:text-base font-bold opacity-75'>going to </h3>
+
+            <span>
+              <Link className='flex ' href={"/shop"}>
+                <button className='px-2 md:px-3 py-[2px] md:py-1 pl-8 bg-bgColor text-white uppercase relative'>shopping</button>
+                <FaLongArrowAltRight size={22} className='absolute mt-[3px] md:mt-[5px] ml-[3px] text-white' />
+              </Link>
+            </span>
+          </span>
         </div>
       </div>
       <Bottom cartPath={pathname} />
