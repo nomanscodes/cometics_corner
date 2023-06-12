@@ -41,7 +41,7 @@ const cart = () => {
                 <img src="/demo/p/p1.avif" alt="product" className='
                 h-[60px] rounded' />
               </picture>
-              <div className='col-span-3 flex flex-col gap-4'>
+              <div className='col-span-3 flex flex-col gap-2'>
                 <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
                 <div className='flex items-center justify-between'>
                   <span className='flex items-center gap-2'>
