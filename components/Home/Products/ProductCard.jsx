@@ -27,12 +27,12 @@ const ProductCart = ({ item }) => {
                     </span>
                     <span className='flex items-center gap-3 sm:gap-5 mt-1'>
                         <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'>Free Delivery</button>
-                        <p className='text-xs px-2 text-bgColor whitespace-nowrap'>34% Off</p>
+                        <p className='text-xs px-2 text-green-900 whitespace-nowrap'>34% Off</p>
                     </span>
                     <span className='flex items-center justify-between mt-2 text-sm'>
                         <span className='flex items-center gap-2'>
-                            <p className='font-semibold text-bgColor'>&#2547; 445777</p>
-                            <p className='line-through font-[200] opacity-80' >&#2547; 555575</p>
+                            <p className='font-semibold text-bgColor'>&#2547; 445</p>
+                            <p className='line-through font-[200] opacity-80' >&#2547; 575</p>
                         </span>
                     </span>
                 </div>

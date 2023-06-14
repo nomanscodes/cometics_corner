@@ -3,7 +3,8 @@ import React from "react";
 import Layout from "@/Layouts/Layout";
 import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import Link from "next/link";
-import { BiMinus, BiPlus } from "react-icons/bi";
+import { SlPlus, SlMinus } from "react-icons/sl"
+import { AiOutlineMinusCircle, AiOutlinePlusCircle } from "react-icons/ai";
 import { AiTwotoneDelete } from "react-icons/ai";
 import { FaLongArrowAltRight } from "react-icons/fa";
 import { RxCross2 } from "react-icons/rx";
@@ -11,6 +12,7 @@ import Bottom from "@/components/PhoneBottom/Bottom";
 import { useRouter } from "next/router";
 import EmptyCart from "@/components/CartPage/EmptyCart";
 import ProductCart from "@/components/Home/Products/ProductCard";
+
 
 const Cart = () => {
   const { asPath, pathname } = useRouter();
@@ -204,31 +206,22 @@ const Cart = () => {
               </div>
             </div>
           </div>
-          <div className="md:col-span-5 hidden md:block bg-white p-3">
-
-            <div>
-              <h1 className="text-[29px] font-[500]">Shopping Cart</h1>
-            </div>
-            <div className="flex items-end">
-              <h1 className="text-[17px] font-[500] w-full text-end opacity-75">
-                Price
-              </h1>
-            </div>
-            <hr className="w-full" />
-            <div className="cartItem flex items-center gap-2 border-b pt-1 pb-3">
+          <div className="pcCartSection md:col-span-5 hidden md:block bg-white p-3">
+            <h1 className="text-[27px] font-[450]">Shopping Cart</h1>
+            <hr className="w-full mt-2" />
+            <div className="cartItem flex items-center gap-2 border-b mt-1 pb-3">
               <picture>
                 <img src="/demo/p/p4.avif" className="w-44" alt="" />
               </picture>
               <div className="flex flex-col gap-1 w-full">
-                <span className="flex items-center justify-between w-full">
-                  <h3 className="text-[20px] font-[490]">
+                <span className="w-full flex items-center justify-between">
+                  <h3 className="text-[16px] font-[490]">
                     Amazon Basics Moisture Rich Conditioner, 28 Fluid Ounce
                   </h3>
-                  <h3 className="text-[17px] font-[600] opacity-80">
-                    578 TK
+                  <h3 className="text-[12px] font-[400]">
+                    Delivery by Thu Jun 22 | <span className="text-green-900">Free</span>
                   </h3>
                 </span>
-
                 <h4 className="text-[16px] font-medium text-bgColor">
                   In Stock
                 </h4>
@@ -237,7 +230,7 @@ const Cart = () => {
                     id="red-checkbox"
                     value=""
                     type="checkbox"
-                    className="checked w-4 h-4 accent-bgColor"
+                    className="checked w-3 h-3 accent-bgColor"
                   />
                   <h4 className="text-[13px] font-[500] opacity-90">
                     This is a gift
@@ -247,89 +240,37 @@ const Cart = () => {
                   <span className="text-[14px] font-[600]">Size:</span>
                   <span className="text-[13px] opacity-80 pl-[4px]">28 Fl Oz (Pack of 1)</span>
                 </h4>
-                <div className="flex items-center gap-1">
-                  <span className="flex items-center border px-2 py-[2px] rounded shadow-md">
-                    <h1 className="text-xs font-medium opacity-90">Qty:</h1>
-                    <select className="text-sm font-medium outline-none opacity-90 cursor-pointer" name="qty" id="">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
+                <span className="flex items-center py-3">
+                  <span className="text-[12px] font-[600] line-through opacity-70">&#2547; 453</span>
+                  <span className="text-[14px] font-[600] opacity-95 mx-2">&#2547; 674</span>
+                  <span className="text-[13px] text-green-900">62% Off</span>
+                </span>
+                <div className="w-full flex items-center gap-1 mt-1">
+
+                  <span className="flex items-center">
+                    <SlMinus size={21} className="opacity-90 cursor-pointer" />
+                    <span className="h-[22px] w-9 border border-gray-300 flex items-center justify-center text-[13px] font-medium mx-1">05</span>
+                    <SlPlus size={21} className="opacity-90 cursor-pointer" />
                   </span>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <hr className="w-4 bg-slate-700 rotate-90" />
                   <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Delete</h3>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <hr className="w-4 bg-slate-700 rotate-90" />
                   <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Save fo later</h3>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
-                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Compare with similer products</h3>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
+
+                  <hr className="w-4 bg-slate-700 rotate-90" />
                   <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Share</h3>
+
                 </div>
               </div>
-
-            </div>
-            <div className="cartItem flex items-center gap-2 border-b pt-1 pb-3">
-              <picture>
-                <img src="/demo/p/p4.avif" className="w-44" alt="" />
-              </picture>
-              <div className="flex flex-col gap-1 w-full">
-                <span className="flex items-center justify-between w-full">
-                  <h3 className="text-[20px] font-[490]">
-                    Amazon Basics Moisture Rich Conditioner, 28 Fluid Ounce
-                  </h3>
-                  <h3 className="text-[17px] font-[600] opacity-80">
-                    578 TK
-                  </h3>
-                </span>
-
-                <h4 className="text-[16px] font-medium text-bgColor">
-                  In Stock
-                </h4>
-                <span className="flex items-center gap-2">
-                  <input
-                    id="red-checkbox"
-                    value=""
-                    type="checkbox"
-                    className="checked w-4 h-4 accent-bgColor"
-                  />
-                  <h4 className="text-[13px] font-[500] opacity-90">
-                    This is a gift
-                  </h4>
-                </span>
-                <h4 className="">
-                  <span className="text-[14px] font-[600]">Size:</span>
-                  <span className="text-[13px] opacity-80 pl-[4px]">28 Fl Oz (Pack of 1)</span>
-                </h4>
-                <div className="flex items-center gap-1">
-                  <span className="flex items-center border px-2 py-[2px] rounded shadow-md">
-                    <h1 className="text-xs font-medium opacity-90">Qty:</h1>
-                    <select className="text-sm font-medium outline-none opacity-90 cursor-pointer" name="qty" id="">
-                      <option value="1">1</option>
-                      <option value="2">2</option>
-                      <option value="3">3</option>
-                    </select>
-                  </span>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
-                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Delete</h3>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
-                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Save fo later</h3>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
-                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Compare with similer products</h3>
-                  <hr className="w-5 bg-slate-700 rotate-90" />
-                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Share</h3>
-                </div>
-              </div>
-
             </div>
           </div>
-
-
-          <div className="md:col-span-2">
+          <div className="summarySection md:col-span-2">
             <div className=" bg-white shadow-md">
-              <div className="bg-bgColor py-[9px] w-full">
-                <h3 className="text-sm font-semibold opacity-90 uppercase text-white px-2">
-                  summary
+              <div className=" py-[9px] w-full">
+                <h3 className="text-sm font-semibold opacity-90 uppercase px-2">
+                  PRICE DETAILS
                 </h3>
+                <hr className="w-full mt-2" />
               </div>
               <div className="mt-2 px-4">
                 <span className="flex items-center justify-between ">
