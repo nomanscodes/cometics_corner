@@ -1,28 +1,26 @@
-import Head from 'next/head'
-import React from 'react'
-import Layout from '@/Layouts/Layout'
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
-import Link from 'next/link'
-import { BiMinus, BiPlus } from 'react-icons/bi'
-import { AiTwotoneDelete } from 'react-icons/ai'
-import { FaLongArrowAltRight } from 'react-icons/fa'
-import { RxCross2 } from 'react-icons/rx'
-import Bottom from '@/components/PhoneBottom/Bottom'
-import { useRouter } from 'next/router'
-import EmptyCart from '@/components/CartPage/EmptyCart'
-import ProductCart from '@/components/Home/Products/ProductCard'
-
+import Head from "next/head";
+import React from "react";
+import Layout from "@/Layouts/Layout";
+import { FiChevronLeft, FiChevronRight } from "react-icons/fi";
+import Link from "next/link";
+import { BiMinus, BiPlus } from "react-icons/bi";
+import { AiTwotoneDelete } from "react-icons/ai";
+import { FaLongArrowAltRight } from "react-icons/fa";
+import { RxCross2 } from "react-icons/rx";
+import Bottom from "@/components/PhoneBottom/Bottom";
+import { useRouter } from "next/router";
+import EmptyCart from "@/components/CartPage/EmptyCart";
+import ProductCart from "@/components/Home/Products/ProductCard";
 
 const Cart = () => {
-
-  const { asPath, pathname } = useRouter()
+  const { asPath, pathname } = useRouter();
 
   const scrollLeft = () => {
-    document.getElementById("suggestedContent").scrollLeft -= 600
-  }
+    document.getElementById("suggestedContent").scrollLeft -= 600;
+  };
   const scrolRight = () => {
-    document.getElementById("suggestedContent").scrollLeft += 600
-  }
+    document.getElementById("suggestedContent").scrollLeft += 600;
+  };
 
   return (
     <Layout>
@@ -32,7 +30,7 @@ const Cart = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div className='py-4 px-2 md:px-6 bg-white'>
+      <div className="py-4 px-2 md:px-6 ">
         <div className="flex items-center gap-2">
           <div className="flex items-center gap-[2px]  text-xs font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ">
             <Link href={""} className="uppercase">
@@ -47,236 +45,385 @@ const Cart = () => {
             <FiChevronRight size={14} />
           </div>
         </div>
-        <div className='flex flex-col gap-4 md:grid grid-cols-7 mt-1 md:mt-3'>
-          <div className='mobileCardSection sm:hidden '>
-            <div className='grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md'>
-              <picture className='col-span-1'>
-                <img src="/demo/p/p1.avif" alt="product" className='
-                h-[60px] rounded' />
+        <div className="flex flex-col gap-4 md:grid grid-cols-7 mt-1 md:mt-3">
+          <div className="mobileCardSection md:hidden ">
+            <div className="grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md">
+              <picture className="col-span-1">
+                <img
+                  src="/demo/p/p1.avif"
+                  alt="product"
+                  className="
+                h-[60px] rounded"
+                />
               </picture>
-              <div className='col-span-3 flex flex-col gap-2'>
-                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
-                <div className='flex items-center justify-between'>
-                  <span className='flex items-center gap-2'>
-                    <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
-                    <RxCross2 size={11} className='opacity-80' />
-                    <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="2">
+              <div className="col-span-3 flex flex-col gap-2">
+                <h3 className="capitalize text-xs font-medium opacity-80">
+                  americn women hair jell (500ml) only use for night{" "}
+                </h3>
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <h5 className="price text-xs font-medium opacity-80">
+                      484 TK
+                    </h5>
+                    <RxCross2 size={11} className="opacity-80" />
+                    <select className="border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2">
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="1"
+                      >
+                        1
+                      </option>
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="2"
+                      >
                         2
                       </option>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="3"
+                      >
                         3
                       </option>
                     </select>
                   </span>
-                  <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
+                  <h5 className="Totalprice text-sm  font-semibold opacity-80">
+                    484 TK
+                  </h5>
                 </div>
               </div>
-              <div className='col-span-1 flex flex-col items-center gap-1'>
-                <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
+              <div className="col-span-1 flex flex-col items-center gap-1">
+                <AiTwotoneDelete
+                  size={22}
+                  className="cursor-pointer opacity-80"
+                />
               </div>
             </div>
-            <div className='grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md'>
-              <picture className='col-span-1'>
-                <img src="/demo/p/p2.avif" alt="product" className='
-                w-full h-[60px] rounded' />
+            <div className="grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md">
+              <picture className="col-span-1">
+                <img
+                  src="/demo/p/p2.avif"
+                  alt="product"
+                  className="
+                w-full h-[60px] rounded"
+                />
               </picture>
-              <div className='col-span-3 flex flex-col gap-2'>
-                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
-                <div className='flex items-center justify-between'>
-                  <span className='flex items-center gap-2'>
-                    <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
-                    <RxCross2 size={11} className='opacity-80' />
-                    <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="2">
+              <div className="col-span-3 flex flex-col gap-2">
+                <h3 className="capitalize text-xs font-medium opacity-80">
+                  americn women hair jell (500ml) only use for night{" "}
+                </h3>
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <h5 className="price text-xs font-medium opacity-80">
+                      484 TK
+                    </h5>
+                    <RxCross2 size={11} className="opacity-80" />
+                    <select className="border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2">
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="1"
+                      >
+                        1
+                      </option>
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="2"
+                      >
                         2
                       </option>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="3"
+                      >
                         3
                       </option>
                     </select>
                   </span>
-                  <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
+                  <h5 className="Totalprice text-sm  font-semibold opacity-80">
+                    484 TK
+                  </h5>
                 </div>
               </div>
-              <div className='col-span-1 flex flex-col items-center gap-1'>
-                <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
+              <div className="col-span-1 flex flex-col items-center gap-1">
+                <AiTwotoneDelete
+                  size={22}
+                  className="cursor-pointer opacity-80"
+                />
               </div>
             </div>
-            <div className='grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md'>
-              <picture className='col-span-1'>
-                <img src="/demo/p/p3.avif" alt="product" className='
-                h-[60px] rounded' />
+            <div className="grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md">
+              <picture className="col-span-1">
+                <img
+                  src="/demo/p/p3.avif"
+                  alt="product"
+                  className="
+                h-[60px] rounded"
+                />
               </picture>
-              <div className='col-span-3 flex flex-col gap-2'>
-                <h3 className='capitalize text-xs font-medium opacity-80'>americn women hair jell (500ml) only use for night </h3>
-                <div className='flex items-center justify-between'>
-                  <span className='flex items-center gap-2'>
-                    <h5 className='price text-xs font-medium opacity-80'>484 TK</h5>
-                    <RxCross2 size={11} className='opacity-80' />
-                    <select className='border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2'>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="1">1</option>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="2">
+              <div className="col-span-3 flex flex-col gap-2">
+                <h3 className="capitalize text-xs font-medium opacity-80">
+                  americn women hair jell (500ml) only use for night{" "}
+                </h3>
+                <div className="flex items-center justify-between">
+                  <span className="flex items-center gap-2">
+                    <h5 className="price text-xs font-medium opacity-80">
+                      484 TK
+                    </h5>
+                    <RxCross2 size={11} className="opacity-80" />
+                    <select className="border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2">
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="1"
+                      >
+                        1
+                      </option>
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="2"
+                      >
                         2
                       </option>
-                      <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                      <option
+                        className="text-xs font-medium opacity-80 capitalize"
+                        value="3"
+                      >
                         3
                       </option>
                     </select>
                   </span>
-                  <h5 className='Totalprice text-sm  font-semibold opacity-80'>484 TK</h5>
+                  <h5 className="Totalprice text-sm  font-semibold opacity-80">
+                    484 TK
+                  </h5>
                 </div>
               </div>
-              <div className='col-span-1 flex flex-col items-center gap-1'>
-                <AiTwotoneDelete size={22} className='cursor-pointer opacity-80' />
+              <div className="col-span-1 flex flex-col items-center gap-1">
+                <AiTwotoneDelete
+                  size={22}
+                  className="cursor-pointer opacity-80"
+                />
               </div>
             </div>
           </div>
-          <div className='md:col-span-5 hidden sm:block'>
-            <div className="relative shadow-md">
-              <table className="w-full text-left">
-                <thead className="text-xs text-white uppercase bg-bgColor">
-                  <tr>
-                    <th scope="col" className="px-3 py-3">
-                      Product
-                    </th>
-                    <th scope="col" className="px-3 py-3">
-                      Name
-                    </th>
-                    <th scope="col" className="px-3 py-3">
-                      Unit Price
-                    </th>
-                    <th scope="col" className="px-3 py-3">
-                      Quantity
-                    </th>
-                    <th scope="col" className="px-3 py-3">
-                      Total
-                    </th>
-                    <th scope="col" className="px-3 py-3">
-                      Action
-                    </th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr className="border-b">
-                    <th scope="row" className="px-3 py-4 font-medium text-gray-900 whitespace-nowrap">
-                      <picture>
-                        <img src="/demo/p/p3.avif" className='w-36' alt="shampoo" />
-                      </picture>
-                    </th>
-                    <td className="px-3 py-4">
-                      <h2 className='capitalize text-sm font-medium opacity-80'>Kashmiri Face wash</h2>
-                      <h6 className='text-xs capitalize mt-2 max-w-sm opacity-80'>This is Kashmiri facewash ,its totaly naturul</h6>
-                    </td>
-                    <td className="px-3 py-4 text-xs font-medium opacity-80">
-                      580 TK
-                    </td>
-                    <td className="px-3 py-4 text-xs ">
-                      <span className='border border-gray-300 p-1 flex items-center justify-between gap-2'>
-                        <BiMinus size={18} className='cursor-pointer opacity-80' /> <h5 className='text-sm font-medium opacity-80'>5</h5><BiPlus size={18} className='cursor-pointer opacity-80' />
-                      </span>
-                    </td>
-                    <td className="px-3 py-4 text-xs font-medium  opacity-80">
-                      2500 TK
-                    </td>
-                    <td className="px-3 py-4 text-xs font-medium ">
-                      <AiTwotoneDelete size={22} className='opacity-80 cursor-pointer' />
-                    </td>
-                  </tr>
-                  <tr className="border-b">
-                    <th scope="row" className="px-3 py-4 font-medium text-gray-900 whitespace-nowrap">
-                      <picture>
-                        <img src="/demo/p/p3.avif" className='w-36' alt="shampoo" />
-                      </picture>
-                    </th>
-                    <td className="px-3 py-4">
-                      <h2 className='capitalize text-sm font-medium opacity-80'>Kashmiri Face wash</h2>
-                      <h6 className='text-xs capitalize mt-2 max-w-sm opacity-80'>This is Kashmiri facewash ,its totaly naturul</h6>
-                    </td>
-                    <td className="px-3 py-4 text-xs font-medium opacity-80">
-                      580 TK
-                    </td>
-                    <td className="px-3 py-4 text-xs ">
-                      <span className='border border-gray-300 p-1 flex items-center justify-between gap-2'>
-                        <BiMinus size={18} className='cursor-pointer opacity-80' /> <h5 className='text-sm font-medium opacity-80'>5</h5><BiPlus size={18} className='cursor-pointer opacity-80' />
-                      </span>
-                    </td>
-                    <td className="px-3 py-4 text-xs font-medium  opacity-80">
-                      2500 TK
-                    </td>
-                    <td className="px-3 py-4 text-xs font-medium ">
-                      <AiTwotoneDelete size={22} className='opacity-80 cursor-pointer' />
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
+          <div className="md:col-span-5 hidden md:block bg-white p-3">
+
+            <div>
+              <h1 className="text-[29px] font-[500]">Shopping Cart</h1>
             </div>
-          </div>
-          <div className='md:col-span-2'>
-            <div className=' bg-white shadow-md'>
-              <div className='bg-bgColor py-[9px] w-full'>
-                <h3 className='text-sm font-semibold opacity-90 uppercase text-white px-2'>summary</h3>
-              </div>
-              <div className='mt-2 px-4'>
-                <span className='flex items-center justify-between '>
-                  <h1 className='text-xs font-bold opacity-75 uppercase '>total 2</h1>
-                  <h1 className='text-xs font-bold opacity-75 uppercase '>3500 TK</h1>
+            <div className="flex items-end">
+              <h1 className="text-[17px] font-[500] w-full text-end opacity-75">
+                Price
+              </h1>
+            </div>
+            <hr className="w-full" />
+            <div className="cartItem flex items-center gap-2 border-b pt-1 pb-3">
+              <picture>
+                <img src="/demo/p/p4.avif" className="w-44" alt="" />
+              </picture>
+              <div className="flex flex-col gap-1 w-full">
+                <span className="flex items-center justify-between w-full">
+                  <h3 className="text-[20px] font-[490]">
+                    Amazon Basics Moisture Rich Conditioner, 28 Fluid Ounce
+                  </h3>
+                  <h3 className="text-[17px] font-[600] opacity-80">
+                    578 TK
+                  </h3>
                 </span>
-                <span className='flex flex-col gap-2 mt-5'>
-                  <h1 className='text-xs font-bold opacity-75 uppercase'>shipping</h1>
-                  <select className='border-none focus:outline-0 bg-gray-100 py-[4px] text-xs font-medium opacity-80 capitalize'>
-                    <option className='text-xs font-medium opacity-80 capitalize py-[2px]' value="1">standerd delivery 50 tk</option>
-                    <option className='text-xs font-medium opacity-80 capitalize' value="2">
+
+                <h4 className="text-[16px] font-medium text-bgColor">
+                  In Stock
+                </h4>
+                <span className="flex items-center gap-2">
+                  <input
+                    id="red-checkbox"
+                    value=""
+                    type="checkbox"
+                    className="checked w-4 h-4 accent-bgColor"
+                  />
+                  <h4 className="text-[13px] font-[500] opacity-90">
+                    This is a gift
+                  </h4>
+                </span>
+                <h4 className="">
+                  <span className="text-[14px] font-[600]">Size:</span>
+                  <span className="text-[13px] opacity-80 pl-[4px]">28 Fl Oz (Pack of 1)</span>
+                </h4>
+                <div className="flex items-center gap-1">
+                  <span className="flex items-center border px-2 py-[2px] rounded shadow-md">
+                    <h1 className="text-xs font-medium opacity-90">Qty:</h1>
+                    <select className="text-sm font-medium outline-none opacity-90 cursor-pointer" name="qty" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </span>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Delete</h3>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Save fo later</h3>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Compare with similer products</h3>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Share</h3>
+                </div>
+              </div>
+
+            </div>
+            <div className="cartItem flex items-center gap-2 border-b pt-1 pb-3">
+              <picture>
+                <img src="/demo/p/p4.avif" className="w-44" alt="" />
+              </picture>
+              <div className="flex flex-col gap-1 w-full">
+                <span className="flex items-center justify-between w-full">
+                  <h3 className="text-[20px] font-[490]">
+                    Amazon Basics Moisture Rich Conditioner, 28 Fluid Ounce
+                  </h3>
+                  <h3 className="text-[17px] font-[600] opacity-80">
+                    578 TK
+                  </h3>
+                </span>
+
+                <h4 className="text-[16px] font-medium text-bgColor">
+                  In Stock
+                </h4>
+                <span className="flex items-center gap-2">
+                  <input
+                    id="red-checkbox"
+                    value=""
+                    type="checkbox"
+                    className="checked w-4 h-4 accent-bgColor"
+                  />
+                  <h4 className="text-[13px] font-[500] opacity-90">
+                    This is a gift
+                  </h4>
+                </span>
+                <h4 className="">
+                  <span className="text-[14px] font-[600]">Size:</span>
+                  <span className="text-[13px] opacity-80 pl-[4px]">28 Fl Oz (Pack of 1)</span>
+                </h4>
+                <div className="flex items-center gap-1">
+                  <span className="flex items-center border px-2 py-[2px] rounded shadow-md">
+                    <h1 className="text-xs font-medium opacity-90">Qty:</h1>
+                    <select className="text-sm font-medium outline-none opacity-90 cursor-pointer" name="qty" id="">
+                      <option value="1">1</option>
+                      <option value="2">2</option>
+                      <option value="3">3</option>
+                    </select>
+                  </span>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Delete</h3>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Save fo later</h3>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Compare with similer products</h3>
+                  <hr className="w-5 bg-slate-700 rotate-90" />
+                  <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Share</h3>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+          <div className="md:col-span-2">
+            <div className=" bg-white shadow-md">
+              <div className="bg-bgColor py-[9px] w-full">
+                <h3 className="text-sm font-semibold opacity-90 uppercase text-white px-2">
+                  summary
+                </h3>
+              </div>
+              <div className="mt-2 px-4">
+                <span className="flex items-center justify-between ">
+                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                    total 2
+                  </h1>
+                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                    3500 TK
+                  </h1>
+                </span>
+                <span className="flex flex-col gap-2 mt-5">
+                  <h1 className="text-xs font-bold opacity-75 uppercase">
+                    shipping
+                  </h1>
+                  <select className="border-none focus:outline-0 bg-gray-100 py-[4px] text-xs font-medium opacity-80 capitalize">
+                    <option
+                      className="text-xs font-medium opacity-80 capitalize py-[2px]"
+                      value="1"
+                    >
+                      standerd delivery 50 tk
+                    </option>
+                    <option
+                      className="text-xs font-medium opacity-80 capitalize"
+                      value="2"
+                    >
                       express delivery 80 tk
                     </option>
-                    <option className='text-xs font-medium opacity-80 capitalize' value="3">
+                    <option
+                      className="text-xs font-medium opacity-80 capitalize"
+                      value="3"
+                    >
                       manual delivery 35 tk
                     </option>
                   </select>
                 </span>
-                <span className='flex flex-col gap-2 mt-5'>
-                  <h1 className='text-xs font-bold opacity-75 uppercase'>give code</h1>
-                  <div className='flex w-full relative mt-2'>
+                <span className="flex flex-col gap-2 mt-5">
+                  <h1 className="text-xs font-bold opacity-75 uppercase">
+                    give code
+                  </h1>
+                  <div className="flex w-full relative mt-2">
                     <input
                       type="text"
                       className="flex items-center bg-gray-200 w-full p-[5px] px-4 focus:outline-none text-sm"
                       placeholder="Enter your coupon"
                     />
-                    <FaLongArrowAltRight className='absolute right-0 mt-2 opacity-75 mr-1 cursor-pointer' />
+                    <FaLongArrowAltRight className="absolute right-0 mt-2 opacity-75 mr-1 cursor-pointer" />
                   </div>
                 </span>
-                <hr className='mt-6 w-full opacity-90' />
-                <span className='flex items-center justify-between mt-4'>
-                  <h1 className='text-xs font-bold opacity-75 uppercase '>total price</h1>
-                  <h1 className='text-xs font-bold opacity-75 uppercase '>3500 TK</h1>
+                <hr className="mt-6 w-full opacity-90" />
+                <span className="flex items-center justify-between mt-4">
+                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                    total price
+                  </h1>
+                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                    3500 TK
+                  </h1>
                 </span>
-                <button className='w-full py-[6px] bg-bgColor uppercase text-white text-sm font-medium rounded mt-4 mb-1'>
+                <button className="w-full py-[6px] bg-bgColor uppercase text-white text-sm font-medium rounded mt-4 mb-1">
                   checkout
                 </button>
               </div>
             </div>
           </div>
         </div>
-
       </div>
-      <div className='mt-3 '>
-        <div className='bg-white px-3 py-2 md:px-6 flex items-center justify-between'>
+      <div className="mt-3 ">
+        <div className="bg-white px-3 py-2 md:px-6 flex items-center justify-between">
           <span>
-            <h1 className='text-xs md:text-sm font-medium uppercase opacity-90'>recomanded for you</h1>
-            <h4 className='xxsFont font-medium uppercase mt-1 opacity-70'>based on your activity</h4>
+            <h1 className="text-xs md:text-sm font-medium uppercase opacity-90">
+              recomanded for you
+            </h1>
+            <h4 className="xxsFont font-medium uppercase mt-1 opacity-70">
+              based on your activity
+            </h4>
           </span>
-          <div className='hidden md:flex items-center gap-2 text-white'>
-            <button onClick={scrollLeft} className='bg-bgColor px-1 md:px-2 md:py-1'>
+          <div className="hidden md:flex items-center gap-2 text-white">
+            <button
+              onClick={scrollLeft}
+              className="bg-bgColor px-1 md:px-2 md:py-1"
+            >
               <FiChevronLeft size={18} />
             </button>
-            <button onClick={scrolRight} className='bg-bgColor px-1 md:px-2 md:py-1'>
+            <button
+              onClick={scrolRight}
+              className="bg-bgColor px-1 md:px-2 md:py-1"
+            >
               <FiChevronRight size={18} />
             </button>
           </div>
         </div>
-        <div id='suggestedContent' className='suggestedContent flex items-center justify-start gap-1 md:gap-2 overflow-x-auto scroll-smooth mt-2 md:mt-4 px-3 md:px-6'>
+        <div
+          id="suggestedContent"
+          className="suggestedContent flex items-center justify-start gap-1 md:gap-2 overflow-x-auto scroll-smooth mt-2 md:mt-4 px-3 md:px-6"
+        >
           <ProductCart />
           <ProductCart />
           <ProductCart />
@@ -302,7 +449,7 @@ const Cart = () => {
       {/* <EmptyCart /> */}
       <Bottom cartPath={pathname} />
     </Layout>
-  )
-}
+  );
+};
 
-export default Cart
+export default Cart;
