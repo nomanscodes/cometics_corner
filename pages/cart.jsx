@@ -54,8 +54,7 @@ const Cart = () => {
                 <img
                   src="/demo/p/p1.avif"
                   alt="product"
-                  className="
-                h-[60px] rounded"
+                  className="h-[60px] rounded"
                 />
               </picture>
               <div className="col-span-3 flex flex-col gap-2">
@@ -64,30 +63,15 @@ const Cart = () => {
                 </h3>
                 <div className="flex items-center justify-between">
                   <span className="flex items-center gap-2">
+                    <span className="flex items-center">
+                      <SlMinus size={14} className="opacity-90 cursor-pointer" />
+                      <span className="h-[17px] w-9 border border-gray-300 flex items-center justify-center text-[13px] font-medium mx-2">05</span>
+                      <SlPlus size={14} className="opacity-90 cursor-pointer" />
+                    </span>
+                    <RxCross2 size={14} className="opacity-80" />
                     <h5 className="price text-xs font-medium opacity-80">
                       484 TK
                     </h5>
-                    <RxCross2 size={11} className="opacity-80" />
-                    <select className="border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2">
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="1"
-                      >
-                        1
-                      </option>
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="2"
-                      >
-                        2
-                      </option>
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="3"
-                      >
-                        3
-                      </option>
-                    </select>
                   </span>
                   <h5 className="Totalprice text-sm  font-semibold opacity-80">
                     484 TK
@@ -140,7 +124,6 @@ const Cart = () => {
                   <span className="text-xs font-medium  text-green-900">62% Off</span>
                 </span>
                 <div className="w-full flex items-center gap-1 mt-1">
-
                   <span className="flex items-center">
                     <SlMinus size={21} className="opacity-90 cursor-pointer" />
                     <span className="h-[22px] w-9 border border-gray-300 flex items-center justify-center text-[13px] font-medium mx-1">05</span>
@@ -153,7 +136,6 @@ const Cart = () => {
 
                   <hr className="w-4 bg-slate-700 rotate-90" />
                   <h3 className="text-xs font-medium opacity-95 text-bgColor cursor-pointer hover:underline">Share</h3>
-
                 </div>
               </div>
             </div>
