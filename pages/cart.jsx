@@ -69,21 +69,21 @@ const Cart = () => {
                       <SlPlus size={14} className="opacity-90 cursor-pointer" />
                     </span>
                     <RxCross2 size={14} className="opacity-80" />
-                    <h5 className="price text-xs font-medium opacity-80">
+                    <h5 className="price text-xs font-medium opacity-80 whitespace-nowrap">
                       484 TK
                     </h5>
                   </span>
-                  <h5 className="Totalprice text-sm  font-semibold opacity-80">
+                  <h5 className="Totalprice text-sm  font-semibold opacity-80 whitespace-nowrap">
                     484 TK
                   </h5>
                 </div>
               </div>
-              <div className="col-span-1 flex flex-col items-center gap-1">
+              {/* <div className="col-span-1 flex flex-col items-center gap-1">
                 <AiTwotoneDelete
                   size={22}
                   className="cursor-pointer opacity-80"
                 />
-              </div>
+              </div> */}
             </div>
 
           </div>
