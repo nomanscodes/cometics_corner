@@ -25,7 +25,7 @@ const ProductCart = ({ item }) => {
                         <span>44/5(130)</span>
                         <span>.765 Sold</span>
                     </span>
-                    <span className='flex items-center gap-3 sm:gap-5 mt-1'>
+                    <span className='flex items-center sm:gap-5 mt-1'>
                         <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'>Free Delivery</button>
                         <p className='text-xs px-2 text-green-900 whitespace-nowrap'>34% Off</p>
                     </span>
