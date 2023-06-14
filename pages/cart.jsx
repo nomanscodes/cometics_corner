@@ -207,7 +207,7 @@ const Cart = () => {
             </div>
           </div>
           <div className="pcCartSection md:col-span-5 hidden md:block bg-white p-3">
-            <h1 className="text-[27px] font-[450]">Shopping Cart</h1>
+            <h1 className="text-[27px]">Shopping Cart</h1>
             <hr className="w-full mt-2" />
             <div className="cartItem flex items-center gap-2 border-b mt-1 pb-3">
               <picture>
