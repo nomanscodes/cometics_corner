@@ -1,6 +1,71 @@
 import React from "react";
 import ProductCart from "../ProductCard";
 
+
+const pData = [
+    {
+        id: 1,
+        image: "/demo/p/p1.avif",
+        name: "Eyes"
+    },
+    {
+        id: 2,
+        image: "/demo/p/p2.avif",
+        name: "Hand Wash"
+    },
+    {
+        id: 3,
+        image: "/demo/p/p3.avif",
+        name: "Nails"
+    },
+    {
+        id: 4,
+        image: "/demo/p/p4.avif",
+        name: "Hair Care"
+    },
+    {
+        id: 1,
+        image: "/demo/p/p1.avif",
+        name: "Eyes"
+    },
+    {
+        id: 2,
+        image: "/demo/p/p2.avif",
+        name: "Hand Wash"
+    },
+    {
+        id: 3,
+        image: "/demo/p/p3.avif",
+        name: "Nails"
+    },
+    {
+        id: 2,
+        image: "/demo/p/p2.avif",
+        name: "Hand Wash"
+    },
+    {
+        id: 3,
+        image: "/demo/p/p3.avif",
+        name: "Nails"
+    },
+    {
+        id: 4,
+        image: "/demo/p/p4.avif",
+        name: "Hair Care"
+    },
+    {
+        id: 3,
+        image: "/demo/p/p3.avif",
+        name: "Nails"
+    },
+    {
+        id: 4,
+        image: "/demo/p/p4.avif",
+        name: "Hair Care"
+    }
+
+]
+
 const TabSection = () => {
     return (
         <div className="px-2 md:px-6 mt-4 font-poppins">
@@ -30,20 +95,17 @@ const TabSection = () => {
             </div>
             <hr className='mt-[3px] md:mt-[6px]' />
 
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-3 mt-4">
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
-                <ProductCart />
+            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-3 mt-4">
+                {pData.map((item) => (
+                    <ProductCart key={item.id} item={item} />
+
+                ))}
             </div>
         </div>
     );
 };
 
+
 export default TabSection
+
+

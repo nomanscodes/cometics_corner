@@ -53,37 +53,7 @@ const pData = [
         id: 4,
         image: "/demo/p/p4.avif",
         name: "Hair Care"
-    },
-    {
-        id: 1,
-        image: "/demo/p/p1.avif",
-        name: "Eyes"
-    },
-    {
-        id: 2,
-        image: "/demo/p/p2.avif",
-        name: "Hand Wash"
-    },
-    {
-        id: 3,
-        image: "/demo/p/p3.avif",
-        name: "Nails"
-    },
-    {
-        id: 4,
-        image: "/demo/p/p4.avif",
-        name: "Hair Care"
-    },
-    {
-        id: 3,
-        image: "/demo/p/p3.avif",
-        name: "Nails"
-    },
-    {
-        id: 4,
-        image: "/demo/p/p4.avif",
-        name: "Hair Care"
-    },
+    }
 
 ]
 

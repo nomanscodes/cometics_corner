@@ -49,7 +49,7 @@ const Cart = () => {
         </div>
         <div className="flex flex-col gap-4 md:grid grid-cols-7 mt-1 md:mt-3">
           <div className="mobileCardSection md:hidden ">
-            <div className="grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md">
+            <div className="grid grid-cols-5 py-3 px-2 mt-4 items-center gap-2 bg-white shadow-md">
               <picture className="col-span-1">
                 <img
                   src="/demo/p/p1.avif"
@@ -59,7 +59,7 @@ const Cart = () => {
                 />
               </picture>
               <div className="col-span-3 flex flex-col gap-2">
-                <h3 className="capitalize text-xs font-medium opacity-80">
+                <h3 className="capitalize text-xs font-medium opacity-80 mb-2">
                   americn women hair jell (500ml) only use for night{" "}
                 </h3>
                 <div className="flex items-center justify-between">
@@ -101,110 +101,7 @@ const Cart = () => {
                 />
               </div>
             </div>
-            <div className="grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md">
-              <picture className="col-span-1">
-                <img
-                  src="/demo/p/p2.avif"
-                  alt="product"
-                  className="
-                w-full h-[60px] rounded"
-                />
-              </picture>
-              <div className="col-span-3 flex flex-col gap-2">
-                <h3 className="capitalize text-xs font-medium opacity-80">
-                  americn women hair jell (500ml) only use for night{" "}
-                </h3>
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <h5 className="price text-xs font-medium opacity-80">
-                      484 TK
-                    </h5>
-                    <RxCross2 size={11} className="opacity-80" />
-                    <select className="border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2">
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="1"
-                      >
-                        1
-                      </option>
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="2"
-                      >
-                        2
-                      </option>
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="3"
-                      >
-                        3
-                      </option>
-                    </select>
-                  </span>
-                  <h5 className="Totalprice text-sm  font-semibold opacity-80">
-                    484 TK
-                  </h5>
-                </div>
-              </div>
-              <div className="col-span-1 flex flex-col items-center gap-1">
-                <AiTwotoneDelete
-                  size={22}
-                  className="cursor-pointer opacity-80"
-                />
-              </div>
-            </div>
-            <div className="grid grid-cols-5 p-2 mt-4 items-center gap-2 bg-white shadow-md">
-              <picture className="col-span-1">
-                <img
-                  src="/demo/p/p3.avif"
-                  alt="product"
-                  className="
-                h-[60px] rounded"
-                />
-              </picture>
-              <div className="col-span-3 flex flex-col gap-2">
-                <h3 className="capitalize text-xs font-medium opacity-80">
-                  americn women hair jell (500ml) only use for night{" "}
-                </h3>
-                <div className="flex items-center justify-between">
-                  <span className="flex items-center gap-2">
-                    <h5 className="price text-xs font-medium opacity-80">
-                      484 TK
-                    </h5>
-                    <RxCross2 size={11} className="opacity-80" />
-                    <select className="border-none focus:outline-0 bg-gray-100 text-xs font-medium opacity-80 capitalize px-2">
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="1"
-                      >
-                        1
-                      </option>
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="2"
-                      >
-                        2
-                      </option>
-                      <option
-                        className="text-xs font-medium opacity-80 capitalize"
-                        value="3"
-                      >
-                        3
-                      </option>
-                    </select>
-                  </span>
-                  <h5 className="Totalprice text-sm  font-semibold opacity-80">
-                    484 TK
-                  </h5>
-                </div>
-              </div>
-              <div className="col-span-1 flex flex-col items-center gap-1">
-                <AiTwotoneDelete
-                  size={22}
-                  className="cursor-pointer opacity-80"
-                />
-              </div>
-            </div>
+
           </div>
           <div className="pcCartSection md:col-span-5 hidden md:block bg-white p-3">
             <h1 className="text-[27px]">Shopping Cart</h1>
@@ -222,9 +119,6 @@ const Cart = () => {
                     Delivery by Thu Jun 22 | <span className="text-green-900">Free</span>
                   </h3>
                 </span>
-                <h4 className="text-[16px] font-medium text-bgColor">
-                  In Stock
-                </h4>
                 <span className="flex items-center gap-2">
                   <input
                     id="red-checkbox"
@@ -232,18 +126,18 @@ const Cart = () => {
                     type="checkbox"
                     className="checked w-3 h-3 accent-bgColor"
                   />
-                  <h4 className="text-[13px] font-[500] opacity-90">
+                  <h4 className="text-[13px] font-[500] opacity-90 text-bgColor mt-1">
                     This is a gift
                   </h4>
                 </span>
                 <h4 className="">
-                  <span className="text-[14px] font-[600]">Size:</span>
-                  <span className="text-[13px] opacity-80 pl-[4px]">28 Fl Oz (Pack of 1)</span>
+                  <span className="text-[14px] font-[500]">Size:</span>
+                  <span className="text-xs font-medium opacity-90 pl-[4px]">28 Fl Oz (Pack of 1)</span>
                 </h4>
-                <span className="flex items-center py-3">
-                  <span className="text-[12px] font-[600] line-through opacity-70">&#2547; 453</span>
-                  <span className="text-[14px] font-[600] opacity-95 mx-2">&#2547; 674</span>
-                  <span className="text-[13px] text-green-900">62% Off</span>
+                <span className="flex items-center py-2">
+                  <span className="text-xs font-medium  ">&#2547; 674</span>
+                  <span className="text-xs font-medium line-through  mx-2">&#2547; 453</span>
+                  <span className="text-xs font-medium  text-green-900">62% Off</span>
                 </span>
                 <div className="w-full flex items-center gap-1 mt-1">
 
@@ -274,57 +168,48 @@ const Cart = () => {
               </div>
               <div className="mt-2 px-4">
                 <span className="flex items-center justify-between ">
-                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                  <h1 className="text-xs font-medium  uppercase ">
                     total 2
                   </h1>
-                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                  <h1 className="text-xs font-medium  uppercase ">
                     3500 TK
                   </h1>
                 </span>
-                <span className="flex flex-col gap-2 mt-5">
-                  <h1 className="text-xs font-bold opacity-75 uppercase">
-                    shipping
+                <span className="flex items-center justify-between mt-4">
+                  <h1 className="text-xs font-medium  uppercase ">
+                    Discount
                   </h1>
-                  <select className="border-none focus:outline-0 bg-gray-100 py-[4px] text-xs font-medium opacity-80 capitalize">
-                    <option
-                      className="text-xs font-medium opacity-80 capitalize py-[2px]"
-                      value="1"
-                    >
-                      standerd delivery 50 tk
-                    </option>
-                    <option
-                      className="text-xs font-medium opacity-80 capitalize"
-                      value="2"
-                    >
-                      express delivery 80 tk
-                    </option>
-                    <option
-                      className="text-xs font-medium opacity-80 capitalize"
-                      value="3"
-                    >
-                      manual delivery 35 tk
-                    </option>
-                  </select>
+                  <h1 className="text-xs font-medium text-green-800 ">
+                    3500 TK
+                  </h1>
+                </span>
+                <span className="flex items-center justify-between mt-4">
+                  <h1 className="text-xs font-medium uppercase ">
+                    Delivery Charges
+                  </h1>
+                  <h1 className="text-xs font-medium text-green-800 ">
+                    Free
+                  </h1>
                 </span>
                 <span className="flex flex-col gap-2 mt-5">
-                  <h1 className="text-xs font-bold opacity-75 uppercase">
+                  <h1 className="text-xs font-medium  uppercase">
                     give code
                   </h1>
                   <div className="flex w-full relative mt-2">
                     <input
                       type="text"
-                      className="flex items-center bg-gray-200 w-full p-[5px] px-4 focus:outline-none text-sm"
+                      className="flex items-center bg-gray-200 w-full p-[5px] px-4 focus:outline-none text-xs font-medium"
                       placeholder="Enter your coupon"
                     />
-                    <FaLongArrowAltRight className="absolute right-0 mt-2 opacity-75 mr-1 cursor-pointer" />
+                    <FaLongArrowAltRight className="absolute right-0 mt-2 mr-1 cursor-pointer" />
                   </div>
                 </span>
                 <hr className="mt-6 w-full opacity-90" />
                 <span className="flex items-center justify-between mt-4">
-                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                  <h1 className="text-xs font-[600] opacity-90 uppercase ">
                     total price
                   </h1>
-                  <h1 className="text-xs font-bold opacity-75 uppercase ">
+                  <h1 className="text-xs font-[600] opacity-90 uppercase ">
                     3500 TK
                   </h1>
                 </span>

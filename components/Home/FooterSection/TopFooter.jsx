@@ -3,7 +3,7 @@ import React from "react";
 
 const TopFooter = () => {
   return (
-    <div className="bg-bgColor text-white">
+    <div className="bg-[#131a22] text-white">
       <div className=" container mx-auto">
         <div className=" md:flex items-center  justify-between py-4">
           <div className=" md:flex md:items-center gap-4">

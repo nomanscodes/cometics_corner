@@ -7,7 +7,7 @@ const Middle = () => {
 
 
     return (
-        <div className=' px-6 flex items-center justify-center gap-5 font-poppins bg-bgColor text-white footerText3 lg:grid grid-cols-4'>
+        <div className=' px-6 flex items-center justify-center gap-5 font-poppins bg-[#131a22] text-white footerText3 lg:grid grid-cols-4'>
             <div className="leftSide col-span-1 footerText3">
                 <div className="p-2 text-center lg:text-left">
                     <div className=" flex items-center justify-center lg:block">

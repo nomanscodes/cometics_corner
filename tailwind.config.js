@@ -18,9 +18,6 @@ module.exports = {
         gold: "#dfc441",
       },
     },
-    fontFamily: {
-      poppins: "Urbanist, sans-serif",
-    },
     screens: {
       xs: "460px",
       sm: "660px",
