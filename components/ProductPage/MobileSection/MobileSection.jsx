@@ -1,6 +1,8 @@
 import React from 'react'
 import ImageSlider from './ImageSlider'
 import Link from 'next/link'
+import { AiOutlineDislike, AiOutlineLike } from 'react-icons/ai'
+
 
 
 const MobileSection = () => {
@@ -219,7 +221,18 @@ const MobileSection = () => {
                         <div className='text-[12px] font-semibold'>
                             This is a holy Grail primeum
                         </div>
-                        <h5 className='text-[12px]  font-medium mt-1'>My hair is straight and very fine so this product works just fine. However, my girlfriend has thick, curly hair and it does not work well to condition her hair.</h5>
+                        <h5 className='text-[11px] 
+                        font-medium mt-1'>My hair is straight and very fine so this product works just fine. However, my girlfriend has thick, curly hair and it does not work well to condition her hair.</h5>
+                        <div className='flex items-center gap-5 mt-2'>
+                            <span className='flex items-center gap-1 border border-gray-400 px-2 py-1 rounded-full shadow'>
+                                <AiOutlineLike size={13} />
+                                <h5 className='text-[10px]'>Helpful for 43</h5>
+                            </span>
+                            <span className='flex items-center gap-1 border border-gray-400 px-2 py-1 rounded-full shadow'>
+                                <AiOutlineLike size={13} />
+                                <h5 className='text-[10px]'>12</h5>
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
