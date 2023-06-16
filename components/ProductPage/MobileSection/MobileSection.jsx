@@ -111,7 +111,7 @@ const MobileSection = () => {
                     <h5 className='text-[11px] font-medium'>Nip hair fall due to breakage in its bud with this hair-fall defense shampoo from TRESemme. Enriched with the strength to make for long, beautiful and strong hair.</h5>
                 </div>
             </div>
-            <div className='bg-white p-2 mt-2'>
+            <div className='reviewSection bg-white p-2 mt-2'>
                 <h1 className='text-[13px] font-semibold opacity-95 mb-2 uppercase'>customer review</h1>
                 <div className='flex items-center gap-3'>
                     <picture className='flex items-center gap-1'>
@@ -123,7 +123,6 @@ const MobileSection = () => {
                     <h1 className='text-[11px] font-semibold'>4.5 OUT OF 5</h1>
                     <h3 className='text-[11px] font-semibold ml-3 text-green-700'>8345 Total ratings</h3>
                 </div>
-
                 <div className='pt-1'>
                     <div className="flex items-center mt-2">
                         <span className="text-[11px] font-medium ">5 Star</span>
@@ -171,6 +170,23 @@ const MobileSection = () => {
                         <span className="text-[11px] font-medium">02%</span>
                     </div>
 
+                </div>
+            </div>
+            <div className='reviewSection p-2 bg-white'>
+                <h1 className='text-[12px] font-semibold opacity-95 uppercase'>review with image</h1>
+                <div className='flex items-center justify-start gap-2 overflow-x-auto scroll-smooth mt-2'>
+                    <picture>
+                        <img src="/demo/p/p1.avif" className='h-16 w-16' alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/demo/p/p2.avif" className='h-16 w-16' alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/demo/p/p3.avif" className='h-16 w-16' alt="" />
+                    </picture>
+                    <picture>
+                        <img src="/demo/p/p4.avif" className='h-16 w-16' alt="" />
+                    </picture>
                 </div>
             </div>
         </div>
