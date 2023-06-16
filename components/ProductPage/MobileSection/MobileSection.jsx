@@ -52,14 +52,14 @@ const MobileSection = () => {
                 </table>
             </div>
             <div className='mt-2 p-2 bg-white flex items-center justify-between w-full'>
-                <span className='flex flex-col items-center justify-center gap-1'>
+                <span className='w-2/5 flex flex-col items-center justify-center gap-1'>
                     <picture>
                         <img src="/SVG/returns.svg" className='h-6' alt="" />
                     </picture>
                     <h1 className='text-sm font-medium text-center'>No Returns Alllowed</h1>
                 </span>
-                <hr className='w-12 rotate-90' />
-                <span className='flex flex-col items-center justify-center gap-1'>
+                <hr className='w-14 rotate-90' />
+                <span className='w-2/5 flex flex-col items-center justify-center gap-1'>
                     <picture>
                         <img src="/SVG/cashondelivery.svg" className='h-6' alt="" />
                     </picture>
