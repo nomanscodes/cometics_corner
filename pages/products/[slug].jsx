@@ -10,6 +10,7 @@ import Compare from '@/components/ProductPage/CompareSection/Compare'
 import CustomerReview from '@/components/ProductPage/CustomerReview/CustomerReview'
 import ImpInformation from '@/components/ProductPage/ImportantInformation/ImpInformation'
 import MobileSection from '@/components/ProductPage/MobileSection/MobileSection'
+import ProductPageBottom from '@/components/ProductPage/Bottom/Bottom'
 
 
 
@@ -54,6 +55,7 @@ const ProductDetails = () => {
             <div className='mobileSection md:hidden'>
                 <MobileSection />
             </div>
+            <ProductPageBottom/>
         </Layout>
     )
 }
