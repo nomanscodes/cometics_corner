@@ -1,10 +1,11 @@
+import Link from 'next/link'
 import React from 'react'
 import { IoMdHeartEmpty } from 'react-icons/io'
 
 const ProductCart = ({ item }) => {
     return (
 
-        <div className=" col-span-1 font-poppins">
+        <Link href={"/products/rerwe"} className="">
             <div className=" bg-white group shadow rounded">
                 <div className='card__top relative'>
                     <picture>
@@ -37,7 +38,7 @@ const ProductCart = ({ item }) => {
                     </span>
                 </div>
             </div>
-        </div>
+        </Link>
     )
 }
 
