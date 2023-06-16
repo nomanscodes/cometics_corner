@@ -193,7 +193,6 @@ const MobileSection = () => {
 
                 <div className='mt-2'>
                     <h1 className='text-[12px] font-semibold opacity-95 mb-1 capitalize '>top reviews</h1>
-
                     <div className='mt-2 pb-3'>
                         <span className='flex items-center gap-2'>
                             <picture>
@@ -291,7 +290,14 @@ const MobileSection = () => {
                             </span>
                         </div>
                     </div>
-
+                    <h3 className='text-[12px] font-medium text-green-700 underline'>See All</h3>
+                    <hr className='mt-2' />
+                    <div className='mt-2'>
+                        <input
+                            type="text"
+                            className="w-full border rounded focus:outline-none text-xs py-2 pl-3"
+                            placeholder="Write a review" />
+                    </div>
                 </div>
             </div>
         </div>
