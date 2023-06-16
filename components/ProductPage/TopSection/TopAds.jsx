@@ -32,7 +32,7 @@ const TopAds = () => {
                     </div>
                 </div>
             </Link>
-            <Link href={""} className='flex items-center justify-between gap-3 px-2 py-[4px] bg-[#f6f5f0] shadow'>
+            <Link href={""} className='flex items-center justify-between md:hidden gap-3 px-2 py-[4px] bg-[#f6f5f0] shadow'>
                 <picture>
                     <img src="/demo/p/p1.avif" alt="" className='w-8 h-9 rounded-sm ' />
                 </picture>

@@ -31,35 +31,41 @@ const MobileSection = () => {
                 <table className=''>
                     <tbody>
                         <tr className=''>
-                            
-                            <td className='text-[12px] pr-5 opacity-90'>Payment</td>
-                            <td className='text-[11px] font-[500] '>Secure Transition</td>
+                            <td className='text-[12px] pr-5 opacity-90'>Item Type</td>
+                            <td className='text-[11px] font-[500] '>Cream</td>
                         </tr>
                         <tr className=''>
-                            
+
                             <td className='text-[12px] pr-5 opacity-90 whitespace-nowrap'>
-                                Ships From  </td>
-                            <td className='text-[11px] font-[500]  '>Author Store</td>
+                                Skin Type</td>
+                            <td className='text-[11px] font-[500]'>Dry</td>
                         </tr>
                         <tr className=''>
-                            
-                            <td className='text-[12px] pr-5 opacity-90'>Sold By</td>
-                            <td className='text-[11px] font-[500]  '>Author</td>
+                            <td className='text-[12px] pr-5 opacity-90'>Brand</td>
+                            <td className='text-[11px] font-[500]  '>Lorem</td>
                         </tr>
                         <tr className=''>
-                            
-                            <td className='text-[12px] pr-5 opacity-90 text-start'>Return  </td>
-                            <td className='text-[11px] font-[500] '>Eligible for return refund or replacement within 30 days of recepit</td>
-                        </tr>
-                        <tr className=''>
-                            
-                            <td className='text-[12px] pr-5 opacity-90 text-start whitespace-nowrap'>Cash on delivery</td>
-                            <td className='text-[11px] font-[500] '>Abailable</td>
+                            <td className='text-[12px] pr-5 opacity-90 text-start'>Material Feature</td>
+                            <td className='text-[11px] font-[500] '>Plastic Bottol</td>
                         </tr>
                     </tbody>
                 </table>
             </div>
-
+            <div className='mt-2 p-2 bg-white flex items-center justify-between w-full'>
+                <span className='flex flex-col items-center justify-center gap-1'>
+                    <picture>
+                        <img src="/SVG/returns.svg" className='h-5' alt="" />
+                    </picture>
+                    <h1 className='text-sm font-medium'>No Returns Alllowed</h1>
+                </span>
+                <hr className='w-12 rotate-90' />
+                <span className='flex flex-col items-center justify-center gap-1'>
+                    <picture>
+                        <img src="/SVG/cashondelivery.svg" className='h-5' alt="" />
+                    </picture>
+                    <h1 className='text-sm font-medium'>Cash On Delivery Available</h1>
+                </span>
+            </div>
         </div>
     )
 }
