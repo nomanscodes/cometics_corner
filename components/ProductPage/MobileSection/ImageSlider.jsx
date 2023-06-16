@@ -7,44 +7,43 @@ import { Carousel } from "react-responsive-carousel";
 const sliderData = [
     {
         id: 1,
-        image: "/demo/b/b1.avif"
+        image: "/demo/sp/p.webp"
     },
     {
         id: 2,
-        image: "/demo/b/b2.avif"
+        image: "/demo/sp/p1.webp"
     },
     {
         id: 3,
-        image: "/demo/b/b3.avif"
+        image: "/demo/sp/p2.webp"
     },
     {
         id: 4,
-        image: "/demo/b/b4.avif"
+        image: "/demo/sp/p3.webp"
     },
     {
         id: 5,
-        image: "/demo/b/b5.avif"
-    },
-    {
-        id: 6,
-        image: "/demo/b/b6.avif"
+        image: "/demo/sp/p4.webp"
     }
 ]
 
 const ImageSlider = () => {
     return (
         <div>
-            <div className="relative mx-auto text-white">
+            <div className="">
                 <Carousel
                     autoPlay={true}
                     infiniteLoop={true}
                     showThumbs={false}
                     showStatus={false}
-                    showIndicators={false}>
+                    showIndicators={true}>
                     {sliderData.map((img) => (
-                        <div className='h-[180px]  w-[100%] fitImage'
-                            style={{ backgroundImage: `url(${img.image})` }} key={img.id}>
-                        </div>
+                        // <div className='h-[220px] w-[100%] '
+                        //     style={{ backgroundImage:`url(${img.image})` }} key={img.id}>
+                        // </div>
+                        <picture key={img.id}>
+                            <img className='h-80 px-1' src={img.image} alt="" />
+                        </picture>
                     ))}
                 </Carousel>
             </div>
