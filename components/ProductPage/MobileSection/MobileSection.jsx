@@ -10,7 +10,7 @@ const MobileSection = () => {
             <div className='mt-[3px] bg-white'>
                 <div className='p-2'>
                     <Link href={""} className='text-[11px] font-medium text-green-700'>View more from Blue Earth</Link>
-                    <h2 className='text-[13px] font-medium opacity-90 mt-1'>Basics Silky Smooth Body Wash, Peach & Orange Blossom Scent, 18 Fl Oz</h2>
+                    <h2 className='text-[13px] font-medium opacity-95 mt-1'>Basics Silky Smooth Body Wash, Peach & Orange Blossom Scent, 18 Fl Oz</h2>
                     <span className='flex items-center gap-2 mt-1'>
                         <picture className='flex items-center gap-1'>
                             <img src="/SVG/star.svg" className='h-[11px]' alt="" />
@@ -31,21 +31,21 @@ const MobileSection = () => {
                 <table className=''>
                     <tbody>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90'>Item Type</td>
+                            <td className='text-[11px] pr-5 opacity-95'>Item Type</td>
                             <td className='text-[11px] font-[500] '>Cream</td>
                         </tr>
                         <tr className=''>
 
-                            <td className='text-[12px] pr-5 opacity-90 whitespace-nowrap'>
+                            <td className='text-[11px] pr-5 opacity-95 whitespace-nowrap'>
                                 Skin Type</td>
                             <td className='text-[11px] font-[500]'>Dry</td>
                         </tr>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90'>Brand</td>
+                            <td className='text-[11px] pr-5 opacity-95'>Brand</td>
                             <td className='text-[11px] font-[500]  '>Lorem</td>
                         </tr>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90 text-start'>Material Feature</td>
+                            <td className='text-[11px] pr-5 opacity-95 text-start'>Material Feature</td>
                             <td className='text-[11px] font-[500] '>Plastic Bottol</td>
                         </tr>
                     </tbody>
@@ -67,29 +67,30 @@ const MobileSection = () => {
                 </span>
             </div>
             <div className='bg-white p-2 mt-2'>
+                <h1 className='text-[13px] font-semibold opacity-95 mb-2'>Product Details</h1>
                 <table className=''>
                     <tbody>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90'>Material Feature</td>
+                            <td className='text-[11px] pr-5 opacity-95'>Material Feature</td>
                             <td className='text-[11px] font-[500] '>Biodegradable Warning</td>
                         </tr>
                         <tr className=''>
 
-                            <td className='text-[12px] pr-5 opacity-90 whitespace-nowrap'>
+                            <td className='text-[11px] pr-5 opacity-95 whitespace-nowrap'>
                                 Date First Available</td>
                             <td className='text-[11px] font-[500]'>April 18, 2022</td>
                         </tr>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90'>Country of Origin</td>
+                            <td className='text-[11px] pr-5 opacity-95'>Country of Origin</td>
                             <td className='text-[11px] font-[500]  '>
                                 Indian</td>
                         </tr>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90 text-start'>Manufacturer</td>
+                            <td className='text-[11px] pr-5 opacity-95 text-start'>Manufacturer</td>
                             <td className='text-[11px] font-[500] '>Amazon.com Services, Inc.</td>
                         </tr>
                         <tr className=''>
-                            <td className='text-[12px] pr-5 opacity-90 text-start'>Product Code</td>
+                            <td className='text-[11px] pr-5 opacity-95 text-start'>Product Code</td>
                             <td className='text-[11px] font-[500] '>B09HHD9X4B</td>
                         </tr>
                     </tbody>
