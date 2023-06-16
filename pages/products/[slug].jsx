@@ -50,7 +50,7 @@ const ProductDetails = () => {
                     <hr className='mt-4' />
                     <CustomerReview />
                 </div>
-                <div className='mobileSection md:hidden mt-2'>
+                <div className='mobileSection md:hidden'>
                     <MobileSection />
                 </div>
             </div>

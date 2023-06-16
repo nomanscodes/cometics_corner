@@ -42,7 +42,7 @@ const ImageSlider = () => {
                         //     style={{ backgroundImage:`url(${img.image})` }} key={img.id}>
                         // </div>
                         <picture key={img.id}>
-                            <img className='h-80 px-1' src={img.image} alt="" />
+                            <img className='h-80 ' src={img.image} alt="" />
                         </picture>
                     ))}
                 </Carousel>

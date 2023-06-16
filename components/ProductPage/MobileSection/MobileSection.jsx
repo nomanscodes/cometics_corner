@@ -4,7 +4,7 @@ import ImageSlider from './ImageSlider'
 
 const MobileSection = () => {
     return (
-        <div>
+        <div  className='py-2 px-1'>
             <ImageSlider />
         </div>
     )
