@@ -71,8 +71,6 @@ const Slider = () => {
                                 </button>
                             </div>
                         ))}
-
-
                     </Carousel>
                 </div>
             </div>

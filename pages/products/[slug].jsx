@@ -9,6 +9,8 @@ import Details from '@/components/ProductPage/Details/Details'
 import Compare from '@/components/ProductPage/CompareSection/Compare'
 import CustomerReview from '@/components/ProductPage/CustomerReview/CustomerReview'
 import ImpInformation from '@/components/ProductPage/ImportantInformation/ImpInformation'
+import MobileSection from '@/components/ProductPage/MobileSection/MobileSection'
+
 
 
 
@@ -23,7 +25,7 @@ const ProductDetails = () => {
             </Head>
             <TopAds />
             <div className=' bg-white'>
-                <div className='py-2 hidden md:block'>
+                <div className='PCsection py-2 hidden md:block'>
                     <div className="flex items-center gap-2 px-6">
                         <div className="flex items-center gap-[2px] xxsFont font-medium opacity-80 hover:text-bgColor transition transform hover:-translate-x-1 motion-reduce:transition-none motion-reduce:hover:transform-none ">
                             <Link href={""} className="uppercase">
@@ -47,6 +49,9 @@ const ProductDetails = () => {
                     <ImpInformation />
                     <hr className='mt-4' />
                     <CustomerReview />
+                </div>
+                <div className='mobileSection md:hidden mt-2 px-3'>
+                    <MobileSection />
                 </div>
             </div>
         </Layout>
