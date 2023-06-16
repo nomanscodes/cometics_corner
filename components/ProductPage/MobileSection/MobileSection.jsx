@@ -2,7 +2,7 @@ import React from 'react'
 import ImageSlider from './ImageSlider'
 import Link from 'next/link'
 import { AiOutlineDislike, AiOutlineLike } from 'react-icons/ai'
-
+import { MdVerifiedUser } from 'react-icons/md'
 
 
 const MobileSection = () => {
@@ -212,8 +212,12 @@ const MobileSection = () => {
                                 <img src="/SVG/star.svg"
                                     className='h-[12px]' alt="" />
                             </picture>
-                            <h3 className='text-[12px] 
+                            <span className='flex items-center gap-1'>
+                                <MdVerifiedUser size={12} />
+                                <h3 className='text-[11px] 
                             font-medium'>Verified Purchease</h3>
+                            </span>
+
                         </div>
                         <span className='text-[10px] font-medium'>
                             Reviewed Date : April 5 ,2024
@@ -229,7 +233,7 @@ const MobileSection = () => {
                                 <h5 className='text-[10px]'>Helpful for 43</h5>
                             </span>
                             <span className='flex items-center gap-1 border border-gray-400 px-2 py-1 rounded-full shadow'>
-                                <AiOutlineLike size={13} />
+                                <AiOutlineDislike size={13} />
                                 <h5 className='text-[10px]'>12</h5>
                             </span>
                         </div>
