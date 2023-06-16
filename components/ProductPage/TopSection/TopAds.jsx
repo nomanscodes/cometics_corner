@@ -32,14 +32,18 @@ const TopAds = () => {
                     </div>
                 </div>
             </Link>
-            <Link href={""} className='flex gap-3 px-2 py-1 bg-white'>
+            <Link href={""} className='flex items-center justify-between gap-3 px-2 py-[4px] bg-slate-200'>
                 <picture>
-                    <img src="/demo/p/p1.avif" alt="" className=' w-8 h-9 rounded-sm ' />
+                    <img src="/demo/p/p1.avif" alt="" className='w-8 h-9 rounded-sm ' />
                 </picture>
                 <div className='flex flex-col gap-1'>
                     <h1 className='text-xs font-[400]'>Good molecules Ultra-Hydrating Facial Oil</h1>
                     <h3 className='text-xs font-medium text-bgColor'>&#2547; 387</h3>
                 </div>
+                <span className='flex flex-col mr-1'>
+                    <h2 className='text-xs font-medium text-green-800'>25%</h2>
+                    <h1 className='text-xs font-medium text-green-800'>OFF</h1>
+                </span>
             </Link>
         </div>
     )
