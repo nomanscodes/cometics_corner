@@ -196,7 +196,8 @@ const MobileSection = () => {
                             <picture>
                                 <img src="/avatar.png" className='h-7 w-7 rounded-full' alt="" />
                             </picture>
-                            <h3 className='text-[12px] font-[450]'>David Jhon</h3>
+                            <h3 className='text-[12px] 
+                            font-medium  mb-1 capitalize'>David Jhon</h3>
                         </span>
                         <div className='flex items-center gap-2'>
                             <picture className='flex items-center gap-1'>
@@ -209,15 +210,16 @@ const MobileSection = () => {
                                 <img src="/SVG/star.svg"
                                     className='h-[12px]' alt="" />
                             </picture>
-                            <h3 className='text-[12px] font-[500]'>Verified Purchease</h3>
+                            <h3 className='text-[12px] 
+                            font-medium'>Verified Purchease</h3>
                         </div>
                         <span className='text-[10px] font-medium'>
                             Reviewed Date : April 5 ,2024
                         </span>
-                        <div className='text-[12px] font-medium'>
+                        <div className='text-[12px] font-semibold'>
                             This is a holy Grail primeum
                         </div>
-                        <h5 className='text-[11px]  font-medium mt-2'>My hair is straight and very fine so this product works just fine. However, my girlfriend has thick, curly hair and it does not work well to condition her hair.</h5>
+                        <h5 className='text-[12px]  font-medium mt-1'>My hair is straight and very fine so this product works just fine. However, my girlfriend has thick, curly hair and it does not work well to condition her hair.</h5>
                     </div>
                 </div>
             </div>
