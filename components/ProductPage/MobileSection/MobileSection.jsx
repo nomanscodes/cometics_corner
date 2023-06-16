@@ -54,16 +54,16 @@ const MobileSection = () => {
             <div className='mt-2 p-2 bg-white flex items-center justify-between w-full'>
                 <span className='flex flex-col items-center justify-center gap-1'>
                     <picture>
-                        <img src="/SVG/returns.svg" className='h-5' alt="" />
+                        <img src="/SVG/returns.svg" className='h-6' alt="" />
                     </picture>
-                    <h1 className='text-sm font-medium'>No Returns Alllowed</h1>
+                    <h1 className='text-sm font-medium text-center'>No Returns Alllowed</h1>
                 </span>
                 <hr className='w-12 rotate-90' />
                 <span className='flex flex-col items-center justify-center gap-1'>
                     <picture>
-                        <img src="/SVG/cashondelivery.svg" className='h-5' alt="" />
+                        <img src="/SVG/cashondelivery.svg" className='h-6' alt="" />
                     </picture>
-                    <h1 className='text-sm font-medium'>Cash On Delivery Available</h1>
+                    <h1 className='text-sm font-medium text-center'>Cash On Delivery Available</h1>
                 </span>
             </div>
         </div>
