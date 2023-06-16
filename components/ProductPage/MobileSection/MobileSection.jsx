@@ -173,7 +173,7 @@ const MobileSection = () => {
                 </div>
             </div>
             <div className='reviewSection p-2 bg-white'>
-                <h1 className='text-[12px] font-semibold opacity-95 uppercase'>review with image</h1>
+                <h1 className='text-[12px] font-semibold opacity-95 mb-1 capitalize'>review with image</h1>
                 <div className='flex items-center justify-start gap-2 overflow-x-auto scroll-smooth mt-2'>
                     <picture>
                         <img src="/demo/p/p1.avif" className='h-16 w-16' alt="" />
@@ -187,6 +187,38 @@ const MobileSection = () => {
                     <picture>
                         <img src="/demo/p/p4.avif" className='h-16 w-16' alt="" />
                     </picture>
+                </div>
+
+                <div className='mt-2'>
+                    <h1 className='text-[12px] font-semibold opacity-95 mb-1 capitalize '>top reviews</h1>
+                    <div className='mt-2'>
+                        <span className='flex items-center gap-2'>
+                            <picture>
+                                <img src="/avatar.png" className='h-7 w-7 rounded-full' alt="" />
+                            </picture>
+                            <h3 className='text-[12px] font-[450]'>David Jhon</h3>
+                        </span>
+                        <div className='flex items-center gap-2'>
+                            <picture className='flex items-center gap-1'>
+                                <img src="/SVG/star.svg"
+                                    className='h-[12px]' alt="" />
+                                <img src="/SVG/star.svg"
+                                    className='h-[12px]' alt="" />
+                                <img src="/SVG/star.svg"
+                                    className='h-[12px]' alt="" />
+                                <img src="/SVG/star.svg"
+                                    className='h-[12px]' alt="" />
+                            </picture>
+                            <h3 className='text-[12px] font-[500]'>Verified Purchease</h3>
+                        </div>
+                        <span className='text-[10px] font-medium'>
+                            Reviewed Date : April 5 ,2024
+                        </span>
+                        <div className='text-[12px] font-medium'>
+                            This is a holy Grail primeum
+                        </div>
+                        <h5 className='text-[11px]  font-medium mt-2'>My hair is straight and very fine so this product works just fine. However, my girlfriend has thick, curly hair and it does not work well to condition her hair.</h5>
+                    </div>
                 </div>
             </div>
         </div>
