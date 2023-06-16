@@ -66,6 +66,35 @@ const MobileSection = () => {
                     <h1 className='text-sm font-medium text-center'>Cash On Delivery Available</h1>
                 </span>
             </div>
+            <div className='bg-white p-2 mt-2'>
+                <table className=''>
+                    <tbody>
+                        <tr className=''>
+                            <td className='text-[12px] pr-5 opacity-90'>Material Feature</td>
+                            <td className='text-[11px] font-[500] '>Biodegradable Warning</td>
+                        </tr>
+                        <tr className=''>
+
+                            <td className='text-[12px] pr-5 opacity-90 whitespace-nowrap'>
+                                Date First Available</td>
+                            <td className='text-[11px] font-[500]'>April 18, 2022</td>
+                        </tr>
+                        <tr className=''>
+                            <td className='text-[12px] pr-5 opacity-90'>Country of Origin</td>
+                            <td className='text-[11px] font-[500]  '>
+                                Indian</td>
+                        </tr>
+                        <tr className=''>
+                            <td className='text-[12px] pr-5 opacity-90 text-start'>Manufacturer</td>
+                            <td className='text-[11px] font-[500] '>Amazon.com Services, Inc.</td>
+                        </tr>
+                        <tr className=''>
+                            <td className='text-[12px] pr-5 opacity-90 text-start'>Product Code</td>
+                            <td className='text-[11px] font-[500] '>B09HHD9X4B</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
         </div>
     )
 }
