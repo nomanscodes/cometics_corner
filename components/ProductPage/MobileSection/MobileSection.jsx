@@ -127,45 +127,45 @@ const MobileSection = () => {
                 <div className='pt-1'>
                     <div className="flex items-center mt-2">
                         <span className="text-[11px] font-medium ">5 Star</span>
-                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 rounded-sm">
                             <div className="h-[15px] bg-bgColor  
-                            w-[70%]">
+                            w-[70%] rounded-sm">
                             </div>
                         </div>
                         <span className="text-[11px] font-medium">70%</span>
                     </div>
                     <div className="flex items-center mt-2">
                         <span className="text-[11px] font-medium ">4 Star</span>
-                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 rounded-sm">
                             <div className="h-[15px] bg-bgColor  
-                            w-[60%]">
+                            w-[60%] rounded-sm">
                             </div>
                         </div>
                         <span className="text-[11px] font-medium">60%</span>
                     </div>
                     <div className="flex items-center mt-2">
                         <span className="text-[11px] font-medium ">3 Star</span>
-                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 rounded-sm">
                             <div className="h-[15px] bg-bgColor  
-                            w-[50%]">
+                            w-[50%] rounded-sm">
                             </div>
                         </div>
                         <span className="text-[11px] font-medium">50%</span>
                     </div>
                     <div className="flex items-center mt-2">
                         <span className="text-[11px] font-medium ">2 Star</span>
-                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 rounded-sm">
                             <div className="h-[15px] bg-bgColor  
-                            w-[20%]">
+                            w-[20%] rounded-sm">
                             </div>
                         </div>
                         <span className="text-[11px] font-medium">20%</span>
                     </div>
                     <div className="flex items-center mt-2">
-                        <span className="text-[11px] font-medium ml-[2px]">1 Star</span>
-                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                        <span className="text-[11px] font-medium ml-[3px]">1 Star</span>
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 rounded-sm">
                             <div className="h-[15px] bg-bgColor  
-                            w-[02%]">
+                            w-[02%] rounded-sm">
                             </div>
                         </div>
                         <span className="text-[11px] font-medium">02%</span>
