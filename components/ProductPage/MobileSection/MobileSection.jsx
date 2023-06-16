@@ -66,8 +66,8 @@ const MobileSection = () => {
                     <h1 className='text-sm font-medium text-center'>Cash On Delivery Available</h1>
                 </span>
             </div>
-            <div className='bg-white p-2 mt-2'>
-                <h1 className='text-[13px] font-semibold opacity-95 mb-2'>Product Details</h1>
+            <div className=' productDetils bg-white p-2 mt-2'>
+                <h1 className='text-[13px] font-semibold opacity-95 mb-2 uppercase'>Product Details</h1>
                 <table className=''>
                     <tbody>
                         <tr className=''>
@@ -96,7 +96,7 @@ const MobileSection = () => {
                     </tbody>
                 </table>
             </div>
-            <div className='bg-white p-2'>
+            <div className='immportantInformation bg-white p-2'>
                 <h1 className='text-[13px] font-semibold opacity-95 mb-2'>IMPORTANT INFORMATION</h1>
                 <div className='mt-2'>
                     <h1 className='text-[12px] font-semibold opacity-95 mb-1'>Ingredients</h1>
@@ -109,6 +109,67 @@ const MobileSection = () => {
                 <div className='mt-2'>
                     <h1 className='text-[12px] font-semibold opacity-95 mb-1'>Direction</h1>
                     <h5 className='text-[11px] font-medium'>Nip hair fall due to breakage in its bud with this hair-fall defense shampoo from TRESemme. Enriched with the strength to make for long, beautiful and strong hair.</h5>
+                </div>
+            </div>
+            <div className='bg-white p-2'>
+                <h1 className='text-[13px] font-semibold opacity-95 mb-2 uppercase'>customer review</h1>
+                <div className='flex items-center gap-3'>
+                    <picture className='flex items-center gap-1'>
+                        <img src="/SVG/star.svg" className='h-[12px]' alt="" />
+                        <img src="/SVG/star.svg" className='h-[12px]' alt="" />
+                        <img src="/SVG/star.svg" className='h-[12px]' alt="" />
+                        <img src="/SVG/star.svg" className='h-[12px]' alt="" />
+                    </picture>
+                    <h1 className='text-[11px] font-semibold'>4.5 OUT OF 5</h1>
+                </div>
+                <h3 className='text-[11px] font-semibold mt-1'>8345 Total ratings</h3>
+                <div className='pt-1'>
+                    <div className="flex items-center mt-2">
+                        <span className="text-[11px] font-medium ">5 Star</span>
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                            <div className="h-[15px] bg-bgColor  
+                            w-[70%]">
+                            </div>
+                        </div>
+                        <span className="text-[11px] font-medium">70%</span>
+                    </div>
+                    <div className="flex items-center mt-2">
+                        <span className="text-[11px] font-medium ">4 Star</span>
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                            <div className="h-[15px] bg-bgColor  
+                            w-[60%]">
+                            </div>
+                        </div>
+                        <span className="text-[11px] font-medium">60%</span>
+                    </div>
+                    <div className="flex items-center mt-2">
+                        <span className="text-[11px] font-medium ">3 Star</span>
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                            <div className="h-[15px] bg-bgColor  
+                            w-[50%]">
+                            </div>
+                        </div>
+                        <span className="text-[11px] font-medium">50%</span>
+                    </div>
+                    <div className="flex items-center mt-2">
+                        <span className="text-[11px] font-medium ">2 Star</span>
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                            <div className="h-[15px] bg-bgColor  
+                            w-[20%]">
+                            </div>
+                        </div>
+                        <span className="text-[11px] font-medium">20%</span>
+                    </div>
+                    <div className="flex items-center mt-2">
+                        <span className="text-[11px] font-medium ml-[2px]">1 Star</span>
+                        <div className="w-2/4 h-[15px] mx-4 bg-gray-200 ">
+                            <div className="h-[15px] bg-bgColor  
+                            w-[02%]">
+                            </div>
+                        </div>
+                        <span className="text-[11px] font-medium">02%</span>
+                    </div>
+                   
                 </div>
             </div>
         </div>
