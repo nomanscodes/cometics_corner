@@ -96,6 +96,21 @@ const MobileSection = () => {
                     </tbody>
                 </table>
             </div>
+            <div className='bg-white p-2'>
+                <h1 className='text-[13px] font-semibold opacity-95 mb-2'>IMPORTANT INFORMATION</h1>
+                <div className='mt-2'>
+                    <h1 className='text-[12px] font-semibold opacity-95 mb-1'>Ingredients</h1>
+                    <h5 className='text-[11px] font-medium'>Water, cetearyl alcohol, dimethicone, stearamidopropyl dimethylamine, behentrimonium chloride, tocopheryl acetate, ascorbic acid, panthenol, niacinamide, biotin, fragrance, dipropylene glycol, lactic acid, potassium chloride, amodimethicone, disodium EDTA, DMDM hydantoin, cetrimonium chloride, polysorbate 20, PEG-150 distearate, methylchloroisothiazolinone, methylisothiazolinone</h5>
+                </div>
+                <div className='mt-2'>
+                    <h1 className='text-[12px] font-semibold opacity-95 mb-1'>Legal Disclaimer</h1>
+                    <h5 className='text-[11px] font-medium'>Statements regarding dietary supplements have not been evaluated by the FDA and are not intended to diagnose, treat, cure, or prevent any disease or health condition.</h5>
+                </div>
+                <div className='mt-2'>
+                    <h1 className='text-[12px] font-semibold opacity-95 mb-1'>Direction</h1>
+                    <h5 className='text-[11px] font-medium'>Nip hair fall due to breakage in its bud with this hair-fall defense shampoo from TRESemme. Enriched with the strength to make for long, beautiful and strong hair.</h5>
+                </div>
+            </div>
         </div>
     )
 }
