@@ -21,10 +21,11 @@ const MobileSection = () => {
                         </picture>
                         <h5 className='text-[11px] font-medium text-green-700'> 393 rating</h5>
                     </span>
-                    <span className='flex items-center gap-2'>
+                    <span className='flex items-center gap-2 mt-1'>
                         <h4 className='text-[14px] font-medium text-green-700'>35% off</h4>
                         <h4 className='text-[14px] font-medium text-gray-600 line-through'>574</h4>
-                        <h4 className='text-[14px] font-medium '> &#2547;798</h4>
+                        <h4 className='text-[14px] font-medium '>
+                            &#2547;798</h4>
                     </span>
                 </div>
 
