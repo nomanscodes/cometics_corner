@@ -3,6 +3,7 @@ import ImageSlider from './ImageSlider'
 import Link from 'next/link'
 import { AiOutlineDislike, AiOutlineLike } from 'react-icons/ai'
 import { MdVerifiedUser } from 'react-icons/md'
+import ProductCart from '@/components/Home/Products/ProductCard'
 
 
 const MobileSection = () => {
@@ -190,7 +191,6 @@ const MobileSection = () => {
                         <img src="/demo/p/p4.avif" className='h-16 w-16' alt="" />
                     </picture>
                 </div>
-
                 <div className='mt-2'>
                     <h1 className='text-[12px] font-semibold opacity-95 mb-1 capitalize '>top reviews</h1>
                     <div className='mt-2 pb-3'>
@@ -299,6 +299,27 @@ const MobileSection = () => {
                             placeholder="Write a review" />
                     </div>
                 </div>
+            </div>
+            <div className='relatedProducts bg-white p-2'>
+                <h1 className='text-[13px] font-semibold opacity-95 mb-2'>RELATED PRODUCTS</h1>
+                <div className=' flex items-start gap-2 overflow-x-auto scroll-smooth mt-2'>
+                    <ProductCart />
+                    <ProductCart />
+                    <ProductCart />
+                    <ProductCart />
+                    <ProductCart />
+                    <ProductCart />
+                </div>
+            </div>
+            <div className='question&answer mt-2 p-2 bg-white'>
+                <span className='flex items-center justify-between gap-12'>
+                    <h1 className='text-[13px] font-semibold opacity-95 mb-2 whitespace-nowrap'>QUESTIONS & ANSWERS</h1>
+                    <input
+                        type="text"
+                        className="w-full border rounded focus:outline-none text-xs py-[6px] pl-3"
+                        placeholder="Search here"
+                    />
+                </span>
             </div>
         </div>
     )
