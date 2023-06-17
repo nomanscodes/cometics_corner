@@ -374,7 +374,7 @@ const MobileSection = () => {
                     <div onClick={() => setShowQuestion(false)} className='bg-black/70  min-h-[80px] h-full w-full'>
                     </div>
                     <div className='bg-white h-fit'>
-                        <div className='bg-bgColor fixed w-full'>
+                        <div className='bg-bgColor overflow-hidden fixed w-full'>
                             <span className='flex items-center gap-3 p-2 text-white'>
                                 <BiArrowBack onClick={() => setShowQuestion(false)} size={18} />
                                 <h1 className='capitalize text-[12px] font-semibold'>
@@ -391,7 +391,7 @@ const MobileSection = () => {
                                 <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
                             </div>
                         </div>
-                        <div className=' overflow-y-auto scroll-smooth mt-20'>
+                        <div className='mt-20 h-[660x]'>
                             <div className='p-2'>
                                 <h4 className='text-[11px] font-semibold'>Q : It is a sutable for oily skin?</h4>
                                 <h4 className='text-[11px] mt-[2px]'>A : Yes you can use this on all skin types</h4>
