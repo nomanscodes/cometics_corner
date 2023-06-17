@@ -75,7 +75,6 @@ const ShopPageMobilePortion = () => {
                         </span>
                         <div className={`fixed bottom-0 left-0 right-0 z-50 ${brand ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
                             <div onClick={() => setBrand(false)} className='bg-black/70 h-full w-full'>
-
                             </div>
                             <div className='bg-white h-fit'>
                                 <h1 className='uppercase font-medium text-sm p-4'>
