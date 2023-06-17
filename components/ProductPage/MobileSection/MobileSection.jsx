@@ -16,7 +16,7 @@ const MobileSection = () => {
     return (
         <div className='py-2'>
             <ImageSlider />
-            <div className='mt-[3px] bg-white'>
+            <div className='title&price mt-[3px] bg-white'>
                 <div className='p-2'>
                     <Link href={""} className='text-[11px] font-medium text-green-700'>View more from Blue Earth</Link>
                     <h2 className='text-[13px] font-medium opacity-95 mt-1'>Basics Silky Smooth Body Wash, Peach & Orange Blossom Scent, 18 Fl Oz</h2>
@@ -36,7 +36,7 @@ const MobileSection = () => {
                     </span>
                 </div>
             </div>
-            <div className='bg-white p-2'>
+            <div className='details bg-white p-2'>
                 <table className=''>
                     <tbody>
                         <tr className=''>
