@@ -151,7 +151,7 @@ const ShopPageMobilePortion = () => {
                     </div>
                     <div className='priceSection'>
                         <span onClick={() => setPrice(true)} className='flex items-center border border-bgColor gap-1 
-                    px-[10px] py-[5px] rounded-full'>
+                         px-[10px] py-[5px] rounded-full'>
                             <h1 className='xxsFont uppercase'>price</h1>
                             <HiOutlineChevronDown size={14} />
                         </span>

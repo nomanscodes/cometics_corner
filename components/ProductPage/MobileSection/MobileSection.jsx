@@ -1,12 +1,17 @@
-import React from 'react'
+import React, { useState } from 'react'
 import ImageSlider from './ImageSlider'
 import Link from 'next/link'
-import { AiOutlineDislike, AiOutlineLike } from 'react-icons/ai'
+import { AiOutlineDislike, AiOutlineLike, AiOutlineSearch } from 'react-icons/ai'
 import { MdVerifiedUser } from 'react-icons/md'
 import ProductCart from '@/components/Home/Products/ProductCard'
-import { BiSearch } from 'react-icons/bi'
+import { BiSearch,BiArrowBack } from 'react-icons/bi'
+
+
 
 const MobileSection = () => {
+
+    const [showQuestion, setShowQuestion] = useState(false)
+
     return (
         <div className='py-2'>
             <ImageSlider />
@@ -290,7 +295,7 @@ const MobileSection = () => {
                             </span>
                         </div>
                     </div>
-                    <h3 className='text-[12px] font-medium text-green-700 underline'>See All</h3>
+                    <h3 className='text-[12px] font-medium text-green-700 underline'>See All Review </h3>
                     <hr className='mt-2' />
                     <div className='mt-2'>
                         <input
@@ -360,6 +365,31 @@ const MobileSection = () => {
                             <h3 className='text-[11px] 
                             font-medium'>Menom Seller</h3>
                         </span>
+                    </div>
+                </div>
+                <h3 onClick={() => setShowQuestion(true)} className='text-[12px] font-medium text-green-700 underline mt-2'>All Questions</h3>
+
+                <div className={`fixed bottom-0 left-0 right-0 z-50 
+                ${showQuestion ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full `}>
+                    <div className='bg-white h-[100vh]'>
+                        <div className='bg-[#131a22]'>
+                            <span className='flex items-center gap-3 
+                           text-white p-2'>
+                                <BiArrowBack onClick={()=>setShowQuestion(false)} size={18} />
+                                <h1 className='capitalize text-[12px] font-semibold'>
+                                    question & answer
+                                </h1>
+                            </span>
+                            <hr />
+                            <div className='flex relative p-3'>
+                                <input
+                                    type="text"
+                                    className="py-1 w-full text-xs pl-8 focus:outline-none rounded"
+                                    placeholder="Have a question? Search for answers"
+                                />
+                                <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
