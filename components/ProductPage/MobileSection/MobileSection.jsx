@@ -373,8 +373,8 @@ const MobileSection = () => {
                 <div className={`fixed bottom-0 left-0 right-0 z-50 ${showQuestion ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
                     <div onClick={() => setShowQuestion(false)} className='bg-black/70  h-full w-full'>
                     </div>
-                    <div className='bg-white h-[500px]'>
-                        <div className='bg-bgColor overflow-hidden fixed w-full'>
+                    <div className='bg-white h-[550px]'>
+                        <div className='bg-bgColor overflow-hidden fixed w-full z-50'>
                             <span className='flex items-center gap-3 p-2 text-white'>
                                 <BiArrowBack onClick={() => setShowQuestion(false)} size={18} />
                                 <h1 className='capitalize text-[12px] font-semibold'>
@@ -391,190 +391,192 @@ const MobileSection = () => {
                                 <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
                             </div>
                         </div>
-                        <div className='mt-20 h-[660px] overflow-auto'>
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : It is a sutable for oily skin?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : Yes you can use this on all skin types</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Blue Earth</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>6</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>2</h4>
-                                        </span>
-                                    </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                        <div className='overflow-auto h-[500px]'>
+                            <div className='mt-20'>
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : It is a sutable for oily skin?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : Yes you can use this on all skin types</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Blue Earth</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>6</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>2</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
-                            </div>
-                            <hr />
-                            <div className='p-2'>
-                                <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
-                                <h4 className='text-[11px] mt-[2px]'>A : This 
-                                brand is Uniliver</h4>
-                                <span className='flex items-center justify-between mt-1'>
-                                    <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
-                                    <span className='flex items-center gap-2'>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineLike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>9</h4>
-                                        </span>
-                                        <span className='flex items-center gap-1 opacity-80'>
-                                            <AiOutlineDislike className='' size={12} />
-                                            <h4 className=' text-[11px] font-medium'>4</h4>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
                                         </span>
                                     </span>
-                                </span>
-                                <span className='flex items-center gap-1 mt-[2px]'>
-                                    <FaUserShield size={12} className='opacity-75'/>
-                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
-                                </span>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
+                                <div className='p-2'>
+                                    <h4 className='text-[11px] font-semibold'>Q : Which brand is this?</h4>
+                                    <h4 className='text-[11px] mt-[2px]'>A : This
+                                        brand is Uniliver</h4>
+                                    <span className='flex items-center justify-between mt-1'>
+                                        <h4 className='text-[11px] mt-[3px] font-medium opacity-70'>Lorem Lots</h4>
+                                        <span className='flex items-center gap-2'>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineLike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>9</h4>
+                                            </span>
+                                            <span className='flex items-center gap-1 opacity-80'>
+                                                <AiOutlineDislike className='' size={12} />
+                                                <h4 className=' text-[11px] font-medium'>4</h4>
+                                            </span>
+                                        </span>
+                                    </span>
+                                    <span className='flex items-center gap-1 mt-[2px]'>
+                                        <FaUserShield size={12} className='opacity-75' />
+                                        <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    </span>
+                                </div>
+                                <hr />
                             </div>
-                            <hr />
                         </div>
                     </div>
                 </div>
