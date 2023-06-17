@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
 import TopSection from '@/components/ProductPage/TopSection/TopSection'
-import { FiChevronLeft, FiChevronRight } from 'react-icons/fi'
+import {FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import TopAds from '@/components/ProductPage/TopSection/TopAds'
 import Details from '@/components/ProductPage/Details/Details'
@@ -11,8 +11,6 @@ import CustomerReview from '@/components/ProductPage/CustomerReview/CustomerRevi
 import ImpInformation from '@/components/ProductPage/ImportantInformation/ImpInformation'
 import MobileSection from '@/components/ProductPage/MobileSection/MobileSection'
 import ProductPageBottom from '@/components/ProductPage/Bottom/Bottom'
-
-
 
 
 const ProductDetails = () => {
@@ -44,8 +42,8 @@ const ProductDetails = () => {
                     </div>
                     <TopSection />
                     <hr className='mt-4' />
-                    <Details />
-                    <hr className='mt-4' />
+                    {/* <Details />
+                    <hr className='mt-4' /> */}
                     <Compare />
                     <hr className='mt-4' />
                     <ImpInformation />

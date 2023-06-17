@@ -6,7 +6,7 @@ import Image from "../../../Extra/image.json"
 const ProductDetailsCerosule = () => {
 
   return (
-    <div className="text-white text-[20px] w-full max-w-[1360px] mx-auto sticky top-10">
+    <div className="text-white text-[20px] w-full max-w-[1360px] mx-auto sticky top-8">
       <Carousel
         infiniteLoop={true}
         showArrows={false}
@@ -21,6 +21,11 @@ const ProductDetailsCerosule = () => {
         ))}
 
       </Carousel>
+      <div className='mt-3 flex items-center gap-5 ml-[76px]'>
+        <button className='capitalize text-sm font-[600] bg-bgColor w-full text-white   p-2'>add to cart</button>
+        <button className='capitalize text-sm font-[600] 
+        bg-[#131a22] w-full text-white   p-2'>buy now</button>
+      </div>
     </div>
   );
 };
