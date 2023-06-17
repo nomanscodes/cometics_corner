@@ -391,7 +391,7 @@ const MobileSection = () => {
                                 <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
                             </div>
                         </div>
-                        <div className='overflow-auto h-[500px]'>
+                        <div className='overflow-auto h-[450px]'>
                             <div className=''>
                                 <div className='p-2'>
                                     <h4 className='text-[11px] font-semibold'>Q : It is a sutable for oily skin?</h4>
