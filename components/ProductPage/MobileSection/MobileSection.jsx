@@ -2,9 +2,10 @@ import React, { useState } from 'react'
 import ImageSlider from './ImageSlider'
 import Link from 'next/link'
 import { AiOutlineDislike, AiOutlineLike, AiOutlineSearch } from 'react-icons/ai'
-import { MdVerifiedUser } from 'react-icons/md'
+import { MdMan, MdVerifiedUser } from 'react-icons/md'
 import ProductCart from '@/components/Home/Products/ProductCard'
 import { BiSearch, BiArrowBack } from 'react-icons/bi'
+import { FaUserShield } from 'react-icons/fa'
 
 
 
@@ -373,7 +374,6 @@ const MobileSection = () => {
                     <div onClick={() => setShowQuestion(false)} className='bg-black/70 h-full w-full'>
                     </div>
                     <div className='bg-white h-fit'>
-
                         <div className='bg-bgColor'>
                             <span className='flex items-center gap-3 p-2 text-white'>
                                 <BiArrowBack onClick={() => setShowQuestion(false)} size={18} />
@@ -389,6 +389,30 @@ const MobileSection = () => {
                                     placeholder="Have a question? Search for answers"
                                 />
                                 <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
+                            </div>
+                        </div>
+                        <div className='p-2'>
+                            <div className='flex flex-col gap-2'>
+                                <h4 className='text-[11px] font-semibold'>Q : It is a sutable for oily skin?</h4>
+                                <h4 className='text-[11px]'>A : Yes you can use this on all skin types</h4>
+                                <span className='flex items-center justify-between'>
+                                    <h4 className='text-[10px] mt-1 font-medium opacity-70'>Blue Earth</h4>
+                                    <span className='flex items-center gap-2'>
+                                        <span className='flex items-center gap-1 opacity-80'>
+                                            <AiOutlineLike className='' size={12} />
+                                            <h4 className=' text-[11px] font-medium'>6</h4>
+                                        </span>
+                                        <span className='flex items-center gap-1 opacity-80'>
+                                            <AiOutlineDislike className='' size={12} />
+                                            <h4 className=' text-[11px] font-medium'>2</h4>
+                                        </span>
+                                    </span>
+                                </span>
+                                <span className='flex items-center gap-1 '>
+                                    <FaUserShield size={12} className='opacity-75'/>
+                                    <h4 className='text-[11px]  font-medium opacity-70'> Menom User</h4>
+                                    
+                                </span>
                             </div>
                         </div>
                     </div>
