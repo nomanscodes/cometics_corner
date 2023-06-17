@@ -16,6 +16,7 @@ import ProductPageBottom from '@/components/ProductPage/Bottom/Bottom'
 
 
 const ProductDetails = () => {
+    
     return (
         <Layout>
             <Head>

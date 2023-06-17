@@ -14,7 +14,7 @@ const MobileSection = () => {
     const [showQuestion, setShowQuestion] = useState(false)
 
     return (
-        <div className={`${showQuestion ? `overflow-y-hidden` : ``} p-2`}>
+        <div className='py-2'>
             <ImageSlider />
             <div className='mt-[3px] bg-white'>
                 <div className='p-2'>
@@ -374,7 +374,7 @@ const MobileSection = () => {
                     <div onClick={() => setShowQuestion(false)} className='bg-black/70  h-full w-full'>
                     </div>
                     <div className='bg-white h-[550px]'>
-                        <div className='bg-bgColor overflow-hidden fixed w-full z-50'>
+                        <div className='bg-bgColor w-full z-50'>
                             <span className='flex items-center gap-3 p-2 text-white'>
                                 <BiArrowBack onClick={() => setShowQuestion(false)} size={18} />
                                 <h1 className='capitalize text-[12px] font-semibold'>
@@ -392,7 +392,7 @@ const MobileSection = () => {
                             </div>
                         </div>
                         <div className='overflow-auto h-[500px]'>
-                            <div className='mt-20'>
+                            <div className=''>
                                 <div className='p-2'>
                                     <h4 className='text-[11px] font-semibold'>Q : It is a sutable for oily skin?</h4>
                                     <h4 className='text-[11px] mt-[2px]'>A : Yes you can use this on all skin types</h4>
