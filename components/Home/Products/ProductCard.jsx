@@ -16,15 +16,13 @@ const ProductCart = ({ item }) => {
                     </span>
                 </div>
                 <div className='card__middle flex flex-col p-2 font-medium'>
-                    <h3 className='text-[14px] font-[400]'>Top sent six colors matte liquied</h3>
+                    <h3 className='text-[13px] md:text-[14px] font-medium opacity-90'>Top sent six colors matte liquied</h3>
                     <span className='flex items-center text-xs opacity-80 py-[2px]'>
-                        <span>
-                            <picture>
-                                <img src="/SVG/star.svg" className='h-4 mr-1' alt="" />
-                            </picture>
-                        </span>
-                        <span>44/5(130)</span>
-                        <span>.765 Sold</span>
+                        <picture>
+                            <img src="/SVG/star.svg" className='h-3 pr-1 mb-[3px]' alt="" />
+                        </picture>
+                        <span className='text-[12px] font-medium '>44/5(130)</span>
+                        <span className='text-[12px] font-medium px-1'>.765 Sold</span>
                     </span>
                     <span className='flex items-center sm:gap-5 mt-1'>
                         <button className='border border-bgColor text-bgColor text-xs px-2 whitespace-nowrap'>Free Delivery</button>
