@@ -14,7 +14,7 @@ const MobileSection = () => {
     const [showQuestion, setShowQuestion] = useState(false)
 
     return (
-        <div className='py-2'>
+        <div className={`${showQuestion ? `overflow-y-hidden` : ``} p-2`}>
             <ImageSlider />
             <div className='mt-[3px] bg-white'>
                 <div className='p-2'>
