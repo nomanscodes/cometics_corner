@@ -4,7 +4,7 @@ import Link from 'next/link'
 import { AiOutlineDislike, AiOutlineLike, AiOutlineSearch } from 'react-icons/ai'
 import { MdVerifiedUser } from 'react-icons/md'
 import ProductCart from '@/components/Home/Products/ProductCard'
-import { BiSearch,BiArrowBack } from 'react-icons/bi'
+import { BiSearch, BiArrowBack } from 'react-icons/bi'
 
 
 
@@ -369,18 +369,19 @@ const MobileSection = () => {
                 </div>
                 <h3 onClick={() => setShowQuestion(true)} className='text-[12px] font-medium text-green-700 underline mt-2'>All Questions</h3>
 
-                <div className={`fixed bottom-0 left-0 right-0 z-50 
-                ${showQuestion ? `h-full ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full `}>
-                    <div className='bg-gray-500 h-full'>
-                        <div className='bg-[#131a22]'>
-                            <span className='flex items-center gap-3 
-                           text-white p-2'>
-                                <BiArrowBack onClick={()=>setShowQuestion(false)} size={18} />
+                <div className={`fixed bottom-0 left-0 right-0 z-50 ${showQuestion ? `h-[100vh] ease-in-out transition-all duration-500` : `h-0 ease-in-out transition-all duration-500`} w-full  flex flex-col`}>
+                    <div onClick={() => setShowQuestion(false)} className='bg-black/70 h-full w-full'>
+                    </div>
+                    <div className='bg-white h-fit'>
+
+                        <div className='bg-bgColor'>
+                            <span className='flex items-center gap-3 p-2 text-white'>
+                                <BiArrowBack onClick={() => setShowQuestion(false)} size={18} />
                                 <h1 className='capitalize text-[12px] font-semibold'>
                                     question & answer
                                 </h1>
                             </span>
-                            <hr />
+                            <hr className='opacity-20' />
                             <div className='flex relative p-3'>
                                 <input
                                     type="text"
