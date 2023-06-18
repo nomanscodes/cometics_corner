@@ -17,7 +17,7 @@ const ChatIcon = () => {
     }
 
     return (
-        <div className='fixed bottom-6 right-8 z-50'>
+        <div className='hidden md:block fixed bottom-6 right-8 z-50 '>
             <picture>
                 <img src="/SVG/chat.svg"
                     onMouseOver={() => showMessage("ok")}

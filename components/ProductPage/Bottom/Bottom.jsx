@@ -9,7 +9,7 @@ const ProductPageBottom = () => {
              <div className="w-1/2 h-full flex items-center justify-center text-sm font-semibold bg-bgColor text-white">
               Add To Cart
              </div>
-             <div className="w-1/2 h-full text-sm font-semibold flex items-center justify-center bg-[#ff7607] text-white">
+             <div className="w-1/2 h-full text-sm font-semibold flex items-center justify-center bg-[#12685c] text-white">
                Buy Now
              </div> 
             </div>
