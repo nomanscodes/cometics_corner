@@ -78,7 +78,7 @@ const ChatIcon = () => {
                     </div>
                 </div>
                 <div className="radimateHrTag w-full bg-slate-400 h-[1px]"></div>
-                <div className="messageTypeSection flex items-center gap-2 p-2">
+                <div className="messageTypeSection flex items-center md:gap-2 p-2">
                     <input
                         type="text"
                         className="flex flex-1 focus:outline-none text-xs pl-4
