@@ -12,7 +12,7 @@ const ChatIcon = () => {
         {showMessageBar ? (
           <>
             <picture>
-              <img src="/SVG/cross.svg" className="h-7" alt="" />
+              <img src="/SVG/cross.svg" className="h-6" alt="" />
             </picture>
           </>
         ) : (
@@ -105,7 +105,7 @@ const ChatIcon = () => {
           <picture>
             <img
               src="/SVG/send.svg"
-              className="h-5 md:h-5 cursor-pointer"
+              className="w-5 md:w-5 h-full md:cursor-pointer"
               alt=""
             />
           </picture>
