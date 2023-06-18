@@ -4,15 +4,15 @@ const ChatIcon = () => {
     const [showMessageBar, setshowMessageBar] = useState(false);
 
     return (
-        <div className="fixed bottom-14 right-1 md:bottom-4 md:right-6 z-50 ">
-            <div onClick={() => setshowMessageBar(!showMessageBar)} className="bg-[#085e54] p-[6px] md:p-2 h-8 w-8 md:h-12 md:w-12 rounded-full flex items-center justify-center  cursor-pointer z-40">
+        <div className="fixed bottom-16 right-1 md:bottom-4 md:right-6 z-50 ">
+            <div onClick={() => setshowMessageBar(!showMessageBar)} className="bg-[#085e54] p-[6px] md:p-2 h-10 w-10 md:h-12 md:w-12 rounded-full flex items-center justify-center  cursor-pointer z-40">
                 <picture>
                     <img src="/SVG/chat.svg" className="h-7" alt="" />
                 </picture>
             </div>
-            <div className={`h-[300px] md:h-[400px]  bg-[#e4e1d7] absolute bottom-[35px] md:bottom-[50px] rounded 
-            ${showMessageBar ? `w-[250px] md:w-96 right-0 ease-in-out transition-all duration-300`
-                    : `left-20 w-0 transition-all ease-in-out duration-300`} `}
+            <div className={`h-[500px] md:h-[400px]  bg-[#e4e1d7] absolute bottom-[44px] md:bottom-[50px] rounded 
+            ${showMessageBar ? `w-[280px] md:w-96 right-0 ease-in-out transition-all duration-300`
+             : `left-20 w-0 transition-all ease-in-out duration-300`} `}
             >
                 <div className="messageTop flex items-center gap-3 bg-[#085e54] p-2 rounded">
                     <picture>
@@ -27,7 +27,7 @@ const ChatIcon = () => {
                         </h3>
                     </span>
                 </div>
-                <div className="messageBody p-[8px] md:p-3 flex flex-col gap-4 h-[200px] overflow-y-auto">
+                <div className="messageBody p-[8px] md:p-3 flex flex-col gap-4 h-[400px] overflow-y-auto">
                     <div className="reciveMessage flex items-end gap-2">
                         <picture>
                             <img
