@@ -24,12 +24,12 @@ const ChatIcon = () => {
         )}
       </div>
       <div
-        className={`h-[400px]  bg-[#e4e1d7] absolute bottom-[44px] 
+        className={`  bg-[#e4e1d7] absolute bottom-[44px] 
             md:bottom-[50px] rounded 
             ${
               showMessageBar
-                ? `w-[280px] md:w-96 right-0 ease-in-out transition-all duration-300`
-                : `left-20 w-0 transition-all ease-in-out duration-300`
+                ? `h-[400px] w-[280px] md:w-96 right-0 ease-in-out transition-all duration-300`
+                : `left-20 h-0 w-0 transition-all ease-in-out duration-300`
             } `}
       >
         <div className="messageTop flex items-center gap-3 bg-[#085e54] p-2 rounded">
