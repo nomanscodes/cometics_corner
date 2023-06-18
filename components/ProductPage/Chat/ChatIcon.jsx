@@ -10,7 +10,8 @@ const ChatIcon = () => {
                     <img src="/SVG/chat.svg" className="h-7" alt="" />
                 </picture>
             </div>
-            <div className={`h-[500px] md:h-[400px]  bg-[#e4e1d7] absolute bottom-[44px] md:bottom-[50px] rounded 
+            <div className={`h-[400px]  bg-[#e4e1d7] absolute bottom-[44px] 
+            md:bottom-[50px] rounded 
             ${showMessageBar ? `w-[280px] md:w-96 right-0 ease-in-out transition-all duration-300`
              : `left-20 w-0 transition-all ease-in-out duration-300`} `}
             >
@@ -27,7 +28,7 @@ const ChatIcon = () => {
                         </h3>
                     </span>
                 </div>
-                <div className="messageBody p-[8px] md:p-3 flex flex-col gap-4 h-[400px] overflow-y-auto">
+                <div className="messageBody p-[8px] md:p-3 flex flex-col gap-4 h-[300px] md:h-[300px] overflow-y-auto">
                     <div className="reciveMessage flex items-end gap-2">
                         <picture>
                             <img
@@ -85,7 +86,7 @@ const ChatIcon = () => {
                         placeholder="Type your message"
                     />
                     <picture>
-                        <img src="/SVG/send.svg" className="h-5 cursor-pointer" alt="" />
+                        <img src="/SVG/send.svg" className="h-5 md:h-5 cursor-pointer" alt="" />
                     </picture>
                 </div>
             </div>
