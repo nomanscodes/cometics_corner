@@ -370,10 +370,11 @@ const MobileSection = () => {
                 </div>
                 <h3 onClick={() => setShowQuestion(true)} className='text-[12px] font-medium text-green-700 underline mt-2'>All Questions</h3>
 
-                <div className={`fixed bottom-0 left-0 right-0 z-50 ${showQuestion ? `h-[100vh] ease-in-out transition-all duration-300` : `h-0 ease-in-out transition-all duration-300`} w-full  flex flex-col`}>
+                <div className={`fixed bottom-0 left-0 right-0 z-50 ${showQuestion ? `
+                h-[100vh] ease-in-out transition-all duration-300` : `h-0 ease-in-out transition-all duration-300`} w-full  flex flex-col`}>
                     <div onClick={() => setShowQuestion(false)} className='bg-black/70  h-full w-full'>
                     </div>
-                    <div className='bg-white h-[550px]'>
+                    <div className={`bg-white  ${showQuestion ? ` h-[550px] transition-all ease-in-out duration-300` : `h-0 ease-in-out duration-300 `} `}>
                         <div className='bg-bgColor w-full z-50'>
                             <span className='flex items-center gap-3 p-2 text-white'>
                                 <BiArrowBack onClick={() => setShowQuestion(false)} size={18} />
