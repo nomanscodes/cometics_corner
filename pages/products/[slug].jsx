@@ -11,6 +11,7 @@ import CustomerReview from '@/components/ProductPage/CustomerReview/CustomerRevi
 import ImpInformation from '@/components/ProductPage/ImportantInformation/ImpInformation'
 import MobileSection from '@/components/ProductPage/MobileSection/MobileSection'
 import ProductPageBottom from '@/components/ProductPage/Bottom/Bottom'
+import ChatIcon from '@/components/ProductPage/Chat/ChatIcon'
 
 
 const ProductDetails = () => {
@@ -24,6 +25,7 @@ const ProductDetails = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TopAds />
+            <ChatIcon/>
             <div className=' bg-white hidden md:block'>
                 <div className='PCsection py-2 '>
                     <div className="flex items-center gap-2 px-6">

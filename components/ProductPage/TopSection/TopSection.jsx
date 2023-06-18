@@ -1,4 +1,4 @@
-/* eslint-disable react/no-unescaped-entities */
+
 import React from "react";
 import ProductDetailsCerosule from "./ProductDetailsCerosule";
 import Link from "next/link";
@@ -38,7 +38,7 @@ const TopSection = () => {
             </span>
           </div>
           <hr />
-          <span>
+          <span className="price&deliveryDate">
             <h1 className="price font-[500] text-sm">
               <span className="opacity-80 pr-2">Price :</span>
               894 TK
@@ -97,7 +97,7 @@ const TopSection = () => {
                     brand
                   </td>
                   <td className="text-[13px] font-[400]  capitalize">
-                    lorem's
+                    lorem
                   </td>
                 </tr>
                 <tr className="mt-[2px]">
@@ -141,6 +141,11 @@ const TopSection = () => {
               </tbody>
             </table>
           </div>
+          <div className='buttonSection mt-3 flex items-center gap-5'>
+            <button className='capitalize text-sm font-[600] bg-bgColor w-full text-white   p-2'>add to cart</button>
+            <button className='capitalize text-sm font-[600] 
+        bg-[#131a22] w-full text-white   p-2'>buy now</button>
+          </div>
           <hr className="mt-2" />
           <div className="aboutThisProduct mt-2 ">
             <h1 className="capitalize text-base font-semibold opacity-95">
@@ -171,7 +176,7 @@ const TopSection = () => {
               </li>
               <li className="text-[13px] font-[400] mt-[6px] list-disc ml-5">
                 Alexa voice shopping enabled: to place your next order, just
-                say, “Alexa, reorder Amazon Basics Body Wash"
+                say, “Alexa, reorder Amazon Basics Body Wash
               </li>
             </ul>
           </div>
