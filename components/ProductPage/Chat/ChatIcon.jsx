@@ -7,7 +7,7 @@ const ChatIcon = () => {
     <div className="fixed bottom-16 right-1 md:bottom-4 md:right-6 z-50 ">
       <div
         onClick={() => setshowMessageBar(!showMessageBar)}
-        className="bg-[#085e54] p-[9px] md:p-2 h-10 w-10 md:h-12 md:w-12 rounded-full flex items-center justify-center  cursor-pointer z-40"
+        className="bg-[#085e54] p-[9px] md:p-2 h-10 w-10 md:h-12 md:w-12 rounded-full flex items-center justify-center md:cursor-pointer z-40"
       >
         {showMessageBar ? (
           <>
