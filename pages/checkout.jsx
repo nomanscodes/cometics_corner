@@ -89,7 +89,7 @@ const Checkout = () => {
                 <div className="contentSection mt-4">
                     <div className={`shippingAdress  ${openTab === "address" ? `block` : `hidden`}`} >
                         <div className="w-full md:flex md:gap-4">
-                            <div className="left md:w-4/6 h-fit bg-[#eae9e5] p-2 rounded shadow-md">
+                            <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-6 py-3 md:px-3 md:p-2 rounded shadow-md">
                                 <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <InputField
                                         label="Full Name"
@@ -107,7 +107,7 @@ const Checkout = () => {
                                     />
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Division</h1>
-                                        <select className="md:w-[400px] py-[6px] md:py-[8px] text-[13px] pl-3 focus:outline-none" name="division" id="">
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] text-[13px] pl-3 focus:outline-none rounded-md  md:rounded-sm " name="division" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
@@ -117,7 +117,7 @@ const Checkout = () => {
                                 <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Distric</h1>
-                                        <select className="md:w-[400px] py-[6px] md:py-[8px] text-[13px] pl-3 focus:outline-none" name="Distric" id="">
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] text-[13px] pl-3 focus:outline-none" name="Distric" id="">
                                             <option value="Dhaka">Dhaka</option>
                                             <option value="Barisl">Barisal</option>
                                             <option value="Khulna">Khulna</option>
@@ -125,7 +125,7 @@ const Checkout = () => {
                                     </div>
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Sub Distric</h1>
-                                        <select className="md:w-[400px] py-[6px] md:py-[8px] text-[13px] pl-3 focus:outline-none" name="sub_distric" id="">
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] text-[13px] pl-3 focus:outline-none" name="sub_distric" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
