@@ -166,11 +166,11 @@ const Checkout = () => {
                                     />
                                 </div>
                                 <div className="flex items-center justify-center">
-                                    <div className='flex flex-col gap-[2px] mt-2 relative'>
+                                    <div className='flex flex-col gap-[2px] md:mt-2 relative'>
                                         <label className='text-[12px] md:text-[14px] opacity-90'>Address</label>
                                         <input
                                             placeholder="Address"
-                                            className="py-[10px] md:py-[10px] w-full md:w-[815px] text-[13px] pl-3 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                            className="py-[10px] md:py-[10px] min-w-[285px] w-full lg:w-[700px] xl:w-[815px] text-[13px] pl-3 inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
                                     </div>
                                 </div>
