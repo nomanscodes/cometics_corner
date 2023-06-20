@@ -26,7 +26,7 @@ const Checkout = () => {
                 <div className="tabSection flex justify-center mt-2 md:mt-4 h-12 md:h-20 pb-2 bg-[#eae9e5] rounded shadow-md">
                     <div className="flex items-center">
                         <div className="flex flex-col items-center">
-                            <div className="h-5 w-5 md:h-9 md:w-9 bg-gray-800 rounded-full flex items-center justify-center cursor-pointer">
+                            <div className="h-5 w-5 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center cursor-pointer">
                                 <picture>
                                     <img src="/SVG/whitecart.svg" className="w-3 md:w-5" alt="" />
                                 </picture>
@@ -37,11 +37,11 @@ const Checkout = () => {
                         </div>
                     </div>
                     <div className="flex items-center">
-                        <span className="h-[2px] w-[60px] md:w-[100px] bg-gray-800"></span>
+                        <span className="h-[2px] w-[60px] md:w-[100px] bg-green-700"></span>
                         <div className="flex flex-col items-center">
                             <div
                                 onClick={() => setOpenTab("address")}
-                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-800 rounded-full flex items-center justify-center  cursor-pointer"
+                                className="h-5 w-5 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center  cursor-pointer"
                             >
                                 <picture>
                                     <img src="/SVG/whiteaddress.svg" className="w-3 md:w-5" alt="" />
@@ -53,11 +53,11 @@ const Checkout = () => {
                         </div>
                     </div>
                     <div className="flex items-center">
-                        <span className="h-[2px] w-[60px] md:w-[100px] bg-gray-800"></span>
+                        <span className="h-[2px] w-[60px] md:w-[100px] bg-gray-500"></span>
                         <div className="flex flex-col items-center ">
                             <div
                                 onClick={() => setOpenTab("payment")}
-                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-800 rounded-full flex items-center justify-center cursor-pointer"
+                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-500 rounded-full flex items-center justify-center cursor-pointer"
                             >
                                 <picture>
                                     <img src="/SVG/whitepayment.svg" className="w-3 md:w-5" alt="" />
@@ -67,14 +67,13 @@ const Checkout = () => {
                                 Payment
                             </h2>
                         </div>
-
                     </div>
                     <div className="flex items-center">
-                        <span className="h-[2px] w-[60px] md:w-[100px] bg-gray-800"></span>
+                        <span className="h-[2px] w-[60px] md:w-[100px] bg-gray-500"></span>
                         <div className="flex flex-col items-center">
                             <div
                                 onClick={() => setOpenTab("confirmation")}
-                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-800 rounded-full flex items-center justify-center  cursor-pointer"
+                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-500 rounded-full flex items-center justify-center  cursor-pointer"
                             >
                                 <picture>
                                     <img src="/SVG/confirmation.svg" className="w-3 md:w-5" alt="" />
@@ -151,17 +150,29 @@ const Checkout = () => {
                                     </div>
                                 </div>
                                 <div className=" md:flex items-center justify-center gap-3 mt-3 mb-3">
-                                    <InputField
-                                        type="address" name="address"
-                                        label="Address"
-                                        placeholder={"Distric"}
-                                    />
+                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Union</h1>
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
+                                            <option value="Dhaka ">Dhaka</option>
+                                            <option value="Barisl ">Barisal</option>
+                                            <option value="Khulna ">Khulna</option>
+                                        </select>
+                                    </div>
                                     <InputField
                                         type="number"
                                         name="zip_code"
                                         label="Zip code"
                                         placeholder={"Zip Code"}
                                     />
+                                </div>
+                                <div className="flex items-center justify-center">
+                                    <div className='flex flex-col gap-[2px] mt-2 relative'>
+                                        <label className='text-[12px] md:text-[14px] opacity-90'>Address</label>
+                                        <input
+                                            placeholder="Address"
+                                            className="py-[10px] md:py-[10px] w-full md:w-[815px] text-[13px] pl-3 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                        />
+                                    </div>
                                 </div>
                             </div>
                             <div className="right mt-2 md:mt-0 md:w-2/6 h-fit">
