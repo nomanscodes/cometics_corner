@@ -96,7 +96,8 @@ const Checkout = () => {
                                         placeholder={"Full name"}
                                     />
                                     <div className='flex flex-col gap-[2px] mt-2 relative '>
-                                        <span className="flex items-center absolute mt-[29px] ml-1">
+                                        <span className="flex items-center absolute 
+                                        mt-[26px]  md:mt-[29px] ml-1">
                                             <picture>
                                                 <img src="/SVG/BdFlag.svg" className="w-7 " alt="" />
                                             </picture>
@@ -104,7 +105,7 @@ const Checkout = () => {
                                         </span>
                                         <label className='text-[12px] md:text-[14px] opacity-90'>Mobile Number</label>
                                         <input
-                                            id="phone" type="tel" name="phone" 
+                                            id="phone" type="tel" name="phone"
                                             placeholder="Mobile No"
                                             className="py-[10px] md:py-[10px] md:w-[400px] text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
@@ -113,7 +114,7 @@ const Checkout = () => {
                                 <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <div className='flex flex-col gap-[2px] mt-2 relative'>
                                         <picture>
-                                            <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[31px] ml-1" alt="" />
+                                            <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
                                         </picture>
                                         <label className='text-[12px] md:text-[14px] opacity-90'>Country</label>
                                         <input value="Bangladesh"
