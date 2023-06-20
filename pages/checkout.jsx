@@ -95,17 +95,32 @@ const Checkout = () => {
                                         label="Full Name"
                                         placeholder={"Full name"}
                                     />
-                                    <InputField
-                                        label="Mobile"
-                                        placeholder={"Mobile number"}
-                                    />
+                                    <div className='flex flex-col gap-[2px] mt-2 relative '>
+                                        <span className="flex items-center absolute mt-[29px] ml-1">
+                                            <picture>
+                                                <img src="/SVG/BdFlag.svg" className="w-7 " alt="" />
+                                            </picture>
+                                            <h2 className="text-[13px]">+088</h2>
+                                        </span>
+                                        <label className='text-[12px] md:text-[14px] opacity-90'>Mobile Number</label>
+                                        <input
+                                            id="phone" type="tel" name="phone" 
+                                            placeholder="Mobile No"
+                                            className="py-[10px] md:py-[10px] md:w-[400px] text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm bg-white"
+                                        />
+                                    </div>
                                 </div>
                                 <div className=" md:flex items-center justify-center gap-3 mt-3">
-                                    <InputField
-                                        label="Country"
-                                        value={"Bangladesh"}
-                                        
-                                    />
+                                    <div className='flex flex-col gap-[2px] mt-2 relative'>
+                                        <picture>
+                                            <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[31px] ml-1" alt="" />
+                                        </picture>
+                                        <label className='text-[12px] md:text-[14px] opacity-90'>Country</label>
+                                        <input value="Bangladesh"
+                                            disabled
+                                            className="py-[10px] md:py-[10px] md:w-[400px] text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                        />
+                                    </div>
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Division</h1>
                                         <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
