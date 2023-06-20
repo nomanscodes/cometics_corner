@@ -37,7 +37,6 @@ const Checkout = () => {
                                 </h2>
                             </div>
                         </div>
-
                         <div className="flex items-center">
                             <span className="h-[2px] w-[60px] md:w-[100px] bg-gray-800"></span>
                             <div className="flex flex-col items-center">
@@ -93,8 +92,9 @@ const Checkout = () => {
                             className={`shippingAdress  ${openTab === "address" ? `block` : `hidden`
                                 }`}
                         >
-                            <div className="w-full flex  gap-4">
-                                <div className="left w-4/6 h-fit bg-[#eae9e5] px-7 py-4 rounded shadow-md flex justify-center gap-12">
+                            <div className="w-full md:flex md:gap-4">
+
+                                <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-7 py-4 rounded shadow-md md:flex justify-center md:gap-12">
                                     <div className="left_LeftSide">
                                         <h1 className="text-[12px] font-medium text-gray-800 capitalize mb-3">
                                             select your shipping address
@@ -162,7 +162,6 @@ const Checkout = () => {
                                                     </div>
                                                 </div>
                                             </div>
-
                                             <div className="mt-3 w-full flex flow-1 items-center justify-center gap-3 border border-gray-400 p-2 cursor-pointer">
                                                 <h3 className="text-[11px] font-medium text-gray-700">
                                                     Select Delivery Date
@@ -175,7 +174,6 @@ const Checkout = () => {
                                                 Order Note :
                                                 <span className="opacity-70"> (Optional)</span>
                                             </h3>
-
                                             <textarea
                                                 name=""
                                                 placeholder="Special note for your order eg. about delivery"
@@ -259,7 +257,7 @@ const Checkout = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="right w-2/6  h-fit">
+                                <div className="right mt-2 md:mt-0 md:w-2/6 h-fit">
                                     <div className="productsCard bg-[#eae9e5] rounded shadow-md p-4">
                                         <h3 className="text-[13px] font-medium text-gray-700">
                                             Order Items
