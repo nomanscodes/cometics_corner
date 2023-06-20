@@ -10,7 +10,7 @@ const AddressCard = () => {
                             <img src="/SVG/correct.svg" alt="" />
                         </picture>
                     </span>
-                    <h3 className="text-[13px] font-semibold text-gray-800">Home Address</h3>
+                    <h3 className="text-[13px] font-semibold text-gray-800 whitespace-nowrap">Home Address</h3>
                     <button className="text-[10px] font-medium text-gray-900 bg-gray-300 p-1 rounded">Default</button>
                 </div>
                 <div className="mt-3 ml-6">
