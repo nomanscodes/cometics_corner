@@ -90,7 +90,7 @@ const Checkout = () => {
                     <div className={`shippingAdress  ${openTab === "address" ? `block` : `hidden`}`} >
                         <div className="w-full md:flex md:gap-4">
                             <div className="left md:w-4/6 h-fit bg-[#eae9e5] p-2 rounded shadow-md">
-                                <div className=" md:flex items-center justify-center gap-3">
+                                <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <InputField
                                         label="Full Name"
                                         placeholder={"Full name"}
@@ -100,34 +100,46 @@ const Checkout = () => {
                                         placeholder={"Mobile number"}
                                     />
                                 </div>
-                                <div className=" md:flex items-center justify-center gap-3">
+                                <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <InputField
                                         label="Country"
                                         value={"Bangladesh"}
                                     />
-                                    <InputField
-                                        label="Division"
-                                        placeholder={"Division "}
-                                    />
+                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Division</h1>
+                                        <select className="md:w-[400px] py-[6px] md:py-[8px] text-[13px] pl-3 focus:outline-none" name="division" id="">
+                                            <option value="Dhaka ">Dhaka</option>
+                                            <option value="Barisl ">Barisal</option>
+                                            <option value="Khulna ">Khulna</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div className=" md:flex items-center justify-center gap-3">
-                                    <InputField
-                                        label="Distric"
-                                        placeholder={"Distric"}
-                                    />
-                                    <InputField
-                                        label="Sub-distric"
-                                        placeholder={"Sub-distric"}
-                                    />
+                                <div className=" md:flex items-center justify-center gap-3 mt-3">
+                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Distric</h1>
+                                        <select className="md:w-[400px] py-[6px] md:py-[8px] text-[13px] pl-3 focus:outline-none" name="Distric" id="">
+                                            <option value="Dhaka">Dhaka</option>
+                                            <option value="Barisl">Barisal</option>
+                                            <option value="Khulna">Khulna</option>
+                                        </select>
+                                    </div>
+                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Sub Distric</h1>
+                                        <select className="md:w-[400px] py-[6px] md:py-[8px] text-[13px] pl-3 focus:outline-none" name="sub_distric" id="">
+                                            <option value="Dhaka ">Dhaka</option>
+                                            <option value="Barisl ">Barisal</option>
+                                            <option value="Khulna ">Khulna</option>
+                                        </select>
+                                    </div>
                                 </div>
-                                <div className=" md:flex items-center justify-center gap-3">
+                                <div className=" md:flex items-center justify-center gap-3 mt-3 mb-3">
                                     <InputField
                                         label="Address"
                                         placeholder={"Distric"}
                                     />
                                     <InputField
-                                        label="Postal Code"
-                                        placeholder={"Postal Code"}
+                                        label="Zip code"
+                                        placeholder={"Zip Code"}
                                     />
                                 </div>
                             </div>
