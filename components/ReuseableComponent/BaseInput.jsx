@@ -9,6 +9,7 @@ const InputField = ({
     placeholder,
     error,
     label = "",
+    
 }) => { 
     return (
         <div className='flex flex-col gap-[2px] mt-2 '>

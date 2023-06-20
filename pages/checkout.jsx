@@ -104,10 +104,11 @@ const Checkout = () => {
                                     <InputField
                                         label="Country"
                                         value={"Bangladesh"}
+                                        
                                     />
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Division</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] text-[13px] pl-3 focus:outline-none rounded-md  md:rounded-sm " name="division" id="">
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
@@ -117,7 +118,7 @@ const Checkout = () => {
                                 <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Distric</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] text-[13px] pl-3 focus:outline-none" name="Distric" id="">
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="Distric" id="">
                                             <option value="Dhaka">Dhaka</option>
                                             <option value="Barisl">Barisal</option>
                                             <option value="Khulna">Khulna</option>
@@ -125,7 +126,7 @@ const Checkout = () => {
                                     </div>
                                     <div className=" flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Sub Distric</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] text-[13px] pl-3 focus:outline-none" name="sub_distric" id="">
+                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
