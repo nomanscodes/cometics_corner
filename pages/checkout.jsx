@@ -92,6 +92,7 @@ const Checkout = () => {
                             <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-6 py-3 md:px-3 md:p-2 rounded shadow-md">
                                 <div className=" md:flex items-center justify-center gap-3 mt-3">
                                     <InputField
+                                        type="name" name="name"
                                         label="Full Name"
                                         placeholder={"Full name"}
                                     />
@@ -151,10 +152,13 @@ const Checkout = () => {
                                 </div>
                                 <div className=" md:flex items-center justify-center gap-3 mt-3 mb-3">
                                     <InputField
+                                        type="address" name="address"
                                         label="Address"
                                         placeholder={"Distric"}
                                     />
                                     <InputField
+                                        type="number"
+                                        name="zip_code"
                                         label="Zip code"
                                         placeholder={"Zip Code"}
                                     />
