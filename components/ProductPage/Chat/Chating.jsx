@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-const ChatIcon = () => {
+const Chating = () => {
   const [showMessageBar, setshowMessageBar] = useState(false);
 
   return (
@@ -113,4 +113,4 @@ const ChatIcon = () => {
   );
 };
 
-export default ChatIcon;
+export default Chating;

@@ -55,6 +55,9 @@ background-size: 100% 100%;
 	font-weight: 200;
 }
 
+.inputOuteLine{
+    outline: 6px;
+}
 
 /* PRODUCT DETAILS CAROUSEL STYLING CUSTOMIZATION START */
 

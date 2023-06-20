@@ -11,7 +11,8 @@ import CustomerReview from '@/components/ProductPage/CustomerReview/CustomerRevi
 import ImpInformation from '@/components/ProductPage/ImportantInformation/ImpInformation'
 import MobileSection from '@/components/ProductPage/MobileSection/MobileSection'
 import ProductPageBottom from '@/components/ProductPage/Bottom/Bottom'
-import ChatIcon from '@/components/ProductPage/Chat/ChatIcon'
+import Chating from '@/components/ProductPage/Chat/Chating'
+
 
 
 const ProductDetails = () => {
@@ -25,7 +26,7 @@ const ProductDetails = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TopAds />
-            <ChatIcon/>
+            <Chating/>
             <div className=' bg-white hidden md:block'>
                 <div className='PCsection py-2 '>
                     <div className="flex items-center gap-2 px-6">
@@ -44,8 +45,6 @@ const ProductDetails = () => {
                     </div>
                     <TopSection />
                     <hr className='mt-4' />
-                    {/* <Details />
-                    <hr className='mt-4' /> */}
                     <Compare />
                     <hr className='mt-4' />
                     <ImpInformation />

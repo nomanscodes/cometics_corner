@@ -143,8 +143,12 @@ const TopSection = () => {
           </div>
           <div className='buttonSection mt-3 flex items-center gap-5'>
             <button className='capitalize text-sm font-[600] bg-bgColor w-full text-white   p-2'>add to cart</button>
-            <button className='capitalize text-sm font-[600] 
-        bg-[#131a22] w-full text-white   p-2'>buy now</button>
+
+            <Link href={"/checkout"} className='capitalize text-sm font-[600]
+             bg-[#131a22] w-full text-white p-2 flex items-center justify-center'>
+              buy now
+            </Link>
+
           </div>
           <hr className="mt-2" />
           <div className="aboutThisProduct mt-2 ">
