@@ -54,6 +54,9 @@ const Checkout = () => {
     const submitHandle = () => {
         if (name === "" || mobile_number === "" || country === "" || division === "" || distric === "" || sub_distric === "" || union === "" || zip_code === "" || address === "") {
             errorNotify("All Input Field Are Required 🤯")
+        } else {
+            successNotify("Shipping Address Updated")
+            setOpenTab("payment")
         }
     }
 
