@@ -2,7 +2,7 @@ import React from "react";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import Image from "../../../Extra/image.json"
-import { AppPropsType } from "next/dist/shared/lib/utils";
+
 
 const ProductDetailsCerosule = () => {
 
@@ -21,9 +21,7 @@ const ProductDetailsCerosule = () => {
             <video src="/demo/p/pv.mp4"></video>
           </picture>
         ))}
-        <video controls >
-          <source src="/demo/p/pv.mp4" type="video/mp4" />
-        </video>
+       
       </Carousel>
     </div>
   );
