@@ -13,7 +13,7 @@ const InputField = ({
 }) => {
     return (
         <div className='flex flex-col gap-[2px] mt-2 '>
-            <label className='text-[13px] md:text-[14px] opacity-90 mb-1'>{label}</label>
+            <label className='text-[13px] md:text-[14px] opacity-90'>{label}</label>
             <input
                 name={name}
                 type={type}
