@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import React from 'react'
-import ReviewCard from './ReviewCard'
+import ReviewCard from '../Card/ReviewCard'
 
 const Review = () => {
     return (
@@ -27,6 +27,7 @@ const Review = () => {
             </h1>
             <div className='mt-2'>
                 <ReviewCard />
+                <ReviewCard img />
             </div>
         </div>
     )
