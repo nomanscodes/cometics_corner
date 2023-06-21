@@ -74,7 +74,7 @@ const Checkout = () => {
                 <h1 className="flex items-center justify-center md:text-[23px] font-semibold text-gray-800 capitalize">
                     shipping address
                 </h1>
-                <div className="tabSection flex justify-center mt-2 md:mt-4 h-14 md:h-20 pb-2 bg-[#eae9e5] rounded shadow-md">
+                <div className="tabSection flex justify-center mt-2 md:mt-4 h-14 md:h-20 pb-2 bg-[#eae9e5] md:rounded shadow-md">
                     <div className="flex items-center">
                         <div className="flex flex-col items-center">
                             <div className="h-7 w-7 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center cursor-pointer">
