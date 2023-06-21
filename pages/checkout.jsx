@@ -447,11 +447,13 @@ const Checkout = () => {
                                             <img src="/SVG/online.svg" className="w-5" alt="" />
                                         </picture>
                                     </div>
-                                    <div className={`mt ${showSSL ? `block cursor-pointer` : `opacity-0`} mt-2`}>
-                                        <picture>
-                                            <img src="/ssl/payment.jpg" className="w-64 shadow-md rounded" alt="" />
-                                        </picture>
-                                    </div>
+
+                                    <picture>
+                                        <img src="/ssl/payment.jpg"
+                                            className={`${showSSL ? `w-64 h-36 ease-in-out transition-all duration-500` : `h-0 w-0 ease-in-out transition-all duration-500`}  shadow-md rounded mt-2 cursor-pointer`} alt=""
+                                        />
+                                    </picture>
+
                                 </div>
                             </div>
                             <div className="right bg-[#eae9e5] rounded shadow-md mt-2 md:mt-0 md:w-2/6 h-fit">
