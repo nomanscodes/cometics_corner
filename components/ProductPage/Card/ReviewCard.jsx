@@ -28,7 +28,7 @@ const ReviewCard = () => {
                     <h3 className='text-[11px] md:text-[12px] font-medium'>Verified Purchease</h3>
                 </span>
             </div>
-            <span className='md:text-[11px] font-medium'>
+            <span className='text-[10px] md:text-[11px] font-medium'>
                 Reviewed Date : April 5 ,2024
             </span>
             <div className='text-[12px] font-semibold'>
