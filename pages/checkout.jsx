@@ -70,19 +70,19 @@ const Checkout = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className="bg-white px-2 md:px-6 py-3 ">
+            <div className="bg-white px-2 md:px-6 py-3">
                 <h1 className="flex items-center justify-center md:text-[23px] font-semibold text-gray-800 capitalize">
                     shipping address
                 </h1>
-                <div className="tabSection flex justify-center mt-2 md:mt-4 h-12 md:h-20 pb-2 bg-[#eae9e5] rounded shadow-md">
+                <div className="tabSection flex justify-center mt-2 md:mt-4 h-14 md:h-20 pb-2 bg-[#eae9e5] rounded shadow-md">
                     <div className="flex items-center">
                         <div className="flex flex-col items-center">
-                            <div className="h-5 w-5 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center cursor-pointer">
+                            <div className="h-7 w-7 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center cursor-pointer">
                                 <picture>
-                                    <img src="/SVG/whitecart.svg" className="w-3 md:w-5" alt="" />
+                                    <img src="/SVG/whitecart.svg" className="w-[18px] md:w-5" alt="" />
                                 </picture>
                             </div>
-                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-5 md:mt-9">
+                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-7 md:mt-9">
                                 Cart
                             </h2>
                         </div>
@@ -92,13 +92,13 @@ const Checkout = () => {
                         <div className="flex flex-col items-center">
                             <div
                                 onClick={() => setOpenTab("address")}
-                                className="h-5 w-5 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center  cursor-pointer"
+                                className="h-7 w-7 md:h-9 md:w-9 bg-green-700 rounded-full flex items-center justify-center  cursor-pointer"
                             >
                                 <picture>
-                                    <img src="/SVG/whiteaddress.svg" className="w-3 md:w-5" alt="" />
+                                    <img src="/SVG/whiteaddress.svg" className="w-[18px] md:w-5" alt="" />
                                 </picture>
                             </div>
-                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-5 md:mt-9">
+                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-7 md:mt-9">
                                 Address
                             </h2>
                         </div>
@@ -108,13 +108,13 @@ const Checkout = () => {
                         <div className="flex flex-col items-center ">
                             <div
                                 onClick={() => setOpenTab("payment")}
-                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-500 rounded-full flex items-center justify-center cursor-pointer"
+                                className="h-7 w-7 md:h-9 md:w-9 bg-gray-500 rounded-full flex items-center justify-center cursor-pointer"
                             >
                                 <picture>
-                                    <img src="/SVG/whitepayment.svg" className="w-3 md:w-5" alt="" />
+                                    <img src="/SVG/whitepayment.svg" className="w-[18px] md:w-5" alt="" />
                                 </picture>
                             </div>
-                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-5 md:mt-9">
+                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-7 md:mt-9">
                                 Payment
                             </h2>
                         </div>
@@ -124,13 +124,13 @@ const Checkout = () => {
                         <div className="flex flex-col items-center">
                             <div
                                 onClick={() => setOpenTab("confirmation")}
-                                className="h-5 w-5 md:h-9 md:w-9 bg-gray-500 rounded-full flex items-center justify-center  cursor-pointer"
+                                className="h-7 w-7 md:h-9 md:w-9 bg-gray-500 rounded-full flex items-center justify-center  cursor-pointer"
                             >
                                 <picture>
-                                    <img src="/SVG/confirmation.svg" className="w-3 md:w-5" alt="" />
+                                    <img src="/SVG/confirmation.svg" className="w-[18px] md:w-5" alt="" />
                                 </picture>
                             </div>
-                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-5 md:mt-9">
+                            <h2 className="text-[11px] font-medium text-gray-800 absolute mt-7 md:mt-9">
                                 Confirmation
                             </h2>
                         </div>
