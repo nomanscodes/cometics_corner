@@ -13,21 +13,26 @@ import { errorNotify, successNotify } from "@/Notify/Notify";
 
 const Checkout = () => {
     const [openTab, setOpenTab] = useState("address");
+    const [showSSL, setShowSSL] = useState(false);
     const [showAddressModal, setShowAddressModal] = useState(false);
     const [selectCod, setSelectCod] = useState(false)
     const [selectOp, setSelectOp] = useState(false)
 
+
     const selectPaymentMedhod = (arg) => {
-        // if (arg === "cod") {
-        //     setSelectCod(true)
-        //     setSelectOp(false)
-        // }
-        // if (arg === "op") {
-        //     setSelectCod(false)
-        //     setSelectOp(true)
-        // }
-        setSelectCod(arg === "cod")
-        setSelectOp(arg === "op")
+        if (arg === "cod") {
+            setSelectCod(true)
+            setSelectOp(false)
+            setShowSSL(false)
+        }
+        if (arg === "op") {
+            setSelectCod(false)
+            setSelectOp(true)
+            setShowSSL(true)
+        }
+
+        // setSelectCod(arg === "cod")
+        // setSelectOp(arg === "op")
     }
     const [shippingAddress, setShippingAddress] = useState({
         name: '',
@@ -411,7 +416,7 @@ const Checkout = () => {
                                         select prefered payment method
                                     </h1>
                                     <div onClick={() => selectPaymentMedhod("cod")} className={`p-3 border 
-                                    ${selectCod ? `border-green-700` : `border-gray-400`}  rounded flex items-center gap-4 mt-3 cursor-pointer`}>
+                                    ${selectCod ? `border-bgColor` : `border-gray-400`}  rounded flex items-center gap-4 mt-3 cursor-pointer`}>
                                         <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
                                             {selectCod && (
                                                 <picture>
@@ -427,7 +432,7 @@ const Checkout = () => {
                                         </picture>
                                     </div>
                                     <div onClick={() => selectPaymentMedhod("op")} className={`p-3 border 
-                                    ${selectOp ? `border-green-700` : `border-gray-400`}  rounded flex items-center gap-4 mt-3 cursor-pointer`}>
+                                    ${selectOp ? `border-bgColor` : `border-gray-400`}  rounded flex items-center gap-4 mt-3 cursor-pointer`}>
                                         <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
                                             {selectOp && (
                                                 <picture>
@@ -442,7 +447,11 @@ const Checkout = () => {
                                             <img src="/SVG/online.svg" className="w-5" alt="" />
                                         </picture>
                                     </div>
-
+                                    <div className={`mt ${showSSL ? `block cursor-pointer` : `opacity-0`} mt-2`}>
+                                        <picture>
+                                            <img src="/ssl/payment.jpg" className="w-64 shadow-md rounded" alt="" />
+                                        </picture>
+                                    </div>
                                 </div>
                             </div>
                             <div className="right bg-[#eae9e5] rounded shadow-md mt-2 md:mt-0 md:w-2/6 h-fit">
