@@ -118,11 +118,11 @@ const Checkout = () => {
                                             </picture>
                                             <h2 className="text-[13px]">+088</h2>
                                         </span>
-                                        <label className='text-[12px] md:text-[14px] opacity-90'>Mobile Number</label>
+                                        <label className='text-[13px] md:text-[14px] opacity-90 mb-1'>Mobile Number</label>
                                         <input
                                             id="phone" type="tel" name="phone"
                                             placeholder="Mobile No*"
-                                            className="py-[10px] md:py-[10px] w-[100%] flex flex-1 text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm bg-white"
+                                            className="py-[10px] md:py-[10px] w-[100%] flex flex-1 text-[12px] md:text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
                                     </div>
                                 </div>
@@ -131,15 +131,15 @@ const Checkout = () => {
                                         <picture>
                                             <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
                                         </picture>
-                                        <label className='text-[12px] md:text-[14px] opacity-90'>Country</label>
+                                        <label className='text-[13px] md:text-[14px] opacity-90 mb-1'>Country</label>
                                         <input value="Bangladesh"
                                             disabled
-                                            className="py-[10px] md:py-[10px] w-[100%] text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                            className="py-[10px] md:py-[10px] w-[100%] text-[12px] md:text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
                                     </div>
                                     <div className="col-span-1 flex flex-col justify-center mt-[10px]">
-                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Division</h1>
-                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
+                                        <h1 className="text-[13px] md:text-[14px] opacity-90 mb-1">Division</h1>
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
@@ -148,26 +148,26 @@ const Checkout = () => {
                                 </div>
                                 <div className="grid grid-cols-2 gap-3 mt-3">
                                     <div className="col-span-1 flex flex-col justify-center mt-[10px]">
-                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Distric</h1>
-                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="Distric" id="">
+                                        <h1 className="text-[13px] md:text-[14px] opacity-90 mb-1">Distric</h1>
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="Distric" id="">
                                             <option value="Dhaka">Dhaka</option>
                                             <option value="Barisl">Barisal</option>
                                             <option value="Khulna">Khulna</option>
                                         </select>
                                     </div>
                                     <div className="col-span-1 flex flex-col justify-center mt-[10px]">
-                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Sub Distric</h1>
-                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
+                                        <h1 className="text-[13px] md:text-[14px] opacity-90 mb-1">Sub Distric</h1>
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div className="md:grid grid-cols-2 gap-3 mt-3 mb-3">
+                                <div className="grid grid-cols-2 gap-3 mt-3 mb-3">
                                     <div className=" col-span-1 flex flex-col justify-center mt-[10px]">
-                                        <h1 className="text-[12px] md:text-[14px] opacity-90">Union</h1>
-                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
+                                        <h1 className="text-[13px] md:text-[14px] opacity-90 mb-1">Union</h1>
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
@@ -181,10 +181,10 @@ const Checkout = () => {
                                     />
                                 </div>
                                 <div className='flex flex-col gap-[2px] md:mt-2'>
-                                    <label className='text-[12px] md:text-[14px] opacity-90'>Address</label>
+                                    <label className='text-[12px] md:text-[14px] opacity-90 mb-1'>Address</label>
                                     <input
                                         placeholder="Address*"
-                                        className="py-[10px] md:py-[10px] w-full text-[13px] pl-3 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                        className="py-[10px] md:py-[10px] w-full text-[13px] pl-2 md:pl-4 inputOuteLine rounded-md md:rounded-sm bg-white"
                                     />
                                 </div>
                             </div>
