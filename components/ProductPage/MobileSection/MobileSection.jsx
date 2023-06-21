@@ -1,15 +1,11 @@
 import React, { useState } from 'react'
 import ImageSlider from './ImageSlider'
 import Link from 'next/link'
-import { AiFillLike, AiOutlineDislike, AiOutlineLike, AiOutlineSearch, AiFillDislike } from 'react-icons/ai'
-import { MdVerifiedUser } from 'react-icons/md'
+import { AiOutlineSearch } from 'react-icons/ai'
 import ProductCart from '@/components/Home/Products/ProductCard'
 import { BiSearch, BiArrowBack } from 'react-icons/bi'
-import { FaUserShield } from 'react-icons/fa'
 import ReviewCard from '../Card/ReviewCard'
 import QuestionAnswerCard from '../Card/Question&AnswerCard'
-import SecondQuestionandAnswer from '../Card/SecondQuestionandAnswer'
-
 
 
 const MobileSection = () => {
@@ -240,7 +236,6 @@ const MobileSection = () => {
                     <QuestionAnswerCard />
                 </div>
                 <h3 onClick={() => setShowQuestion(true)} className='text-[12px] font-medium text-green-700 underline mt-2'>All Questions</h3>
-
                 <div className={`fixed bottom-0 left-0 right-0 z-50 ${showQuestion ? `
                 h-[100vh] ease-in-out transition-all duration-300` : `h-0 ease-in-out transition-all duration-300`} w-full  flex flex-col`}>
                     <div onClick={() => setShowQuestion(false)} className='bg-black/70  h-full w-full'>
@@ -263,15 +258,15 @@ const MobileSection = () => {
                                 <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
                             </div>
                         </div>
-                        <div className='overflow-auto h-[450px]'>
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
-                            <SecondQuestionandAnswer />
+                        <div className='overflow-auto h-[450px] px-4 py-2'>
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
+                            <QuestionAnswerCard />
                         </div>
                     </div>
                 </div>
