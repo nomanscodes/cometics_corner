@@ -126,7 +126,7 @@ const Checkout = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="w-fullgrid grid-cols-2 gap-3 mt-3">
+                                <div className="grid grid-cols-2 gap-3 mt-3">
                                     <div className='col-span-1 flex flex-col gap-[2px] mt-2 relative'>
                                         <picture>
                                             <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
