@@ -327,65 +327,7 @@ const Checkout = () => {
                                         select your billing address
                                     </h1>
                                     <AddressCard />
-                                    <div className="w-full">
-                                        <div onClick={() => setShowAddressModal(true)}
-                                            className="mt-3 w-full flex items-center justify-center gap-3 border border-gray-400 p-2 whitespace-nowrap  cursor-pointer"
-                                        >
-                                            <h3 className="text-[11px] font-medium text-gray-700">
-                                                Add New Address
-                                            </h3>
-                                            <AiOutlinePlus size={14} />
-                                        </div>
-                                        <div
-                                            className={`addressForm fixed z-40 left-0 right-0 bottom-0 top-0 bg-black/30 ${showAddressModal ? `h-[100vh] w-full ease-in-out transition-all duration-300 ` : `hidden`
-                                                } flex items-center justify-center`}
-                                        >
-                                            <div
-                                                className={`p-8 bg-white rounded shadow  ${showAddressModal
-                                                    ? `w-[580px] h-[381px] ease-in-out transition-all duration-300`
-                                                    : `h-0 w-0 ease-in-out transition-all duration-300`
-                                                    } `}
-                                            >
-                                                <span className="flex items-center justify-between">
-                                                    <h3 className="text-[14px] font-medium">
-                                                        Add Your Address
-                                                    </h3>
-                                                    <RxCross2 onClick={() => setShowAddressModal(false)} className="cursor-pointer" size={22} />
-                                                </span>
-                                                <hr className="w-full mt-2" />
-                                                <span className="flex items-center gap-4">
-                                                    <InputField
-                                                        label="Full Name"
-                                                        placeholder={"Enter your full name"}
-                                                    />
-                                                    <InputField
-                                                        label="Division"
-                                                        placeholder={"Division "}
-                                                    />
-                                                </span>
-                                                <span className="flex items-center gap-4">
-                                                    <InputField label="City" placeholder={"City"} />
-                                                    <InputField
-                                                        label="Address"
-                                                        placeholder={"Address"}
-                                                    />
-                                                </span>
-                                                <span className="flex items-center gap-4">
-                                                    <InputField
-                                                        label="Country"
-                                                        value={"Bangladesh"}
-                                                    />
-                                                    <InputField
-                                                        label="Division"
-                                                        placeholder={"Enter your division name"}
-                                                    />
-                                                </span>
-                                                <div className="flex items-center justify-center py-2 w-full bg-bgColor mt-5 text-white text-xs font-medium rounded shadow cursor-pointer">
-                                                    Add Address
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                
                                     <div className="mt-5">
                                         <h3 className="text-[11px] font-medium text-gray-700">
                                             Order Note :
