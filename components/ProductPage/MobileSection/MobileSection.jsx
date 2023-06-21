@@ -252,10 +252,10 @@ const MobileSection = () => {
                             <div className='flex relative p-3'>
                                 <input
                                     type="text"
-                                    className="py-1 w-full text-xs pl-8 focus:outline-none rounded"
+                                    className="py-[7px] w-full text-xs pl-7 focus:outline-none rounded"
                                     placeholder="Have a question? Search for answers"
                                 />
-                                <AiOutlineSearch className=' absolute ml-1 mt-[4px] text-gray-500 border-solid border-neutral-500' size={20} />
+                                <AiOutlineSearch className=' absolute ml-1 mt-[7px] text-gray-500 border-solid border-neutral-500' size={20} />
                             </div>
                         </div>
                         <div className='overflow-auto h-[450px] px-4 py-2'>
