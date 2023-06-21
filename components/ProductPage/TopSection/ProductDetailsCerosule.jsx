@@ -18,7 +18,6 @@ const ProductDetailsCerosule = () => {
         {Image?.map((img) => (
           <picture key={img.id}>
             <img src={img?.src} className="" alt="" />
-            <video src="/demo/p/pv.mp4"></video>
           </picture>
         ))}
        
