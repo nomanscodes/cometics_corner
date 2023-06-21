@@ -327,8 +327,8 @@ const Checkout = () => {
                                         select your billing address
                                     </h1>
                                     <AddressCard />
-                                
-                                    <div className="mt-5">
+
+                                    <div className="mt-3 md:mt-5">
                                         <h3 className="text-[11px] font-medium text-gray-700">
                                             Order Note :
                                             <span className="opacity-70"> (Optional)</span>
@@ -336,7 +336,7 @@ const Checkout = () => {
                                         <textarea
                                             name=""
                                             placeholder="Special note for your order eg. about delivery"
-                                            className="mt-3 w-full h-[80px] resize-none focus:outline-none text-[11px] p-2 rounded-sm shadow-sm bg-gray-100"
+                                            className="mt-3 w-full h-[60px] md:h-[80px] resize-none focus:outline-none text-[11px] p-2 rounded-sm shadow-sm bg-gray-100"
                                         ></textarea>
                                     </div>
                                 </div>
@@ -379,15 +379,16 @@ const Checkout = () => {
 
                                 </div>
                             </div>
-                            <div className="right mt-2 md:mt-0 md:w-2/6 h-fit">
-                                <div className="productsCard bg-[#eae9e5] rounded shadow-md p-4">
+                            <div className="right bg-[#eae9e5] mt-2 md:mt-0 md:w-2/6 h-fit">
+                                <div className="productsCard rounded p-4">
                                     <h3 className="text-[13px] font-medium text-gray-700">
                                         Order Items
                                         <span className="text-[12px] opacity-80">(6)</span>
                                     </h3>
-                                    <div className="h-[2px] w-[96px] bg-gray-700 mt-1"></div>
-                                    <div className="Card mt-3 ">
-                                        <div className="mt-2 grid grid-cols-6 gap-3 bg-gray-100 p-2 rounded-md shadow">
+                                    {/* <div className="h-[2px] w-[96px] bg-gray-700 mt-1">
+                                    </div> */}
+                                    <div className="Card">
+                                        <div className="mt-2 grid grid-cols-6 gap-3 p-2 border border-gray-400 border-opacity-70 rounded-md">
                                             <picture className="col-span-1">
                                                 <img
                                                     src="/product1.avif"
@@ -427,32 +428,31 @@ const Checkout = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="cuponCard bg-[#eae9e5] rounded shadow-md p-4 mt-4">
-                                    <h3 className="text-[13px] font-medium text-gray-700">
+                                <div className="addressCard px-4 ">
+                                    <h3 className="text-[14px] font-medium text-gray-700 mb-2">
                                         Coupon Code
-                                        <span className="text-[12px] opacity-80">(6)</span>
                                     </h3>
-                                    <div className="h-[2px] w-[96px] bg-gray-700 mt-1"></div>
-                                    <div className="mt-3">
-                                        <div className="mt-4 flex items-center gap-3">
-                                            <input
-                                                type="text"
-                                                placeholder="Gift card or discount code"
-                                                className="w-full py-2 pl-4 border border-gray-300 bg-gray-100 focus:outline-none rounded  text-[12px] font-medium"
-                                            />
-                                            <button className="px-3 py-2 bg-gray-800 text-white rounded shadow-md text-xs ">
-                                                Apply
-                                            </button>
-                                        </div>
-                                    </div>
+                                    <AddressCard />
                                 </div>
-                                <div className="amountSection bg-[#eae9e5] rounded shadow-md p-4 mt-4">
-                                    <div className="bg-gray-100 p-6 rounded-md">
+                                <div className="cuponCard p-4">
+                                    <h3 className="text-[14px] font-medium text-gray-700">
+                                        Coupon Code
+                                    </h3>
+                                    {/* <div className="h-[2px] w-[96px] bg-gray-500 mt-1"></div> */}
+                                    <h4 className="w-full py-2 pl-4 border border-gray-400 focus:outline-none rounded  text-[11px] font-medium text-opacity-80 mt-2">
+                                        Your Coupon code <span className="text-bgColor"> #MenomShop </span> and get <span className="text-green-700">25% </span>Discount
+                                    </h4>
+                                </div>
+                                <div className="amountSection rounded px-4">
+                                    <h3 className="text-[14px] font-medium text-gray-700">
+                                        Amount Details
+                                    </h3>
+                                    <div className="rounded-md border border-gray-500  border-opacity-80 mt-2 p-4">
                                         <span className="flex items-center justify-between mt-2">
                                             <h3 className="text-[12px] font-semibold text-gray-700">
                                                 Sub Total
                                             </h3>
-                                            <h3 className="text-[12px] font-medium text-gray-700">
+                                            <h3 className="text-[12px] font-semibold text-gray-700">
                                                 &#2547; 343
                                             </h3>
                                         </span>
@@ -460,7 +460,7 @@ const Checkout = () => {
                                             <h3 className="text-[12px] font-semibold text-gray-700">
                                                 Shipping Cost
                                             </h3>
-                                            <h3 className="text-[12px] font-medium text-gray-700">
+                                            <h3 className="text-[12px] font-semibold  text-gray-700">
                                                 &#2547; 60
                                             </h3>
                                         </span>
@@ -468,7 +468,7 @@ const Checkout = () => {
                                             <h3 className="text-[12px] font-semibold text-gray-700">
                                                 Tax
                                             </h3>
-                                            <h3 className="text-[12px] font-medium text-gray-700">
+                                            <h3 className="text-[12px] font-semibold  text-gray-700">
                                                 &#2547; 22
                                             </h3>
                                         </span>
@@ -476,11 +476,11 @@ const Checkout = () => {
                                             <h3 className="text-[12px] font-semibold text-gray-700">
                                                 Discount
                                             </h3>
-                                            <h3 className="text-[12px] font-medium text-gray-700">
+                                            <h3 className="text-[12px] font-semibold  text-gray-700">
                                                 &#2547; 30
                                             </h3>
                                         </span>
-                                        <hr className="w-full bg-gray-600 mt-3" />
+                                        <div className="w-full h-[1px] bg-gray-600 mt-2"></div>
                                         <span className="flex items-center justify-between mt-2">
                                             <h3 className="text-[16px] font-semibold text-gray-700">
                                                 Total
@@ -503,7 +503,7 @@ const Checkout = () => {
                                     onClick={() => setOpenTab("payment")}
                                     className="flex items-center justify-center p-3 w-full text-xs font-medium bg-bgColor text-white mt-2 rounded shadow-md cursor-pointer"
                                 >
-                                    Proceed To Payment
+                                    Confirm Order
                                 </div>
                             </div>
                         </div>
