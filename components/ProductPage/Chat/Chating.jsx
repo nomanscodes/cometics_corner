@@ -12,7 +12,7 @@ const Chating = () => {
         {showMessageBar ? (
           <>
             <picture>
-              <img src="/SVG/cross.svg" className="h-6" alt="" />
+              <img src="/SVG/down.svg" className="h-8 mt-1" alt="" />
             </picture>
           </>
         ) : (
