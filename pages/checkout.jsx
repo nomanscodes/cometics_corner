@@ -524,8 +524,8 @@ const Checkout = () => {
                     </div>
                     <div className={`orderConfirmation  ${openTab === "confirmation" ? `block` : `hidden`} `}>
                         <div className="w-full md:flex md:gap-6">
-                            <div className="left md:w-4/6 md:flex justify-center  gap-6">
-                                <div className="left_LeftSide bg-[#eae9e5] w-full h-fit p-4 rounded shadow-md">
+                            <div className="left md:w-4/6 md:flex justify-center md:gap-6">
+                                <div className="left_LeftSide bg-[#eae9e5] w-full h-fit px-2 md:px-0 md:p-4 rounded shadow-md">
                                     <div className="productsCard rounded p-4">
                                         <h3 className="text-[13px] font-medium text-gray-700">
                                             Order Items
@@ -575,8 +575,9 @@ const Checkout = () => {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="left_RightSide bg-[#eae9e5] w-full h-fit p-4 rounded shadow-md">
-                                    <div className="addressCard px-4 ">
+
+                                <div className="left_RightSide bg-[#eae9e5] w-full h-fit p-2 md:p-4 rounded shadow-md mt-2 md:mt-0">
+                                    <div className="addressCard px-4">
                                         <h3 className="text-[14px] font-medium text-gray-700">
                                             Shipping Address
                                         </h3>
@@ -594,7 +595,7 @@ const Checkout = () => {
                                     </div>
                                 </div>
                             </div>
-                            <div className="right bg-[#eae9e5] rounded shadow-md mt-2 md:mt-0 md:w-2/6 h-fit">
+                            <div className="right bg-[#eae9e5] rounded shadow-md mt-2 md:mt-0 md:w-2/6 h-fit px-2 md:px-4 pb-2">
                                 <div className="PaymentMethod p-4">
                                     <h3 className="text-[14px] font-medium text-gray-700">
                                         Payment Method
@@ -690,7 +691,7 @@ const Checkout = () => {
                                 </div>
                                 <div
                                     onClick={() => setOpenTab("payment")}
-                                    className="flex items-center justify-center p-3 w-full text-xs font-medium bg-bgColor text-white mt-2 rounded shadow-md cursor-pointer"
+                                    className="flex items-center justify-center p-3 w-full text-xs font-medium bg-bgColor text-white mt-2 rounded shadow-md cursor-pointer "
                                 >
                                     Confirm Order
                                 </div>
