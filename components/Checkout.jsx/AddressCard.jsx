@@ -1,6 +1,6 @@
 import React from 'react'
 
-const AddressCard = () => {
+const AddressCard = ({ Bill }) => {
     return (
         <div className="p-3 border border-gray-400 border-opacity-70  rounded flex items-center gap-2 mt-2">
             <div>
@@ -10,7 +10,16 @@ const AddressCard = () => {
                             <img src="/SVG/correct.svg" alt="" />
                         </picture>
                     </span>
-                    <h3 className="text-[13px] font-semibold text-gray-800 whitespace-nowrap">Same as shipping address</h3>
+                    {Bill ? <>
+                        <h3 className="text-[13px] font-semibold text-gray-800 whitespace-nowrap">Same as shipping address
+                        </h3>
+                    </>
+                        :
+                        <>
+                            <h3 className="text-[13px] font-semibold text-gray-800 whitespace-nowrap">Shipping address
+                            </h3>
+                        </>}
+
                     <h3 className="text-[10px] font-medium text-gray-900 bg-gray-300 p-1 rounded">Default</h3>
                 </div>
                 <div className="mt-3 ml-6">
@@ -26,7 +35,7 @@ const AddressCard = () => {
                 </div>
             </div>
             <hr className="w-[50px] bg-slate-400 rotate-90" />
-            
+
         </div>
     )
 }

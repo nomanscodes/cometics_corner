@@ -320,7 +320,6 @@ const Checkout = () => {
 
                     <div className={`paymentDetails   ${openTab === "payment" ? `block` : `hidden`} `}>
                         <div className="w-full md:flex md:gap-4">
-
                             <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-7 py-4 rounded shadow-md md:flex justify-center md:gap-12">
                                 <div className="left_LeftSide">
                                     <h1 className="text-[12px] font-medium text-gray-800 capitalize mb-3">
@@ -379,7 +378,7 @@ const Checkout = () => {
 
                                 </div>
                             </div>
-                            <div className="right bg-[#eae9e5] mt-2 md:mt-0 md:w-2/6 h-fit">
+                            <div className="right bg-[#eae9e5] rounded shadow-md mt-2 md:mt-0 md:w-2/6 h-fit">
                                 <div className="productsCard rounded p-4">
                                     <h3 className="text-[13px] font-medium text-gray-700">
                                         Order Items
@@ -443,13 +442,13 @@ const Checkout = () => {
                                     <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
                                     </div>
                                     <span className="w-full flex items-center  justify-between gap-2 py-2 px-4 border border-gray-400 border-opacity-70 rounded-md mt-2">
-                                      <div className="flex items-center gap-2">
-                                      <picture>
-                                            <img src="/SVG/coupon.svg" className="w-5" alt="" />
-                                        </picture>
-                                        <h2 className="text-[12px] font-semibold text-bgColor">#MenomShop </h2>
-                                        <span className="text-[11px] font-semibold opacity-70 ml-2">34% off</span>
-                                      </div>
+                                        <div className="flex items-center gap-2">
+                                            <picture>
+                                                <img src="/SVG/coupon.svg" className="w-5" alt="" />
+                                            </picture>
+                                            <h2 className="text-[12px] font-semibold text-bgColor">#MenomShop </h2>
+                                            <span className="text-[11px] font-semibold opacity-70 ml-2">34% off</span>
+                                        </div>
                                         <picture>
                                             <img src="/SVG/correctfill.svg" className="w-4" alt="" />
                                         </picture>
@@ -523,11 +522,180 @@ const Checkout = () => {
                             </div>
                         </div>
                     </div>
-                    <div
-                        className={`orderConfirmation  ${openTab === "confirmation" ? `block` : `hidden`
-                            } `}
-                    >
-                        I am Order confirmation
+                    <div className={`orderConfirmation  ${openTab === "confirmation" ? `block` : `hidden`} `}>
+                        <div className="w-full md:flex md:gap-6">
+                            <div className="left md:w-4/6 md:flex justify-center  gap-6">
+                                <div className="left_LeftSide bg-[#eae9e5] w-full h-fit p-4 rounded shadow-md">
+                                    <div className="productsCard rounded p-4">
+                                        <h3 className="text-[13px] font-medium text-gray-700">
+                                            Order Items
+                                            <span className="text-[12px] opacity-80">(6)</span>
+                                        </h3>
+                                        <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                        </div>
+                                        <div className="Card">
+                                            <div className="mt-2 grid grid-cols-6 gap-3 p-2 border border-gray-400 border-opacity-70 rounded-md">
+                                                <picture className="col-span-1">
+                                                    <img
+                                                        src="/product1.avif"
+                                                        className="rounded-sm"
+                                                        alt=""
+                                                    />
+                                                </picture>
+                                                <div className="col-span-3 flex flex-col justify-center">
+                                                    <h3 className="text-[11px] font-semibold text-gray-700">
+                                                        European Beauty Mackup
+                                                    </h3>
+                                                    <h3 className="text-[11px] font-medium text-gray-700">
+                                                        <span className="opacity-80">Color :</span> Red and
+                                                        white
+                                                    </h3>
+                                                </div>
+                                                <div className="col-span-2 flex flex-col justify-center">
+                                                    <span className="flex items-center gap-1">
+                                                        <h3 className="text-[11px] font-medium text-gray-700">
+                                                            &#2547; 236{" "}
+                                                        </h3>
+                                                        <picture>
+                                                            <img
+                                                                src="/SVG/multi.svg"
+                                                                className="h-2"
+                                                                alt=""
+                                                            />
+                                                        </picture>
+                                                        <h3 className="text-[11px] font-medium text-gray-700">
+                                                            1
+                                                        </h3>
+                                                    </span>
+                                                    <h3 className="text-[11px] font-semibold text-gray-700">
+                                                        &#2547; 236
+                                                    </h3>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="left_RightSide bg-[#eae9e5] w-full h-fit p-4 rounded shadow-md">
+                                    <div className="addressCard px-4 ">
+                                        <h3 className="text-[14px] font-medium text-gray-700">
+                                            Shipping Address
+                                        </h3>
+                                        <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                        </div>
+                                        <AddressCard />
+                                    </div>
+                                    <div className="addressCard px-4 mt-4">
+                                        <h3 className="text-[14px] font-medium text-gray-700">
+                                            Billing Address
+                                        </h3>
+                                        <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                        </div>
+                                        <AddressCard Bill />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="right bg-[#eae9e5] rounded shadow-md mt-2 md:mt-0 md:w-2/6 h-fit">
+                                <div className="PaymentMethod p-4">
+                                    <h3 className="text-[14px] font-medium text-gray-700">
+                                        Payment Method
+                                    </h3>
+                                    <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                    </div>
+                                    <div className="mt-2 border border-gray-400 border-opacity-70 p-4 rounded-md">
+                                        <h1 className="text-[11px] font-medium opacity-80">Cash on delivery</h1>
+
+                                        <span className="flex items-center gap-6 mt-2">
+                                        <h1 className="text-[12px] font-medium text-bgColor opacity-80">Due</h1>
+                                        <h1 className="text-[12px] font-semibold opacity-80">
+                                            &#2547;436</h1>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div className="cuponCard px-4">
+                                    <h3 className="text-[14px] font-medium text-gray-700">
+                                        Coupon Code
+                                    </h3>
+                                    <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                    </div>
+                                    <span className="w-full flex items-center  justify-between gap-2 py-2 px-4 border border-gray-400 border-opacity-70 rounded-md mt-2">
+                                        <div className="flex items-center gap-2">
+                                            <picture>
+                                                <img src="/SVG/coupon.svg" className="w-5" alt="" />
+                                            </picture>
+                                            <h2 className="text-[12px] font-semibold text-bgColor">#MenomShop </h2>
+                                            <span className="text-[11px] font-semibold opacity-70 ml-2">34% off</span>
+                                        </div>
+                                        <picture>
+                                            <img src="/SVG/correctfill.svg" className="w-4" alt="" />
+                                        </picture>
+                                    </span>
+                                </div>
+                                <div className="amountSection rounded px-4">
+                                    <h3 className="text-[14px] font-medium text-gray-700">
+                                        Amount Details
+                                    </h3>
+                                    <div className="h-[1px] w-[110px] bg-gray-600 mt-1">
+                                    </div>
+                                    <div className="rounded-md border border-gray-400 border-opacity-70  mt-2 p-4">
+                                        <span className="flex items-center justify-between mt-2">
+                                            <h3 className="text-[12px] font-semibold text-gray-700">
+                                                Sub Total
+                                            </h3>
+                                            <h3 className="text-[12px] font-semibold text-gray-700">
+                                                &#2547; 343
+                                            </h3>
+                                        </span>
+                                        <span className="flex items-center justify-between mt-2">
+                                            <h3 className="text-[12px] font-semibold text-gray-700">
+                                                Shipping Cost
+                                            </h3>
+                                            <h3 className="text-[12px] font-semibold  text-gray-700">
+                                                &#2547; 60
+                                            </h3>
+                                        </span>
+                                        <span className="flex items-center justify-between mt-2">
+                                            <h3 className="text-[12px] font-semibold text-gray-700">
+                                                Tax
+                                            </h3>
+                                            <h3 className="text-[12px] font-semibold  text-gray-700">
+                                                &#2547; 22
+                                            </h3>
+                                        </span>
+                                        <span className="flex items-center justify-between mt-2">
+                                            <h3 className="text-[12px] font-semibold text-gray-700">
+                                                Discount
+                                            </h3>
+                                            <h3 className="text-[12px] font-semibold  text-gray-700">
+                                                &#2547; 30
+                                            </h3>
+                                        </span>
+                                        <div className="w-full h-[1px] bg-gray-600 mt-2"></div>
+                                        <span className="flex items-center justify-between mt-2">
+                                            <h3 className="text-[16px] font-semibold text-gray-700">
+                                                Total
+                                            </h3>
+                                            <h3 className="text-[16px] font-semibold text-gray-700">
+                                                &#2547; 30
+                                            </h3>
+                                        </span>
+                                    </div>
+                                    <div className="Message bg-gray-100 rounded shadow-md p-6 mt-4">
+                                        <h1 className="text-[11px] font-medium text-green-700">
+                                            How we are calculate shipping cost?
+                                        </h1>
+                                        <h1 className="text-[11px] font-medium opacity-80 mt-2">
+                                            Express Delivery method has been applied to your order
+                                        </h1>
+                                    </div>
+                                </div>
+                                <div
+                                    onClick={() => setOpenTab("payment")}
+                                    className="flex items-center justify-center p-3 w-full text-xs font-medium bg-bgColor text-white mt-2 rounded shadow-md cursor-pointer"
+                                >
+                                    Confirm Order
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
