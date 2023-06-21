@@ -126,7 +126,7 @@ const Checkout = () => {
                                         />
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-2 gap-3 mt-3">
+                                <div className="grid grid-cols-2 gap-3 md:mt-3">
                                     <div className='col-span-1 flex flex-col gap-[2px] mt-2 relative'>
                                         <picture>
                                             <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
@@ -137,9 +137,9 @@ const Checkout = () => {
                                             className="py-[10px] md:py-[10px] w-[100%] text-[12px] md:text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
                                     </div>
-                                    <div className="col-span-1 flex flex-col justify-center mt-[10px]">
+                                    <div className="col-span-1 flex flex-col justify-center mt-[12px]">
                                         <h1 className="text-[13px] md:text-[14px] opacity-90">Division</h1>
-                                        <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
+                                        <select className="w-[100%] py-[10px] md:py-[9px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md md:rounded-sm bg-white" name="division" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
@@ -164,7 +164,7 @@ const Checkout = () => {
                                         </select>
                                     </div>
                                 </div>
-                                <div className="grid grid-cols-2 gap-3 mt-3 mb-3">
+                                <div className="grid grid-cols-2 gap-3 md:mt-3 mb-[10px]">
                                     <div className=" col-span-1 flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[13px] md:text-[14px] opacity-90 ">Union</h1>
                                         <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
@@ -180,7 +180,7 @@ const Checkout = () => {
                                         placeholder={"Zip Code*"}
                                     />
                                 </div>
-                                <div className='flex flex-col gap-[2px] md:mt-2'>
+                                <div className='flex flex-col '>
                                     <label className='text-[13px] md:text-[14px] opacity-90 '>Address</label>
                                     <input
                                         placeholder="Address*"
