@@ -447,12 +447,14 @@ const Checkout = () => {
                                             <img src="/SVG/online.svg" className="w-5" alt="" />
                                         </picture>
                                     </div>
+                                 
+                                        <picture>
+                                            <img src="/ssl/payment.jpg"
+                                                className={`${showSSL ? `w-64 h-36 ease-in-out transition-all duration-500` : `h-0 w-0 ease-in-out transition-all duration-500`}  shadow-md rounded mt-2 cursor-pointer mx-auto`} alt=""
+                                            />
+                                        </picture>
+                            
 
-                                    <picture>
-                                        <img src="/ssl/payment.jpg"
-                                            className={`${showSSL ? `w-64 h-36 ease-in-out transition-all duration-500` : `h-0 w-0 ease-in-out transition-all duration-500`}  shadow-md rounded mt-2 cursor-pointer`} alt=""
-                                        />
-                                    </picture>
 
                                 </div>
                             </div>
