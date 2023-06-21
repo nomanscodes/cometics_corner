@@ -260,12 +260,19 @@ const MobileSection = () => {
                         </div>
                         <div className='overflow-auto h-[450px] px-4 py-2'>
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
+                            <hr className='my-[6px]' />
                             <QuestionAnswerCard />
                         </div>
                     </div>
