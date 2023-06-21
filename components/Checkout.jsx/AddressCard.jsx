@@ -2,7 +2,7 @@ import React from 'react'
 
 const AddressCard = () => {
     return (
-        <div className="p-3 border border-gray-400 rounded flex items-center gap-2">
+        <div className="p-3 border border-gray-400 border-opacity-70  rounded flex items-center gap-2 mt-2">
             <div>
                 <div className="flex items-center gap-2">
                     <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">

@@ -385,8 +385,8 @@ const Checkout = () => {
                                         Order Items
                                         <span className="text-[12px] opacity-80">(6)</span>
                                     </h3>
-                                    {/* <div className="h-[2px] w-[96px] bg-gray-700 mt-1">
-                                    </div> */}
+                                    <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                    </div>
                                     <div className="Card">
                                         <div className="mt-2 grid grid-cols-6 gap-3 p-2 border border-gray-400 border-opacity-70 rounded-md">
                                             <picture className="col-span-1">
@@ -429,17 +429,20 @@ const Checkout = () => {
                                     </div>
                                 </div>
                                 <div className="addressCard px-4 ">
-                                    <h3 className="text-[14px] font-medium text-gray-700 mb-2">
+                                    <h3 className="text-[14px] font-medium text-gray-700">
                                         Coupon Code
                                     </h3>
+                                    <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                    </div>
                                     <AddressCard />
                                 </div>
                                 <div className="cuponCard p-4">
                                     <h3 className="text-[14px] font-medium text-gray-700">
                                         Coupon Code
                                     </h3>
-                                    {/* <div className="h-[2px] w-[96px] bg-gray-500 mt-1"></div> */}
-                                    <h4 className="w-full py-2 pl-4 border border-gray-400 focus:outline-none rounded  text-[11px] font-medium text-opacity-80 mt-2">
+                                    <div className="h-[1px] w-[96px] bg-gray-600 mt-1">
+                                    </div>
+                                    <h4 className="w-full py-2 pl-4 border border-gray-400 border-opacity-70 rounded text-[11px] font-medium text-opacity-80 mt-2">
                                         Your Coupon code <span className="text-bgColor"> #MenomShop </span> and get <span className="text-green-700">25% </span>Discount
                                     </h4>
                                 </div>
@@ -447,7 +450,9 @@ const Checkout = () => {
                                     <h3 className="text-[14px] font-medium text-gray-700">
                                         Amount Details
                                     </h3>
-                                    <div className="rounded-md border border-gray-500  border-opacity-80 mt-2 p-4">
+                                    <div className="h-[1px] w-[110px] bg-gray-600 mt-1">
+                                    </div>
+                                    <div className="rounded-md border border-gray-400 border-opacity-70  mt-2 p-4">
                                         <span className="flex items-center justify-between mt-2">
                                             <h3 className="text-[12px] font-semibold text-gray-700">
                                                 Sub Total
