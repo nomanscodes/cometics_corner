@@ -4,7 +4,7 @@ import Review from './Review'
 
 const CustomerReview = () => {
     return (
-        <div className='mt-4 px-6 '>
+        <div className='mt-4 px-6'>
             <h1 className='uppercase text-xl font-bold opacity-95'>Looking for specific info?</h1>
             <div className='mt-3 flex w-full'>
                 <div className='w-1/3'>

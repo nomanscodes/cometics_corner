@@ -2,7 +2,7 @@ import React from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
 import TopSection from '@/components/ProductPage/TopSection/TopSection'
-import {FiChevronRight } from 'react-icons/fi'
+import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import TopAds from '@/components/ProductPage/TopSection/TopAds'
 import Details from '@/components/ProductPage/Details/Details'
@@ -12,11 +12,13 @@ import ImpInformation from '@/components/ProductPage/ImportantInformation/ImpInf
 import MobileSection from '@/components/ProductPage/MobileSection/MobileSection'
 import ProductPageBottom from '@/components/ProductPage/Bottom/Bottom'
 import Chating from '@/components/ProductPage/Chat/Chating'
+import QuestionAndAnswer from '@/components/ProductPage/QuestionAndAnswer/QuestionAndAnswer'
+
 
 
 
 const ProductDetails = () => {
-    
+
     return (
         <Layout>
             <Head>
@@ -26,7 +28,7 @@ const ProductDetails = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <TopAds />
-            <Chating/>
+            <Chating />
             <div className=' bg-white hidden md:block'>
                 <div className='PCsection py-2 '>
                     <div className="flex items-center gap-2 px-6">
@@ -50,12 +52,14 @@ const ProductDetails = () => {
                     <ImpInformation />
                     <hr className='mt-4' />
                     <CustomerReview />
+                    <hr />
+                    <QuestionAndAnswer />
                 </div>
             </div>
             <div className='mobileSection md:hidden'>
                 <MobileSection />
             </div>
-            <ProductPageBottom/>
+            <ProductPageBottom />
         </Layout>
     )
 }
