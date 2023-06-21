@@ -9,8 +9,8 @@ const InputField = ({
     placeholder,
     error,
     label = "",
-    
-}) => { 
+
+}) => {
     return (
         <div className='flex flex-col gap-[2px] mt-2 '>
             <label className='text-[12px] md:text-[14px] opacity-90'>{label}</label>
@@ -21,7 +21,7 @@ const InputField = ({
                 onChange={onChange}
                 onBlur={onBlur}
                 placeholder={placeholder}
-                className="py-[10px] md:py-[10px] md:w-[400px] text-[13px] pl-4 inputOuteLine rounded-md md:rounded-sm
+                className="py-[10px] md:py-[10px] flex flex-1 w-[100%] text-[13px] pl-4 rounded-md md:rounded-sm
                "
             />
             {error && <p className="error">{error}</p>}

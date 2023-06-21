@@ -10,6 +10,21 @@ import { RxCross2 } from "react-icons/rx";
 const Checkout = () => {
     const [openTab, setOpenTab] = useState("address");
     const [showAddressModal, setShowAddressModal] = useState(false);
+    const [selectCod, setSelectCod] = useState(false)
+    const [selectOp, setSelectOp] = useState(false)
+
+    const selectPaymentMedhod = (arg) => {
+
+        if (arg === "cod") {
+            setSelectCod(true)
+            setSelectOp(false)
+        }
+        if (arg === "op") {
+            setSelectCod(false)
+            setSelectOp(true)
+        }
+
+    }
 
     return (
         <Layout>
@@ -88,14 +103,14 @@ const Checkout = () => {
                 <div className="contentSection mt-4">
                     <div className={`shippingAdress  ${openTab === "address" ? `block` : `hidden`}`} >
                         <div className="w-full md:flex md:gap-4">
-                            <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-6 py-3 md:px-3 md:p-2 rounded shadow-md">
-                                <div className=" md:flex items-center justify-center gap-3 mt-3">
+                            <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-3 py-3 md:px-6 md:p-2 rounded shadow-md">
+                                <div className="w-full md:grid grid-cols-2 gap-3 mt-3">
                                     <InputField
                                         type="name" name="name"
                                         label="Full Name"
                                         placeholder={"Full name*"}
                                     />
-                                    <div className='flex flex-col gap-[2px] mt-2 relative '>
+                                    <div className='col-span-1 w-full flex flex-col gap-[2px] mt-2 relative '>
                                         <span className="flex items-center absolute 
                                         mt-[26px]  md:mt-[29px] ml-1">
                                             <picture>
@@ -107,52 +122,52 @@ const Checkout = () => {
                                         <input
                                             id="phone" type="tel" name="phone"
                                             placeholder="Mobile No*"
-                                            className="py-[10px] md:py-[10px] md:w-[400px] text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm bg-white"
+                                            className="py-[10px] md:py-[10px] w-[100%] flex flex-1 text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
                                     </div>
                                 </div>
-                                <div className=" md:flex items-center justify-center gap-3 mt-3">
-                                    <div className='flex flex-col gap-[2px] mt-2 relative'>
+                                <div className="w-full md:grid grid-cols-2 gap-3 mt-3">
+                                    <div className='col-span-1 flex flex-col gap-[2px] mt-2 relative'>
                                         <picture>
                                             <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
                                         </picture>
                                         <label className='text-[12px] md:text-[14px] opacity-90'>Country</label>
                                         <input value="Bangladesh"
                                             disabled
-                                            className="py-[10px] md:py-[10px] md:w-[400px] text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                            className="py-[10px] md:py-[10px] w-[100%] text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm bg-white"
                                         />
                                     </div>
-                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                    <div className="col-span-1 flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Division</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="division" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div className=" md:flex items-center justify-center gap-3 mt-3">
-                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                <div className="grid grid-cols-2 gap-3 mt-3">
+                                    <div className="col-span-1 flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Distric</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="Distric" id="">
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="Distric" id="">
                                             <option value="Dhaka">Dhaka</option>
                                             <option value="Barisl">Barisal</option>
                                             <option value="Khulna">Khulna</option>
                                         </select>
                                     </div>
-                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                    <div className="col-span-1 flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Sub Distric</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
                                         </select>
                                     </div>
                                 </div>
-                                <div className=" md:flex items-center justify-center gap-3 mt-3 mb-3">
-                                    <div className=" flex flex-col justify-center mt-[10px]">
+                                <div className="md:grid grid-cols-2 gap-3 mt-3 mb-3">
+                                    <div className=" col-span-1 flex flex-col justify-center mt-[10px]">
                                         <h1 className="text-[12px] md:text-[14px] opacity-90">Union</h1>
-                                        <select className="md:w-[400px] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
+                                        <select className="w-[100%] py-[10px] md:py-[10px] px-3 text-[13px] focus:outline-none rounded-md  md:rounded-sm bg-white" name="sub_distric" id="">
                                             <option value="Dhaka ">Dhaka</option>
                                             <option value="Barisl ">Barisal</option>
                                             <option value="Khulna ">Khulna</option>
@@ -165,14 +180,12 @@ const Checkout = () => {
                                         placeholder={"Zip Code*"}
                                     />
                                 </div>
-                                <div className="flex items-center justify-center">
-                                    <div className='flex flex-col gap-[2px] md:mt-2 relative'>
-                                        <label className='text-[12px] md:text-[14px] opacity-90'>Address</label>
-                                        <input
-                                            placeholder="Address*"
-                                            className="py-[10px] md:py-[10px] min-w-[300px] w-full lg:w-[700px] xl:w-[815px] text-[13px] pl-3 inputOuteLine rounded-md md:rounded-sm bg-white"
-                                        />
-                                    </div>
+                                <div className='flex flex-col gap-[2px] md:mt-2'>
+                                    <label className='text-[12px] md:text-[14px] opacity-90'>Address</label>
+                                    <input
+                                        placeholder="Address*"
+                                        className="py-[10px] md:py-[10px] w-full text-[13px] pl-3 inputOuteLine rounded-md md:rounded-sm bg-white"
+                                    />
                                 </div>
                             </div>
                             <div className="right mt-2 md:mt-0 md:w-2/6 h-fit">
@@ -305,85 +318,72 @@ const Checkout = () => {
                         </div>
                     </div>
 
-                    <div
-                        className={`paymentDetails   ${openTab === "payment" ? `block` : `hidden`
-                            } `}
-                    >
+                    <div className={`paymentDetails   ${openTab === "payment" ? `block` : `hidden`} `}>
                         <div className="w-full md:flex md:gap-4">
 
                             <div className="left md:w-4/6 h-fit bg-[#eae9e5] px-7 py-4 rounded shadow-md md:flex justify-center md:gap-12">
                                 <div className="left_LeftSide">
                                     <h1 className="text-[12px] font-medium text-gray-800 capitalize mb-3">
-                                        select your shipping address
+                                        select your billing address
                                     </h1>
                                     <AddressCard />
-                                    <div className="flex items-center gap-2">
-                                        <div>
+                                    <div className="w-full">
+                                        <div onClick={() => setShowAddressModal(true)}
+                                            className="mt-3 w-full flex items-center justify-center gap-3 border border-gray-400 p-2 whitespace-nowrap  cursor-pointer"
+                                        >
+                                            <h3 className="text-[11px] font-medium text-gray-700">
+                                                Add New Address
+                                            </h3>
+                                            <AiOutlinePlus size={14} />
+                                        </div>
+                                        <div
+                                            className={`addressForm fixed z-40 left-0 right-0 bottom-0 top-0 bg-black/30 ${showAddressModal ? `h-[100vh] w-full ease-in-out transition-all duration-300 ` : `hidden`
+                                                } flex items-center justify-center`}
+                                        >
                                             <div
-                                                onClick={() => setShowAddressModal(true)}
-                                                className="mt-3 flex items-center justify-center gap-3 border border-gray-400 p-2 whitespace-nowrap  cursor-pointer"
+                                                className={`p-8 bg-white rounded shadow  ${showAddressModal
+                                                    ? `w-[580px] h-[381px] ease-in-out transition-all duration-300`
+                                                    : `h-0 w-0 ease-in-out transition-all duration-300`
+                                                    } `}
                                             >
-                                                <h3 className="text-[11px] font-medium text-gray-700">
-                                                    Add New Address
-                                                </h3>
-                                                <AiOutlinePlus size={14} />
-                                            </div>
-                                            <div
-                                                className={`addressForm fixed z-40 left-0 right-0 bottom-0 top-0 bg-black/30 ${showAddressModal ? `h-[100vh] w-full ease-in-out transition-all duration-300 ` : `hidden`
-                                                    } flex items-center justify-center`}
-                                            >
-                                                <div
-                                                    className={`p-8 bg-white rounded shadow 
-                    ${showAddressModal
-                                                            ? `w-[580px] h-[381px] ease-in-out transition-all duration-300`
-                                                            : `h-0 w-0 ease-in-out transition-all duration-300`
-                                                        } `}
-                                                >
-                                                    <span className="flex items-center justify-between">
-                                                        <h3 className="text-[14px] font-medium">
-                                                            Add Your Address
-                                                        </h3>
-                                                        <RxCross2 onClick={() => setShowAddressModal(false)} className="cursor-pointer" size={22} />
-                                                    </span>
-                                                    <hr className="w-full mt-2" />
-                                                    <span className="flex items-center gap-4">
-                                                        <InputField
-                                                            label="Full Name"
-                                                            placeholder={"Enter your full name"}
-                                                        />
-                                                        <InputField
-                                                            label="Division"
-                                                            placeholder={"Division "}
-                                                        />
-                                                    </span>
-                                                    <span className="flex items-center gap-4">
-                                                        <InputField label="City" placeholder={"City"} />
-                                                        <InputField
-                                                            label="Address"
-                                                            placeholder={"Address"}
-                                                        />
-                                                    </span>
-                                                    <span className="flex items-center gap-4">
-                                                        <InputField
-                                                            label="Country"
-                                                            value={"Bangladesh"}
-                                                        />
-                                                        <InputField
-                                                            label="Division"
-                                                            placeholder={"Enter your division name"}
-                                                        />
-                                                    </span>
-                                                    <div className="flex items-center justify-center py-2 w-full bg-bgColor mt-5 text-white text-xs font-medium rounded shadow cursor-pointer">
-                                                        Add Address
-                                                    </div>
+                                                <span className="flex items-center justify-between">
+                                                    <h3 className="text-[14px] font-medium">
+                                                        Add Your Address
+                                                    </h3>
+                                                    <RxCross2 onClick={() => setShowAddressModal(false)} className="cursor-pointer" size={22} />
+                                                </span>
+                                                <hr className="w-full mt-2" />
+                                                <span className="flex items-center gap-4">
+                                                    <InputField
+                                                        label="Full Name"
+                                                        placeholder={"Enter your full name"}
+                                                    />
+                                                    <InputField
+                                                        label="Division"
+                                                        placeholder={"Division "}
+                                                    />
+                                                </span>
+                                                <span className="flex items-center gap-4">
+                                                    <InputField label="City" placeholder={"City"} />
+                                                    <InputField
+                                                        label="Address"
+                                                        placeholder={"Address"}
+                                                    />
+                                                </span>
+                                                <span className="flex items-center gap-4">
+                                                    <InputField
+                                                        label="Country"
+                                                        value={"Bangladesh"}
+                                                    />
+                                                    <InputField
+                                                        label="Division"
+                                                        placeholder={"Enter your division name"}
+                                                    />
+                                                </span>
+                                                <div className="flex items-center justify-center py-2 w-full bg-bgColor mt-5 text-white text-xs font-medium rounded shadow cursor-pointer">
+                                                    Add Address
                                                 </div>
                                             </div>
-                                        </div>
-                                        <div className="mt-3 w-full flex flow-1 items-center justify-center gap-3 border border-gray-400 p-2 cursor-pointer">
-                                            <h3 className="text-[11px] font-medium text-gray-700">
-                                                Select Delivery Date
-                                            </h3>
-                                            <AiOutlineCalendar size={14} />
                                         </div>
                                     </div>
                                     <div className="mt-5">
@@ -400,78 +400,41 @@ const Checkout = () => {
                                 </div>
                                 <div className="left_RightSide">
                                     <h1 className="text-[12px] font-medium text-gray-800 capitalize mb-3">
-                                        select prefered delivery type
+                                        select prefered payment method
                                     </h1>
-                                    <div className="p-3 border border-gray-400 rounded grid grid-cols-6 gap-2 mt-3">
-                                        <div className="col-span-4">
-                                            <div className="flex items-center gap-2">
-                                                <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
-                                                    <picture>
-                                                        <img src="/SVG/correct.svg" alt="" />
-                                                    </picture>
-                                                </span>
-                                                <h3 className="text-[13px] font-semibold text-gray-800">
-                                                    Free Delivery
-                                                </h3>
-                                            </div>
-                                            <h3 className="text-[11px] font-medium text-gray-700 ml-6 mt-2">
-                                                Free Delivery within 4-5 days
-                                            </h3>
-                                        </div>
-                                        <div className="col-span-2 flex items-center justify-center">
-                                            <h1 className="text-[12px] font-medium text-gray-900 bg-gray-200 py-1 px-3 rounded">
-                                                Free
-                                            </h1>
-                                        </div>
+                                    <div onClick={() => selectPaymentMedhod("cod")} className={`p-3 border 
+                                    ${selectCod ? `border-green-700` : `border-gray-400`}  rounded flex items-center gap-4 mt-3 cursor-pointer`}>
+                                        <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
+                                            {selectCod && (
+                                                <picture>
+                                                    <img src="/SVG/correct.svg" alt="" />
+                                                </picture>
+                                            )}
+                                        </span>
+                                        <h3 className="text-[11px] font-medium text-gray-700">
+                                            Cash on delivery
+                                        </h3>
+                                        <picture>
+                                            <img src="/SVG/cod.svg" className="w-5" alt="" />
+                                        </picture>
                                     </div>
-                                    <div className="p-3 border border-gray-400 rounded grid grid-cols-6 gap-2 mt-3">
-                                        <div className="col-span-4">
-                                            <div className="flex items-center gap-2">
-                                                <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
-                                                    <picture>
-                                                        <img src="/SVG/correct.svg" alt="" />
-                                                    </picture>
-                                                </span>
-                                                <h3 className="text-[13px] font-semibold text-gray-800">
-                                                    Regular Delivery
-                                                </h3>
-                                            </div>
-                                            <h3 className="text-[11px] font-medium text-gray-700 ml-6 mt-2">
-                                                Safe Delivery within 2-4 days
-                                            </h3>
-                                        </div>
-                                        <div className="col-span-2 flex items-center justify-center">
-                                            <h1 className="text-[12px] font-medium text-gray-900 bg-gray-200 py-1 px-3 rounded">
-                                                &#2547; 50
-                                            </h1>
-                                        </div>
+                                    <div onClick={() => selectPaymentMedhod("op")} className={`p-3 border 
+                                    ${selectOp ? `border-green-700` : `border-gray-400`}  rounded flex items-center gap-4 mt-3 cursor-pointer`}>
+                                        <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
+                                            {selectOp && (
+                                                <picture>
+                                                    <img src="/SVG/correct.svg" alt="" />
+                                                </picture>
+                                            )}
+                                        </span>
+                                        <h3 className="text-[11px] font-medium text-gray-700">
+                                            Online Payment
+                                        </h3>
+                                        <picture>
+                                            <img src="/SVG/online.svg" className="w-5" alt="" />
+                                        </picture>
                                     </div>
-                                    <div className="p-3 border border-gray-400 rounded mt-3 w-full grid grid-cols-6 gap-2">
-                                        <div className="col-span-4">
-                                            <div className="flex items-center gap-2">
-                                                <span className="h-4 w-4 p-[2px] rounded-full border border-gray-700 ">
-                                                    <picture>
-                                                        <img src="/SVG/correct.svg" alt="" />
-                                                    </picture>
-                                                </span>
-                                                <h3 className="text-[13px] font-semibold text-gray-800">
-                                                    Express Delivery
-                                                </h3>
-                                                <h2 className="text-[10px] font-medium text-gray-900 bg-gray-300 p-1 rounded">
-                                                    Recomanded
-                                                </h2>
-                                            </div>
-                                            <h3 className="text-[11px] font-medium text-gray-700 ml-6 mt-2">
-                                                Fastest Delivery within 1-2 days
-                                            </h3>
-                                        </div>
-                                        <div className="col-span-2 flex items-center justify-center">
-                                            {/* <hr className="w-[50px] bg-slate-400 rotate-90" /> */}
-                                            <h1 className="text-[12px] font-medium text-gray-900 bg-gray-200 py-1 px-3 rounded">
-                                                &#2547; 80
-                                            </h1>
-                                        </div>
-                                    </div>
+
                                 </div>
                             </div>
                             <div className="right mt-2 md:mt-0 md:w-2/6 h-fit">
