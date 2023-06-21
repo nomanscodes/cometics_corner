@@ -116,7 +116,7 @@ const Checkout = () => {
                                             <picture>
                                                 <img src="/SVG/BdFlag.svg" className="w-7 " alt="" />
                                             </picture>
-                                            <h2 className="text-[13px]">+088</h2>
+                                            <h2 className="text-[12px] md:text-[13px]">+088</h2>
                                         </span>
                                         <label className='text-[13px] md:text-[14px] opacity-90'>Mobile Number</label>
                                         <input
