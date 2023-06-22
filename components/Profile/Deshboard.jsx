@@ -148,13 +148,15 @@ const Deshboard = () => {
                         <hr className='mt-2' />
                         <div className='flex flex-col gap-1 mt-2'>
                             <div className='flex items-center justify-between gap-12 p-2'>
-                                <span className='flex items-center gap-2'>
-                                    <picture>
-                                        <img src="/brand.avif"
-                                            className='w-10 h-10 rounded-full'
-                                            alt="" />
-                                    </picture>
-
+                                <div className='flex items-center gap-2'>
+                                    <span className='w-10 h-10'>
+                                        <picture>
+                                            <img src="/brand.avif"
+                                                className='w-10 h-10 rounded-full whitespace-nowrap'
+                                                alt=""
+                                            />
+                                        </picture>
+                                    </span>
                                     <span>
                                         <span className='flex items-center gap-2'>
                                             <h1 className='text-[13px] font-medium'>Fatema Begum</h1>
@@ -166,7 +168,7 @@ const Deshboard = () => {
                                         </span>
                                         <h1 className='truncate text-[11px] font-medium opacity-80'>Hey its Fatima how can help you?</h1>
                                     </span>
-                                </span>
+                                </div>
                                 <span>
                                     <h1 className='text-[11px] font-medium opacity-80 mt-[2px]'> 46 mins</h1>
                                 </span>
