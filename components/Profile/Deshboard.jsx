@@ -77,7 +77,7 @@ const Deshboard = () => {
                 </div>
                 <div className='col-span-2 w-full middle'>
                     <AddressCard />
-                    <div className='mt-4 p-3 bg-[#293b62] rounded shadow flex flex-col gap-2 text-center max-w-[275px]' >
+                    <div className='mt-4 p-3 bg-[#293b62] rounded shadow flex flex-col gap-2 text-center md:max-w-[275px]' >
                         <h1 className='text-[20px] text-white'>Get More Done Together With US</h1>
                         <h1 className='text-[11px] text-white px-12'>Lorem ipsum dolor sit amet, consectetur </h1>
                         <div >
