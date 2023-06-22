@@ -35,13 +35,16 @@ const Middle = () => {
         />
         <AiOutlineSearch className='h-[38px] text-white bg-bgColor rounded-lg rounded-l-none md:rounded md:rounded-l-none md:h-8 lg:h-9 p-1 w-10 border border-l-0 border-solid border-neutral-700' size={30} />
       </div>
-      <div className='hidden lg:flex items-center leading-tight gap-3 px-3'>
-        <Image src="/avatar.png" alt='profile image' className='rounded-full' height={30} width={30} />
-        <span className=''>
-          <h6 className='text-sm'>noman@gmail.com</h6>
-          <h6 className='text-xs opacity-70'>(Customer)</h6>
-        </span>
-      </div>
+      <Link href={`/profile/noman`}>
+        <div className='hidden lg:flex items-center leading-tight gap-3 px-3'>
+          <Image src="/avatar.png" alt='profile image' className='rounded-full' height={30} width={30} />
+          <span className=''>
+            <h6 className='text-sm'>noman@gmail.com</h6>
+            <h6 className='text-xs opacity-70'>(Customer)</h6>
+          </span>
+        </div>
+      </Link>
+
       <div className='px-3 hidden md:flex items-center gap-2 text-white'>
         <Link
           href={""}
