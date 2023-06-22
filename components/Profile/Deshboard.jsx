@@ -6,7 +6,7 @@ const Deshboard = () => {
     return (
         <div className='p-3 bg-white rounded shadow-sm'>
             <h1 className='text-[17px] font-[500] flex items-center justify-center'>My Deshboard</h1>
-            <div className='mt-2 flex items-start justify-center md:grid grid-cols-4 gap-3 overflow-x-auto scroll-smooth'>
+            <div className='mt-2 flex items-center justify-start overflow-x-auto scroll-smooth md:grid grid-cols-4 gap-3 '>
                 <div className='availablePoint bg-[#e4e1d7] flex items-center justify-center p-5 rounded shadow min-w-[280px]'>
                     <div>
                         <span className='flex gap-2'>
