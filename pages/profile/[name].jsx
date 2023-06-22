@@ -24,16 +24,16 @@ const UserPrifile = () => {
                             <img src="/avatar.png" className='h-14 w-14 rounded-full mb-7 md:mb-0' alt="" />
                         </picture>
                         <div className='flex flex-col gap-1'>
-                            <h5 className='capitalize text-[20px] text-gray-800 font-[450]'>sara ali khan</h5>
+                            <h5 className='capitalize text-[20px] md:text-gray-800 font-[450] text-bgColor'>sara ali khan</h5>
                             <div className='md:flex items-center gap-3'>
                                 <span className='flex items-center gap-2 opacity-80'>
                                     <FiMail size={14} />
-                                    <h4 className='text-[13px] font-medium'>saraalikhan@gmail.com</h4>
+                                    <h4 className='text-[13px] font-medium text-green-700 md:text-gray-800'>saraalikhan@gmail.com</h4>
                                 </span>
                                 <hr className='w-4 rotate-90' />
                                 <span className='flex items-center gap-2 opacity-80'>
                                     <FiPhone size={14} />
-                                    <h4 className='text-[13px] font-medium'>+088 0146575682</h4>
+                                    <h4 className='text-[13px] font-medium text-green-700 md:text-gray-800'>+088 0146575682</h4>
                                 </span>
                                 <hr className='w-4 rotate-90' />
                                 <span className='flex items-center gap-2 '>
