@@ -47,7 +47,7 @@ const UserPrifile = () => {
                         <button className='text-[14px] font-semibold text-white bg-bgColor p-2 rounded shadow-md'>Sing Out</button>
                     </div>
                 </div>
-                <div className='listItems mt-2 bg-white px-5 pt-3 pb-1 flex items-center gap-6 rounded shadow-sm'>
+                <div className='listItems mt-2 bg-white px-5 pt-3 pb-1 flex justify-start items-center overflow-x-auto scroll-smooth gap-6 rounded shadow-sm'>
                     <div onClick={() => setShowTab("deshboard")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Deshboard</h3>
                         <span className={` ${showTab === "deshboard" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
@@ -66,7 +66,7 @@ const UserPrifile = () => {
                         <span className={` ${showTab === "inbox" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
                     <div onClick={() => setShowTab("order")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium'>My Order</h3>
+                        <h3 className='text-[13px] font-medium whitespace-nowrap'>My Order</h3>
                         <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
                 </div>
