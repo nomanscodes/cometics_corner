@@ -55,7 +55,7 @@ const Deshboard = () => {
                 </div>
             </div>
             <div className='mt-2 md:grid grid-cols-9 gap-4'>
-                <div className='col-span-1 w-full left flex flex-col gap-2 mt-2'>
+                <div className='col-span-1 w-full left flex md:flex-col  items-center justify-start overflow-x-auto scroll-smooth gap-2 mt-2'>
                     <div className='orderdProduct bg-[#e4e1d7] flex flex-col items-center justify-center p-3 text-center rounded shadow'>
                         <h1 className='text-[12px] font-medium '>
                             Products You Order
