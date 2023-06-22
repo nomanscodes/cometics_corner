@@ -6,8 +6,8 @@ const Deshboard = () => {
     return (
         <div className='p-3 bg-white rounded shadow-sm'>
             <h1 className='text-[17px] font-[500] flex items-center justify-center'>My Deshboard</h1>
-            <div className='mt-2 flex items-center justify-center md:grid grid-cols-4  gap-3'>
-                <div className='availablePoint bg-[#e4e1d7] flex items-center justify-center p-5 rounded shadow'>
+            <div className='mt-2 flex items-start justify-center md:grid grid-cols-4 gap-3 overflow-x-auto scroll-smooth'>
+                <div className='availablePoint bg-[#e4e1d7] flex items-center justify-center p-5 rounded shadow min-w-[280px]'>
                     <div>
                         <span className='flex gap-2'>
                             <h1 className='text-[13px] font-medium'>Available Points</h1>
@@ -18,7 +18,7 @@ const Deshboard = () => {
                         <h4 className='text-[20px] font-bold opacity-75 flex items-center  mt-3'>5456533</h4>
                     </div>
                 </div>
-                <div className='totalPurchased bg-[#e4e1d7] flex items-center justify-center p-5 rounded shadow'>
+                <div className='totalPurchased bg-[#e4e1d7] flex items-center justify-center p-5 rounded shadow min-w-[280px]'>
                     <div>
                         <h1 className='text-[13px] font-medium'>
                             Total Purchased
@@ -26,7 +26,7 @@ const Deshboard = () => {
                         <h4 className='text-[20px] font-bold opacity-75 flex items-center  mt-3'>533 TK</h4>
                     </div>
                 </div>
-                <div className='lastPurchasedItem bg-[#e4e1d7] p-[10px] rounded shadow'>
+                <div className='lastPurchasedItem bg-[#e4e1d7] p-[10px] rounded shadow min-w-[280px]'>
                     <div className='grid grid-cols-4 gap-2'>
                         <div className='col-span-1'>
                             <picture>
@@ -49,7 +49,7 @@ const Deshboard = () => {
                         </picture>
                     </h3>
                 </div>
-                <div className='button flex flex-col items-center gap-3 pl-8'>
+                <div className='button flex flex-col items-center gap-2 pl-8 min-w-[280px]'>
                     <button className='text-[13px] font-semibold text-white bg-bgColor rounded p-[13px] w-full'>Go To Shopping </button>
                     <button className='text-[13px] font-semibold border rounded p-[13px] w-full'>Go To Shopping </button>
                 </div>
