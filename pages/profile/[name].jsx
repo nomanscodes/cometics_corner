@@ -9,20 +9,17 @@ import Profile from '@/components/Profile/Profile'
 const UserProfile = () => {
     const [showTab, setShowTab] = useState("deshboard")
 
-    const tabControl = (arg) => {
-        setShowTab(arg)
-        sessionStorage.setItem('arg', arg)
-    }
     useEffect(() => {
-        const tab = sessionStorage.getItem("arg");
-        if (tab === null) {
-            setShowTab("deshboard")
-        } else {
-            setShowTab(tab)
+        const storedTab = sessionStorage.getItem("tab");
+        if (storedTab) {
+          setShowTab(storedTab);
         }
-
-    }, [])
-
+      }, []);
+    
+      const tabControl = (tab) => {
+        setShowTab(tab);
+        sessionStorage.setItem("tab", tab);
+      };
 
     return (
         <Layout>
