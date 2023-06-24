@@ -1,13 +1,26 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
 import { FiCalendar, FiMail, FiPhone } from 'react-icons/fi'
 import Deshboard from '@/components/Profile/Deshboard'
+import Profile from '@/components/Profile/Profile'
 
 
 const UserPrifile = () => {
-
     const [showTab, setShowTab] = useState("deshboard")
+
+    const tabControl = (arg) => {
+        setShowTab(arg)
+        sessionStorage.setItem('arg', arg)
+    }
+    useEffect(() => {
+        const tab = sessionStorage.getItem("arg");
+        if (tab === "") {
+            setShowTab("deshboard")
+        }
+        setShowTab(tab)
+    }, [])
+
 
     return (
         <Layout>
@@ -48,24 +61,23 @@ const UserPrifile = () => {
                     </div>
                 </div>
                 <div className='listItems mt-2 bg-white px-5 pt-3 pb-1 flex justify-start items-center overflow-x-auto scroll-smooth gap-6 rounded shadow-sm'>
-                    <div onClick={() => setShowTab("deshboard")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                    <div onClick={() => tabControl("deshboard")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Deshboard</h3>
                         <span className={` ${showTab === "deshboard" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
-
                     </div>
-                    <div onClick={() => setShowTab("profile")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                    <div onClick={() => tabControl("profile")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Profile</h3>
                         <span className={` ${showTab === "profile" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
-                    <div onClick={() => setShowTab("following")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                    <div onClick={() => tabControl("following")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Following</h3>
                         <span className={` ${showTab === "following" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
-                    <div onClick={() => setShowTab("inbox")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                    <div onClick={() => tabControl("inbox")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Inbox</h3>
                         <span className={` ${showTab === "inbox" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
-                    <div onClick={() => setShowTab("order")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                    <div onClick={() => tabControl("order")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium whitespace-nowrap'>My Order</h3>
                         <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
@@ -75,7 +87,8 @@ const UserPrifile = () => {
                         <Deshboard />
                     </div>
                     <div className={`${showTab === "profile" ? `w-full h-fit` : `hidden`}`}>
-                        profile
+                        <Profile />
+                        dgfgdfgdf
                     </div>
                     <div className={`${showTab === "following" ? `w-full h-fit` : `hidden`}`}>
                         following
