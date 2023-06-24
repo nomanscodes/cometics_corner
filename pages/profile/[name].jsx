@@ -6,7 +6,7 @@ import Deshboard from '@/components/Profile/Deshboard'
 import Profile from '@/components/Profile/Profile'
 
 
-const UserPrifile = () => {
+const UserProfile = () => {
     const [showTab, setShowTab] = useState("deshboard")
 
     const tabControl = (arg) => {
@@ -15,10 +15,12 @@ const UserPrifile = () => {
     }
     useEffect(() => {
         const tab = sessionStorage.getItem("arg");
-        if (tab === "") {
+        if (tab === null) {
             setShowTab("deshboard")
+        } else {
+            setShowTab(tab)
         }
-        setShowTab(tab)
+
     }, [])
 
 
@@ -106,4 +108,4 @@ const UserPrifile = () => {
     )
 }
 
-export default UserPrifile
+export default UserProfile
