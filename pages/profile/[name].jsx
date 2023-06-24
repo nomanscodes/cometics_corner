@@ -12,14 +12,14 @@ const UserProfile = () => {
     useEffect(() => {
         const storedTab = sessionStorage.getItem("tab");
         if (storedTab) {
-          setShowTab(storedTab);
+            setShowTab(storedTab);
         }
-      }, []);
-    
-      const tabControl = (tab) => {
+    }, []);
+
+    const tabControl = (tab) => {
         setShowTab(tab);
         sessionStorage.setItem("tab", tab);
-      };
+    };
 
     return (
         <Layout>
@@ -29,26 +29,29 @@ const UserProfile = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='md:px-3 mt-3'>
-                <div className='heading flex items-center justify-between bg-white p-3 md:p-5 rounded shadow-sm'>
+            <div className='md:px-3 md:mt-3'>
+                <div className='heading md:flex items-center justify-between bg-white p-3 md:p-5 rounded shadow-sm'>
+                    <div className='p-1 mb-1'>
+                        <h4 className='text-[17px] font-medium'>My Profile</h4>
+                    </div>
                     <div className='flex items-center gap-5 md:gap-2'>
                         <picture>
-                            <img src="/avatar.png" className='h-14 w-14 rounded-full mb-7 md:mb-0' alt="" />
+                            <img src="/avatar.png" className='h-14 w-14 rounded-full md:mb-0' alt="" />
                         </picture>
                         <div className='flex flex-col gap-1'>
-                            <h5 className='capitalize text-[20px] md:text-gray-800 font-[450] text-bgColor'>sara ali khan</h5>
-                            <div className='md:flex items-center gap-3'>
+                            <h5 className='capitalize text-[14px] md:text-[20px] md:text-gray-800 font-[450] text-bgColor'>sara ali khan</h5>
+                            <div className='md:flex items-center md:gap-3'>
                                 <span className='flex items-center gap-2 opacity-80'>
                                     <FiMail size={14} />
-                                    <h4 className='text-[13px] font-medium text-green-700 md:text-gray-800'>saraalikhan@gmail.com</h4>
+                                    <h4 className='text-[12px] md:text-[13px] font-medium text-green-700 md:text-gray-800'>saraalikhan@gmail.com</h4>
                                 </span>
-                                <hr className='w-4 rotate-90' />
-                                <span className='flex items-center gap-2 opacity-80'>
+                                <hr className='hidden md:block w-4 rotate-90' />
+                                <span className='hidden md:flex items-center gap-2 opacity-80'>
                                     <FiPhone size={14} />
                                     <h4 className='text-[13px] font-medium text-green-700 md:text-gray-800'>+088 0146575682</h4>
                                 </span>
-                                <hr className='w-4 rotate-90' />
-                                <span className='flex items-center gap-2 '>
+                                <hr className='hidden md:block w-4 rotate-90' />
+                                <span className='hidden md:flex items-center gap-2'>
                                     <FiCalendar size={14} />
                                     <h4 className='text-[13px] font-medium opacity-80'><span className='opacity-70'>Joined</span> 23 August 2023</h4>
                                 </span>
@@ -59,7 +62,7 @@ const UserProfile = () => {
                         <button className='text-[14px] font-semibold text-white bg-bgColor p-2 rounded shadow-md'>Sing Out</button>
                     </div>
                 </div>
-                <div className='listItems mt-2 bg-white px-5 pt-3 pb-1 flex justify-start items-center overflow-x-auto scroll-smooth gap-6 rounded shadow-sm'>
+                <div className='listItems md:mt-2 bg-white px-5 pt-3 pb-1 flex justify-start items-center overflow-x-auto scroll-smooth gap-6 rounded shadow-sm'>
                     <div onClick={() => tabControl("deshboard")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Deshboard</h3>
                         <span className={` ${showTab === "deshboard" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
