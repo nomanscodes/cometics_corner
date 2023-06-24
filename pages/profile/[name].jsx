@@ -2,12 +2,13 @@ import React, { useState, useEffect } from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
 import { FiCalendar, FiMail, FiPhone } from 'react-icons/fi'
-import Deshboard from '@/components/Profile/Deshboard'
-import Profile from '@/components/Profile/Profile'
+import MyOrder from '@/components/Profile/Order'
+import Profile from '@/components/Profile/ShippingAddres'
+import Following from '@/components/Profile/Following'
 
 
 const UserProfile = () => {
-    const [showTab, setShowTab] = useState("deshboard")
+    const [showTab, setShowTab] = useState("order")
 
     useEffect(() => {
         const storedTab = sessionStorage.getItem("tab");
@@ -31,7 +32,7 @@ const UserProfile = () => {
             </Head>
             <div className='md:px-3 md:mt-3'>
                 <div className='heading md:flex items-center justify-between bg-white p-3 md:p-5 rounded shadow-sm'>
-                    <div className='p-1 mb-1'>
+                    <div className='p-1 mb-1 md:hidden'>
                         <h4 className='text-[17px] font-medium'>My Profile</h4>
                     </div>
                     <div className='flex items-center gap-5 md:gap-2'>
@@ -63,13 +64,13 @@ const UserProfile = () => {
                     </div>
                 </div>
                 <div className='listItems md:mt-2 bg-white px-5 pt-3 pb-1 flex justify-start items-center overflow-x-auto scroll-smooth gap-6 rounded shadow-sm'>
-                    <div onClick={() => tabControl("deshboard")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium'>Deshboard</h3>
-                        <span className={` ${showTab === "deshboard" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
+                    <div onClick={() => tabControl("order")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                        <h3 className='text-[13px] font-medium whitespace-nowrap'>My Order</h3>
+                        <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
-                    <div onClick={() => tabControl("profile")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium'>Profile</h3>
-                        <span className={` ${showTab === "profile" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
+                    <div onClick={() => tabControl("shipping-address")} className='w-fit flex flex-col gap-1 cursor-pointer'>
+                        <h3 className='text-[13px] font-medium whitespace-nowrap'>Shipping-address</h3>
+                        <span className={` ${showTab === "shipping-address" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
                     <div onClick={() => tabControl("following")} className='w-fit flex flex-col gap-1 cursor-pointer'>
                         <h3 className='text-[13px] font-medium'>Following</h3>
@@ -79,28 +80,22 @@ const UserProfile = () => {
                         <h3 className='text-[13px] font-medium'>Inbox</h3>
                         <span className={` ${showTab === "inbox" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
                     </div>
-                    <div onClick={() => tabControl("order")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium whitespace-nowrap'>My Order</h3>
-                        <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
-                    </div>
+
                 </div>
                 <div className='contentForm mt-2'>
-                    <div className={`${showTab === "deshboard" ? `w-full h-fit` : `hidden`}`}>
-                        <Deshboard />
+                    <div className={`${showTab === "order" ? `w-full h-fit` : `hidden`}`}>
+                        <MyOrder />
                     </div>
-                    <div className={`${showTab === "profile" ? `w-full h-fit` : `hidden`}`}>
+                    <div className={`${showTab === "shipping-address" ? `w-full h-fit` : `hidden`}`}>
                         <Profile />
-                        dgfgdfgdf
                     </div>
                     <div className={`${showTab === "following" ? `w-full h-fit` : `hidden`}`}>
-                        following
+                        <Following />
                     </div>
                     <div className={`${showTab === "inbox" ? `w-full h-fit` : `hidden`}`}>
                         Inbox
                     </div>
-                    <div className={`${showTab === "order" ? `w-full h-fit` : `hidden`}`}>
-                        Myorder
-                    </div>
+
                 </div>
             </div>
         </Layout>
