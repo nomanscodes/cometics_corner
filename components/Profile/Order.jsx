@@ -6,7 +6,7 @@ const MyOrder = () => {
     return (
         <div className='p-3 bg-white rounded shadow-sm'>
             <h1 className='text-[20px] mb-1 font-[500] flex items-center justify-center'>My Orders</h1>
-            <div className='hidden md:block min-h-[60vh]'>
+            <div className='hidden md:block min-h-[50vh]'>
                 <div className='grid grid-cols-10 mt-3'>
                     <span className='col-span-1 p-2 border border-gray-400 text-[14px] font-medium'>
                         No
