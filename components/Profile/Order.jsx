@@ -6,7 +6,7 @@ const MyOrder = () => {
     return (
         <div className='p-3 bg-white rounded shadow-sm'>
             <h1 className='text-[20px] mb-1 font-[500] flex items-center justify-center'>My Orders</h1>
-            <div className='hidden md:block'>
+            <div className='hidden md:block min-h-[60vh]'>
                 <div className='grid grid-cols-10 mt-3'>
                     <span className='col-span-1 p-2 border border-gray-400 text-[14px] font-medium'>
                         No
@@ -63,14 +63,13 @@ const MyOrder = () => {
                     </span>
                 </div>
             </div>
-
             <div className='md:hidden mt-4'>
                 <div className='flex items-center justify-between mb-4'>
-                    <span className='text-[12px] font-medium bg-bgColor text-white p-2 rounded'>Delivered</span>
-                    <span className='text-[12px] font-medium  border p-2 rounded'>
+                    <span className='text-[11px] font-medium bg-bgColor text-white px-[10px] py-[5px] rounded-full'>Delivered</span>
+                    <span className='text-[11px] font-medium  border px-[10px] py-[5px] rounded-full'>
                         Processing
                     </span>
-                    <span className='text-[12px] font-medium  border p-2 rounded'>
+                    <span className='text-[11px] font-medium  border px-[10px] py-[5px] rounded-full'>
                         Cancelled
                     </span>
                 </div>
@@ -91,11 +90,11 @@ const MyOrder = () => {
                         </span>
                     </span>
                     <span className='flex items-center justify-between mt-[14px]'>
-                        <Link className='text-[13px] font-medium bg-bgColor py-[4px] px-2 text-white rounded-sm shadow'
+                        <Link className='text-[12px] font-medium bg-bgColor py-[4px] px-[10px] text-white rounded-sm shadow'
                             href={"/order-details/jhfdikgjudfhsk"}>
                             Details
                         </Link>
-                        <h4 className=' text-[13px] font-medium text-green-700'>
+                        <h4 className='text-[13px] font-medium text-green-700'>
                             Delivered
                         </h4>
                     </span>

@@ -3,10 +3,12 @@ import AddressCard from '../Checkout.jsx/AddressCard'
 
 const ShippingAddress = () => {
   return (
-    <div className='md:flex items-center justify-center gap-4 px-2'>
+    <div className='md:flex items-center justify-center px-2 md:min-h-[60vh]'>
+
       <AddressCard />
       <AddressCard />
       <AddressCard />
+
     </div>
   )
 }
