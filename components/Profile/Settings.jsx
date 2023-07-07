@@ -40,33 +40,35 @@ const Settings = () => {
                     <div className='col-span-1 w-full flex flex-col 
                     gap-[2px] mt-4 md:mt-2 relative'>
                         <span className="flex items-center absolute 
-                                        mt-[26px]  md:mt-[29px] ml-1">
+                                        mt-[30px]  md:mt-[32px] ml-1">
                             <picture>
-                                <img src="/SVG/BdFlag.svg" className="w-7 " alt="" />
+                                <img src="/SVG/BdFlag.svg" className="w-6" alt="" />
                             </picture>
                             <h2 className="text-[12px] md:text-[13px]">+088</h2>
                         </span>
-                        <label className='text-[13px] md:text-[14px] opacity-90'>Mobile Number</label>
+                        <label className='text-[13px] md:text-[14px] opacity-90'>Phone Number</label>
                         <input
                             type="tel"
                             name="mobile_number"
                             onChange={handleChange}
                             value={shippingAddress.mobile_number}
                             placeholder="Mobile No*"
-                            className="py-[10px] md:py-[10px] w-[100%] flex flex-1 text-[12px] md:text-[13px] pl-[70px] inputOuteLine rounded-md md:rounded-sm border"
+                            className="py-[10px] md:py-[10px] w-[100%] flex flex-1 text-[12px] md:text-[13px] pl-[65px] inputOuteLine rounded-md md:rounded-sm border"
                         />
                     </div>
                 </div>
                 <div className="grid grid-cols-2 gap-3 md:gap-7 mt-1 md:mt-4">
                     <div className='col-span-1 flex flex-col gap-[2px] mt-2 relative'>
                         <picture>
-                            <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
+                            <img src="/SVG/BdFlag.svg" className="w-6 absolute 
+                            mt-[31px]  
+                            md:mt-[34px] ml-1" alt="" />
                         </picture>
                         <label className='text-[13px] md:text-[14px] opacity-90'>Country</label>
                         <input
                             value={shippingAddress.country}
                             disabled
-                            className="py-[10px] md:py-[10px] w-[100%] text-[12px] md:text-[13px] pl-10 inputOuteLine rounded-md md:rounded-sm border"
+                            className="py-[10px] md:py-[10px] w-[100%] text-[12px] md:text-[13px] pl-8 inputOuteLine rounded-md md:rounded-sm border"
                         />
                     </div>
                     <div className="col-span-1 flex flex-col justify-center mt-[12px]">
