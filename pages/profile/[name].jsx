@@ -94,7 +94,7 @@ const UserProfile = () => {
                         </div>
                     </div>
                     <div className='rightSide mt-4 md:mt-0 bg-white col-span-6 rounded-sm shadow-sm border border-gray-300 py-6'>
-                        <div className='bg-white flex justify-start items-center overflow-x-auto scroll-smooth gap-6 border-b px-6'>
+                        <div className='bg-white flex justify-start items-center overflow-x-auto scroll-smooth gap-6 border-b px-6 shadow-sm'>
                             <div onClick={() => tabControl("order")} className='w-fit flex flex-col gap-3 cursor-pointer'>
                                 <h3 className='text-[12px] font-medium whitespace-nowrap'>My Orders</h3>
                                 <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
@@ -102,10 +102,6 @@ const UserProfile = () => {
                             <div onClick={() => tabControl("shipping-address")} className='w-fit flex flex-col gap-3 cursor-pointer'>
                                 <h3 className='text-[12px] font-medium whitespace-nowrap'>Shipping-address</h3>
                                 <span className={` ${showTab === "shipping-address" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
-                            </div>
-                            <div onClick={() => tabControl("following")} className='w-fit flex flex-col gap-3 cursor-pointer'>
-                                <h3 className='text-[12px] font-medium whitespace-nowrap'>My Reviews</h3>
-                                <span className={` ${showTab === "following" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
                             </div>
                             <div onClick={() => tabControl("inbox")} className='w-fit flex flex-col gap-3 cursor-pointer'>
                                 <h3 className='text-[12px] font-medium whitespace-nowrap'>Account Settings</h3>
