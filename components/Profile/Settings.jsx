@@ -25,7 +25,7 @@ const Settings = () => {
 
 
     return (
-        <div className="px-5">
+        <div className="px-3 md:px-5">
             <div>
                 <div className="w-full md:grid grid-cols-2 gap-7 mt-6">
                     <InputField
@@ -57,7 +57,7 @@ const Settings = () => {
                         />
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-7 mt-1 md:mt-4">
+                <div className="grid grid-cols-2 gap-3 md:gap-7 mt-1 md:mt-4">
                     <div className='col-span-1 flex flex-col gap-[2px] mt-2 relative'>
                         <picture>
                             <img src="/SVG/BdFlag.svg" className="w-7 absolute mt-[28px]  md:mt-[30px] ml-1" alt="" />
@@ -108,7 +108,7 @@ const Settings = () => {
                         </select>
                     </div>
                 </div>
-                <div className="grid grid-cols-2 gap-7 mt-2 md:mt-4">
+                <div className="grid grid-cols-2 gap-3 md:gap-7 mt-2 md:mt-4">
                     <div className="col-span-1 flex flex-col justify-center mt-[10px]">
                         <h1 className="text-[13px] md:text-[14px] opacity-90 ">Union</h1>
                         <select className="w-[100%] py-[10px] md:py-[10px] px-2 md:px-3 text-[12px] md:text-[13px] focus:outline-none rounded-md  md:rounded-sm border"
