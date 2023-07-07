@@ -9,6 +9,7 @@ const InputField = ({
     placeholder,
     error,
     label = "",
+    border
 
 }) => {
     return (
@@ -21,8 +22,7 @@ const InputField = ({
                 onChange={onChange}
                 onBlur={onBlur}
                 placeholder={placeholder}
-                className="py-[10px] md:py-[10px] flex flex-1 w-[100%] text-[12px] md:text-[13px] pl-2 md:pl-4 rounded-md md:rounded-sm focus:outline-none
-               "
+                className={`py-[10px] md:py-[10px] flex flex-1 w-[100%] text-[12px] md:text-[13px] pl-2 md:pl-4 rounded-md md:rounded-sm focus:outline-none ${border ? `border` : ``}`}
             />
             {error && <p className="error">{error}</p>}
         </div>

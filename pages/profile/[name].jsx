@@ -3,8 +3,8 @@ import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
 import { useRouter } from "next/router";
 import MyOrder from '@/components/Profile/Order'
-import Profile from '@/components/Profile/ShippingAddres'
-import Following from '@/components/Profile/Following'
+import ShippingAddres from '@/components/Profile/ShippingAddres'
+import Settings from '@/components/Profile/Settings';
 import { AiFillCamera } from 'react-icons/ai'
 import { BiChevronDown } from 'react-icons/bi'
 import Bottom from '@/components/PhoneBottom/Bottom'
@@ -108,9 +108,9 @@ const UserProfile = () => {
                                 <h3 className='text-[12px] font-medium whitespace-nowrap'>Shipping-address</h3>
                                 <span className={` ${showTab === "shipping-address" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
                             </div>
-                            <div onClick={() => tabControl("inbox")} className='w-fit flex flex-col gap-3 cursor-pointer'>
+                            <div onClick={() => tabControl("settings")} className='w-fit flex flex-col gap-3 cursor-pointer'>
                                 <h3 className='text-[12px] font-medium whitespace-nowrap'>Account Settings</h3>
-                                <span className={` ${showTab === "inbox" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
+                                <span className={` ${showTab === "settings" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
                             </div>
                             <div onClick={() => tabControl("notification")} className='w-fit flex flex-col gap-3 cursor-pointer'>
                                 <h3 className='text-[12px] font-medium'>Notification</h3>
@@ -122,10 +122,10 @@ const UserProfile = () => {
                                 <MyOrder />
                             </div>
                             <div className={`${showTab === "shipping-address" ? `w-full h-fit` : `hidden`}`}>
-                                <Profile />
+                                <ShippingAddres />
                             </div>
-                            <div className={`${showTab === "following" ? `w-full h-fit` : `hidden`}`}>
-                                <Following />
+                            <div className={`${showTab === "settings" ? `w-full h-fit` : `hidden`}`}>
+                                <Settings />
                             </div>
                             <div className={`${showTab === "inbox" ? `w-full h-fit` : `hidden`}`}>
                                 Inbox
