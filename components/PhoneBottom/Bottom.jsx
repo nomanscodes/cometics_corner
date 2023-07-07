@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 
-const Bottom = ({ shopPath, homePath, categoryPath, cartPath }) => {
+const Bottom = ({ shopPath, homePath, categoryPath, cartPath, accountPath }) => {
     return (
         <div className="fixed bottom-0 left-0 z-40 w-full bg-white border-t shadow-2xl md:hidden ">
             <div className="flex items-center justify-between px-3 sm:px-6">
@@ -77,11 +77,27 @@ const Bottom = ({ shopPath, homePath, categoryPath, cartPath }) => {
                         </>
                     )}
                 </Link>
-                <Link href={"/account"} className="flex flex-col items-center p-1">
-                    <picture>
-                        <img className="w-5" src="/SVG/bottomaccount.svg" alt="home" />
-                    </picture>
-                    <p className="font-medium footerText2 text-[#A1A0A0]">Account</p>
+                <Link href={"/profile/noman"} className="flex flex-col items-center p-1">
+                    {accountPath ? (
+                        <>
+                            <picture>
+                                <img
+                                    className="w-5"
+                                    src="/SVG/activeAccount.svg" alt="home" />
+                            </picture>
+                            <p className="font-medium footerText2 text-[#A1A0A0]">Profile</p>
+                        </>
+                    ) : (
+                        <>
+                            <picture>
+                                <img
+                                    className="w-5"
+                                    src="/SVG/bottomaccount.svg"
+                                    alt="home" />
+                            </picture>
+                            <p className="font-medium footerText2 text-[#A1A0A0]">Profile</p>
+                        </>
+                    )}
                 </Link>
             </div>
         </div>

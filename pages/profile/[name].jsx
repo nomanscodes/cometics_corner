@@ -1,13 +1,18 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
+import { useRouter } from "next/router";
 import MyOrder from '@/components/Profile/Order'
 import Profile from '@/components/Profile/ShippingAddres'
 import Following from '@/components/Profile/Following'
 import { AiFillCamera } from 'react-icons/ai'
 import { BiChevronDown } from 'react-icons/bi'
+import Bottom from '@/components/PhoneBottom/Bottom'
+
 
 const UserProfile = () => {
+    const { asPath, pathname } = useRouter();
+
     const [showTab, setShowTab] = useState("order")
     const [coverImage, setCoverImage] = useState()
 
@@ -129,6 +134,7 @@ const UserProfile = () => {
                     </div>
                 </div>
             </div>
+            <Bottom accountPath={pathname}/>
         </Layout>
 
     )
