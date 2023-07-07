@@ -1,14 +1,15 @@
 import React, { useState, useEffect } from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
-import { FiCalendar, FiMail, FiPhone } from 'react-icons/fi'
 import MyOrder from '@/components/Profile/Order'
 import Profile from '@/components/Profile/ShippingAddres'
 import Following from '@/components/Profile/Following'
-
+import { AiFillCamera } from 'react-icons/ai'
+import { BiChevronDown } from 'react-icons/bi'
 
 const UserProfile = () => {
     const [showTab, setShowTab] = useState("order")
+    const [coverImage, setCoverImage] = useState()
 
     useEffect(() => {
         const storedTab = sessionStorage.getItem("tab");
@@ -30,72 +31,106 @@ const UserProfile = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='md:px-3 md:mt-3'>
-                <div className='heading md:flex items-center justify-between bg-white p-3 md:p-5 rounded shadow-sm'>
-                    <div className='p-1 mb-1 md:hidden'>
-                        <h4 className='text-[17px] font-medium'>My Profile</h4>
+            <div className=''>
+                <div
+                    style={{ backgroundImage: `url("/usercover.avif")` }}
+                    className='w-full h-32 md:h-48 fitImage'
+                >
+                    <div className='flex items-start justify-end p-4'>
+                        <label onChange={(e) => setCoverImage(e.target.value)} for="dropzone-file" className="flex items-center justify-center gap-2 text-white px-3 py-[5px] border border-white cursor-pointer bg-[#2e4cb9] rounded-sm shadow-sm">
+                            <AiFillCamera size={16} />
+                            <h2 className='text-[11px] font-medium'>Change Cover</h2>
+                            <input value={coverImage} id="dropzone-file" type="file" className="hidden" />
+                        </label>
                     </div>
-                    <div className='flex items-center gap-5 md:gap-2'>
-                        <picture>
-                            <img src="/avatar.png" className='h-14 w-14 rounded-full md:mb-0' alt="" />
-                        </picture>
-                        <div className='flex flex-col gap-1'>
-                            <h5 className='capitalize text-[14px] md:text-[20px] md:text-gray-800 font-[450] text-bgColor'>sara ali khan</h5>
-                            <div className='md:flex items-center md:gap-3'>
-                                <span className='flex items-center gap-2 opacity-80'>
-                                    <FiMail size={14} />
-                                    <h4 className='text-[12px] md:text-[13px] font-medium text-green-700 md:text-gray-800'>saraalikhan@gmail.com</h4>
-                                </span>
-                                <hr className='hidden md:block w-4 rotate-90' />
-                                <span className='hidden md:flex items-center gap-2 opacity-80'>
-                                    <FiPhone size={14} />
-                                    <h4 className='text-[13px] font-medium text-green-700 md:text-gray-800'>+088 0146575682</h4>
-                                </span>
-                                <hr className='hidden md:block w-4 rotate-90' />
-                                <span className='hidden md:flex items-center gap-2'>
-                                    <FiCalendar size={14} />
-                                    <h4 className='text-[13px] font-medium opacity-80'><span className='opacity-70'>Joined</span> 23 August 2023</h4>
-                                </span>
+                </div>
+                <div className='px-3 md:px-10 w-full md:grid grid-cols-8 gap-8 -mt-12 md:-mt-14'>
+                    <div className='leftSide bg-white col-span-2 rounded-sm shadow-sm border border-gray-300 '>
+                        <div className='flex flex-col items-center justify-center gap-2 p-6'>
+                            <div className='w-28 h-28 rounded-full fitImage' style={{ backgroundImage: `url("/user.jpg")` }} >
+                                <div className='bg-white p-[2px] absolute mt-[80px] ml-20 h-7 w-7 rounded-full flex items-center justify-center'>
+                                    <label
+                                        // onChange={(e) => setCoverImage(e.target.value)}
+                                        for="dropzone-file" className="text-white cursor-pointer
+                                     bg-[#2e4cb9] w-full h-full p-1 rounded-full"
+                                    >
+                                        <AiFillCamera size={15} />
+                                        <input value={coverImage} id="dropzone-file" type="file" className="hidden" />
+                                    </label>
+                                </div>
+                            </div>
+                            <span className='mt-2 text-center'>
+                                <h3 className='text-[14px] font-semibold text-gray-800'>Sara Ali Jahan</h3>
+                                <h3 className='text-[11px] font-medium text-gray-800 opacity-75'>demo@gmail.com</h3>
+                            </span>
+                        </div>
+
+                        <div className=''>
+                            <span className='flex items-center justify-between px-8 py-[14px] text-[12px] font-medium opacity-95 border-t'>
+                                <h1>Total Orders</h1>
+                                <h1 className='text-green-800'>45</h1>
+                            </span>
+                            <span className='flex items-center justify-between px-8 py-[14px] text-[12px] font-medium opacity-95 border-t'>
+                                <h1>Pending Orders</h1>
+                                <h1 className='text-green-800'>05</h1>
+                            </span>
+                            <span className='flex items-center justify-between px-8 py-[14px] text-[12px] font-medium opacity-95 border-t'>
+                                <h1>Total Shopping </h1>
+                                <h1 className='text-pink-600'>3545 TK</h1>
+                            </span>
+                            <span className='flex items-center justify-between px-8 py-[14px] text-[12px] font-medium opacity-95 border-t'>
+                                <h1>Reviews Given</h1>
+                                <h1 className='text-yellow-500'>12</h1>
+                            </span>
+                            <span className='flex items-center justify-between px-8 py-[14px] text-[12px] font-medium opacity-95 border-t'>
+                                <h1>Points</h1>
+                                <h1 className='text-cyan-600'>4543323</h1>
+                            </span>
+                            <span className='flex items-center justify-between px-8 py-[14px] text-[12px] font-medium opacity-95 border-t'>
+                                <h1>Opportunities</h1>
+                                {/* <AiOutlineDown/> */}
+                                <BiChevronDown size={24} />
+                            </span>
+                        </div>
+                    </div>
+                    <div className='rightSide mt-4 md:mt-0 bg-white col-span-6 rounded-sm shadow-sm border border-gray-300 py-6'>
+                        <div className='bg-white flex justify-start items-center overflow-x-auto scroll-smooth gap-6 border-b px-6'>
+                            <div onClick={() => tabControl("order")} className='w-fit flex flex-col gap-3 cursor-pointer'>
+                                <h3 className='text-[12px] font-medium whitespace-nowrap'>My Orders</h3>
+                                <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
+                            </div>
+                            <div onClick={() => tabControl("shipping-address")} className='w-fit flex flex-col gap-3 cursor-pointer'>
+                                <h3 className='text-[12px] font-medium whitespace-nowrap'>Shipping-address</h3>
+                                <span className={` ${showTab === "shipping-address" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
+                            </div>
+                            <div onClick={() => tabControl("following")} className='w-fit flex flex-col gap-3 cursor-pointer'>
+                                <h3 className='text-[12px] font-medium whitespace-nowrap'>My Reviews</h3>
+                                <span className={` ${showTab === "following" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
+                            </div>
+                            <div onClick={() => tabControl("inbox")} className='w-fit flex flex-col gap-3 cursor-pointer'>
+                                <h3 className='text-[12px] font-medium whitespace-nowrap'>Account Settings</h3>
+                                <span className={` ${showTab === "inbox" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
+                            </div>
+                            <div onClick={() => tabControl("notification")} className='w-fit flex flex-col gap-3 cursor-pointer'>
+                                <h3 className='text-[12px] font-medium'>Notification</h3>
+                                <span className={` ${showTab === "notification" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`} />
+                            </div>
+                        </div>
+                        <div className='contentForm mt-2'>
+                            <div className={`${showTab === "order" ? `w-full h-fit` : `hidden`}`}>
+                                <MyOrder />
+                            </div>
+                            <div className={`${showTab === "shipping-address" ? `w-full h-fit` : `hidden`}`}>
+                                <Profile />
+                            </div>
+                            <div className={`${showTab === "following" ? `w-full h-fit` : `hidden`}`}>
+                                <Following />
+                            </div>
+                            <div className={`${showTab === "inbox" ? `w-full h-fit` : `hidden`}`}>
+                                Inbox
                             </div>
                         </div>
                     </div>
-                    <div className='hidden md:block'>
-                        <button className='text-[14px] font-semibold text-white bg-bgColor p-2 rounded shadow-md'>Sing Out</button>
-                    </div>
-                </div>
-                <div className='listItems md:mt-2 bg-white px-5 pt-3 pb-1 flex justify-start items-center overflow-x-auto scroll-smooth gap-6 rounded shadow-sm'>
-                    <div onClick={() => tabControl("order")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium whitespace-nowrap'>My Order</h3>
-                        <span className={` ${showTab === "order" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
-                    </div>
-                    <div onClick={() => tabControl("shipping-address")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium whitespace-nowrap'>Shipping-address</h3>
-                        <span className={` ${showTab === "shipping-address" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
-                    </div>
-                    <div onClick={() => tabControl("following")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium'>Following</h3>
-                        <span className={` ${showTab === "following" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
-                    </div>
-                    <div onClick={() => tabControl("inbox")} className='w-fit flex flex-col gap-1 cursor-pointer'>
-                        <h3 className='text-[13px] font-medium'>Inbox</h3>
-                        <span className={` ${showTab === "inbox" ? `duration-500 opacity-100` : `opacity-0`} h-[2px] w-full bg-bgColor`}></span>
-                    </div>
-
-                </div>
-                <div className='contentForm mt-2'>
-                    <div className={`${showTab === "order" ? `w-full h-fit` : `hidden`}`}>
-                        <MyOrder />
-                    </div>
-                    <div className={`${showTab === "shipping-address" ? `w-full h-fit` : `hidden`}`}>
-                        <Profile />
-                    </div>
-                    <div className={`${showTab === "following" ? `w-full h-fit` : `hidden`}`}>
-                        <Following />
-                    </div>
-                    <div className={`${showTab === "inbox" ? `w-full h-fit` : `hidden`}`}>
-                        Inbox
-                    </div>
-
                 </div>
             </div>
         </Layout>

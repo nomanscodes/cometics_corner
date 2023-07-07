@@ -4,59 +4,59 @@ import Link from 'next/link'
 
 const MyOrder = () => {
     return (
-        <div className='p-3 bg-white rounded shadow-sm'>
-            <h1 className='text-[20px] mb-1 font-[500] flex items-center justify-center'>My Orders</h1>
+        <div className='px-2 bg-white rounded shadow-sm'>
+            <h1 className='text-[18px] mb-1 font-[500] flex items-center justify-center'>My Orders</h1>
             <div className='hidden md:block min-h-[50vh]'>
-                <div className='grid grid-cols-10 mt-3'>
-                    <span className='col-span-1 p-2 border border-gray-400 text-[14px] font-medium'>
+                <div className='grid grid-cols-12 mt-3 bg-[#2e4cb9] text-white'>
+                    <span className='col-span-1 p-1 border border-gray-400 text-[13px] font-medium'>
                         No
                     </span>
-                    <span className='col-span-2 p-2 border border-gray-400 text-[14px] font-medium'>
+                    <span className='col-span-2 p-2 border border-gray-400 text-[13px] font-medium'>
                         Order
                     </span>
-                    <span className='p-2 border border-gray-400 text-[14px] font-medium'>
+                    <span className='p-2 col-span-2 border border-gray-400 text-[13px] font-medium'>
                         Date
                     </span>
-                    <span className='col-span-2 p-2 border border-gray-400 text-[14px] font-medium'>
+                    <span className='col-span-2 p-2 border border-gray-400 text-[13px] font-medium'>
                         Tracking Number
                     </span>
-                    <span className='p-2 border border-gray-400 text-[14px] font-medium'>
+                    <span className='p-2 border border-gray-400 text-[13px] font-medium'>
                         Quantity
                     </span>
-                    <span className='p-2 border border-gray-400 text-[14px] font-medium'>
+                    <span className='p-2 border border-gray-400 text-[13px] font-medium'>
                         Total Amount
                     </span>
-                    <span className='p-2 border border-gray-400 text-[14px] font-medium'>
+                    <span className='col-span-2 p-2 border border-gray-400 text-[13px] font-medium'>
                         State
                     </span>
-                    <span className='p-2 border border-gray-400 text-[14px] font-medium flex items-center justify-center'>
+                    <span className='p-2 border border-gray-400 text-[13px] font-medium flex items-center justify-center'>
                         Action
                     </span>
                 </div>
-                <div className='grid grid-cols-10'>
-                    <span className='col-span-1 flex items-center  p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium'>
+                <div className='grid grid-cols-12'>
+                    <span className='col-span-1 flex items-center  p-[10px] border border-t-0  border-gray-400 text-[12px] font-medium'>
                         1
                     </span>
-                    <span className='col-span-2 flex items-center  p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium'>
+                    <span className='col-span-2 flex items-center  p-[10px] border border-t-0  border-gray-400 text-[12px] font-medium'>
                         #56753GD4362
                     </span>
-                    <span className='flex items-center p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium whitespace-nowrap'>
+                    <span className='col-span-2 flex items-center p-[10px] border border-t-0  border-gray-400 text-[12px] font-medium whitespace-nowrap'>
                         12 August,2023
                     </span>
-                    <span className='col-span-2 flex items-center p-[10px] border border-t-0 border-gray-400 text-[13px] font-medium'>
+                    <span className='col-span-2 flex items-center p-[10px] border border-t-0 border-gray-400 text-[12px] font-medium'>
                         1343rers232
                     </span>
-                    <span className='flex items-center p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium'>
+                    <span className='flex items-center p-[10px] border border-t-0  border-gray-400 text-[12px] font-medium'>
                         04
                     </span>
-                    <span className='flex items-center p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium'>
+                    <span className='flex items-center p-[10px] border border-t-0  border-gray-400 text-[12px] font-medium'>
                         345 TK
                     </span>
-                    <span className='flex items-center p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium text-green-700'>
+                    <span className='col-span-2 flex items-center p-[10px] border border-t-0  border-gray-400 text-[12px] font-medium text-green-700'>
                         Delivered
                     </span>
-                    <span className='p-[10px] border border-t-0  border-gray-400 text-[14px] font-medium flex items-center justify-center'>
-                        <Link className='text-[13px] font-semibold bg-bgColor py-[4px] px-2 text-white rounded-sm shadow'
+                    <span className='p-[10px] border border-t-0  border-gray-400 text-[13px] font-medium flex items-center justify-center'>
+                        <Link className='text-[12px] font-semibold bg-bgColor py-[4px] px-2 text-white rounded-sm shadow'
                             href={"/order-details/jhfdikgjudfhsk"}>
                             Details
                         </Link>
