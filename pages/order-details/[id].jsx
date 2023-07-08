@@ -7,8 +7,14 @@ import { HiAnnotation } from 'react-icons/hi'
 import AddressCard from '@/components/Checkout.jsx/AddressCard'
 import { MdArrowBackIos } from 'react-icons/md'
 import OrderDetailsCard from '@/components/Profile/OrderDetailsCard'
+import { useRouter } from 'next/router'
 
 const OrderDetails = () => {
+
+  const router = useRouter()
+
+  console.log("router", router.query);
+
   return (
     <Layout>
       <Head>
@@ -174,9 +180,11 @@ const OrderDetails = () => {
           </div>
         </div>
       </div>
-      <div className='bg-white'>
-        <div className='flex items-center justify-between gap-5 p-3'>
-          <MdArrowBackIos size={17} className='' />
+      <div className=''>
+        <div className='flex items-center justify-between gap-5 p-3 bg-white'>
+          <Link href={"/profile/noman"}>
+            <MdArrowBackIos size={17} />
+          </Link>
           <h5 className='text-[15px] font-semibold text-gray-900'>Order Details</h5>
           <span></span>
         </div>
