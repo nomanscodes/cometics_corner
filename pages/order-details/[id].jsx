@@ -8,6 +8,7 @@ import AddressCard from '@/components/Checkout.jsx/AddressCard'
 import { MdArrowBackIos } from 'react-icons/md'
 import OrderDetailsCard from '@/components/Profile/OrderDetailsCard'
 import { useRouter } from 'next/router'
+import Bottom from '@/components/PhoneBottom/Bottom'
 
 const OrderDetails = () => {
 
@@ -232,6 +233,7 @@ const OrderDetails = () => {
           </div>
         </div>
       </div>
+      <Bottom/>
     </Layout>
 
   )
