@@ -5,7 +5,7 @@ import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { HiAnnotation } from 'react-icons/hi'
 import AddressCard from '@/components/Checkout.jsx/AddressCard'
-import { MdArrowBackIos,MdKeyboardArrowLeft } from 'react-icons/md'
+import { MdArrowBackIos, MdKeyboardArrowLeft } from 'react-icons/md'
 import OrderDetailsCard from '@/components/Profile/OrderDetailsCard'
 import { useRouter } from 'next/router'
 import Bottom from '@/components/PhoneBottom/Bottom'
@@ -183,8 +183,8 @@ const OrderDetails = () => {
       <div className='md:hidden'>
         <div className='flex items-center justify-between gap-5 p-3 bg-white'>
           <Link href={"/profile/noman"} className='flex items-center'>
-            <MdKeyboardArrowLeft size={22}/>
-            <h3 className='text-[13px] font-medium text-gray-600'>Prev</h3>
+            <MdKeyboardArrowLeft size={18} />
+            <h3 className='text-[12px] font-medium text-gray-600'>BACK</h3>
           </Link>
           <h5 className='text-[15px] font-semibold text-gray-900'>Order Details</h5>
           <span></span>
