@@ -182,19 +182,39 @@ const OrderDetails = () => {
         <div className='py-5 px-3 bg-gray-100'>
           <div className='flex items-center justify-between'>
             <span className='flex items-center gap-2'>
-              <h1 className='text-[13px] font-semibold text-gray-900'>Order No</h1>
+              <h1 className='text-[13px] font-semibold text-gray-900'>Order No :</h1>
               <h1 className='text-[13px] font-semibold text-green-600'>45763521</h1>
             </span>
             <h1 className='text-[13px] font-semibold text-gray-700'>12-04-2023</h1>
           </div>
           <div className='flex items-center justify-between mt-2'>
             <span className='flex items-center gap-2'>
-              <h1 className='text-[12px] font-medium text-gray-800'>Tracking No</h1>
+              <h1 className='text-[12px] font-medium text-gray-800'>Tracking No :</h1>
               <h1 className='text-[12px] font-medium '>#4HY31TBU4353</h1>
             </span>
             <h1 className='text-[13px] font-medium text-green-700'>Delivered</h1>
           </div>
           <h1 className='text-[13px] font-medium text-gray-700 mt-2'>2 Items</h1>
+          <div className='mt-3'>
+            <div className='grid grid-cols-4 border shadow-sm p-[2px] bg-white'>
+              <picture className='col-span-1'>
+                <img src="/demo/p/p1.avif" alt="" />
+              </picture>
+              <div className='col-span-3 pl-2 '>
+                <h4 className='text-[12px] font-semibold text-gray-700'>American Hair Gel For Women</h4>
+                <h4 className='text-[11px] font-semibold text-gray-600'>Sky Blue</h4>
+                <span className='flex items-center gap-3 mt-2'>
+                  <h4 className='text-[11px] font-semibold text-gray-700'>Color : <span className='text-black'>Red</span></h4>
+                  <h4 className='text-[11px] font-semibold text-gray-700'>Size : <span className='text-black'>L</span></h4>
+                  <h4 className='text-[11px] font-semibold text-gray-700'>Qty : <span className='text-black'>02</span></h4>
+                </span>
+                <span className='flex items-center justify-between mt-2'>
+                  <h4 className='text-[11px] font-semibold text-gray-700'>Qty : <span className='text-black'>02</span></h4>
+                  <span className='text-[12px] font-semibold text-gray-900'>342 TK</span>
+                </span>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </Layout>
