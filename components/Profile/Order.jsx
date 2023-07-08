@@ -8,8 +8,6 @@ import { IoMdPricetags } from 'react-icons/io'
 import { HiStatusOnline } from 'react-icons/hi'
 import OrderCard from './OrderCard'
 
-
-
 const MyOrder = () => {
 
     const [showTab, setShowTab] = useState("all-orders")
