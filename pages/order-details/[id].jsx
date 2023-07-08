@@ -1,7 +1,6 @@
 import React from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
-
 import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { HiAnnotation } from 'react-icons/hi'
@@ -220,8 +219,8 @@ const OrderDetails = () => {
             </span>
           </div>
           <div className='mt-5 flex items-center justify-between gap-4 w-full'>
-            <button className='text-[12px] font-semibold py-[6px] px-6 rounded-full border border-gray-800 w-full'>Reorder</button>
-            <button className='text-[12px] font-semibold py-[6px] px-6 rounded-full w-full bg-bgColor text-white'>Leave Feedback</button>
+            <Link href={""} className='text-[12px] font-semibold py-[6px] px-6 rounded-full border border-gray-800 w-full flex items-center justify-center'>Reorder</Link>
+            <Link href={""} className='text-[12px] font-semibold py-[6px] px-6 rounded-full w-full bg-bgColor text-white'>Leave Feedback</Link>
           </div>
         </div>
       </div>
