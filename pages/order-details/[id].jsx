@@ -5,16 +5,15 @@ import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { HiAnnotation } from 'react-icons/hi'
 import AddressCard from '@/components/Checkout.jsx/AddressCard'
-import { MdArrowBackIos } from 'react-icons/md'
+import { MdArrowBackIos,MdKeyboardArrowLeft } from 'react-icons/md'
 import OrderDetailsCard from '@/components/Profile/OrderDetailsCard'
 import { useRouter } from 'next/router'
 import Bottom from '@/components/PhoneBottom/Bottom'
 
+
+
 const OrderDetails = () => {
-
   const router = useRouter()
-
-  console.log("router", router.query);
 
   return (
     <Layout>
@@ -181,10 +180,11 @@ const OrderDetails = () => {
           </div>
         </div>
       </div>
-      <div className=''>
+      <div className='md:hidden'>
         <div className='flex items-center justify-between gap-5 p-3 bg-white'>
-          <Link href={"/profile/noman"}>
-            <MdArrowBackIos size={17} />
+          <Link href={"/profile/noman"} className='flex items-center'>
+            <MdKeyboardArrowLeft size={20} className='mt-[1px]' />
+            <h3 className='text-[13px] font-medium text-gray-600'>Prev</h3>
           </Link>
           <h5 className='text-[15px] font-semibold text-gray-900'>Order Details</h5>
           <span></span>
@@ -233,7 +233,7 @@ const OrderDetails = () => {
           </div>
         </div>
       </div>
-      <Bottom/>
+      <Bottom />
     </Layout>
 
   )
