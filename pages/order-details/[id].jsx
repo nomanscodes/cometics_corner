@@ -183,7 +183,7 @@ const OrderDetails = () => {
       <div className='md:hidden'>
         <div className='flex items-center justify-between gap-5 p-3 bg-white'>
           <Link href={"/profile/noman"} className='flex items-center'>
-            <MdKeyboardArrowLeft size={20} className='mt-[1px]' />
+            <MdKeyboardArrowLeft size={22}/>
             <h3 className='text-[13px] font-medium text-gray-600'>Prev</h3>
           </Link>
           <h5 className='text-[15px] font-semibold text-gray-900'>Order Details</h5>
