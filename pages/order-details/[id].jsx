@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
+
 import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
 import { HiAnnotation } from 'react-icons/hi'
 import AddressCard from '@/components/Checkout.jsx/AddressCard'
 import { MdArrowBackIos } from 'react-icons/md'
+import OrderDetailsCard from '@/components/Profile/OrderDetailsCard'
 
 const OrderDetails = () => {
   return (
@@ -195,26 +197,31 @@ const OrderDetails = () => {
             <h1 className='text-[13px] font-medium text-green-700'>Delivered</h1>
           </div>
           <h1 className='text-[13px] font-medium text-gray-700 mt-2'>2 Items</h1>
+          <div>
+            <OrderDetailsCard />
+            <OrderDetailsCard />
+          </div>
+
           <div className='mt-3'>
-            <div className='grid grid-cols-4 border shadow-sm p-[2px] bg-white'>
-              <picture className='col-span-1'>
-                <img src="/demo/p/p1.avif" className='w-[90px] h-full' alt="" />
-              </picture>
-              <div className='col-span-3 px-2 '>
-                <h4 className='text-[12px] font-semibold text-gray-700'>American Hair Gel For Women</h4>
-                <h4 className='text-[11px] font-semibold text-gray-600 mt-1'>Sky Blue</h4>
-                <span className='flex items-center gap-3 
-                mt-1'>
-                  <h4 className='text-[11px] font-semibold text-gray-700'>Color : <span className='text-black'>Red</span></h4>
-                  <h4 className='text-[11px] font-semibold text-gray-700'>Size : <span className='text-black'>L</span></h4>
-                  <h4 className='text-[11px] font-semibold text-gray-700'>Qty : <span className='text-black'>02</span></h4>
-                </span>
-                <span className='flex items-center justify-between mt-1'>
-                  <h4 className='text-[11px] font-semibold text-gray-700'>Qty : <span className='text-black'>02</span></h4>
-                  <span className='text-[12px] font-semibold text-gray-900'>342 TK</span>
-                </span>
-              </div>
-            </div>
+            <h4 className='text-[13px] font-semibold text-gray-700 pb-2'>Order Information</h4>
+            <AddressCard />
+
+            <span className='grid grid-cols-5 mt-4'>
+              <h1 className='text-[12px] font-medium text-gray-600 col-span-2'>Payment Method :</h1>
+              <h1 className='text-[12px] font-medium col-span-3'>Online Payment</h1>
+            </span>
+            <span className='grid grid-cols-5 mt-4'>
+              <h1 className='text-[12px] font-medium text-gray-600 col-span-2'>Discount :</h1>
+              <h1 className='text-[12px] font-medium col-span-3'>20% Discount By Promo Code</h1>
+            </span>
+            <span className='grid grid-cols-5 mt-4'>
+              <h1 className='text-[12px] font-medium text-gray-600 col-span-2'>Total Amount :</h1>
+              <h1 className='text-[12px] font-medium col-span-3'>234 TK</h1>
+            </span>
+          </div>
+          <div className='mt-5 flex items-center justify-between gap-4 w-full'>
+            <button className='text-[12px] font-semibold py-[6px] px-6 rounded-full border border-gray-800 w-full'>Reorder</button>
+            <button className='text-[12px] font-semibold py-[6px] px-6 rounded-full w-full bg-bgColor text-white'>Leave Feedback</button>
           </div>
         </div>
       </div>
