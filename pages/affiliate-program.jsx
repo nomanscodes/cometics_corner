@@ -48,8 +48,8 @@ const AffiliateProgram = () => {
                 <div className='mt-4 px-3 md:px-16'>
                     <div className="text-emerald-500 
                     md:text-[22px] font-semibold flex items-center justify-center">How It Works</div>
-                    <div className='mt-6 md:mt-8 grid grid-cols-5 gap-2 md:gap-0'>
-                        <div className="flex-col justify-center items-center gap-4 inline-flex">
+                    <div className='mt-6 md:mt-8 grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-0'>
+                        <div className="flex-col md:justify-center items-center gap-4 inline-flex">
                             <picture>
                                 <img
                                     className="w-[40px] md:w-[90px]"
@@ -63,41 +63,41 @@ const AffiliateProgram = () => {
                                 md:text-[13px] font-medium leading-tight">Join CART24 Affiliate program & start earning.</h2>
                             </div>
                         </div>
-                        <div className='flex items-center 
+                        <div className='hidden md:flex items-center 
                          justify-center'>
                             <picture>
                                 <img src="/SVG/arrowBold.svg" 
                                 className='w-8 md:w-20 opacity-80' alt="" />
                             </picture>
                         </div>
-                        <div className="flex-col justify-center items-center gap-4 inline-flex">
+                        <div className="flex-col md:justify-center items-center gap-4 inline-flex">
                             <picture>
                                 <img
                                     className="w-[40px] md:w-[90px]"
                                     alt=''
                                     src="/SVG/recomended.svg" />
                             </picture>
-                            <div className="flex flex-col justify-center items-center gap-2">
+                            <div className="flex flex-col justify-center md:items-center gap-2">
                                 <span className="text-zinc-800 text-opacity-90 text-[14px] md:text-[20px] font-semibold">Recommend</span>
                                 <h2 className="md:text-center text-zinc-800 
                                 text-[11px]
                                 md:text-[13px] font-medium leading-tight">Share thousands of products with your own personalized link.</h2>
                             </div>
                         </div>
-                        <div className='flex items-center 
+                        <div className='hidden  md:last-of-type:flex items-center 
                          justify-center'>
                             <picture>
                                 <img src="/SVG/arrowBold.svg" className=' w-8 md:w-20 opacity-80' alt="" />
                             </picture>
                         </div>
-                        <div className="flex-col justify-center items-center gap-4 inline-flex">
+                        <div className="flex-col md:justify-center items-center gap-4 inline-flex">
                             <picture>
                                 <img
                                     className="w-[40px] md:w-[90px]"
                                     alt=''
                                     src="/SVG/earn.svg" />
                             </picture>
-                            <div className="flex flex-col justify-center items-center gap-2">
+                            <div className="flex flex-col justify-center md:items-center gap-2">
                                 <span className="text-zinc-800 text-opacity-90 text-[14px] md:text-[20px] font-semibold">Earn</span>
                                 <h2 className="md:text-center text-zinc-800 
                                 text-[11px]
