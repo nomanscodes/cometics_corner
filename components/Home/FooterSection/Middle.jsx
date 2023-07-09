@@ -58,7 +58,7 @@ const Middle = () => {
             </div>
             <div className="middle2 p-2 ">
                 <h1 className='font-bold hidden sm:block'>Make Money With Us</h1>
-                <div className='mt-2 grid grid-cols-2 gap-2 sm:flex flex-col footerText sm:text-[14px]'>
+                <div className='mt-2 grid grid-cols-2 gap-2 sm:flex flex-col footerText3 sm:text-[14px]'>
                     <Link className=' hover:underline duration-300' href={""}> Sell products on Amazon </Link>
                     <Link className=' hover:underline duration-300' href={""}> Sell on Amazon Business</Link>
                     <Link className=' hover:underline duration-300' href={""}>Sell apps on Amazon</Link>
