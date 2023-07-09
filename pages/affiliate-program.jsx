@@ -45,7 +45,7 @@ const AffiliateProgram = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='mt-4 px-3 md:px-16'>
+                <div className='mt-4 md:px-16'>
                     <div className="text-emerald-500 
                     md:text-[22px] font-semibold flex items-center justify-center">How It Works</div>
                     <div className='mt-6 md:mt-8 grid grid-cols-3 md:grid-cols-5 gap-2 md:gap-0'>
