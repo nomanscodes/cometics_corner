@@ -7,7 +7,7 @@ const Middle = () => {
 
 
     return (
-        <div className=' px-6 flex items-center justify-center gap-5 font-poppins bg-[#131a22] text-white footerText3 lg:grid grid-cols-4'>
+        <div className=' px-6 sm:flex items-center justify-center gap-5  bg-[#131a22] text-white footerText3 lg:grid grid-cols-4'>
             <div className="leftSide col-span-1 footerText3">
                 <div className="p-2 text-center lg:text-left">
                     <div className=" flex items-center justify-center lg:block">
@@ -48,7 +48,7 @@ const Middle = () => {
             <div className="middle1 p-2 hidden sm:block">
                 <h1 className='font-bold '>Get To Know Us</h1>
                 <div className='mt-2 flex flex-col'>
-                    <Link className=' hover:underline duration-300' href={""}> Careers </Link>
+                    <Link className=' hover:underline duration-300' href={""}> Careers sm</Link>
                     <Link className=' hover:underline duration-300' href={""}> Blog</Link>
                     <Link className=' hover:underline duration-300' href={""}>About Amazon</Link>
                     <Link className=' hover:underline duration-300' href={""}>Investor Relations</Link>
@@ -56,9 +56,9 @@ const Middle = () => {
                     <Link className=' hover:underline duration-300' href={""}> Amazon Science</Link>
                 </div>
             </div>
-            <div className="middle2 p-2 hidden md:block">
-                <h1 className='font-bold'>Make Money With Us</h1>
-                <div className='mt-2 flex flex-col'>
+            <div className="middle2 p-2 ">
+                <h1 className='font-bold hidden sm:block'>Make Money With Us</h1>
+                <div className='mt-2 grid grid-cols-2 gap-2 sm:flex flex-col footerText sm:text-[14px]'>
                     <Link className=' hover:underline duration-300' href={""}> Sell products on Amazon </Link>
                     <Link className=' hover:underline duration-300' href={""}> Sell on Amazon Business</Link>
                     <Link className=' hover:underline duration-300' href={""}>Sell apps on Amazon</Link>
@@ -67,10 +67,10 @@ const Middle = () => {
                     <Link className=' hover:underline duration-300' href={""}> Amazon Science</Link>
                 </div>
             </div>
-            <div className="rightSide p-2 hidden xs:block">
+            <div className="rightSide p-2 hidden sm:block">
                 <h1 className='font-bold'>GET TO KNOW US</h1>
                 <div className='mt-2 flex flex-col'>
-                    <Link className=' hover:underline duration-300' href={""}> Careers </Link>
+                    <Link className=' hover:underline duration-300' href={""}> Careers xs</Link>
                     <Link className=' hover:underline duration-300' href={""}> Blog</Link>
                     <Link className=' hover:underline duration-300' href={""}>About Amazon</Link>
                     <Link className=' hover:underline duration-300' href={""}>Investor Relations</Link>

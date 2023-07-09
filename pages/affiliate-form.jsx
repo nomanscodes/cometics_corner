@@ -1,7 +1,7 @@
 import React from 'react'
 import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
-
+import Bottom from '@/components/PhoneBottom/Bottom'
 
 const AffilateForm = () => {
     return (
@@ -13,6 +13,7 @@ const AffilateForm = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
             <div>AffilateForm</div>
+            <Bottom />
         </Layout>
 
     )
