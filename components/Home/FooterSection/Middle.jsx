@@ -46,7 +46,7 @@ const Middle = () => {
                 </div>
             </div>
             <div className="middle1 p-2 hidden sm:block">
-                <h1 className='font-bold '>GET TO KNOW US</h1>
+                <h1 className='font-bold '>Get To Know Us</h1>
                 <div className='mt-2 flex flex-col'>
                     <Link className=' hover:underline duration-300' href={""}> Careers </Link>
                     <Link className=' hover:underline duration-300' href={""}> Blog</Link>
@@ -57,13 +57,13 @@ const Middle = () => {
                 </div>
             </div>
             <div className="middle2 p-2 hidden md:block">
-                <h1 className='font-bold'>GET TO KNOW US</h1>
+                <h1 className='font-bold'>Make Money With Us</h1>
                 <div className='mt-2 flex flex-col'>
-                    <Link className=' hover:underline duration-300' href={""}> Careers </Link>
-                    <Link className=' hover:underline duration-300' href={""}> Blog</Link>
-                    <Link className=' hover:underline duration-300' href={""}>About Amazon</Link>
-                    <Link className=' hover:underline duration-300' href={""}>Investor Relations</Link>
-                    <Link className=' hover:underline duration-300' href={""}>Amazon Devices</Link>
+                    <Link className=' hover:underline duration-300' href={""}> Sell products on Amazon </Link>
+                    <Link className=' hover:underline duration-300' href={""}> Sell on Amazon Business</Link>
+                    <Link className=' hover:underline duration-300' href={""}>Sell apps on Amazon</Link>
+                    <Link className=' hover:underline duration-300' href={"/affiliate-program"}>Become an Affiliate</Link>
+                    <Link className=' hover:underline duration-300' href={""}>Advertise Your Products</Link>
                     <Link className=' hover:underline duration-300' href={""}> Amazon Science</Link>
                 </div>
             </div>
