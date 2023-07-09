@@ -3,6 +3,8 @@ import Layout from '@/Layouts/Layout'
 import Head from 'next/head'
 import { FiChevronRight } from 'react-icons/fi'
 import Link from 'next/link'
+import Bottom from '@/components/PhoneBottom/Bottom'
+
 const AffiliateProgram = () => {
     return (
         <Layout>
@@ -155,6 +157,7 @@ const AffiliateProgram = () => {
                     md:text-[20px] font-semibold tracking-wide"> Earn Commissions by Recommending Products</div>
                 </div>
             </div>
+            <Bottom />
         </Layout>
 
     )
