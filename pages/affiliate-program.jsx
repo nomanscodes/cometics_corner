@@ -45,59 +45,63 @@ const AffiliateProgram = () => {
                         </Link>
                     </div>
                 </div>
-                <div className='mt-4 px-16'>
+                <div className='mt-4 px-3 md:px-16'>
                     <div className="text-emerald-500 
-                    text-[22px] font-semibold flex items-center justify-center">How It Works</div>
-                    <div className='mt-8 grid grid-cols-5'>
+                    md:text-[22px] font-semibold flex items-center justify-center">How It Works</div>
+                    <div className='mt-6 md:mt-8 grid grid-cols-5 gap-2 md:gap-0'>
                         <div className="flex-col justify-center items-center gap-4 inline-flex">
                             <picture>
                                 <img
-                                    className="w-[90px]"
+                                    className="w-[40px] md:w-[90px]"
                                     alt=''
                                     src="/SVG/signUp.svg" />
                             </picture>
-                            <div className="flex flex-col justify-center items-center gap-2">
-                                <span className="text-zinc-800 text-opacity-90 text-[20px] font-semibold">Sign up</span>
-                                <h2 className="text-center text-zinc-800  
-                                text-[13px] font-medium leading-tight">Join CART24 Affiliate program & start earning.</h2>
+                            <div className="flex flex-col justify-center md:items-center gap-2">
+                                <span className="text-zinc-800 text-opacity-90 text-[14px] md:text-[20px] font-semibold">Sign up</span>
+                                <h2 className="md:text-center text-zinc-800 
+                                text-[11px]
+                                md:text-[13px] font-medium leading-tight">Join CART24 Affiliate program & start earning.</h2>
                             </div>
                         </div>
                         <div className='flex items-center 
                          justify-center'>
                             <picture>
-                                <img src="/SVG/arrowBold.svg" className='w-20 opacity-80' alt="" />
+                                <img src="/SVG/arrowBold.svg" 
+                                className='w-8 md:w-20 opacity-80' alt="" />
                             </picture>
                         </div>
                         <div className="flex-col justify-center items-center gap-4 inline-flex">
                             <picture>
                                 <img
-                                    className="w-[90px]"
+                                    className="w-[40px] md:w-[90px]"
                                     alt=''
                                     src="/SVG/recomended.svg" />
                             </picture>
                             <div className="flex flex-col justify-center items-center gap-2">
-                                <span className="text-zinc-800 text-opacity-90 text-[20px] font-semibold">Recommend</span>
-                                <h2 className="text-center text-zinc-800  
-                                text-[13px] font-medium leading-tight">Share thousands of products with your own personalized link.</h2>
+                                <span className="text-zinc-800 text-opacity-90 text-[14px] md:text-[20px] font-semibold">Recommend</span>
+                                <h2 className="md:text-center text-zinc-800 
+                                text-[11px]
+                                md:text-[13px] font-medium leading-tight">Share thousands of products with your own personalized link.</h2>
                             </div>
                         </div>
                         <div className='flex items-center 
                          justify-center'>
                             <picture>
-                                <img src="/SVG/arrowBold.svg" className='w-20 opacity-80' alt="" />
+                                <img src="/SVG/arrowBold.svg" className=' w-8 md:w-20 opacity-80' alt="" />
                             </picture>
                         </div>
                         <div className="flex-col justify-center items-center gap-4 inline-flex">
                             <picture>
                                 <img
-                                    className="w-[90px]"
+                                    className="w-[40px] md:w-[90px]"
                                     alt=''
                                     src="/SVG/earn.svg" />
                             </picture>
                             <div className="flex flex-col justify-center items-center gap-2">
-                                <span className="text-zinc-800 text-opacity-90 text-[20px] font-semibold">Earn</span>
-                                <h2 className="text-center text-zinc-800  
-                                text-[13px] font-medium leading-tight">Earn commissions based on product purchase completion. </h2>
+                                <span className="text-zinc-800 text-opacity-90 text-[14px] md:text-[20px] font-semibold">Earn</span>
+                                <h2 className="md:text-center text-zinc-800 
+                                text-[11px]
+                                md:text-[13px] font-medium leading-tight">Earn commissions based on product purchase completion. </h2>
                             </div>
                         </div>
                     </div>
