@@ -26,8 +26,8 @@ const AffiliateProgram = () => {
                 <div className="bg-gradient-to-b from-slate-200 to-slate-50 shadow-sm mt-3 flex items-center justify-between py-2 md:py-0 md:p-4">
                     <div>
                         <picture>
-                            <img src="/SVG/affiliate.svg" 
-                            className='h-[80px] md:h-[160px]' alt="" />
+                            <img src="/SVG/affiliate.svg"
+                                className='h-[80px] md:h-[160px]' alt="" />
                         </picture>
                     </div>
                     <div className="flex-col justify-center md:items-center gap-3 md:gap-6 inline-flex">
@@ -38,8 +38,8 @@ const AffiliateProgram = () => {
                     <div className="flex flex-col justify-center items-center gap-3 md:gap-5">
                         <span className="text-neutral-500 text-[12px] md:text-[16px] font-medium">Apply now here</span>
 
-                        <Link href={"/affiliate-form"} 
-                        className="px-[10px] md:px-[30px] py-[6px] text-[12px]
+                        <Link href={"/affiliate-form"}
+                            className="px-[10px] md:px-[30px] py-[6px] text-[12px]
                         md:py-[11px] bg-bgColor rounded shadow justify-center items-center inline-flex text-white md:text-[16px] font-semibold whitespace-nowrap">
                             Sign Up
                         </Link>
@@ -60,14 +60,14 @@ const AffiliateProgram = () => {
                                 <span className="text-zinc-800 text-opacity-90 text-[14px] md:text-[20px] font-semibold">Sign up</span>
                                 <h2 className="md:text-center text-zinc-800 
                                 text-[11px]
-                                md:text-[13px] font-medium leading-tight">Join CART24 Affiliate program & start earning.</h2>
+                                md:text-[13px] font-medium leading-tight">Join CART24 Affiliate program and start earning.</h2>
                             </div>
                         </div>
                         <div className='hidden md:flex items-center 
                          justify-center'>
                             <picture>
-                                <img src="/SVG/arrowBold.svg" 
-                                className='w-8 md:w-20 opacity-80' alt="" />
+                                <img src="/SVG/arrowBold.svg"
+                                    className='w-8 md:w-20 opacity-80' alt="" />
                             </picture>
                         </div>
                         <div className="flex-col md:justify-center items-center gap-4 inline-flex">
@@ -105,25 +105,24 @@ const AffiliateProgram = () => {
                             </div>
                         </div>
                     </div>
-
                     <div className='mt-12'>
-                        <h4 className="text-zinc-800 text-opacity-90 text-[24px] font-semibold tracking-wide">Frequently Asked Questions</h4>
-                        <div className='mt-5 grid grid-cols-2 gap-8'>
+                        <h4 className="text-zinc-800 text-opacity-90 md:text-[24px] font-semibold tracking-wide">Frequently Asked Questions</h4>
+                        <div className='md:mt-5 grid grid-cols-2 gap-2 md:gap-8'>
                             <div className='py-3'>
-                                <h4 className="text-zinc-800 text-opacity-90 text-[20px] font-semibold tracking-wide">How does the Associates Program work?</h4>
-                                <p className='text-[14px] mt-3' >
+                                <h4 className="text-zinc-800 text-opacity-90 text-[13px] md:text-[20px] font-semibold tracking-wide">How does the Associates Program work?</h4>
+                                <p className='text-[11px] md:text-[14px] mt-3' >
                                     You can share products and available programs on Amazon with your audience through customized linking tools and earn money on qualifying purchases and customer actions like signing up for a free trial program. Learn more.
                                 </p>
                             </div>
                             <div className='py-3'>
-                                <h4 className="text-zinc-800 text-opacity-90 text-[20px] font-semibold tracking-wide">How do I earn in this program?</h4>
-                                <p className='text-[14px] mt-3' >
+                                <h4 className="text-zinc-800 text-opacity-90 text-[13px] md:text-[20px] font-semibold tracking-wide">How do I earn in this program?</h4>
+                                <p className='text-[11px] md:text-[14px] mt-3' >
                                     You earn from qualifying purchases and programs through the traffic you drive to Amazon. Commission income for qualifying purchases and programs differ based on product category. Note: Commission income is paid approximately 60 days after the end of the month in which it was earned.
                                 </p>
                             </div>
                             <div className='py-3'>
-                                <h4 className="text-zinc-800 text-opacity-90 text-[20px] font-semibold tracking-wide">How do I qualify for this program?</h4>
-                                <p className='text-[14px] mt-3' >
+                                <h4 className="text-zinc-800 text-opacity-90 text-[13px] md:text-[20px] font-semibold tracking-wide">How do I qualify for this program?</h4>
+                                <p className='text-[11px] md:text-[14px] mt-3' >
                                     Bloggers, publishers and content creators with a qualifying website or mobile app can participate in this program. <Link className='text-green-700 hover:underline' href={""}>Learn More.</Link>
                                     <br />
                                     <br />
@@ -131,8 +130,8 @@ const AffiliateProgram = () => {
                                 </p>
                             </div>
                             <div className='py-3'>
-                                <h4 className="text-zinc-800 text-opacity-90 text-[20px] font-semibold tracking-wide">How do I sign up to the program?</h4>
-                                <p className='text-[14px] mt-3' >
+                                <h4 className="text-zinc-800 text-opacity-90 text-[13px] md:text-[20px] font-semibold tracking-wide">How do I sign up to the program?</h4>
+                                <p className='text-[11px] md:text-[14px] mt-3' >
                                     Sign up to the program <Link className='text-green-700 hover:underline' href={""}> here.</Link>
                                     <br />
                                     <br />
@@ -142,16 +141,18 @@ const AffiliateProgram = () => {
                         </div>
                     </div>
                 </div>
-                <div className='mt-12 flex items-center justify-between px-3 py-6 bg-gradient-to-b from-slate-200 to-slate-50 '>
+                <div className='mt-5 md:mt-12 flex items-center md:justify-between gap-2 md:px-3 py-6 bg-gradient-to-b from-slate-200 to-slate-50 '>
                     <div className='flex items-center gap-4'>
-                        <h5 className="text-zinc-800 text-opacity-90 text-[20px] font-semibold tracking-wide">Start Earning Today</h5>
-                        <Link href={"/affiliate-form"} className="px-[30px] 
-                        py-[10px] bg-bgColor rounded shadow justify-center items-center inline-flex text-white text-[16px] font-semibold">
+                        <h5 className="text-zinc-800 text-opacity-90 text-[12px] 
+                        md:text-[20px] font-semibold tracking-wide hidden sm:block">Start Earning Today</h5>
+                        <Link href={"/affiliate-form"}
+                            className="px-[10px] md:px-[30px] py-[6px] text-[11px]
+                        md:py-[11px] bg-bgColor rounded shadow justify-center items-center inline-flex text-white md:text-[16px] font-semibold whitespace-nowrap">
                             Sign Up
                         </Link>
                     </div>
-                    <div className="text-zinc-800 text-opacity-90 
-                    text-[20px] font-semibold tracking-wide"> Earn Commissions by Recommending Products</div>
+                    <div className="text-zinc-800 text-opacity-90 text-[12px] 
+                    md:text-[20px] font-semibold tracking-wide"> Earn Commissions by Recommending Products</div>
                 </div>
             </div>
         </Layout>
