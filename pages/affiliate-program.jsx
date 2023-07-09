@@ -84,7 +84,7 @@ const AffiliateProgram = () => {
                                 md:text-[13px] font-medium leading-tight">Share thousands of products with your own personalized link.</h2>
                             </div>
                         </div>
-                        <div className='hidden  md:last-of-type:flex items-center 
+                        <div className='hidden  md:flex items-center 
                          justify-center'>
                             <picture>
                                 <img src="/SVG/arrowBold.svg" className=' w-8 md:w-20 opacity-80' alt="" />
@@ -107,7 +107,7 @@ const AffiliateProgram = () => {
                     </div>
                     <div className='mt-12'>
                         <h4 className="text-zinc-800 text-opacity-90 md:text-[24px] font-semibold tracking-wide">Frequently Asked Questions</h4>
-                        <div className='md:mt-5 grid grid-cols-2 gap-2 md:gap-8'>
+                        <div className='mt-5 sm:grid grid-cols-2 gap-2 md:gap-8'>
                             <div className='py-3'>
                                 <h4 className="text-zinc-800 text-opacity-90 text-[13px] md:text-[20px] font-semibold tracking-wide">How does the Associates Program work?</h4>
                                 <p className='text-[11px] md:text-[14px] mt-3' >
