@@ -39,12 +39,12 @@ const PhoneNav = () => {
             </div>
             <div className='flex items-center gap-2 w-full'>
                 <div className='flex w-full'>
-                    <AiOutlineSearch className='h-[38px] text-black p-1 w-10 border border-r-0 border-neutral-400 opacity-60' size={30} />
                     <input
                         type="text"
-                        className="flex flex-1 py-2 md:py-1 text-black text-sm border border-l-0 border-neutral-300 pl-4 focus:outline-none "
-                        placeholder="Search For Products"
+                        className="flex flex-1 py-2 text-black text-sm border border-l-0 border-neutral-300 pl-2 focus:outline-none rounded"
+                        placeholder="Search Amazon"
                     />
+                    <AiOutlineSearch className='absolute right-4 mt-1' size={28} />
                 </div>
             </div>
         </div>
