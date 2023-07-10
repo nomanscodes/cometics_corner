@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Alice&family=Alkatra&family=Farsan&family=Fasthand&family=Great+Vibes&family=Kalam&family=Oswald:wght@200&family=Poppins:wght@200;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700&family=Roboto+Mono&family=Roboto:wght@300&family=Urbanist:wght@400;500;600;700;800&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Alice&family=Alkatra&family=Farsan&family=Fasthand&family=Great+Vibes&family=Kalam&family=Oswald:wght@200&family=Poppins:wght@200;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700&family=Roboto+Mono&family=Roboto:wght@300&family=Urbanist:wght@400;500;600;700;800&display=swap'); */
+
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Alkatra&family=Farsan&family=Fasthand&family=Great+Vibes&family=Kalam&family=Mansalva&family=Oswald:wght@200&family=Poppins:wght@200;400;500;600;700&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,700&family=Roboto+Mono&family=Roboto:wght@300&family=Urbanist:wght@400;500;600;700;800&display=swap');
+
 
 @tailwind base;
 @tailwind components;

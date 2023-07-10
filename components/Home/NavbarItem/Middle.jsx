@@ -44,7 +44,7 @@ const Middle = () => {
           </span>
         </div>
       </Link>
-
+      
       <div className='px-3 hidden md:flex items-center gap-2 text-white'>
         <Link
           href={""}

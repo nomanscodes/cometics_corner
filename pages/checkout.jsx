@@ -1,11 +1,8 @@
 import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Layout from "@/Layouts/Layout";
-import Link from "next/link";
 import AddressCard from "@/components/Checkout.jsx/AddressCard";
-import { AiOutlinePlus, AiOutlineCalendar } from "react-icons/ai";
 import InputField from "@/components/ReuseableComponent/BaseInput";
-import { RxCross2 } from "react-icons/rx";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { errorNotify, successNotify } from "@/Notify/Notify";
@@ -14,7 +11,6 @@ import { errorNotify, successNotify } from "@/Notify/Notify";
 const Checkout = () => {
     const [openTab, setOpenTab] = useState("address");
     const [showSSL, setShowSSL] = useState(false);
-    const [showAddressModal, setShowAddressModal] = useState(false);
     const [selectCod, setSelectCod] = useState(false)
     const [selectOp, setSelectOp] = useState(false)
 

@@ -17,6 +17,9 @@ module.exports = {
         bgColor: "#f85606",
         gold: "#dfc441",
       },
+      fontFamily: {
+        captcha: "Mansalva,cursive",
+      },
     },
     screens: {
       xs: "460px",
