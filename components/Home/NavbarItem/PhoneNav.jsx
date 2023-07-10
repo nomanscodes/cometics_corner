@@ -37,7 +37,7 @@ const PhoneNav = () => {
                     </div>
                 </div>
             </div>
-            <div className='flex items-center gap-2 w-full'>
+            <div className='flex items-center gap-2 w-full mb-1'>
                 <div className='flex w-full'>
                     <input
                         type="text"
