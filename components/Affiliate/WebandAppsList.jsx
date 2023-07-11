@@ -13,6 +13,7 @@ const WebandAppsList = ({ setFormTab }) => {
         sessionStorage.setItem("affiliateTab", "affiliate_profile")
     }
 
+    
     return (
         <>
             <div className='bg-white border shadow-sm'>
@@ -65,7 +66,7 @@ const WebandAppsList = ({ setFormTab }) => {
                     ${agree ? `hidden` : `flex`}  items-center justify-center md:cursor-pointer`}>Next</h1>
 
                     <div className={`py-2 ${agree ? `block` : `hidden`}`}>
-                        <p className='text-[13px] md:text-[14px] font-medium mt-2 text-zinc-800'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsam, quaerat saepe dolores ipsa, delectus cum repudiandae deserunt unde nulla veritatis quibusdam! Quia sequi earum eaque possimus quae voluptatem molestias?</p>
+                        <p className='text-[13px] md:text-[14px] font-medium md:mt-2 text-zinc-800'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsam, quaerat saepe dolores ipsa, delectus cum repudiandae deserunt unde nulla veritatis quibusdam! Quia sequi earum eaque possimus quae voluptatem molestias?</p>
                         <div className='flex items-center gap-4 mt-2'>
                             <div className="flex items-center gap-2">
                                 <input
