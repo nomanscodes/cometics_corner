@@ -16,38 +16,46 @@ const WebandAppsList = ({ setFormTab }) => {
     return (
         <>
             <div className='bg-white border shadow-sm'>
-                <h3 className='p-3 text-bgColor text-[15px] font-medium'>Your Website, Mobile Apps and Other Platform</h3>
+                <h3 className='p-3 text-bgColor text-[14px] md:text-[15px] font-medium'>Your Website, Mobile Apps and Other Platform</h3>
                 <hr />
                 <div className='p-3'>
-                    <span className='flex items-center gap-1 text-[15px] font-medium'>
-                        <h4 className=' text-zinc-950'>Important :</h4>
+                    <span className='flex items-center gap-1 text-[13px] md:text-[15px] font-medium'>
+                        <h4 className=' text-zinc-950 hidden md:block'>Important:</h4>
                         <h4 className='text-zinc-600'>Please read
                             <span className='text-green-700 px-1'>
                                 <Link href={""}>
                                     these instraction
                                 </Link>
                             </span>
-                            before fill this form</h4>
+                            before fill this form
+                        </h4>
                     </span>
-                    <p className='text-[14px] font-medium mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsam, quaerat saepe dolores ipsa, delectus cum repudiandae deserunt unde nulla veritatis quibusdam! Quia sequi earum eaque possimus quae voluptatem molestias?</p>
-                    <div className='mt-2 py-3 grid grid-cols-2 gap-4'>
+                    <p className='text-[12px] md:text-[14px] font-medium mt-2 text-zinc-900'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsam, quaerat saepe dolores ipsa, delectus cum repudiandae deserunt unde nulla veritatis quibusdam! Quia sequi earum eaque possimus quae voluptatem molestias?</p>
+                    <div className='mt-2 py-3 flex flex-col gap-4 md:grid grid-cols-2 '>
                         <div>
-                            <h3 className='text-[16px] font-semibold text-zinc-800'>Enter Your Website`s URL</h3>
+                            <h3 className='text-[14px] md:text-[16px] font-semibold text-zinc-800'>Enter Your Website`s URL</h3>
                             <div className='flex items-center gap-3 mt-2'>
-                                <input type="text" placeholder='http://localhost:3000/affiliate-form' className='py-[8px] md:py-[7px] flex flex-1 w-[100%] text-[12px] md:text-[14px] pl-2 rounded-md md:rounded-sm focus:outline-none border border-gray-500' />
-                                <h1 className='px-6 py-[6px] md:py-[7px] text-white bg-bgColor w-20 flex items-center justify-center md:cursor-pointer rounded-sm'>Add</h1>
+
+                                <input type="text" placeholder='http://localhost:3000/affiliate-form' 
+                                className='py-[6px] md:py-[7px] flex flex-1 
+                                w-[100%] text-[12px] md:text-[14px] pl-2 rounded-md md:rounded-sm focus:outline-none border border-gray-500' />
+
+                                <h1 className='px-6 py-[5px] md:py-[7px] text-white bg-bgColor w-20 flex items-center justify-center md:cursor-pointer rounded-sm'>Add</h1>
                             </div>
-                            <div className='mt-2 border border-gray-500 h-48 rounded p-3 text-zinc-700'>
+                            <div className='mt-2 border border-gray-500 h-36
+                            md:h-48 rounded p-3 text-zinc-700'>
 
                             </div>
                         </div>
                         <div>
-                            <h3 className='text-[16px] font-semibold text-zinc-800'>Enter Your Mobile Apps or Other Platform URL</h3>
+                            <h3 className='text-[14px] md:text-[16px] font-semibold text-zinc-800'>Enter Your Mobile Apps or Other Platform URL</h3>
                             <div className='flex items-center gap-3 mt-2'>
-                                <input type="text" placeholder='http://localhost:3000/affiliate-form' className='py-[8px] md:py-[7px] flex flex-1 w-[100%] text-[12px] md:text-[14px] pl-2 rounded-md md:rounded-sm focus:outline-none border border-gray-500' />
-                                <h1 className='px-6 py-[6px] md:py-[7px] text-white bg-bgColor w-20 flex items-center justify-center md:cursor-pointer rounded-sm'>Add</h1>
+                                <input type="text" placeholder='http://localhost:3000/affiliate-form' className='
+                                py-[6px] md:py-[7px] flex flex-1 w-[100%] text-[12px] md:text-[14px] pl-2 rounded-md md:rounded-sm focus:outline-none border border-gray-500' />
+                                <h1 className='px-6 py-[5px] md:py-[7px] text-white bg-bgColor w-20 flex items-center justify-center md:cursor-pointer rounded-sm'>Add</h1>
                             </div>
-                            <div className='mt-2 border border-gray-500 h-48 rounded p-3 text-zinc-700'>
+                            <div className='mt-2 border border-gray-500 h-36
+                             md:h-48 rounded p-3 text-zinc-700'>
 
                             </div>
                         </div>
@@ -57,7 +65,7 @@ const WebandAppsList = ({ setFormTab }) => {
                     ${agree ? `hidden` : `flex`}  items-center justify-center md:cursor-pointer`}>Next</h1>
 
                     <div className={`py-2 ${agree ? `block` : `hidden`}`}>
-                        <p className='text-[14px] font-medium mt-2'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsam, quaerat saepe dolores ipsa, delectus cum repudiandae deserunt unde nulla veritatis quibusdam! Quia sequi earum eaque possimus quae voluptatem molestias?</p>
+                        <p className='text-[13px] md:text-[14px] font-medium mt-2 text-zinc-800'>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga ipsam, quaerat saepe dolores ipsa, delectus cum repudiandae deserunt unde nulla veritatis quibusdam! Quia sequi earum eaque possimus quae voluptatem molestias?</p>
                         <div className='flex items-center gap-4 mt-2'>
                             <div className="flex items-center gap-2">
                                 <input
