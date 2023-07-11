@@ -11,7 +11,6 @@ const AffilateForm = () => {
 
     const [formTab, setFormTab] = useState("account_information")
 
-
     useEffect(() => {
         const storedTab = sessionStorage.getItem("affiliateTab");
         if (storedTab) {
@@ -19,7 +18,8 @@ const AffilateForm = () => {
         }
     }, []);
 
-    
+    console.log("formTab", formTab);
+
     const AffiliateContent = ({ arg }) => {
         if (arg === "account_information") {
             return <AccountInformation setFormTab={setFormTab} />
@@ -32,9 +32,7 @@ const AffilateForm = () => {
         }
     }
 
-    const tabHandle = (arg) => {
-        setFormTab(arg)
-    }
+
     return (
         <Layout>
             <Head>
@@ -43,10 +41,11 @@ const AffilateForm = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <div className='p-6'>
-                <h4 className="text-zinc-800 text-opacity-90 md:text-[25px] font-semibold tracking-wide uppercase flex items-center justify-center">creating your amazon affiliate program</h4>
-                <div className='w-8/12 mx-auto'>
-                    <div className='w-4/5 mx-auto mt-6 border border-zinc-300 rounded-full bg-zinc-200 flex items-center justify-between h-5 shadow'>
+            <div className='p-3 md:p-6'>
+                <h4 className="text-zinc-800 text-opacity-90 
+                text-[16px] md:text-[25px] font-semibold tracking-wide uppercase flex items-center justify-center">creating your amazon affiliate program</h4>
+                <div className='md:w-8/12 mx-auto'>
+                    <div className='w-4/5 mx-auto mt-6 border border-zinc-300 rounded-full bg-zinc-200 hidden md:flex items-center justify-between h-5 shadow'>
                         <div className='flex flex-col items-center gap-3'>
                             <span className='h-[24px] w-[24px] rounded-full border border-zinc-300 bg-zinc-200 shadow-lg flex items-center justify-center'>
                                 <span className={`h-[18px] w-[18px] rounded-full 
@@ -55,15 +54,20 @@ const AffilateForm = () => {
                             <h3 className='absolute 
                             text-sm font-medium mt-[30px] text-zinc-900'>Account Information</h3>
                         </div>
+
                         <div className='flex flex-col items-center gap-3'>
                             <span className='h-[24px] w-[24px] rounded-full border border-zinc-300 bg-zinc-200 shadow-lg flex items-center justify-center'>
                                 <span className={`h-[18px] w-[18px] rounded-full 
-                                ${formTab === "webandapps_list" ? `bg-bgColor` : `` || formTab === "affiliate_profile" || "start_affiliate" ? `bg-green-600` : ``}`}></span>
+                                ${formTab === "account_information" ? `bg-zinc-200 ` : `` || formTab === "webandapps_list" ? `bg-bgColor` : ``
+                                        || formTab === "affiliate_profile" || "start_affiliate" ? `bg-green-600` : ``}`
+                                }>
+                                </span>
                             </span>
                             <h3 className='absolute 
                             text-sm font-medium mt-[30px]
                             text-zinc-700'>Website & Mobile Apps List</h3>
                         </div>
+
                         <div className='flex flex-col items-center gap-3'>
                             <span className='h-[24px] w-[24px] rounded-full border border-zinc-300 bg-zinc-200 shadow-lg flex items-center justify-center'>
                                 <span className={`h-[18px] w-[18px] rounded-full 
@@ -72,6 +76,7 @@ const AffilateForm = () => {
                             <h3 className='absolute 
                             text-sm font-medium mt-[30px]  text-zinc-700 '>Profile</h3>
                         </div>
+
                         <div className='flex flex-col items-center gap-3'>
                             <span className='h-[24px] w-[24px] rounded-full border border-zinc-300 bg-zinc-200 shadow-lg flex items-center justify-center'>
                                 <span className={`h-[18px] w-[18px] rounded-full 
@@ -81,7 +86,7 @@ const AffilateForm = () => {
                             text-sm font-medium mt-[30px] text-zinc-700'>Start Affiliate</h3>
                         </div>
                     </div>
-                    <div className='mt-14'>
+                    <div className='mt-4 md:mt-14'>
                         <AffiliateContent arg={formTab} />
                     </div>
                 </div>

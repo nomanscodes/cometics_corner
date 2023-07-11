@@ -12,21 +12,22 @@ const AccountInformation = ({ setFormTab }) => {
     return (
         <>
             <div className='bg-white border shadow-sm'>
-                <h3 className='p-3 text-bgColor text-[15px] font-medium'>Your Account Information</h3>
+                <h3 className='p-3 text-bgColor text-[14px] md:text-[15px] font-medium'>Your Account Information</h3>
                 <hr />
-                <div className='p-3'>
-                    <span className='flex items-center gap-1 text-[15px] font-medium'>
-                        <h4 className=' text-zinc-950'>Important :</h4>
+                <div className='p-2 md:p-3'>
+                    <span className='flex items-center gap-1 text-[13px] md:text-[15px] font-medium'>
+                        <h4 className=' text-zinc-950 hidden md:block'>Important:</h4>
                         <h4 className='text-zinc-600'>Please read
                             <span className='text-green-700 px-1'>
                                 <Link href={""}>
                                     these instraction
                                 </Link>
                             </span>
-                            before fill this form</h4>
+                            before fill this form
+                        </h4>
                     </span>
-                    <h4 className='text-zinc-950 text-[15px] font-medium mt-3'>Fill the form with correct information</h4>
-                    <div className='mt-6 w-3/5 flex flex-col gap-3'>
+                    <h4 className='text-zinc-950 text-[13px] md:text-[15px] font-medium mt-3'>Fill the form with correct information</h4>
+                    <div className='md:mt-6 md:w-3/5 flex flex-col gap-3'>
                         <InputField
                             border
                             label='Affiliate Name'
@@ -85,7 +86,7 @@ const AccountInformation = ({ setFormTab }) => {
                 </div>
             </div>
             <div className='mt-3 flex items-center justify-end'>
-                <h1 onClick={() => submitHandeler()} className='px-6 py-2 text-white bg-bgColor'>Next</h1>
+                <h1 onClick={() => submitHandeler()} className='md:px-6 px-4 py-[6px] md:py-2 text-white bg-bgColor'>Next</h1>
             </div>
         </>
 
